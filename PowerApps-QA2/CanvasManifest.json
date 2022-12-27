@@ -97,11 +97,11 @@
     "Id": "97b44ffe-ffb8-4376-a62c-ef36bd4e0804",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "OKR-QA",
+    "Name": "OKR-QA2",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "OKR-QA",
+    "AppName": "OKR-QA2",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

@@ -16,8 +16,7 @@ scr_home As screen:
         ZIndex: =2
 
         Title6 As label:
-            AutoHeight: =true
-            Height: =36
+            Height: =88
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0

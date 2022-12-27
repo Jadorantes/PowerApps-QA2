@@ -1,0 +1,182 @@
+{
+  "30971f61-f7b0-4fd0-969c-6f44d693efcf": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Empresas)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1600/1.0.1600.3026/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "8beab477-406e-4371-9cd8-6138a2aba091"
+    ],
+    "id": "30971f61-f7b0-4fd0-969c-6f44d693efcf"
+  },
+  "4795ab98-1e69-471e-abb2-0bdd7f7329af": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://fundaciondonde.sharepoint.com/sites/desarrollo/OKRs": {
+        "dataSources": {
+          "Areas": {
+            "tableName": "b9396b15-8e5b-4e80-92a5-1993b09c4a55"
+          },
+          "Empleado": {
+            "tableName": "047a9ec7-8fbd-466e-bef4-3e83ec8df28a"
+          },
+          "Estatus": {
+            "tableName": "c77514cc-1568-44ea-9067-ebc504b95acd"
+          },
+          "Objetivo": {
+            "tableName": "5de5b440-b2bc-4cc5-9fea-1244dded4dfe"
+          },
+          "Perfil_1": {
+            "tableName": "79eaf5c5-dcb3-4d19-a678-03c7494b3333"
+          },
+          "PeriodoTiempo": {
+            "tableName": "fccde9ae-9f3b-45d2-b652-0efd03dde905"
+          },
+          "ResultadoClave": {
+            "tableName": "4aadeb27-6d90-4342-b94e-e6606d86a7df"
+          },
+          "Tarea": {
+            "tableName": "c767bf30-97a1-4600-86fb-cbdb50bab8dd"
+          },
+          "TipoObjetivo": {
+            "tableName": "28d6cf79-eb05-4b83-9032-4786fe4f7493"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Empleado",
+      "Estatus",
+      "Areas",
+      "Objetivo",
+      "Perfil_1",
+      "ResultadoClave",
+      "Tarea",
+      "TipoObjetivo",
+      "PeriodoTiempo"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "8beab477-406e-4371-9cd8-6138a2aba091"
+    ],
+    "id": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
+  },
+  "503ec02b-985e-4414-9c78-c56d6b28cb82": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1611/1.0.1611.3104/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "503ec02b-985e-4414-9c78-c56d6b28cb82"
+  },
+  "8beab477-406e-4371-9cd8-6138a2aba091": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-27.westus.logic.azure.com:443/workflows/8799ef36fe71425895e5d6097f5ea693/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=LdcMbCtFSGfSyu77L6U7E22l5kuUteihxwwKN8KYXsM",
+      "workflowEndpoint": "/subscriptions/655be0f1-fb2c-4c5a-9fbf-ff414e1b901b/resourceGroups/956304DE810745CC972302ABE58C25A4-298F37B7C3DF41D38AD759B3247B5931/providers/Microsoft.Logic/workflows/15620dcd-6e54-4723-b9a2-13259a39e827",
+      "workflowName": "15620dcd-6e54-4723-b9a2-13259a39e827",
+      "workflowPath": "/subscriptions/655be0f1-fb2c-4c5a-9fbf-ff414e1b901b/resourceGroups/956304DE810745CC972302ABE58C25A4-298F37B7C3DF41D38AD759B3247B5931/providers/Microsoft.Logic/workflows/15620dcd-6e54-4723-b9a2-13259a39e827"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "30971f61-f7b0-4fd0-969c-6f44d693efcf": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "4795ab98-1e69-471e-abb2-0bdd7f7329af": {
+          "value": "shared_sharepointonline"
+        },
+        "d1c164fd-9d0c-4b19-b76e-98f962ed82a2": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "15620dcd-6e54-4723-b9a2-13259a39e827"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "30971f61-f7b0-4fd0-969c-6f44d693efcf"
+        },
+        "shared_office365": {
+          "value": "d1c164fd-9d0c-4b19-b76e-98f962ed82a2"
+        },
+        "shared_sharepointonline": {
+          "value": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "15620dcd-6e54-4723-b9a2-13259a39e827"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ImportarExcelListas"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "30971f61-f7b0-4fd0-969c-6f44d693efcf",
+      "shared_office365": "d1c164fd-9d0c-4b19-b76e-98f962ed82a2",
+      "shared_sharepointonline": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
+    },
+    "dependents": [],
+    "id": "8beab477-406e-4371-9cd8-6138a2aba091"
+  },
+  "d1c164fd-9d0c-4b19-b76e-98f962ed82a2": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "8beab477-406e-4371-9cd8-6138a2aba091"
+    ],
+    "id": "d1c164fd-9d0c-4b19-b76e-98f962ed82a2"
+  }
+}

@@ -1,0 +1,86 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Set(MyUserID,UsuariosdeOffice365.MyProfile().Id);
+        //PopUp Validacion Usuario
+        Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
+        Set(popUpUsr,If(valUsr="Activo","false","true"));
+        Set(varUserExist,If(IsEmpty(Filter(Empleado,Nombre_Usuario.DisplayName=User().FullName))="true","false","true"));
+        //Set(popUp;If(popUpUsr="true" && VarpopUpComprobacion="false";"false"));;
+        Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+        //Obtener ID Usuario
+        Set(valUsr2,LookUp(Empleado,Nombre_Usuario.Email=User().Email,ID));
+        Set(valUsrIDEm,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Title));
+        Set(valUsrResp,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Departamento));
+        Set(valUsrRespDir,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Direccion));
+        Set(valUsrJefe,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Responsable.DisplayName));
+        Set(valUsrPuesto,LookUp(Empleado,Nombre=User().FullName,Puesto));
+        //Coleccion Datos
+        ClearCollect(
+            RegistrosEmpleados,
+            {
+                IDempleado:valUsr2,
+                TipoAcceso:"Usuario",
+                Estatus:"Activo"
+            }
+        );
+        
+        //Coleccion Objetivos
+        Set(
+            VarIDOG,
+            1
+        );
+        ClearCollect(
+           RegistroResultadosClaveOG,
+           {
+               Co_ID:VarIDOG,
+               Co_ResultadoClaveOG:"",
+               Co_PeriodoTiempoOG:""
+               
+            }
+        );
+        
+        //Coleccion Menu
+        ClearCollect(
+            Navegacion,
+            Table(
+                {
+                    Titulo: "Inicio",
+                    icono: 'home-icon',
+                    nav: scr_home
+                },
+                 {
+                    Titulo: "Objetivo",
+                    icono: 'objetivo-ico',
+                    nav:  scr_objetivo
+                },
+                {
+                    Titulo: "Configuraciones",
+                    icono: 'config-icon',
+                    nav:  scr_configuracion
+                } 
+            )
+        );
+        ClearCollect(
+            MyPeerList,
+            Filter(Empleado,Responsable.DisplayName=valUsrJefe)
+        );
+        Set(
+            VarIDTR,
+            1
+        );
+        ClearCollect(
+            TareaRC,
+            {
+                Co_IDTarea:VarIDTR,
+                Co_TitleTarea:"",
+                CO_PeriodoTiempoTarea:"",
+                Co_FITarea:"",
+                Co_FFTarea:"",
+                Co_IDResultadoClaveTarea:""
+            }
+        );
+        Set(varlbtTituloObjetivo,"Detalle Objetivos");
+        //VarpopUpComprobacion=true
+    StartScreen: =If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Puesto)="DGA DE TECNOLOGIAS DE INFORMACION",scr_objetivo)
+

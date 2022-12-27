@@ -1,0 +1,187 @@
+scr_resultado As screen:
+
+    Gallery1 As gallery.galleryVertical:
+        Height: =246
+        Items: =Objetivo
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =846
+        X: =292
+        Y: =100
+        ZIndex: =1
+
+        Label7 As label:
+            BorderThickness: =1
+            Color: =RGBA(99, 139, 44, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =124
+            OnSelect: =Set(idObjetivo,LookUp(Objetivo,ID=ThisItem.ID))
+            Text: =ThisItem.Title
+            Width: =686
+            X: =150
+            Y: =62
+            ZIndex: =1
+
+        Button3 As button:
+            Height: =35
+            OnSelect: |+
+                =Set(idObjetivos,Label9.Text);
+                
+            Text: ="Seleccionar"
+            X: =647
+            Y: =44
+            ZIndex: =2
+
+        Label9 As label:
+            Height: =113
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ID
+            Width: =122
+            Y: =11
+            ZIndex: =3
+
+    DatePicker2_3 As datepicker:
+        Height: =25
+        Width: =215
+        X: =923
+        Y: =528
+        ZIndex: =1
+
+    Gallery7_1 As gallery.galleryVertical:
+        Height: =209
+        Items: =RegistroResultados
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =861
+        X: =291
+        Y: =559
+        ZIndex: =1
+
+        Label11_1 As label:
+            BorderThickness: =1
+            Height: =149
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Title
+            Width: =474
+            X: =171
+            ZIndex: =1
+
+        Label12_2 As label:
+            BorderThickness: =1
+            Height: =77
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.FechaInicio
+            Width: =206
+            X: =645
+            ZIndex: =2
+
+        Label12_3 As label:
+            BorderThickness: =1
+            Height: =72
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.FechaFin
+            Width: =206
+            X: =645
+            Y: =77
+            ZIndex: =3
+
+        Label14 As label:
+            Height: =149
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.IdObjetivo
+            Width: =171
+            ZIndex: =4
+
+    Label10_3 As label:
+        Text: ="Fecha de fin"
+        X: =781
+        Y: =520
+        ZIndex: =2
+
+    Label10_2 As label:
+        Text: ="Fecha de inicio"
+        X: =386
+        Y: =513
+        ZIndex: =3
+
+    DatePicker2_2 As datepicker:
+        Height: =25
+        Width: =215
+        X: =536
+        Y: =520
+        ZIndex: =4
+
+    TextInput3_1 As text:
+        Default: ="Ingresa tu resultado"
+        Height: =98
+        Width: =846
+        X: =292
+        Y: =375
+        ZIndex: =5
+
+    Header_5 As Header:
+        ZIndex: =7
+
+    Icon5_1 As icon.Save:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =49
+        Icon: =Icon.Save
+        OnSelect: |-
+            =Collect(ResultadoClave,RegistroResultados);
+            Clear(RegistroResultados)
+        Width: =51
+        X: =1101
+        Y: =5
+        ZIndex: =10
+
+    Icon6_1 As icon.Add:
+        Height: =47
+        Icon: =Icon.Add
+        OnSelect: |-
+            =Collect(
+               RegistroResultados,
+               {
+                   Title: TextInput3_1.Text,
+                   FechaInicio:DatePicker2_2.SelectedDate,
+                   FechaFin:DatePicker2_3.SelectedDate,
+                   IdObjetivo: idObjetivos
+                }
+            );
+            
+            Reset(TextInput3_1);
+            Reset(DatePicker2_2);
+            Reset(DatePicker2_3);
+        Width: =49
+        X: =1177
+        Y: =401
+        ZIndex: =11
+
+    Menu_5 As Menu:
+        Height: =708
+        Width: =70
+        Y: =60
+        ZIndex: =20
+
+    Image3 As image:
+        Height: =50
+        Image: ='clave-ico'
+        Width: =64
+        X: =203
+        Y: =387
+        ZIndex: =21
+
+    Image7 As image:
+        Height: =60
+        Image: ='objetivo-ico'
+        Width: =70
+        X: =200
+        Y: =164
+        ZIndex: =22
+
+    Label8 As label:
+        Height: =67
+        Text: =idObjetivos
+        X: =1175
+        Y: =115
+        ZIndex: =23
+

@@ -1,0 +1,635 @@
+scr_home As screen:
+
+    Menu_1 As Menu:
+        Width: =Menu_1.MenuWidth
+        Y: =60
+
+    "GalleryObjetivosDireccion As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =578
+        Items: =Filter(Objetivo,NivelObjetivo="Direccion")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Width: =545
+        X: =70
+        Y: =165
+        ZIndex: =2
+
+        Title6 As label:
+            AutoHeight: =true
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nombre
+            VerticalAlign: =VerticalAlign.Top
+            Width: =460
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle5 As label:
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.FechaInicio
+            VerticalAlign: =VerticalAlign.Top
+            X: =32
+            Y: =Title6.Y + Title6.Height + 4
+            ZIndex: =2
+
+        Separator5 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Subtitle5_1 As label:
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.FechaFin
+            VerticalAlign: =VerticalAlign.Top
+            X: =209
+            Y: =Title6.Y + Title6.Height + 4
+            ZIndex: =5
+
+    Header_1 As Header:
+        ZIndex: =3
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =52
+        Size: =20
+        Text: =User().FullName
+        Width: =399
+        X: =914
+        Y: =5
+        ZIndex: =4
+
+    lbTObjetivoDireccion As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =26
+        Text: ="Objetivos dirección"
+        Width: =545
+        X: =70
+        Y: =105
+        ZIndex: =5
+
+    "GalleryObjetivosArea As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =578
+        Items: =Filter(Objetivo,NivelObjetivo=valUsrRespDir)
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Width: =545
+        X: =755
+        Y: =165
+        ZIndex: =6
+
+        Title6_1 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nombre
+            VerticalAlign: =VerticalAlign.Top
+            Width: =460
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle5_3 As label:
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.FechaInicio
+            VerticalAlign: =VerticalAlign.Top
+            X: =32
+            Y: =Title6_1.Y + Title6_1.Height + 4
+            ZIndex: =2
+
+        Separator5_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Subtitle5_2 As label:
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.FechaFin
+            VerticalAlign: =VerticalAlign.Top
+            X: =209
+            Y: =Title6_1.Y + Title6_1.Height + 4
+            ZIndex: =5
+
+    lbTObjetivoArea As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =26
+        Text: ="Objetivos área"
+        Width: =545
+        X: =755
+        Y: =105
+        ZIndex: =7
+
+    ValidacionUsuarioActivo As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =708
+        Visible: =popUpUsr
+        Width: =1366
+        Y: =60
+        ZIndex: =8
+
+        "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            Height: =560
+            Items: =Search(Empleado,valUsrIDEm,"Title")
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =560
+            Width: =1366
+            Y: =48
+            ZIndex: =1
+
+            Rectangle1 As rectangle:
+                Fill: =RGBA(230, 230, 230, 0.15)
+                Height: =559
+                OnSelect: =Select(Parent)
+                Width: =585
+                X: =17
+                Y: =1
+                ZIndex: =1
+
+            ImaEmp As image:
+                Height: =60
+                Image: =ThisItem.Nombre_Usuario.Picture
+                OnSelect: =Select(Parent)
+                Width: =60
+                X: =128
+                Y: =41
+                ZIndex: =2
+
+            lbTNomEmp As label:
+                Align: =Align.Right
+                FontWeight: =FontWeight.Normal
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Email: "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =34
+                Y: =238
+                ZIndex: =3
+
+            lbNomEmp As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Nombre_Usuario.Email
+                VerticalAlign: =VerticalAlign.Top
+                Width: =310
+                X: =247
+                Y: =238
+                ZIndex: =4
+
+            lbResTEmp As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =18
+                Text: ="Jefe Directo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =598
+                Y: =53
+                ZIndex: =5
+
+            lbResEmp As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =16
+                Text: =ThisItem.Responsable.DisplayName
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =661
+                Y: =107
+                ZIndex: =6
+
+            lbTDirEmp As label:
+                Align: =Align.Right
+                FontWeight: =FontWeight.Normal
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Dirección: "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =34
+                Y: =284
+                ZIndex: =7
+
+            lbDirEmp As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Lighter
+                Height: =101
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Direccion
+                VerticalAlign: =VerticalAlign.Top
+                Width: =310
+                X: =247
+                Y: =284
+                ZIndex: =8
+
+            lbTDepEmp As label:
+                Align: =Align.Right
+                FontWeight: =FontWeight.Normal
+                Height: =59
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =18
+                Text: |-
+                    ="Departamento: "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =174
+                X: =73
+                Y: =385
+                ZIndex: =9
+
+            lbDepEmp As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Lighter
+                Height: =69
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Departamento
+                VerticalAlign: =VerticalAlign.Top
+                Width: =310
+                X: =247
+                Y: =385
+                ZIndex: =10
+
+            lbTNomEmp_1 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Nombre
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =212
+                Y: =54
+                ZIndex: =11
+
+            lbResTEmp_1 As label:
+                Align: =Align.Center
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Información General"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =60
+                Y: =145
+                ZIndex: =12
+
+            lbResTEmp_2 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Mi Equipo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =598
+                Y: =1
+                ZIndex: =13
+
+            Image5 As image:
+                Height: =48
+                Image: =ThisItem.Responsable.Picture
+                OnSelect: =Select(Parent)
+                Width: =48
+                X: =600
+                Y: =99
+                ZIndex: =14
+
+            lbResEmp_1 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =16
+                Text: =ThisItem.Responsable.Department
+                VerticalAlign: =VerticalAlign.Top
+                Width: =380
+                X: =961
+                Y: =107
+                ZIndex: =15
+
+            lbResTEmp_3 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =18
+                Text: ="Equipo de trabajo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =600
+                Y: =168
+                ZIndex: =16
+
+        TituloValidacion As label:
+            Size: =28
+            Text: ="Validación de datos usuario"
+            Width: =500
+            X: =433
+            Y: =5
+            ZIndex: =2
+
+        Correcto As button:
+            OnSelect: |
+                =ForAll(RegistrosEmpleados,
+                    Patch(Empleado,
+                        LookUp(Empleado,ID=RegistrosEmpleados[@IDempleado]),
+                        {
+                            Tipo_Acceso: TipoAcceso,
+                            Estatus_Empleado: Estatus
+                        }
+                    )
+                );
+                Refresh(Empleado);
+                Set(popUpUsr,"false");
+            Text: ="Datos Correctos"
+            Width: =200
+            X: =402
+            Y: =648
+            ZIndex: =3
+
+        Incorrecto As button:
+            OnSelect: =Set(varValUsr,true)
+            Text: ="Datos Incorrectos"
+            Width: =200
+            X: =754
+            Y: =648
+            ZIndex: =4
+
+        "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            Height: =356
+            Items: =MyPeerList
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =60
+            Width: =766
+            X: =600
+            Y: =252
+            ZIndex: =5
+
+            Image8 As image:
+                Height: =48
+                Image: =ThisItem.Nombre_Usuario.Picture
+                OnSelect: =Select(Parent)
+                Width: =48
+                X: =3
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Title4 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Normal
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Nombre
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =62
+                Y: =18
+                ZIndex: =2
+
+            Subtitle4 As label:
+                AutoHeight: =true
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Departamento
+                VerticalAlign: =VerticalAlign.Top
+                Width: =380
+                X: =362
+                Y: =18
+                ZIndex: =3
+
+            Separator4 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =5
+
+        ValidacionUSerExist As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =9
+
+            Rectangle3 As rectangle:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =703
+                Visible: =false//varUserExist
+                Width: =1366
+                Y: =5
+                ZIndex: =6
+
+            Label1 As label:
+                Align: =Align.Center
+                Height: =147
+                Size: =30
+                Text: ="El usuario no existe en la base de datos"
+                Visible: =false//varUserExist
+                Width: =785
+                X: =290
+                Y: =254
+                ZIndex: =7
+
+            Button4 As button:
+                OnSelect: =Exit()
+                Text: ="Salir"
+                Visible: =false//varUserExist
+                X: =603
+                Y: =648
+                ZIndex: =8
+
+    EnvioCorreoDatos As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 87, 69, 1)
+        Height: =708
+        Visible: |
+            =varValUsr
+        Width: =1366
+        Y: =60
+        ZIndex: =9
+
+        txtNombreUsr As text:
+            Default: =LookUp(Empleado,Nombre=User().FullName,Nombre)
+            Height: =92
+            X: =438
+            Y: =46
+            ZIndex: =1
+
+        txtPuesto As text:
+            Default: =LookUp(Empleado,Nombre=User().FullName,Puesto)
+            Height: =92
+            X: =438
+            Y: =258
+            ZIndex: =4
+
+        listArea As dropdown:
+            Default: =LookUp(Empleado,Nombre=User().FullName,Departamento)
+            Items: =Distinct(Areas,Departamento)
+            Width: =320
+            X: =438
+            Y: =169
+            ZIndex: =6
+
+        Button2 As button:
+            Height: =62
+            OnSelect: |+
+                =Office365Outlook.SendEmailV2(Concatenate("solicitudessp@frd.org.mx;",User().Email),"Actualización de los datos del usuario del OKR",Concatenate("Se requieren correcciones de los datos del usuario ",User().FullName,
+                "</br></br>Nombre ", txtNombreUsr, 
+                "</br>Puesto ", txtPuesto,
+                "</br>Area ", listArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                "</br>Jefe Directo ", txtJefeDirecto
+                ));
+                Set(varValUsr,false);
+                Exit();
+                
+            Text: ="Corrección Datos"
+            Visible: =popUpUsr
+            Width: =320
+            X: =438
+            Y: =574
+            ZIndex: =7
+
+        txtJefeDirecto As text:
+            Default: =LookUp(Empleado,Nombre=User().FullName,Responsable.DisplayName)
+            Height: =42
+            X: =438
+            Y: =421
+            ZIndex: =8
+
+        Label3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Size: =18
+            Text: ="NOMBRE"
+            Visible: =varValUsr
+            X: =207
+            Y: =72
+            ZIndex: =9
+
+        Label3_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Size: =18
+            Text: ="PUESTO"
+            Visible: =varValUsr
+            X: =207
+            Y: =284
+            ZIndex: =10
+
+        Label3_2 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =90
+            Size: =18
+            Text: ="JEFE DIRECTO"
+            Visible: =varValUsr
+            X: =207
+            Y: =415
+            ZIndex: =11
+
+        Label3_3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Size: =18
+            Text: ="AREA"
+            Visible: =varValUsr
+            X: =207
+            Y: =191
+            ZIndex: =12
+

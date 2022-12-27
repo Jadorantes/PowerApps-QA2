@@ -1,0 +1,8 @@
+Admin As CanvasComponent:
+    Fill: =RGBA(237, 237, 237, 1)
+    Height: =60
+    Width: =1360
+    X: =0
+    Y: =0
+    ZIndex: =1
+

@@ -1,0 +1,1949 @@
+scr_objetivo As screen:
+
+    Header_2 As Header:
+
+    ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
+        Height: =708
+        Width: =1296
+        X: =70
+        Y: =60
+        ZIndex: =2
+
+        "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =620
+            Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(104, Self.Height - 60)
+            Width: =1296
+            Y: =62
+            ZIndex: =1
+
+            Title8 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Nombre"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            Subtitle7 As label:
+                AutoHeight: =true
+                Height: =33.4
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =32
+                Y: =47
+                ZIndex: =2
+
+            NextArrow7 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =60
+                Icon: =Icon.ChevronRight
+                OnSelect: |-
+                    =Set(varIDObjetivoEmple,ThisItem.ID);
+                    Set(varctnDetalleObjetivos,true);
+                    Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =Parent.TemplateWidth - Self.Width - 5
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =3
+
+            Separator7 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            Title8_1 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Periodo de Tiempo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =300
+                Y: =16
+                ZIndex: =6
+
+            Subtitle7_2 As label:
+                AutoHeight: =true
+                Height: =33.4
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Periodo_Tiempo
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =300
+                Y: =47
+                ZIndex: =7
+
+            Title8_3 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Estatus aprobación"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =180
+                X: =550
+                Y: =16
+                ZIndex: =10
+
+            Subtitle7_4 As label:
+                AutoHeight: =true
+                Height: =33.4
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.EstatusAprobacion
+                VerticalAlign: =VerticalAlign.Top
+                Width: =180
+                X: =550
+                Y: =47
+                ZIndex: =11
+
+            Title8_4 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Estatus Ejecución"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =180
+                X: =775
+                Y: =16
+                ZIndex: =12
+
+            Subtitle7_5 As label:
+                AutoHeight: =true
+                Height: =33.4
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.EstatusEjecucion
+                VerticalAlign: =VerticalAlign.Top
+                Width: =180
+                X: =775
+                Y: =47
+                ZIndex: =13
+
+        TxBuscadorObje As text:
+            Default: =
+            HintText: ="Buscar por nombre"
+            X: =30
+            Y: =22
+            ZIndex: =2
+
+        ImaOKR As image:
+            Height: =48
+            Image: ='objetivo-ico'
+            OnSelect: |
+                =Set(varctnObjetivoEmpleado,false);
+                Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
+                Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
+                Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
+            Tooltip: ="Agregar Objetivo"
+            Width: =48
+            X: =1212
+            Y: =14
+            ZIndex: =3
+
+    ctnObjetivoGeneral As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =708
+        Visible: =varctnResultadoClaveEmpleado
+        Width: =1296
+        X: =70
+        Y: =60
+        ZIndex: =3
+
+        Form_ObjetivosGeneral As form:
+            DataSource: =Objetivo
+            DefaultMode: =FormMode.New
+            Height: =138
+            OnSuccess: |
+                =ForAll(
+                    RegistroResultadosClaveOG,
+                    Patch(
+                        ResultadoClave,
+                        Defaults(ResultadoClave),{
+                            Title:Co_ResultadoClaveOG,
+                            PeriodoTiempo:Co_PeriodoTiempoOG,
+                            IdObjetivo:Form_ObjetivosGeneral.LastSubmit.ID
+                        }
+                    )
+                );
+                Set(varctnObjetivoEmpleado,true);
+                Set(varctnResultadoClaveEmpleado,false);
+                Set(varlbtTituloObjetivo,"Detalle Objetivos");
+                NewForm(Form_ObjetivosGeneral);
+                Set(
+                    VarIDOG,
+                    1
+                );
+                ClearCollect(
+                   RegistroResultadosClaveOG,
+                   {
+                       Co_ID:VarIDOG,
+                       Co_ResultadoClaveOG:"",
+                       Co_PeriodoTiempoOG:""
+                    }
+                );
+            Width: =1296
+            Y: =105
+            ZIndex: =1
+
+            Title_DataCard6 As typedDataCard.textualMultiLineEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Title
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Title")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue40.Text
+                Width: =800
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey40 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="Objetivo"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue40 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Clear: =true
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =47
+                    Mode: =TextMode.MultiLine
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage39 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue40.Y + DataCardValue40.Height
+                    ZIndex: =3
+
+                StarVisible39 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey40.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey40.Y
+                    ZIndex: =4
+
+            Periodo_Tiempo_DataCard2 As typedDataCard.allowedValuesStringEditCard:
+                AllowedValues: =DataSourceInfo([@Objetivo], DataSourceInfo.AllowedValues, "Periodo_Tiempo")
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Periodo_Tiempo"
+                Default: =ThisItem.Periodo_Tiempo
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Periodo_Tiempo")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue39.Selected.Result
+                Width: =432
+                X: =2
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey39 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue39 As dropdown:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Items: =Distinct(PeriodoTiempo,Title)
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey39.Y + DataCardKey39.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage38 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue39.Y + DataCardValue39.Height
+                    ZIndex: =3
+
+                StarVisible38 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey39.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey39.Y
+                    ZIndex: =4
+
+            NivelObjetivo_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="NivelObjetivo"
+                Default: =ThisItem.NivelObjetivo
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"NivelObjetivo")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@Objetivo], DataSourceInfo.MaxLength, "NivelObjetivo")
+                Required: =false
+                Update: =DataCardValue36.Text
+                Visible: =false
+                Width: =432
+                X: =0
+                Y: =1
+                ZIndex: =2
+
+                DataCardKey36 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue36 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =varNivelObjetivo
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage35 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue36.Y + DataCardValue36.Height
+                    ZIndex: =3
+
+                StarVisible35 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey36.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey36.Y
+                    ZIndex: =4
+
+        "Gallery_ResultadoClaveOG As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =407
+            Items: =RegistroResultadosClaveOG
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(104, Self.Height - 60)
+            Width: =1190
+            X: =32
+            Y: =243
+            ZIndex: =1
+
+            lbTituloRCOG As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Resultado Clave"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =600
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            NextArrow6 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =60
+                Icon: =Icon.Trash
+                OnSelect: =Remove(RegistroResultadosClaveOG,ThisItem)
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =Parent.TemplateWidth - Self.Width - 5
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =3
+
+            Separator8 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            inpResultadoClaveOG As text:
+                Default: =ThisItem.Co_ResultadoClaveOG
+                Mode: =TextMode.MultiLine
+                OnSelect: =Select(Parent)
+                Width: =600
+                X: =32
+                Y: =52
+                ZIndex: =5
+
+            lbPTRCOG As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Perido de tiempo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =400
+                X: =652
+                Y: =14
+                ZIndex: =6
+
+            lisPTRCOG As dropdown:
+                Default: =ThisItem.Co_PeriodoTiempoOG
+                Items: =Distinct(PeriodoTiempo,Nombre)
+                OnSelect: =Select(Parent)
+                Width: =400
+                X: =652
+                Y: =50
+                ZIndex: =7
+
+            lblIDRCOG As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.Co_ID
+                X: =257
+                Y: =10
+                ZIndex: =8
+
+        lbENombre As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="Nombre"
+            Width: =350
+            X: =32
+            Y: =16
+            ZIndex: =2
+
+        lbNombre As label:
+            Text: =User().FullName
+            Width: =550
+            X: =32
+            Y: =56
+            ZIndex: =3
+
+        lbEPuesto As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="Puesto"
+            Width: =350
+            X: =634
+            Y: =16
+            ZIndex: =4
+
+        lbPuesto As label:
+            Text: =valUsrPuesto
+            Width: =550
+            X: =634
+            Y: =56
+            ZIndex: =5
+
+        icoAgregarRCOG As icon.Add:
+            Icon: =Icon.Add
+            OnSelect: |-
+                =Set(
+                    VarIDOG,
+                    Sum(
+                        VarIDOG,
+                        1
+                    )
+                );
+                Collect(
+                   RegistroResultadosClaveOG,
+                   {
+                       Co_ID:VarIDOG,
+                       Co_ResultadoClaveOG:"",
+                       Co_PeriodoTiempoOG:""
+                    }
+                );
+            X: =1222
+            Y: =270
+            ZIndex: =6
+
+        btnGuardarOG As button:
+            OnSelect: |-
+                =ForAll(
+                    Gallery_ResultadoClaveOG.AllItems,
+                    Patch(
+                        RegistroResultadosClaveOG,
+                        {Co_ID:Value(lblIDRCOG.Text)},
+                        {
+                            Co_ResultadoClaveOG:inpResultadoClaveOG.Text
+                        },
+                        {
+                            Co_PeriodoTiempoOG:lisPTRCOG.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'
+                        }
+                    )
+                );
+                Set(varNivelObjetivo,If(lbPuesto.Text="DGA DE TECNOLOGIAS DE INFORMACION","Direccion"));
+                SubmitForm(Form_ObjetivosGeneral);
+            Text: ="Guardar"
+            X: =474
+            Y: =665
+            ZIndex: =7
+
+        btnCancelarOG As button:
+            OnSelect: |
+                =Set(varctnObjetivoEmpleado,true);
+                Set(varctnResultadoClaveEmpleado,false);
+                Set(varlbtTituloObjetivo,"Detalle Objetivos");
+            Text: ="Cancelar"
+            X: =652
+            Y: =665
+            ZIndex: =8
+
+    ctnObjetivoOtros As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =708
+        Visible: =varctnResultadoClaveEmpleado2
+        Width: =1296
+        X: =70
+        Y: =60
+        ZIndex: =4
+
+        lbENombre_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="Nombre"
+            Width: =350
+            X: =26
+            ZIndex: =1
+
+        "GalleryObjetivosOtro As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =552
+            Items: =Filter(ResultadoClave,'Creado por'.DisplayName=LookUp(Empleado,Nombre_Usuario.DisplayName=lbNombre_1.Text,Responsable.DisplayName))
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(104, Self.Height - 60)
+            Width: =1262
+            X: =26
+            Y: =80
+            ZIndex: =1
+
+            Title7 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Resultado Clave"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            Subtitle6 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =32
+                Y: =Title7.Y + Title7.Height + 4
+                ZIndex: =2
+
+            NextArrow4 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =60
+                Icon: =Icon.ChevronRight
+                OnSelect: |-
+                    =Set(varIDRCOG,ThisItem.ID);
+                    Set(varctnRCOO,true);
+                    Set(varlbtTituloObjetivo,"Registro de Objetivos")
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =Parent.TemplateWidth - Self.Width - 5
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =3
+
+            Separator6 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            Title7_1 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Periodo de Tiempo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =532
+                Y: =16
+                ZIndex: =5
+
+            Subtitle6_1 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.PeriodoTiempo
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =532
+                Y: =56
+                ZIndex: =6
+
+            Title7_2 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Objetivo Principal
+                    "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =845
+                Y: =16
+                ZIndex: =7
+
+            Subtitle6_2 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =LookUp(Objetivo,ID=ThisItem.IdObjetivo,Title)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =845
+                Y: =56
+                ZIndex: =8
+
+        lbNombre_1 As label:
+            Text: =User().FullName
+            Width: =550
+            X: =26
+            Y: =40
+            ZIndex: =2
+
+        lbEPuesto_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="Puesto"
+            Width: =350
+            X: =628
+            ZIndex: =3
+
+        lbPuesto_1 As label:
+            Text: =valUsrPuesto
+            Width: =550
+            X: =628
+            Y: =40
+            ZIndex: =4
+
+        Button1 As button:
+            OnSelect: |-
+                =Set(varctnObjetivoEmpleado,true);
+                Set(varctnResultadoClaveEmpleado2,false);
+                Set(varlbtTituloObjetivo,"Detalle Objetivos")
+            Text: ="Cancelar"
+            X: =577
+            Y: =632
+            ZIndex: =5
+
+        ctnResultadoClaveOO As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =628
+            Visible: =varctnRCOO
+            Width: =1296
+            Y: =80
+            ZIndex: =6
+
+            lblOGRC00 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                Text: ="ID_Objetivo"
+                ZIndex: =1
+
+            lblRCRC00 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                Text: ="ID_ResultadoC"
+                X: =150
+                ZIndex: =2
+
+            lblRCRC00_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                Text: ="Resultado Clave"
+                Width: =990
+                X: =300
+                ZIndex: =3
+
+            lblOGRC00_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                Text: =LookUp(ResultadoClave,ID=varIDRCOG,IdObjetivo)
+                Y: =40
+                ZIndex: =4
+
+            lblRCRC00_2 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                Text: |-
+                    =LookUp(ResultadoClave,ID=varIDRCOG,ID
+                    )
+                X: =150
+                Y: =40
+                ZIndex: =5
+
+            lblRCRC00_3 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                Text: =LookUp(ResultadoClave,ID=varIDRCOG,Title)
+                Width: =990
+                X: =300
+                Y: =40
+                ZIndex: =6
+
+            Form_RCOO As form:
+                DataSource: =Objetivo
+                DefaultMode: =FormMode.New
+                Height: =133
+                NumberOfColumns: =2
+                OnSuccess: |-
+                    =ForAll(
+                        RegistroResultadosClaveOG,
+                        Patch(
+                            ResultadoClave,
+                            Defaults(ResultadoClave),{
+                                Title:Co_ResultadoClaveOG,
+                                PeriodoTiempo:Co_PeriodoTiempoOG,
+                                IdObjetivo:Form_RCOO.LastSubmit.ID
+                            }
+                        )
+                    );
+                    Set(varctnObjetivoEmpleado,true);
+                    Set(varctnRCOO,false);
+                    NewForm(Form_RCOO);
+                    Set(
+                        VarIDOG,
+                        1
+                    );
+                    ClearCollect(
+                       RegistroResultadosClaveOG,
+                       {
+                           Co_ID:VarIDOG,
+                           Co_ResultadoClaveOG:"",
+                           Co_PeriodoTiempoOG:""
+                        }
+                    );
+                Width: =1290
+                X: =2
+                Y: =75
+                ZIndex: =7
+
+                Title_DataCard3 As typedDataCard.textualMultiLineEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.Title
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Title")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue19.Text
+                    Width: =645
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey19 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: ="Objetivo"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue19 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =65
+                        Mode: =TextMode.MultiLine
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage21 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue19.Y + DataCardValue19.Height
+                        ZIndex: =3
+
+                    StarVisible21 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey19.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey19.Y
+                        ZIndex: =4
+
+                Periodo_Tiempo_DataCard3 As typedDataCard.allowedValuesStringEditCard:
+                    AllowedValues: =DataSourceInfo([@Objetivo], DataSourceInfo.AllowedValues, "Periodo_Tiempo")
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Periodo_Tiempo"
+                    Default: =ThisItem.Periodo_Tiempo
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Periodo_Tiempo")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: |
+                        =true
+                    Update: =DataCardValue17.Selected.Result
+                    Width: =645
+                    X: =1
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey17 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue17 As dropdown:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Distinct(PeriodoTiempo,Title)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage18 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue17.Y + DataCardValue17.Height
+                        ZIndex: =3
+
+                    StarVisible18 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey17.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey17.Y
+                        ZIndex: =4
+
+                NivelObjetivo_DataCard2 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="NivelObjetivo"
+                    Default: =ThisItem.NivelObjetivo
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"NivelObjetivo")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Objetivo], DataSourceInfo.MaxLength, "NivelObjetivo")
+                    Required: =false
+                    Update: =DataCardValue8.Text
+                    Visible: |
+                        =false
+                    Width: =645
+                    X: =0
+                    Y: =1
+                    ZIndex: =8
+
+                    DataCardKey8 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue8 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =varNivelObjetivo
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage11 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue8.Y + DataCardValue8.Height
+                        ZIndex: =3
+
+                    StarVisible11 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey8.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey8.Y
+                        ZIndex: =4
+
+                ID_ResultadoClave_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ID_ResultadoClave"
+                    Default: =ThisItem.ID_ResultadoClave
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"ID_ResultadoClave")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Objetivo], DataSourceInfo.MaxLength, "ID_ResultadoClave")
+                    Required: =false
+                    Update: =DataCardValue13.Text
+                    Visible: =false
+                    Width: =645
+                    X: =1
+                    Y: =1
+                    ZIndex: =8
+
+                    DataCardKey13 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue13 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =lblRCRC00_2.Text
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage14 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue13.Y + DataCardValue13.Height
+                        ZIndex: =3
+
+                    StarVisible14 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey13.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey13.Y
+                        ZIndex: =4
+
+            "Gallery_ResultadoClaveOG_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+                Height: =359
+                Items: =RegistroResultadosClaveOG
+                Layout: =Layout.Vertical
+                TemplatePadding: =0
+                TemplateSize: =Min(104, Self.Height - 60)
+                Width: =1212
+                Y: =208
+                ZIndex: =8
+
+                lbTituloRCOG_1 As label:
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: ="Resultado Clave"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =600
+                    X: =32
+                    Y: =16
+                    ZIndex: =1
+
+                NextArrow6_1 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Height: =60
+                    Icon: =Icon.Trash
+                    OnSelect: =Remove(RegistroResultadosClaveOG,ThisItem)
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    TabIndex: =0
+                    Tooltip: ="Ver los detalles del elemento"
+                    Width: =60
+                    X: =Parent.TemplateWidth - Self.Width - 5
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =3
+
+                Separator8_1 As rectangle:
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =4
+
+                inpResultadoClaveOG_1 As text:
+                    Default: =ThisItem.Co_ResultadoClaveOG
+                    Mode: =TextMode.MultiLine
+                    OnSelect: =Select(Parent)
+                    Width: =600
+                    X: =32
+                    Y: =52
+                    ZIndex: =5
+
+                lbPTRCOG_1 As label:
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: ="Perido de tiempo"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =400
+                    X: =652
+                    Y: =14
+                    ZIndex: =6
+
+                lisPTRCOG_1 As dropdown:
+                    Default: =DataCardValue17.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'
+                    DisplayMode: |-
+                        =If(
+                            StartsWith(DataCardValue17.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult', "Anual"), DisplayMode.Edit, DisplayMode.Disabled
+                        )
+                    Items: =Distinct(PeriodoTiempo,Nombre)
+                    OnSelect: =Select(Parent)
+                    Width: =400
+                    X: =652
+                    Y: =50
+                    ZIndex: =7
+
+                lblIDRCOG_1 As label:
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Co_ID
+                    X: =257
+                    Y: =10
+                    ZIndex: =8
+
+            icoAgregarRCOG_1 As icon.Add:
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =Set(
+                        VarIDOG,
+                        Sum(
+                            VarIDOG,
+                            1
+                        )
+                    );
+                    Collect(
+                       RegistroResultadosClaveOG,
+                       {
+                           Co_ID:VarIDOG,
+                           Co_ResultadoClaveOG:"",
+                           Co_PeriodoTiempoOG:""
+                        }
+                    );
+                X: =1226
+                Y: =232
+                ZIndex: =9
+
+            btnGuardarOG_1 As button:
+                DisplayMode: |-
+                    =If( IsBlank(DataCardValue19.Text) && IsBlank( inpResultadoClaveOG_1.Text) 
+                    ,Disabled, Edit)
+                OnSelect: |-
+                    =ForAll(
+                        Gallery_ResultadoClaveOG_1.AllItems,
+                        Patch(
+                            RegistroResultadosClaveOG,
+                            {Co_ID:Value(lblIDRCOG_1.Text)},
+                            {
+                                Co_ResultadoClaveOG:inpResultadoClaveOG_1.Text
+                            },
+                            {
+                                Co_PeriodoTiempoOG:lisPTRCOG_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'
+                            }
+                        )
+                    );
+                    Set(varNivelObjetivo,If(LookUp(Objetivo,ID=lblOGRC00_1.Text,NivelObjetivo)="Direccion",LookUp(Empleado,Responsable.DisplayName=LookUp(Objetivo,ID=lblOGRC00_1.Text,'Creado por'.DisplayName),Direccion)));
+                    SubmitForm(Form_RCOO);
+                Text: ="Guardar"
+                X: =480
+                Y: =578
+                ZIndex: =10
+
+            btnCancelarOG_1 As button:
+                OnSelect: |-
+                    =Set(varctnObjetivoEmpleado,true);
+                    Set(varctnRCOO,false);
+                    Set(varlbtTituloObjetivo,"Detale Resultado Claves Jefe Directo");
+                Text: ="Cancelar"
+                X: =658
+                Y: =578
+                ZIndex: =11
+
+    ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =708
+        Visible: =varctnDetalleObjetivos
+        Width: =1296
+        X: =70
+        Y: =60
+        ZIndex: =5
+
+        "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =545
+            Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(104, Self.Height - 60)
+            Width: =1290
+            Y: =80
+            ZIndex: =1
+
+            Title12 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Nombre"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            Subtitle11 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =32
+                Y: =Title12.Y + Title12.Height + 4
+                ZIndex: =2
+
+            NextArrow11 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =60
+                Icon: =Icon.ChevronRight
+                OnSelect: |-
+                    =Set(varIDRCEmple,ThisItem.ID);
+                    Set(varctnTareaRC,true);
+                    Set(varlbtTituloObjetivo,"Registro Tareas");
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =1210
+                Y: =22
+                ZIndex: =3
+
+            Separator12 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            Title12_1 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Perido de Tiempo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =532
+                Y: =10
+                ZIndex: =5
+
+            Subtitle11_1 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.PeriodoTiempo
+                VerticalAlign: =VerticalAlign.Top
+                Width: =500
+                X: =532
+                Y: =50
+                ZIndex: =6
+
+            NextArrow11_2 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =60
+                Icon: =Icon.View
+                OnSelect: |-
+                    =Set(varIDRCEmple,ThisItem.ID);
+                    Set(varctnResultadosCDetalle,true);
+                    Set(varlbtTituloObjetivo,"Detalle Tareas");
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =1098
+                Y: =22
+                ZIndex: =8
+
+        lblOGRC00_2 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="ID_Objetivo"
+            Width: =190
+            X: =6
+            ZIndex: =2
+
+        lblRCRC00_4 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="Objetivo"
+            Width: =1100
+            X: =196
+            ZIndex: =3
+
+        lblOGRC00_3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,ID)
+            Width: =190
+            X: =6
+            Y: =40
+            ZIndex: =4
+
+        lblRCRC00_5 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,Title)
+            Width: =1100
+            X: =196
+            Y: =40
+            ZIndex: =5
+
+        btnCancelarOG_2 As button:
+            OnSelect: |-
+                =Set(varctnObjetivoEmpleado,true);
+                Set(varctnDetalleObjetivos,false);
+                Set(varlbtTituloObjetivo,"Detalle Objetivos");
+            Text: ="Cancelar"
+            X: =548
+            Y: =656
+            ZIndex: =6
+
+    ctnTareas As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =708
+        Visible: =varctnTareaRC
+        Width: =1296
+        X: =70
+        Y: =60
+        ZIndex: =6
+
+        lblOGRC00_4 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="ID_ResultadoClave"
+            Width: =190
+            X: =6
+            ZIndex: =1
+
+        "Gallery_Tareas As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =535
+            Items: =TareaRC
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =130
+            Width: =1212
+            X: =6
+            Y: =79
+            ZIndex: =1
+
+            Title11 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Nombre"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =400
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            NextArrow10 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =55
+                Icon: =Icon.Trash
+                OnSelect: =Select(Parent)
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =55
+                X: =Parent.TemplateWidth - Self.Width - 5
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =3
+
+            Separator11 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            txtTarea As text:
+                Default: =ThisItem.Co_TitleTarea
+                Height: =63
+                Mode: =TextMode.MultiLine
+                OnSelect: =Select(Parent)
+                Width: =400
+                X: =32
+                Y: =48
+                ZIndex: =5
+
+            Title11_1 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Fecha Inicio"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =726
+                Y: =17
+                ZIndex: =6
+
+            DtpFITarea As datepicker:
+                DefaultDate: =ThisItem.Co_FITarea
+                Height: =30
+                InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Now(), Self.Format, Self.Language))
+                OnChange: |
+                    =If( LookUp(PeriodoTiempo,Title=txtPTTarea.Text,Finalizar)<DtpFITarea.SelectedDate || LookUp(PeriodoTiempo,Title=txtPTTarea.Text,Inicio)>DtpFITarea.SelectedDate,Notify("La fecha introducida no es valida, debe estar dentro del rango del periodo de tiempo", NotificationType.Error) && Reset(DtpFITarea)
+                    
+                    );
+                    //Reset(DtpFITarea);;
+                    //Reset(DtpFFTarea);;
+                OnSelect: =Select(Parent)
+                Width: =200
+                X: =726
+                Y: =49
+                ZIndex: =7
+
+            Title11_2 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Fecha Fin"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =200
+                X: =952
+                Y: =17
+                ZIndex: =8
+
+            DtpFFTarea As datepicker:
+                DefaultDate: =ThisItem.Co_FITarea
+                Height: =30
+                InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Now(), Self.Format, Self.Language))
+                OnChange: |-
+                    =If(DtpFFTarea.SelectedDate > LookUp(PeriodoTiempo,Title=txtPTTarea.Text,Finalizar) || DtpFFTarea.SelectedDate < DtpFITarea.SelectedDate ,Notify("La fecha introducida no es valida, debe estar dentro del rango del periodo de tiempo y no debe ser menor a tu fecha inicio", NotificationType.Error)
+                    && Reset(DtpFFTarea)
+                    );
+                OnSelect: =Select(Parent)
+                Width: =200
+                X: =952
+                Y: =49
+                ZIndex: =9
+
+            Title11_3 As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: ="Perido de tiempo"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =270
+                X: =447
+                Y: =16
+                ZIndex: =10
+
+            txtPTTarea As text:
+                Default: =LookUp(ResultadoClave,ID=varIDRCEmple,PeriodoTiempo)
+                DisplayMode: =DisplayMode.View
+                Height: =31
+                OnSelect: =Select(Parent)
+                Width: =270
+                X: =447
+                Y: =48
+                ZIndex: =11
+
+            IlblIDTarea As label:
+                Height: =26
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =14
+                Text: =ThisItem.Co_IDTarea
+                VerticalAlign: =VerticalAlign.Top
+                Visible: =false
+                Width: =400
+                X: =40
+                Y: =40
+                ZIndex: =12
+
+        lblRCRC00_6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="Resultado Clave"
+            Width: =1100
+            X: =196
+            ZIndex: =2
+
+        lblOGRC00_5 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
+            Width: =190
+            X: =6
+            Y: =39
+            ZIndex: =3
+
+        lblRCRC00_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
+            Width: =1100
+            X: =196
+            Y: =39
+            ZIndex: =4
+
+        btnCancelarOG_3 As button:
+            OnSelect: |-
+                =Set(varctnDetalleObjetivos,true);
+                Set(varctnTareaRC,false);
+                Set(varlbtTituloObjetivo,"Detalle Resultados Clave");
+            Text: ="Cancelar"
+            X: =638
+            Y: =655
+            ZIndex: =5
+
+        Icon1 As icon.Add:
+            Height: =48
+            Icon: =Icon.Add
+            OnSelect: |-
+                =Set(
+                    VarIDTR,
+                    Sum(
+                        VarIDTR,
+                        1
+                    )
+                );
+                Collect(
+                    TareaRC,
+                    {
+                        Co_IDTarea:VarIDTR,
+                        Co_TitleTarea:"",
+                        CO_PeriodoTiempoTarea:"",
+                        Co_FITarea:"",
+                        Co_FFTarea:"",
+                        Co_IDResultadoClaveTarea:""
+                    }
+                );
+            Width: =48
+            X: =1219
+            Y: =102
+            ZIndex: =6
+
+        btnGuardarOG_2 As button:
+            OnSelect: |-
+                =ForAll(
+                    Gallery_Tareas.AllItems,
+                    Patch(
+                        TareaRC,
+                        {Co_IDTarea:Value(IlblIDTarea.Text)},
+                        {Co_TitleTarea:txtTarea.Text},
+                        {CO_PeriodoTiempoTarea:txtPTTarea.Text},
+                        {Co_FITarea:DtpFITarea.SelectedDate},
+                        {Co_FFTarea:DtpFFTarea.SelectedDate},
+                        {Co_IDResultadoClaveTarea:lblOGRC00_5.Text}
+                    )
+                );
+                ForAll(
+                    TareaRC,
+                    Patch(
+                        Tarea,
+                        Defaults(Tarea),{
+                            Title:Co_TitleTarea,
+                            PeriodoTiempoTarea:CO_PeriodoTiempoTarea,
+                            Fecha_Inicio:DateValue(Co_FITarea),
+                            Fecha_Fin:DateValue(Co_FFTarea),
+                            ID_ResultadoClave:Co_IDResultadoClaveTarea
+                        }
+                    )
+                );
+                Set(varctnDetalleObjetivos,true);
+                Set(varctnTareaRC,false);
+                Set(varlbtTituloObjetivo,"Detalle Resultado Clave");
+                Set(
+                    VarIDTR,
+                    1
+                );
+                ClearCollect(
+                    TareaRC,
+                    {
+                        Co_IDTarea:VarIDTR,
+                        Co_TitleTarea:"",
+                        CO_PeriodoTiempoTarea:"",
+                        Co_FITarea:"",
+                        Co_FFTarea:"",
+                        Co_IDResultadoClaveTarea:""
+                    }
+                );
+            Text: ="Guardar"
+            X: =449
+            Y: =655
+            ZIndex: =7
+
+    ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =708
+        Visible: =varctnResultadosCDetalle
+        Width: =1296
+        X: =70
+        Y: =60
+        ZIndex: =7
+
+        lblOGRC00_6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="ID_ResultadoClave"
+            Width: =190
+            X: =6
+            Y: =13
+            ZIndex: =1
+
+        "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =530
+            Items: =Filter(Tarea,ID_ResultadoClave=varIDRCEmple)
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(104, Self.Height - 60)
+            Width: =1290
+            X: =6
+            Y: =92
+            ZIndex: =1
+
+            Title9 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Nombre" 
+                VerticalAlign: =VerticalAlign.Top
+                Width: =400
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            Subtitle8 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =400
+                X: =32
+                Y: =Title9.Y + Title9.Height + 4
+                ZIndex: =2
+
+            NextArrow8 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Height: =60
+                Icon: =Icon.ChevronRight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =Parent.TemplateWidth - Self.Width - 5
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =3
+
+            Separator9 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            Title9_1 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Fecha de inicio" 
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =432
+                Y: =22
+                ZIndex: =5
+
+            Subtitle8_1 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Fecha_Inicio
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =432
+                Y: =58
+                ZIndex: =6
+
+            Title9_2 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Fecha de finalización" 
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =732
+                Y: =22
+                ZIndex: =7
+
+            Subtitle8_2 As label:
+                Height: =32
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Fecha_Fin
+                VerticalAlign: =VerticalAlign.Top
+                Width: =300
+                X: =732
+                Y: =58
+                ZIndex: =8
+
+        lblRCRC00_8 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="Resultado Clave"
+            Width: =1100
+            X: =196
+            Y: =13
+            ZIndex: =2
+
+        lblOGRC00_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
+            Width: =190
+            X: =6
+            Y: =52
+            ZIndex: =3
+
+        lblRCRC00_9 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
+            Width: =1100
+            X: =196
+            Y: =52
+            ZIndex: =4
+
+        btnCancelarOG_4 As button:
+            OnSelect: |-
+                =Set(varctnDetalleObjetivos,true);
+                Set(varctnResultadosCDetalle,false);
+                Set(varlbtTituloObjetivo,"Detalle Resultados Clave");
+            Text: ="Cancelar"
+            X: =571
+            Y: =644
+            ZIndex: =5
+
+    lbtTituloObjetivo As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Size: =20
+        Text: =varlbtTituloObjetivo
+        Width: =500
+        X: =468
+        Y: =10
+        ZIndex: =8
+
+    Menu_2 As Menu:
+        Width: =Menu_2.MenuWidth
+        Y: =60
+        ZIndex: =9
+

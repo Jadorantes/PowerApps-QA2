@@ -118,13 +118,6 @@ scr_home As screen:
             Y: =Title6_1.Y + Title6_1.Height + 4
             ZIndex: =2
 
-        Separator5_1 As rectangle:
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
-
         Subtitle5_2 As label:
             Height: =32
             OnSelect: =Select(Parent)

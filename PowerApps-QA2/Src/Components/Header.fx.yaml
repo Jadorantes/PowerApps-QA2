@@ -15,7 +15,9 @@ Header As CanvasComponent:
                         border-radius:14px; 
                         height:"& 46 & "px;
                         height:"& 46 & "px;
-                        width: "& 100 & ";
+                        width: "& 100 & "%;
+                        left:" & 10 & "px;
+                        right:" & 10 & "px;
                     "">
                     border-radius: 20px;
             </div>"

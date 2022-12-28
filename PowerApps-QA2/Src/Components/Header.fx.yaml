@@ -1,15 +1,24 @@
 Header As CanvasComponent:
     Fill: =RGBA(255, 255, 255, 1)
-    Height: =80
+    Height: =60
     Width: =1366
     X: =0
     Y: =0
     ZIndex: =1
 
     HtmlText1 As htmlViewer:
-        Height: =80
+        Height: =60
         HtmlText: |-
-            ="<div style=""border:5px solid white;box-shadow: 0px 5px 0px black;"" height='400px'>border-radius: 20px; </div>"
+            ="<div 
+                style=""border:1px white;
+                        box-shadow: 0px 2px 0px; 
+                        border-radius:14px; 
+                        height:"& 46 & "px;
+                        height:"& 46 & "px;
+                        width: "& 100 & ";
+                    "">
+                    border-radius: 20px;
+            </div>"
         Width: =1366
         ZIndex: =1
 

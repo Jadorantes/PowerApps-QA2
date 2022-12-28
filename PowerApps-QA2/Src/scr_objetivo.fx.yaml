@@ -190,6 +190,30 @@ scr_objetivo As screen:
             Y: =14
             ZIndex: =3
 
+        ctnPopUpSinOK As groupContainer.manualLayoutContainer:
+            Height: =708
+            Width: =1296
+            ZIndex: =4
+
+            Button8 As button:
+                Height: =450
+                Text: |-
+                    ="Aun no has registrado nada.   
+                    ¡Registra tu primer objetivo!"
+                Width: =762
+                X: =240
+                Y: =79
+                ZIndex: =1
+
+            Button11 As button:
+                Fill: =RGBA(109, 49, 162, 1)
+                Height: =79
+                Text: ="Registrar OK"
+                Width: =252
+                X: =495
+                Y: =407
+                ZIndex: =2
+
     ctnObjetivoGeneral As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =708
@@ -1762,16 +1786,6 @@ scr_objetivo As screen:
         Y: =60
         ZIndex: =7
 
-        lblOGRC00_6 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(230, 230, 230, 1)
-            BorderThickness: =1
-            Text: ="ID_ResultadoClave"
-            Width: =190
-            X: =6
-            Y: =13
-            ZIndex: =1
-
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             Height: =530
             Items: =Filter(Tarea,ID_ResultadoClave=varIDRCEmple)
@@ -1781,7 +1795,7 @@ scr_objetivo As screen:
             Width: =1290
             X: =6
             Y: =92
-            ZIndex: =1
+            ZIndex: =2
 
             Title9 As label:
                 Height: =32
@@ -1890,6 +1904,16 @@ scr_objetivo As screen:
                 Y: =58
                 ZIndex: =8
 
+        lblOGRC00_6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Text: ="ID_ResultadoClave"
+            Width: =190
+            X: =6
+            Y: =13
+            ZIndex: =3
+
         lblRCRC00_8 As label:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -1898,7 +1922,7 @@ scr_objetivo As screen:
             Width: =1100
             X: =196
             Y: =13
-            ZIndex: =2
+            ZIndex: =4
 
         lblOGRC00_7 As label:
             Align: =Align.Center
@@ -1908,7 +1932,7 @@ scr_objetivo As screen:
             Width: =190
             X: =6
             Y: =52
-            ZIndex: =3
+            ZIndex: =5
 
         lblRCRC00_9 As label:
             Align: =Align.Center
@@ -1918,7 +1942,7 @@ scr_objetivo As screen:
             Width: =1100
             X: =196
             Y: =52
-            ZIndex: =4
+            ZIndex: =6
 
         btnCancelarOG_4 As button:
             OnSelect: |-
@@ -1928,7 +1952,7 @@ scr_objetivo As screen:
             Text: ="Cancelar"
             X: =571
             Y: =644
-            ZIndex: =5
+            ZIndex: =7
 
     lbtTituloObjetivo As label:
         Align: =Align.Center

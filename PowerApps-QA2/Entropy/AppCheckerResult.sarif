@@ -4043,6 +4043,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.config-icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.config-icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "config-icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL"
                 }
               ],
@@ -4084,6 +4114,126 @@
               },
               "properties": {
                 "member": "DGATI LETRAS NEGRAS HORIZONTAL1",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL3"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL3",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DGATI LETRAS NEGRAS HORIZONTAL3",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL4"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL4",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DGATI LETRAS NEGRAS HORIZONTAL4",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.hmbn"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.hmbn",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "hmbn",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.home-icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.home-icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "home-icon",
                 "module": "App",
                 "type": "App"
               }
@@ -4163,6 +4313,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Objetivosn"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Objetivosn",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Objetivosn",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.user-icon"
                 }
               ],
@@ -4174,66 +4354,6 @@
               },
               "properties": {
                 "member": "user-icon",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL3"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL3",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DGATI LETRAS NEGRAS HORIZONTAL3",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL4"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.DGATI LETRAS NEGRAS HORIZONTAL4",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DGATI LETRAS NEGRAS HORIZONTAL4",
                 "module": "App",
                 "type": "App"
               }

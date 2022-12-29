@@ -1,6 +1,6 @@
 Menu As CanvasComponent:
     Fill: =RGBA(237, 237, 237, 1)
-    Height: =Max(App.Width, App.MinScreenWidth)/'DGATI LETRAS NEGRAS HORIZONTAL2'
+    Height: =Max(App.Width, App.MinScreenWidth)/2
     MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5+40,70)
     NavItems: =Navegacion
     Width: =Menu.MenuWidth

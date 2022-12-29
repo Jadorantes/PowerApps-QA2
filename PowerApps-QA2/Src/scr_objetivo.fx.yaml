@@ -623,7 +623,7 @@ scr_objetivo As screen:
                 );
                 Set(varNivelObjetivo,If(lbPuesto.Text="DGA DE TECNOLOGIAS DE INFORMACION","Direccion"));
                 SubmitForm(Form_ObjetivosGeneral);
-                Set(popValObj,If(IsEmpty(GalleryObjetivoEmp.AllItems),"true","false"));
+                Set(popValObj,"false");
             Text: ="Guardar"
             X: =474
             Y: =665

@@ -1,8 +1,9 @@
 scr_home As screen:
 
     Menu_1 As Menu:
-        Width: =Menu_1.MenuWidth
-        Y: =112
+        Height: =688
+        Width: =70
+        Y: =80
 
     "GalleryObjetivosDireccion As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =578

@@ -444,7 +444,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/29/2022 22:22:17",
+  "HeaderLastSavedDateTimeUTC": "12/29/2022 22:23:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "30971f61-f7b0-4fd0-969c-6f44d693efcf": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
@@ -1013,7 +1013,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 4.4606456,
     "ControlCount": {
-      "02f390211a9948f1bd262c9df508cd24": 6,
+      "02f390211a9948f1bd262c9df508cd24": 7,
       "1ad60f7079e34193a9c3a18cb59ba034": 2,
       "506fd33b098f40f79398950882792782": 6,
       "a6c673aa15834ec999ce5618f106cb55": 1,

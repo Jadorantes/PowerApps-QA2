@@ -1,10 +1,5 @@
 scr_home As screen:
 
-    Menu_1 As Menu:
-        Height: =688
-        Width: =70
-        Y: =80
-
     "GalleryObjetivosDireccion As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =578
         Items: =Filter(Objetivo,NivelObjetivo="Direccion")

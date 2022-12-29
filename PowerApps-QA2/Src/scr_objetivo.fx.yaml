@@ -192,7 +192,9 @@ scr_objetivo As screen:
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
             Height: =708
-            Visible: =popValObj
+            Visible: |-
+                =//popValObj
+                false
             Width: =1296
             ZIndex: =4
 
@@ -209,6 +211,11 @@ scr_objetivo As screen:
             Button11 As button:
                 Fill: =RGBA(109, 49, 162, 1)
                 Height: =79
+                OnSelect: |
+                    =Set(varctnObjetivoEmpleado,false);
+                    Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
+                    Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
+                    Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
                 Text: ="Registrar OK"
                 Width: =252
                 X: =495

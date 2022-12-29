@@ -42,6 +42,7 @@ Menu As CanvasComponent:
             ZIndex: =1
 
         Title5 As label:
+            FontWeight: =FontWeight.Bold
             Height: =39
             OnSelect: =Select(Parent); Navigate(ThisItem.nav)
             PaddingBottom: =0

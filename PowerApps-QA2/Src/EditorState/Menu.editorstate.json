@@ -97,7 +97,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "276",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

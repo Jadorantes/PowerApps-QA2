@@ -192,6 +192,7 @@ scr_objetivo As screen:
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
             Height: =708
+            Visible: =popValObj
             Width: =1296
             ZIndex: =4
 
@@ -1968,6 +1969,6 @@ scr_objetivo As screen:
 
     Menu_2 As Menu:
         Width: =Menu_2.MenuWidth
-        Y: =60
+        Y: =80
         ZIndex: =9
 

@@ -59,7 +59,7 @@
         "Name": "HtmlText1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 415,
+        "PublishOrderIndex": 414,
         "Rules": [
           {
             "Category": "Data",
@@ -270,7 +270,7 @@
         "Name": "Image1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 416,
+        "PublishOrderIndex": 415,
         "Rules": [
           {
             "Category": "Data",

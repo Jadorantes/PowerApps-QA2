@@ -60,7 +60,7 @@
         "Name": "IcoHamburger",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 417,
+        "PublishOrderIndex": 416,
         "Rules": [
           {
             "Category": "Design",
@@ -252,7 +252,7 @@
             "Name": "galleryTemplate5",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 419,
+            "PublishOrderIndex": 418,
             "Rules": [
               {
                 "Category": "Design",
@@ -388,7 +388,7 @@
             "Name": "Image6",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 420,
+            "PublishOrderIndex": 419,
             "Rules": [
               {
                 "Category": "Data",
@@ -649,7 +649,7 @@
             "Name": "Rectangle8",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 421,
+            "PublishOrderIndex": 420,
             "Rules": [
               {
                 "Category": "Design",
@@ -879,7 +879,7 @@
             "Name": "Title5",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 422,
+            "PublishOrderIndex": 421,
             "Rules": [
               {
                 "Category": "Data",
@@ -1184,7 +1184,7 @@
         "Name": "galMenu",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 418,
+        "PublishOrderIndex": 417,
         "Rules": [
           {
             "Category": "Data",
@@ -1387,7 +1387,7 @@
         "Name": "Rectangle2",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 423,
+        "PublishOrderIndex": 422,
         "Rules": [
           {
             "Category": "Design",

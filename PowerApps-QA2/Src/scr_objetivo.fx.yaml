@@ -1309,6 +1309,7 @@ scr_objetivo As screen:
                     );
                     Set(varNivelObjetivo,If(LookUp(Objetivo,ID=lblOGRC00_1.Text,NivelObjetivo)="Direccion",LookUp(Empleado,Responsable.DisplayName=LookUp(Objetivo,ID=lblOGRC00_1.Text,'Creado por'.DisplayName),Direccion)));
                     SubmitForm(Form_RCOO);
+                    Set(popValObj,"false")
                 Text: ="Guardar"
                 X: =480
                 Y: =578

@@ -1995,11 +1995,6 @@ scr_configuracion As screen:
                 Y: =600
                 ZIndex: =3
 
-    Menu_3 As Menu:
-        Width: =Menu_3.MenuWidth
-        Y: =60
-        ZIndex: =11
-
     Mensaje_Permisos As group:
         Height: =5
         Width: =5
@@ -2026,4 +2021,9 @@ scr_configuracion As screen:
             X: =419
             Y: =400
             ZIndex: =13
+
+    Menu_3 As Menu:
+        Width: =Menu_3.MenuWidth
+        Y: =80
+        ZIndex: =14
 

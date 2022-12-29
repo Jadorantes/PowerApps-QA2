@@ -1,6 +1,6 @@
 Menu As CanvasComponent:
     Fill: =RGBA(237, 237, 237, 1)
-    Height: =Max(App.Width, App.MinScreenWidth)/3
+    Height: =Max(App.Width, App.MinScreenWidth)/1.99
     MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5+40,70)
     NavItems: =Navegacion
     Width: =Menu.MenuWidth
@@ -9,7 +9,7 @@ Menu As CanvasComponent:
     ZIndex: =1
 
     IcoHamburger As icon.Hamburger:
-        Color: =RGBA(0, 87, 69, 1)
+        Color: =RGBA(0, 0, 0, 1)
         Height: =40
         Icon: =Icon.Hamburger
         OnSelect: =Set(varOpenMenu, !varOpenMenu)
@@ -19,14 +19,14 @@ Menu As CanvasComponent:
     "galMenu As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =Parent.Height-IcoHamburger.Height
+        Height: =415
         Items: =Menu.NavItems
         Layout: =Layout.Vertical
         TemplateFill: =RGBA(237, 237, 237, 1)
         TemplatePadding: =0
         TemplateSize: =80
-        Width: =273
-        Y: =IcoHamburger.Y+IcoHamburger.Height
+        Width: =222
+        Y: =40
         ZIndex: =2
 
         Image6 As image:
@@ -42,6 +42,7 @@ Menu As CanvasComponent:
             ZIndex: =1
 
         Title5 As label:
+            FontWeight: =FontWeight.Bold
             Height: =39
             OnSelect: =Select(Parent); Navigate(ThisItem.nav)
             PaddingBottom: =0

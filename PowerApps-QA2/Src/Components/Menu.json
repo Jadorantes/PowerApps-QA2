@@ -124,7 +124,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(0, 87, 69, 1)",
+            "InvariantScript": "RGBA(0, 0, 0, 1)",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -1542,7 +1542,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638079508202689410",
+    "LastModifiedTimestamp": "638079508650377556",
     "Name": "Menu",
     "Rules": [
       {
@@ -1632,7 +1632,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638079508202689410",
+  "LastModifiedTimestamp": "638079508650377556",
   "Name": "02f390211a9948f1bd262c9df508cd24",
   "OverridableProperties": {},
   "TemplateOriginalName": "152d9fd109cf4c89bd33612b115f3e27",

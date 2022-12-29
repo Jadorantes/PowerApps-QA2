@@ -1542,7 +1542,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638079511170380896",
+    "LastModifiedTimestamp": "638079511488984832",
     "Name": "Menu",
     "Rules": [
       {
@@ -1565,7 +1565,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "Max(App.Width, App.MinScreenWidth)",
+        "InvariantScript": "Max(App.Width, App.MinScreenWidth)/'DGATI LETRAS NEGRAS HORIZONTAL2'",
         "Property": "Height",
         "RuleProviderType": "System"
       },
@@ -1632,7 +1632,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638079511170380896",
+  "LastModifiedTimestamp": "638079511488984832",
   "Name": "02f390211a9948f1bd262c9df508cd24",
   "OverridableProperties": {},
   "TemplateOriginalName": "152d9fd109cf4c89bd33612b115f3e27",

@@ -52,7 +52,7 @@ App As appinfo:
                 },
                  {
                     Titulo: "Objetivo",
-                    icono: 'Objetivosn',
+                    icono: 'objn',
                     nav:  scr_objetivo
                 },
                 {

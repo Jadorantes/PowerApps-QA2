@@ -1,6 +1,6 @@
 Menu As CanvasComponent:
     Fill: =RGBA(237, 237, 237, 1)
-    Height: =Max(App.Width, App.MinScreenWidth)/3
+    Height: =Max(App.Width, App.MinScreenWidth)
     MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5+40,70)
     NavItems: =Navegacion
     Width: =Menu.MenuWidth
@@ -19,7 +19,7 @@ Menu As CanvasComponent:
     "galMenu As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =700
+        Height: =415
         Items: =Menu.NavItems
         Layout: =Layout.Vertical
         TemplateFill: =RGBA(237, 237, 237, 1)

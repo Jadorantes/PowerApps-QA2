@@ -1248,7 +1248,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "700",
+            "InvariantScript": "415",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1542,7 +1542,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638079509494655128",
+    "LastModifiedTimestamp": "638079511170380896",
     "Name": "Menu",
     "Rules": [
       {
@@ -1565,7 +1565,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "Max(App.Width, App.MinScreenWidth)/3",
+        "InvariantScript": "Max(App.Width, App.MinScreenWidth)",
         "Property": "Height",
         "RuleProviderType": "System"
       },
@@ -1632,7 +1632,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638079509494655128",
+  "LastModifiedTimestamp": "638079511170380896",
   "Name": "02f390211a9948f1bd262c9df508cd24",
   "OverridableProperties": {},
   "TemplateOriginalName": "152d9fd109cf4c89bd33612b115f3e27",

@@ -544,7 +544,7 @@ scr_home As screen:
                 ZIndex: =8
 
     EnvioCorreoDatos As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(0, 87, 69, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =708
         Visible: |
             =varValUsr
@@ -553,30 +553,39 @@ scr_home As screen:
         ZIndex: =8
 
         txtNombreUsr As text:
+            BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Nombre)
             Height: =92
+            Width: =572
             X: =438
             Y: =46
             ZIndex: =1
 
         txtPuesto As text:
+            BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Puesto)
             Height: =92
+            Width: =572
             X: =438
             Y: =258
             ZIndex: =4
 
         listArea As dropdown:
+            BorderColor: =RGBA(0, 154, 62, 1)
+            ChevronBackground: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Departamento)
+            Height: =62
             Items: =Distinct(Areas,Departamento)
-            Width: =320
+            SelectionFill: =RGBA(0, 154, 62, 1)
+            Width: =572
             X: =438
             Y: =169
             ZIndex: =6
 
         Button2 As button:
+            Fill: =RGBA(0, 154, 62, 1)
             Height: =62
-            OnSelect: |+
+            OnSelect: |
                 =Office365Outlook.SendEmailV2(Concatenate("solicitudessp@frd.org.mx;",User().Email),"Actualización de los datos del usuario del OKR",Concatenate("Se requieren correcciones de los datos del usuario ",User().FullName,
                 "</br></br>Nombre ", txtNombreUsr, 
                 "</br>Puesto ", txtPuesto,
@@ -584,64 +593,93 @@ scr_home As screen:
                 "</br>Jefe Directo ", txtJefeDirecto
                 ));
                 Set(varValUsr,false);
-                Exit();
-                
+                //Exit();;
+                Set(varPopUpMail,true);
             Text: ="Corrección Datos"
             Visible: =popUpUsr
             Width: =320
-            X: =438
-            Y: =578
+            X: =523
+            Y: =575
             ZIndex: =7
 
         txtJefeDirecto As text:
+            BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Responsable.DisplayName)
-            Height: =42
+            Height: =84
+            Width: =572
             X: =438
-            Y: =421
+            Y: =409
             ZIndex: =8
 
         Label3 As label:
-            Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="NOMBRE"
             Visible: =varValUsr
-            X: =207
-            Y: =72
+            X: =182
+            Y: =59
             ZIndex: =9
 
         Label3_1 As label:
-            Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="PUESTO"
             Visible: =varValUsr
-            X: =207
+            X: =182
             Y: =284
             ZIndex: =10
 
         Label3_2 As label:
-            Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =90
+            Height: =102
             Size: =18
             Text: ="JEFE DIRECTO"
             Visible: =varValUsr
-            X: =207
-            Y: =415
+            Width: =200
+            X: =182
+            Y: =413
             ZIndex: =11
 
         Label3_3 As label:
-            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="AREA"
             Visible: =varValUsr
-            X: =207
-            Y: =191
+            X: =182
+            Y: =178
             ZIndex: =12
+
+        Icon2 As icon.ArrowLeft:
+            Icon: =Icon.ArrowLeft
+            X: =61
+            Y: =35
+            ZIndex: =13
+
+        ctnNotCorreo As groupContainer.manualLayoutContainer:
+            Height: =702
+            Visible: =varPopUpMail
+            Width: =1366
+            Y: =6
+            ZIndex: =14
+
+            Button5 As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                Height: =374
+                Text: ="Se ha enviado una solicitud de corrección de datos a tu administrador"
+                Width: =982
+                X: =195
+                Y: =78
+                ZIndex: =1
+
+            Button6 As button:
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                OnSelect: =Exit();
+                Text: ="OK"
+                X: =606
+                Y: =352
+                ZIndex: =2
 
     Container2 As groupContainer.manualLayoutContainer:
         Height: =60

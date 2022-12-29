@@ -636,3 +636,8 @@ scr_home As screen:
             Y: =30
             ZIndex: =3
 
+    Menu_1 As Menu:
+        Width: =Menu_1.MenuWidth
+        Y: =165
+        ZIndex: =12
+

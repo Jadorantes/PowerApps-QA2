@@ -193,8 +193,8 @@ scr_objetivo As screen:
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
             Height: =708
             Visible: |-
-                =//popValObj
-                false
+                =popValObj
+                //false
             Width: =1296
             ZIndex: =4
 

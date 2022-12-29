@@ -318,7 +318,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: ="Información General"
+                Text: ="Mi información General"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =60
@@ -371,18 +371,52 @@ scr_home As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =18
-                Text: ="Equipo de trabajo"
+                Text: ="Mi equipo de trabajo"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =600
                 Y: =168
                 ZIndex: =16
 
+            lbTNomEmp_2 As label:
+                Align: =Align.Right
+                FontWeight: =FontWeight.Normal
+                Height: =37
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Puesto: "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =207
+                X: =40
+                Y: =480
+                ZIndex: =17
+
+            lbTNomEmp_3 As label:
+                Align: =Align.Right
+                FontWeight: =FontWeight.Normal
+                Height: =69
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Puesto
+                VerticalAlign: =VerticalAlign.Top
+                Width: =491
+                X: =262
+                Y: =480
+                ZIndex: =18
+
         TituloValidacion As label:
+            Height: =43
             Size: =28
-            Text: ="Validación de datos usuario"
-            Width: =500
-            X: =433
+            Text: ="Validación de mis datos usuario"
+            Width: =607
+            X: =379
             Y: =5
             ZIndex: =2
 

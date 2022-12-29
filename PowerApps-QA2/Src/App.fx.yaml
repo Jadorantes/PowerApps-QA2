@@ -47,17 +47,17 @@ App As appinfo:
             Table(
                 {
                     Titulo: "Inicio",
-                    icono: 'Homen',
+                    icono: Homen,
                     nav: scr_home
                 },
                  {
                     Titulo: "Objetivo",
-                    icono: 'objn',
+                    icono: objn,
                     nav:  scr_objetivo
                 },
                 {
                     Titulo: "Configuraciones",
-                    icono: 'Ajustesn',
+                    icono: Ajustesn,
                     nav:  scr_configuracion
                 } 
             )

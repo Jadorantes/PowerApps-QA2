@@ -19,8 +19,7 @@ Menu As CanvasComponent:
     "galMenu As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(237, 237, 237, 1)
-        Height: |
-            =Parent.Height-IcoHamburger.Height
+        Height: =Parent.Height-IcoHamburger.Height
         Items: =Menu.NavItems
         Layout: =Layout.Vertical
         TemplateFill: =RGBA(237, 237, 237, 1)

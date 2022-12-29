@@ -4,7 +4,8 @@
     "Component1": 8,
     "Header": 5,
     "Menu": 6,
-    "Menu_1": 6
+    "Menu_1": 6,
+    "Menu_3": 6
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -295,7 +296,7 @@
     "Menu": 8,
     "Menu_1": 438,
     "Menu_2": 411,
-    "Menu_3": 18,
+    "Menu_3": 439,
     "Menu_4": 187,
     "Menu_5": 415,
     "NextArrow1": 43,
@@ -445,7 +446,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/29/2022 22:30:22",
+  "HeaderLastSavedDateTimeUTC": "12/29/2022 22:31:35",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "30971f61-f7b0-4fd0-969c-6f44d693efcf": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
@@ -554,13 +555,13 @@
     "datepicker": 13,
     "dropdown": 9,
     "form": 11,
-    "gallery": 3,
+    "gallery": 1,
     "groupContainer": 7,
-    "htmlViewer": 0,
-    "icon": 2,
-    "image": 1,
-    "label": 5,
-    "rectangle": 4,
+    "htmlViewer": 5,
+    "icon": 0,
+    "image": 2,
+    "label": 4,
+    "rectangle": 3,
     "text": 8
   },
   "PublishOrderIndices": {
@@ -851,7 +852,7 @@
     "Menu": 5,
     "Menu_1": 49,
     "Menu_2": 223,
-    "Menu_3": 248,
+    "Menu_3": 5,
     "Menu_4": 61,
     "Menu_5": 226,
     "NextArrow1": 274,
@@ -1023,7 +1024,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 4.4606456,
     "ControlCount": {
-      "02f390211a9948f1bd262c9df508cd24": 9,
+      "02f390211a9948f1bd262c9df508cd24": 10,
       "1ad60f7079e34193a9c3a18cb59ba034": 2,
       "506fd33b098f40f79398950882792782": 6,
       "a6c673aa15834ec999ce5618f106cb55": 1,

@@ -1978,6 +1978,6 @@ scr_objetivo As screen:
 
     Menu_2 As Menu:
         Width: =Menu_2.MenuWidth
-        Y: =80
+        Y: =81
         ZIndex: =9
 

@@ -6212,24 +6212,10 @@
         "ChevronFill",
         "ChevronHoverFill",
         "ChevronDisabledFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "ChevronBackground",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "ChevronBackground",
         "ChevronHoverBackground",
         "ChevronDisabledBackground",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SelectionFill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "SelectionFill",
         "Color",
         "HoverColor",
         "PressedColor",
@@ -15145,14 +15131,7 @@
         "Format",
         "VirtualKeyboardMode",
         "DelayOutput",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderColor",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "BorderColor",
         "DisabledBorderColor",
         "PressedBorderColor",
         "HoverBorderColor",
@@ -25015,14 +24994,7 @@
         "ChevronFill",
         "ChevronHoverFill",
         "ChevronDisabledFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "ChevronBackground",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "ChevronBackground",
         "ChevronHoverBackground",
         "ChevronDisabledBackground",
         "SelectionFill",
@@ -25884,14 +25856,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Color",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Color",
         "DisabledColor",
         "PressedColor",
         "HoverColor",

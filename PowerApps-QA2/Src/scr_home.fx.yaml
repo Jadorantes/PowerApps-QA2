@@ -592,11 +592,10 @@ scr_home As screen:
                 "</br>Area ", listArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
                 "</br>Jefe Directo ", txtJefeDirecto
                 ));
-                Set(varValUsr,false);
                 //Exit();;
                 Set(varPopUpMail,true);
             Text: ="Corrección Datos"
-            Visible: =popUpUsr
+            Visible: =varValUsr
             Width: =320
             X: =523
             Y: =575
@@ -678,7 +677,9 @@ scr_home As screen:
         Icon6 As icon.CancelBadge:
             Color: =RGBA(0, 154, 62, 1)
             Icon: =Icon.CancelBadge
-            OnSelect: =Set(popUpUsr,"true")
+            OnSelect: |
+                =Set(popUpUsr,"true");
+                Set(varValUsr,false);
             X: =1055
             Y: =47
             ZIndex: =15

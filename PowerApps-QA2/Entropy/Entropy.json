@@ -450,7 +450,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/30/2022 00:09:47",
+  "HeaderLastSavedDateTimeUTC": "12/30/2022 00:14:12",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "30971f61-f7b0-4fd0-969c-6f44d693efcf": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
@@ -610,8 +610,8 @@
     "Button2": 52,
     "Button3": 236,
     "Button4": 37,
-    "Button5": 42,
-    "Button6": 43,
+    "Button5": 41,
+    "Button6": 42,
     "Button8": 72,
     "CargaMasiva": 265,
     "Component1": 2,
@@ -769,7 +769,7 @@
     "Icon_CerrarPPCM": 269,
     "Icon1": 210,
     "Icon5_1": 231,
-    "Icon6": 0,
+    "Icon6": 44,
     "Icon6_1": 242,
     "ID_DataCard2": 339,
     "ID_ResultadoClave_DataCard1": 149,
@@ -1003,7 +1003,7 @@
     "TituloValidacion": 8,
     "TxBuscadorObje": 75,
     "txtJefeDirecto": 50,
-    "txtNombreUsr": 44,
+    "txtNombreUsr": 43,
     "txtPTTarea": 206,
     "txtPuesto": 48,
     "txtTarea": 205,
@@ -1064,7 +1064,7 @@
       "typedDataCard": 24
     },
     "DeserializationLoadTime": 6.7575602,
-    "ErrorCount": 18
+    "ErrorCount": 17
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

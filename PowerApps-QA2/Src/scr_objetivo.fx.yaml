@@ -1767,9 +1767,6 @@ scr_objetivo As screen:
                         1
                     )
                 );
-                
-                If(IsBlank(txtTarea)
-                    ,Notify("Este campo no puede ir vacio"),
                 Collect(
                     TareaRC,
                     {
@@ -1780,7 +1777,9 @@ scr_objetivo As screen:
                         Co_FFTarea:"",
                         Co_IDResultadoClaveTarea:""
                     }
-                ));
+                );
+                
+                
                 
             Width: =51
             X: =1218

@@ -10,13 +10,13 @@ scr_objetivo As screen:
         ZIndex: =2
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =620
+            Height: =590
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =Min(104, Self.Height - 60)
             Width: =1296
-            Y: =62
+            Y: =92
             ZIndex: =1
 
             Title8 As label:
@@ -179,7 +179,8 @@ scr_objetivo As screen:
                 Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
             Tooltip: ="Agregar Objetivo"
             Width: =57
-            X: =1195
+            X: =1202
+            Y: =9
             ZIndex: =3
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:

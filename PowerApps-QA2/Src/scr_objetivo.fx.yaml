@@ -1532,7 +1532,7 @@ scr_objetivo As screen:
                 AccessibleLabel: =Self.Tooltip
                 Height: =55
                 Icon: =Icon.Trash
-                OnSelect: =Remove(Gallery_Tareas,ThisItem)
+                OnSelect: =Remove(TareaRC,ThisItem)
                 PaddingBottom: =10
                 PaddingLeft: =10
                 PaddingRight: =10

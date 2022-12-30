@@ -68,7 +68,7 @@ scr_home As screen:
         ZIndex: =3
 
     Header_1 As Header:
-        Height: =105
+        Height: =82
         ZIndex: =4
 
     "GalleryObjetivosArea As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":

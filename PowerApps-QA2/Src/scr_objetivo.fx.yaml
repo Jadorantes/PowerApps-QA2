@@ -1760,7 +1760,7 @@ scr_objetivo As screen:
             Height: =42
             Image: =Agregar
             OnSelect: |-
-                =If(IsEmpty(txtTarea),
+                =If(!IsBlank(txtTarea),
                 Collect(
                     TareaRC,
                     {

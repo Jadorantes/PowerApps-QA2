@@ -180,6 +180,7 @@ Bienvanida As screen:
         AutoStart: =true
         Duration: =5000
         OnTimerEnd: =Set(varBCCS,true);Set(varBCBD,false)
+        Visible: =false
         X: =924
         Y: =705
         ZIndex: =15
@@ -219,6 +220,7 @@ Bienvanida As screen:
         AutoStart: =varBCCS
         Duration: =5000
         OnTimerEnd: =Set(varBCCS,false);Set(varBVDU,true)
+        Visible: =false
         X: =924
         Y: =655
         ZIndex: =17
@@ -258,6 +260,7 @@ Bienvanida As screen:
         AutoStart: =varBVDU
         Duration: =5000
         OnTimerEnd: =Navigate(scr_home)
+        Visible: =false
         X: =924
         Y: =606
         ZIndex: =19

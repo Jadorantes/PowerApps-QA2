@@ -53,6 +53,7 @@ scr_objetivo As screen:
             Separator7 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
+                Visible: =false
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - 1
                 ZIndex: =4
@@ -192,6 +193,7 @@ scr_objetivo As screen:
             ZIndex: =4
 
             Button8 As button:
+                Fill: =RGBA(0, 154, 62, 1)
                 Height: =450
                 Text: |-
                     ="Aun no has registrado nada.   
@@ -202,14 +204,14 @@ scr_objetivo As screen:
                 ZIndex: =1
 
             Button11 As button:
-                Fill: =RGBA(109, 49, 162, 1)
+                Fill: =RGBA(0, 121, 187, 1)
                 Height: =79
                 OnSelect: |
                     =Set(varctnObjetivoEmpleado,false);
                     Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"));
-                Text: ="Registrar OK"
+                Text: ="Registrar"
                 Width: =252
                 X: =495
                 Y: =407
@@ -1199,8 +1201,8 @@ scr_objetivo As screen:
                     TabIndex: =0
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =60
-                    X: =Parent.TemplateWidth - Self.Width - 5
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    X: =1127
+                    Y: =30
                     ZIndex: =3
 
                 Separator8_1 As rectangle:
@@ -1253,28 +1255,6 @@ scr_objetivo As screen:
                     Y: =10
                     ZIndex: =8
 
-            icoAgregarRCOG_1 As icon.Add:
-                Icon: =Icon.Add
-                OnSelect: |-
-                    =Set(
-                        VarIDOG,
-                        Sum(
-                            VarIDOG,
-                            1
-                        )
-                    );
-                    Collect(
-                       RegistroResultadosClaveOG,
-                       {
-                           Co_ID:VarIDOG,
-                           Co_ResultadoClaveOG:"",
-                           Co_PeriodoTiempoOG:""
-                        }
-                    );
-                X: =1226
-                Y: =232
-                ZIndex: =9
-
             btnGuardarOG_1 As button:
                 DisplayMode: |-
                     =If( IsBlank(DataCardValue19.Text) && IsBlank( inpResultadoClaveOG_1.Text) 
@@ -1310,6 +1290,30 @@ scr_objetivo As screen:
                 X: =658
                 Y: =578
                 ZIndex: =11
+
+            Image9 As image:
+                Height: =65
+                Image: =Agregar
+                OnSelect: |-
+                    =Set(
+                        VarIDOG,
+                        Sum(
+                            VarIDOG,
+                            1
+                        )
+                    );
+                    Collect(
+                       RegistroResultadosClaveOG,
+                       {
+                           Co_ID:VarIDOG,
+                           Co_ResultadoClaveOG:"",
+                           Co_PeriodoTiempoOG:""
+                        }
+                    );
+                Width: =72
+                X: =1212
+                Y: =234
+                ZIndex: =12
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

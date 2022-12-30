@@ -652,9 +652,12 @@ scr_home As screen:
             ZIndex: =12
 
         Icon2 As icon.ArrowLeft:
-            Icon: =Icon.ArrowLeft
-            X: =61
-            Y: =35
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.CancelBadge
+            OnSelect: =Set(varValUsr,true)
+            Visible: =varValUsr
+            X: =1080
+            Y: =47
             ZIndex: =13
 
         ctnNotCorreo As groupContainer.manualLayoutContainer:

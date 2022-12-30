@@ -112,6 +112,7 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
+    "Bienvanida",
     "scr_home",
     "Perfil",
     "scr_objetivo",

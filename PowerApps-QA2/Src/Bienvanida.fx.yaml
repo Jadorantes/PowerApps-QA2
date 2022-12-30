@@ -1,0 +1,16 @@
+Bienvanida As screen:
+
+    Fondo As image:
+        Height: =768
+        Image: =Back_inicio
+        ImagePosition: =ImagePosition.Fill
+        Width: =1366
+        ZIndex: =1
+
+    Image10 As image:
+        Height: =99
+        Image: ='Logo dgati blanco'
+        Width: =501
+        Y: =42
+        ZIndex: =2
+

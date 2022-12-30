@@ -52,6 +52,7 @@ scr_home As screen:
             ZIndex: =5
 
     Header_1 As Header:
+        Height: =105
         ZIndex: =3
 
     lbTObjetivoDireccion As label:
@@ -616,12 +617,14 @@ scr_home As screen:
             Size: =20
             Text: =User().FullName
             Width: =399
+            Y: =13
             ZIndex: =1
 
         Image2 As image:
-            Height: =60
+            Height: =50
             Image: =User().Image
             X: =392
+            Y: =10
             ZIndex: =2
 
         Label4_1 As label:
@@ -633,11 +636,12 @@ scr_home As screen:
             Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Puesto)
             Width: =399
             X: =1
-            Y: =30
+            Y: =37
             ZIndex: =3
 
     Menu_1 As Menu:
-        Width: =Menu_1.MenuWidth
-        Y: =81
+        Height: =662
+        Width: =70
+        Y: =105
         ZIndex: =12
 

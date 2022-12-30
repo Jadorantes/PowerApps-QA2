@@ -1,7 +1,12 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(MyUserID,UsuariosdeOffice365.MyProfile().Id);
+        =//Variables de Bienvenida
+        Set(varBCBD,true);
+        Set(varBCCS,false);
+        Set(varBVDU,false);
+        
+        Set(MyUserID,UsuariosdeOffice365.MyProfile().Id);
         //PopUp Validacion Usuario
         Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
         Set(popUpUsr,If(valUsr="Activo","false","true"));

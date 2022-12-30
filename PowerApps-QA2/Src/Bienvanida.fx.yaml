@@ -76,11 +76,36 @@ Bienvanida As screen:
         Y: =131
         ZIndex: =5
 
-    Label2 As label:
-        Text: ="Texto"
-        X: =372
-        Y: =714
-        ZIndex: =6
+    CargandoBD As htmlViewer:
+        Height: =58
+        HtmlText: |-
+            ="<div 
+                style=""
+                    
+                    //width: 463px;
+                    //height: 121px;
+                    //left: 652px;
+                    //top: 110px;
+            
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 35px;
+                    //line-height: 64px;
+                    text-align: center;
+                    //letter-spacing: 0.2px; 
+            
+                    color:#FFFFFF; 
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
+                "">
+                Cargando Base de Datos
+            </div>"
+        Visible: =varBCBD
+        Width: =500
+        X: =433
+        Y: =696
+        ZIndex: =14
 
     BarraProgreso As group:
         Height: =5
@@ -150,4 +175,90 @@ Bienvanida As screen:
             X: =1166
             Y: =754
             ZIndex: =13
+
+    TimerCBD As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: =Set(varBCCS,true);Set(varBCBD,false)
+        X: =924
+        Y: =705
+        ZIndex: =15
+
+    CargandoCS As htmlViewer:
+        Height: =58
+        HtmlText: |-
+            ="<div 
+                style=""
+                    
+                    //width: 463px;
+                    //height: 121px;
+                    //left: 652px;
+                    //top: 110px;
+            
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 35px;
+                    //line-height: 64px;
+                    text-align: center;
+                    //letter-spacing: 0.2px; 
+            
+                    color:#FFFFFF; 
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
+                "">
+                Cargando Componentes
+            </div>"
+        Visible: =varBCCS
+        Width: =500
+        X: =433
+        Y: =696
+        ZIndex: =16
+
+    TimerCCS As timer:
+        AutoStart: =varBCCS
+        Duration: =5000
+        OnTimerEnd: =Set(varBCCS,false);Set(varBVDU,true)
+        X: =924
+        Y: =655
+        ZIndex: =17
+
+    VDU As htmlViewer:
+        Height: =58
+        HtmlText: |-
+            ="<div 
+                style=""
+                    
+                    //width: 463px;
+                    //height: 121px;
+                    //left: 652px;
+                    //top: 110px;
+            
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 35px;
+                    //line-height: 64px;
+                    text-align: center;
+                    //letter-spacing: 0.2px; 
+            
+                    color:#FFFFFF; 
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
+                "">
+                Validando Datos
+            </div>"
+        Visible: =varBVDU
+        Width: =500
+        X: =433
+        Y: =696
+        ZIndex: =18
+
+    TimerVDU As timer:
+        AutoStart: =varBVDU
+        Duration: =5000
+        OnTimerEnd: =Navigate(scr_home)
+        X: =924
+        Y: =606
+        ZIndex: =19
 

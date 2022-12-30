@@ -687,25 +687,6 @@ scr_objetivo As screen:
                 Y: =Title7.Y + Title7.Height + 4
                 ZIndex: =2
 
-            NextArrow4 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =Set(varIDRCOG,ThisItem.ID);
-                    Set(varctnRCOO,true);
-                    Set(varlbtTituloObjetivo,"Registro de Objetivos")
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="Ver los detalles del elemento"
-                Width: =60
-                X: =Parent.TemplateWidth - Self.Width - 5
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =3
-
             Separator6 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
@@ -772,14 +753,14 @@ scr_objetivo As screen:
                 ZIndex: =8
 
             Image16 As image:
-                Height: =65
+                Height: =52
                 Image: =Agregar
                 OnSelect: |-
                     =Set(varIDRCOG,ThisItem.ID);
                     Set(varctnRCOO,true);
                     Set(varlbtTituloObjetivo,"Registro de Objetivos")
-                Width: =87
-                X: =1110
+                Width: =72
+                X: =1145
                 Y: =16
                 ZIndex: =9
 
@@ -1778,6 +1759,33 @@ scr_objetivo As screen:
             Y: =655
             ZIndex: =7
 
+        Image18 As image:
+            Height: =55
+            Image: =Agregar
+            OnSelect: |-
+                =Set(
+                    VarIDTR,
+                    Sum(
+                        VarIDTR,
+                        1
+                    )
+                );
+                Collect(
+                    TareaRC,
+                    {
+                        Co_IDTarea:VarIDTR,
+                        Co_TitleTarea:"",
+                        CO_PeriodoTiempoTarea:"",
+                        Co_FITarea:"",
+                        Co_FFTarea:"",
+                        Co_IDResultadoClaveTarea:""
+                    }
+                );
+            Width: =71
+            X: =1207
+            Y: =43
+            ZIndex: =8
+
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =708
@@ -1825,22 +1833,6 @@ scr_objetivo As screen:
                 X: =32
                 Y: =Title9.Y + Title9.Height + 4
                 ZIndex: =2
-
-            NextArrow8 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="Ver los detalles del elemento"
-                Width: =60
-                X: =Parent.TemplateWidth - Self.Width - 5
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =3
 
             Separator9 As rectangle:
                 Height: =1
@@ -1904,6 +1896,15 @@ scr_objetivo As screen:
                 X: =732
                 Y: =58
                 ZIndex: =8
+
+            Image17 As image:
+                Height: =54
+                Image: =Agregar
+                OnSelect: =Select(Parent)
+                Width: =87
+                X: =1150
+                Y: =30
+                ZIndex: =9
 
         lblOGRC00_6 As label:
             Align: =Align.Center

@@ -3,14 +3,76 @@ Bienvanida As screen:
     Fondo As image:
         Height: =768
         Image: =Back_inicio
-        ImagePosition: =ImagePosition.Fill
+        ImagePosition: =ImagePosition.Stretch
         Width: =1366
         ZIndex: =1
 
     Image10 As image:
         Height: =99
         Image: ='Logo dgati blanco'
-        Width: =501
+        ImagePosition: =ImagePosition.Stretch
+        Width: =422
+        X: =100
         Y: =42
         ZIndex: =2
+
+    bienvenida As htmlViewer:
+        Height: =80
+        HtmlText: |-
+            ="<div 
+                style=""
+                    
+                    //width: 300px;
+                    //height: 30px;
+                    //left: 741px;
+                    //top: 55px;
+            
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 60px;
+                    //line-height: 64px;
+                    text-align: right;
+                    //letter-spacing: 0.2px; 
+            
+                    color:#FFFFFF; 
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
+                "">
+                Bienvenido
+            </div>"
+        Width: =328
+        X: =840
+        Y: =51
+        ZIndex: =4
+
+    MensajeBienvenida As htmlViewer:
+        Height: =121
+        HtmlText: |-
+            ="<div 
+                style=""
+                    
+                    width: 463px;
+                    //height: 121px;
+                    left: 652px;
+                    top: 110px;
+            
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    //line-height: 64px;
+                    text-align: center;
+                    //letter-spacing: 0.2px; 
+            
+                    color:#FFFFFF; 
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
+                "">
+                Estás ingresando a la captura de tus
+            </div>"
+        Width: =463
+        X: =790
+        Y: =131
+        ZIndex: =5
 

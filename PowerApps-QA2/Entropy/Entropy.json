@@ -3,7 +3,8 @@
     "Admin": 9,
     "Component1": 6,
     "Header": 7,
-    "Menu": 8
+    "Menu": 8,
+    "Menu_1": 8
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -306,7 +307,7 @@
     "Mensaje Admin": 255,
     "Mensaje_Permisos": 257,
     "Menu": 8,
-    "Menu_1": 76,
+    "Menu_1": 446,
     "Menu_2": 420,
     "Menu_3": 96,
     "Menu_4": 21,
@@ -453,7 +454,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/30/2022 01:05:42",
+  "HeaderLastSavedDateTimeUTC": "12/30/2022 01:12:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "30971f61-f7b0-4fd0-969c-6f44d693efcf": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
@@ -911,7 +912,7 @@
     "Mensaje Admin": 420,
     "Mensaje_Permisos": 421,
     "Menu": 6,
-    "Menu_1": 55,
+    "Menu_1": 6,
     "Menu_2": 231,
     "Menu_3": 261,
     "Menu_4": 69,
@@ -1100,7 +1101,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 3.9935065,
     "ControlCount": {
-      "02f390211a9948f1bd262c9df508cd24": 6,
+      "02f390211a9948f1bd262c9df508cd24": 7,
       "1ad60f7079e34193a9c3a18cb59ba034": 2,
       "506fd33b098f40f79398950882792782": 6,
       "a6c673aa15834ec999ce5618f106cb55": 1,

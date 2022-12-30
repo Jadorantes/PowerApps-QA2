@@ -1594,7 +1594,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EnvioCorreoDatos",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10716,7 +10716,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Menu_1",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10737,7 +10737,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -10752,7 +10752,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -14393,7 +14393,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ValidacionUsuarioActivo",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1,9 +1,5 @@
 scr_home As screen:
 
-    Menu_1 As Menu:
-        Width: =Menu_1.MenuWidth
-        Y: =82
-
     "GalleryObjetivosDireccion As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =578
         Items: =Filter(Objetivo,NivelObjetivo="Direccion")
@@ -13,7 +9,7 @@ scr_home As screen:
         Width: =620
         X: =85
         Y: =165
-        ZIndex: =2
+        ZIndex: =1
 
         Title6 As label:
             Align: =Align.Justify
@@ -65,6 +61,11 @@ scr_home As screen:
         Width: =545
         X: =122
         Y: =105
+        ZIndex: =2
+
+    Menu_1 As Menu:
+        Width: =Menu_1.MenuWidth
+        Y: =82
         ZIndex: =3
 
     Header_1 As Header:

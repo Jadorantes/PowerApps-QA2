@@ -158,6 +158,7 @@ scr_objetivo As screen:
                     =Set(varIDObjetivoEmple,ThisItem.ID);
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
+                Tooltip: ="Agregar Resultado"
                 Width: =55
                 X: =1185
                 Y: =16
@@ -1298,7 +1299,7 @@ scr_objetivo As screen:
                 ZIndex: =11
 
             Image9 As image:
-                Height: =65
+                Height: =47
                 Image: =Agregar
                 OnSelect: |-
                     =Set(
@@ -1308,6 +1309,8 @@ scr_objetivo As screen:
                             1
                         )
                     );
+                    If(IsBlank(inpResultadoClaveOG_1)
+                        ,Notify("Este campo no puede ir vacio"),
                     Collect(
                        RegistroResultadosClaveOG,
                        {
@@ -1315,10 +1318,10 @@ scr_objetivo As screen:
                            Co_ResultadoClaveOG:"",
                            Co_PeriodoTiempoOG:""
                         }
-                    );
-                Width: =72
-                X: =1184
-                Y: =232
+                    ));
+                Width: =64
+                X: =1212
+                Y: =237
                 ZIndex: =12
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
@@ -1410,6 +1413,7 @@ scr_objetivo As screen:
                     =Set(varIDRCEmple,ThisItem.ID);
                     Set(varctnResultadosCDetalle,true);
                     Set(varlbtTituloObjetivo,"Detalle Tareas");
+                Tooltip: ="Ver detalle"
                 Width: =52
                 X: =1082
                 Y: =22
@@ -1422,6 +1426,7 @@ scr_objetivo As screen:
                     =Set(varIDRCEmple,ThisItem.ID);
                     Set(varctnTareaRC,true);
                     Set(varlbtTituloObjetivo,"Registro Tareas");
+                Tooltip: ="Registrar tarea"
                 Width: =52
                 X: =1185
                 Y: =22

@@ -678,6 +678,7 @@ scr_home As screen:
         Icon6 As icon.CancelBadge:
             Color: =RGBA(0, 154, 62, 1)
             Icon: =Icon.CancelBadge
+            OnSelect: =Set(popUpUsr,"true")
             X: =1055
             Y: =47
             ZIndex: =15

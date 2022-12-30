@@ -269,9 +269,8 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
                 Text: |-
-                    ="Departamento: "
+                    ="Área: "
                 VerticalAlign: =VerticalAlign.Top
                 Width: =174
                 X: =73

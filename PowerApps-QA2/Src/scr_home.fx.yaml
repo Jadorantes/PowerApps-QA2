@@ -5,14 +5,15 @@ scr_home As screen:
         Items: =Filter(Objetivo,NivelObjetivo="Direccion")
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =Min(104, Self.Height - 60)
-        Width: =545
-        X: =70
+        TemplateSize: =156
+        Width: =620
+        X: =85
         Y: =165
         ZIndex: =1
 
         Title6 As label:
-            Height: =88
+            Align: =Align.Justify
+            Height: =160
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -20,9 +21,9 @@ scr_home As screen:
             PaddingTop: =0
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =460
+            Width: =562
             X: =32
-            Y: =16
+            Y: =24
             ZIndex: =1
 
         Subtitle5 As label:
@@ -53,12 +54,12 @@ scr_home As screen:
 
     lbTObjetivoDireccion As label:
         Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =60
         Size: =26
         Text: ="Objetivos dirección"
         Width: =545
-        X: =70
+        X: =122
         Y: =105
         ZIndex: =2
 
@@ -72,7 +73,7 @@ scr_home As screen:
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(104, Self.Height - 60)
-        Width: =545
+        Width: =590
         X: =755
         Y: =165
         ZIndex: =4
@@ -119,7 +120,7 @@ scr_home As screen:
 
     lbTObjetivoArea As label:
         Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =60
         Size: =26
         Text: ="Objetivos área"
@@ -717,8 +718,7 @@ scr_home As screen:
             ZIndex: =3
 
     Menu_1 As Menu:
-        Height: =662
-        Width: =70
-        Y: =105
+        Width: =Menu_1.MenuWidth
+        Y: =71
         ZIndex: =9
 

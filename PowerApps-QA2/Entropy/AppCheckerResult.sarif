@@ -942,6 +942,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.ImaOKR.AccessibleLabel"
                 }
               ],
@@ -996,36 +1026,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
         },
         {
           "locations": [

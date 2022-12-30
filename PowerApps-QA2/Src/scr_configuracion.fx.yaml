@@ -120,7 +120,9 @@ scr_configuracion As screen:
                 ZIndex: =2
 
             DdDepartamentoEd As dropdown:
+                ChevronBackground: =RGBA(0, 154, 62, 1)
                 Items: =Distinct(Areas,Direccion)
+                SelectionFill: =RGBA(0, 154, 62, 1)
                 X: =190
                 Y: =102
                 ZIndex: =3
@@ -176,26 +178,6 @@ scr_configuracion As screen:
                     X: =Title1.X
                     Y: =Title1.Y + Title1.Height + 4
                     ZIndex: =3
-
-                NextArrow1 As icon.ChevronRight:
-                    AccessibleLabel: =Self.Tooltip
-                    Height: =48
-                    Icon: =Icon.View
-                    OnSelect: |-
-                        =ViewForm(Form_Empleados);
-                        Set(varctnEmpleadosGeneal,false);
-                        Set(varctnEmpleadosABD,true);
-                        Set(varctnEmpleadosABDGuardar,false);
-                    PaddingBottom: =10
-                    PaddingLeft: =10
-                    PaddingRight: =10
-                    PaddingTop: =10
-                    TabIndex: =0
-                    Tooltip: ="Ver los detalles del elemento"
-                    Width: =48
-                    X: =1219
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =4
 
                 Separator1 As rectangle:
                     Height: =1
@@ -254,7 +236,21 @@ scr_configuracion As screen:
                     Y: =20
                     ZIndex: =8
 
+                Image13 As image:
+                    Height: =48
+                    Image: =Ver
+                    OnSelect: |-
+                        =ViewForm(Form_Empleados);
+                        Set(varctnEmpleadosGeneal,false);
+                        Set(varctnEmpleadosABD,true);
+                        Set(varctnEmpleadosABDGuardar,false);
+                    Width: =48
+                    X: =1202
+                    Y: =15
+                    ZIndex: =9
+
             CargaMasiva As button:
+                Fill: =RGBA(0, 154, 62, 1)
                 OnSelect: =Set(varPopUpCM,true);
                 Text: ="Carga masiva"
                 X: =861
@@ -262,6 +258,7 @@ scr_configuracion As screen:
                 ZIndex: =5
 
             AgregarUsuario As button:
+                Fill: =RGBA(0, 154, 62, 1)
                 OnSelect: |-
                     =NewForm(Form_Empleados);
                     Set(varctnEmpleadosGeneal,false);
@@ -282,7 +279,10 @@ scr_configuracion As screen:
                 ZIndex: =7
 
             DdDepartamentoEd_1 As dropdown:
+                ChevronBackground: =RGBA(0, 154, 62, 1)
+                Fill: =RGBA(0, 0, 0, 0)
                 Items: =Filter(Areas,Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                SelectionFill: =RGBA(0, 154, 62, 1)
                 X: =699
                 Y: =98
                 ZIndex: =8
@@ -1132,6 +1132,7 @@ scr_configuracion As screen:
             ZIndex: =1
 
             TiPerfil As text:
+                BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =
                 HintText: ="Buscar Perfil"
                 X: =40
@@ -1208,6 +1209,7 @@ scr_configuracion As screen:
                     ZIndex: =4
 
             AgregarPerfil As button:
+                Fill: =RGBA(0, 154, 62, 1)
                 OnSelect: |-
                     =NewForm(Form_Perfil);
                     Set(varctnPerfilGeneal,false);
@@ -1342,6 +1344,7 @@ scr_configuracion As screen:
             ZIndex: =1
 
             TiEstatus As text:
+                BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =
                 HintText: ="Buscar Estatus"
                 X: =40
@@ -1432,6 +1435,7 @@ scr_configuracion As screen:
                     ZIndex: =5
 
             AgregarEstatus As button:
+                Fill: =RGBA(0, 154, 62, 1)
                 OnSelect: |-
                     =NewForm(Form_Estatus);
                     Set(varctnEstatusGeneal,false);
@@ -1439,7 +1443,7 @@ scr_configuracion As screen:
                     Reset(TiEstatus);
                 Text: ="Agregar estatus"
                 Width: =250
-                X: =1059
+                X: =986
                 Y: =40
                 ZIndex: =6
 
@@ -1740,6 +1744,7 @@ scr_configuracion As screen:
                     ZIndex: =6
 
             AgregarDepartamento As button:
+                Fill: =RGBA(0, 154, 62, 1)
                 OnSelect: |-
                     =NewForm(Form_Departamento);
                     Set(varctnDepartamentoGeneal,false);

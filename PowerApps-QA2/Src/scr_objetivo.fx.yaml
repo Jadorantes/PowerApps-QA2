@@ -1760,13 +1760,8 @@ scr_objetivo As screen:
             Height: =42
             Image: =Agregar
             OnSelect: |-
-                =If(IsEmpty(txtTarea),Set(
-                    VarIDTR,
-                    Sum(
-                        VarIDTR,
-                        1
-                    )
-                );
+                =
+                If(IsEmpty(txtTarea),
                 Collect(
                     TareaRC,
                     {
@@ -1779,6 +1774,14 @@ scr_objetivo As screen:
                     }
                     ,Notify("Este campo no puede ir vacio")
                 ));
+                
+                Set(
+                    VarIDTR,
+                    Sum(
+                        VarIDTR,
+                        1
+                    )
+                );
             Width: =51
             X: =1218
             Y: =79

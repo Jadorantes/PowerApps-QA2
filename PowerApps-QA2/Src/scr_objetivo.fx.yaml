@@ -151,13 +151,13 @@ scr_objetivo As screen:
                 ZIndex: =13
 
             Image12 As image:
-                Height: =51
+                Height: =36
                 Image: =Agregar
                 OnSelect: |-
                     =Set(varIDObjetivoEmple,ThisItem.ID);
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
-                Width: =70
+                Width: =55
                 X: =1195
                 Y: =31
                 ZIndex: =14
@@ -170,7 +170,7 @@ scr_objetivo As screen:
             ZIndex: =2
 
         ImaOKR As image:
-            Height: =48
+            Height: =65
             Image: ='objetivo-ico'
             OnSelect: |
                 =Set(varctnObjetivoEmpleado,false);
@@ -178,9 +178,8 @@ scr_objetivo As screen:
                 Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                 Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
             Tooltip: ="Agregar Objetivo"
-            Width: =48
-            X: =1212
-            Y: =14
+            Width: =57
+            X: =1195
             ZIndex: =3
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
@@ -1321,13 +1320,13 @@ scr_objetivo As screen:
         ZIndex: =5
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =545
+            Height: =485
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =Min(104, Self.Height - 60)
             Width: =1290
-            Y: =80
+            Y: =140
             ZIndex: =1
 
             Title12 As label:
@@ -1421,6 +1420,8 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            FontWeight: =FontWeight.Semibold
+            Size: =20
             Text: ="ID_Objetivo"
             Width: =190
             X: =6
@@ -1430,7 +1431,9 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            Text: ="Objetivo"
+            FontWeight: =FontWeight.Bold
+            Size: =24
+            Text: ="OK"
             Width: =1100
             X: =196
             ZIndex: =3
@@ -1439,6 +1442,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Height: =100
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,ID)
             Width: =190
             X: =6
@@ -1449,6 +1453,8 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Height: =100
+            Size: =24
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,Title)
             Width: =1100
             X: =196

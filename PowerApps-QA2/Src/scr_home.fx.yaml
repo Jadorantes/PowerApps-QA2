@@ -568,7 +568,7 @@ scr_home As screen:
             Width: =572
             X: =438
             Y: =258
-            ZIndex: =4
+            ZIndex: =2
 
         listArea As dropdown:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -580,7 +580,7 @@ scr_home As screen:
             Width: =572
             X: =438
             Y: =169
-            ZIndex: =6
+            ZIndex: =3
 
         Button2 As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -599,7 +599,7 @@ scr_home As screen:
             Width: =320
             X: =523
             Y: =575
-            ZIndex: =7
+            ZIndex: =4
 
         txtJefeDirecto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -608,7 +608,7 @@ scr_home As screen:
             Width: =572
             X: =438
             Y: =409
-            ZIndex: =8
+            ZIndex: =5
 
         Label3 As label:
             FontWeight: =FontWeight.Semibold
@@ -617,7 +617,7 @@ scr_home As screen:
             Visible: =varValUsr
             X: =182
             Y: =59
-            ZIndex: =9
+            ZIndex: =6
 
         Label3_1 As label:
             FontWeight: =FontWeight.Semibold
@@ -626,7 +626,7 @@ scr_home As screen:
             Visible: =varValUsr
             X: =182
             Y: =284
-            ZIndex: =10
+            ZIndex: =7
 
         Label3_2 As label:
             FontWeight: =FontWeight.Semibold
@@ -637,7 +637,7 @@ scr_home As screen:
             Width: =200
             X: =182
             Y: =413
-            ZIndex: =11
+            ZIndex: =8
 
         Label3_3 As label:
             DisabledColor: =RGBA(255, 255, 255, 1)
@@ -648,14 +648,24 @@ scr_home As screen:
             Visible: =varValUsr
             X: =182
             Y: =178
-            ZIndex: =12
+            ZIndex: =9
+
+        Icon6 As icon.CancelBadge:
+            Color: =RGBA(0, 154, 62, 1)
+            Icon: =Icon.CancelBadge
+            OnSelect: |
+                =Set(popUpUsr,"true");
+                Set(varValUsr,false);
+            X: =1055
+            Y: =47
+            ZIndex: =10
 
         ctnNotCorreo As groupContainer.manualLayoutContainer:
             Height: =702
-            Visible: =false//varPopUpMail
+            Visible: =varPopUpMail
             Width: =1366
             Y: =6
-            ZIndex: =14
+            ZIndex: =11
 
             Button5 As button:
                 Fill: =RGBA(0, 154, 62, 1)
@@ -673,16 +683,6 @@ scr_home As screen:
                 X: =606
                 Y: =352
                 ZIndex: =2
-
-        Icon6 As icon.CancelBadge:
-            Color: =RGBA(0, 154, 62, 1)
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Set(popUpUsr,"true");
-                Set(varValUsr,false);
-            X: =1055
-            Y: =47
-            ZIndex: =15
 
     Container2 As groupContainer.manualLayoutContainer:
         Height: =60

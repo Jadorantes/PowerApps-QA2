@@ -4032,36 +4032,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varPopUpMail"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varPopUpMail",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varPopUpMail",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.book-icon"
                 }
               ],

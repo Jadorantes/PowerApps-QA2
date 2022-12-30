@@ -788,6 +788,7 @@ scr_objetivo As screen:
             ZIndex: =4
 
         Button1 As button:
+            Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |-
                 =Set(varctnObjetivoEmpleado,true);
                 Set(varctnResultadoClaveEmpleado2,false);
@@ -1311,8 +1312,8 @@ scr_objetivo As screen:
                         }
                     );
                 Width: =72
-                X: =1212
-                Y: =234
+                X: =1184
+                Y: =232
                 ZIndex: =12
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:

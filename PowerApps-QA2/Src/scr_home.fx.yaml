@@ -719,6 +719,6 @@ scr_home As screen:
     Menu_1 As Menu:
         Height: =662
         Width: =70
-        Y: =105
+        Y: =81
         ZIndex: =9
 

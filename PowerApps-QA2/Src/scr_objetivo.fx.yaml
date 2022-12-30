@@ -30,7 +30,7 @@ scr_objetivo As screen:
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =32
+                X: =57
                 Y: =16
                 ZIndex: =1
 
@@ -46,7 +46,7 @@ scr_objetivo As screen:
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =32
+                X: =57
                 Y: =47
                 ZIndex: =2
 
@@ -99,7 +99,7 @@ scr_objetivo As screen:
                 Text: ="Estatus aprobación"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
-                X: =550
+                X: =623
                 Y: =16
                 ZIndex: =10
 
@@ -115,7 +115,7 @@ scr_objetivo As screen:
                 Text: =ThisItem.EstatusAprobacion
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
-                X: =550
+                X: =621
                 Y: =47
                 ZIndex: =11
 
@@ -130,7 +130,7 @@ scr_objetivo As screen:
                 Text: ="Estatus Ejecución"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
-                X: =775
+                X: =922
                 Y: =16
                 ZIndex: =12
 
@@ -146,7 +146,7 @@ scr_objetivo As screen:
                 Text: =ThisItem.EstatusEjecucion
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
-                X: =775
+                X: =922
                 Y: =47
                 ZIndex: =13
 
@@ -1456,6 +1456,7 @@ scr_objetivo As screen:
             ZIndex: =5
 
         btnCancelarOG_2 As button:
+            Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |-
                 =Set(varctnObjetivoEmpleado,true);
                 Set(varctnDetalleObjetivos,false);
@@ -1484,6 +1485,7 @@ scr_objetivo As screen:
             ZIndex: =1
 
         "Gallery_Tareas As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            BorderColor: =RGBA(0, 154, 62, 1)
             Height: =535
             Items: =TareaRC
             Layout: =Layout.Vertical
@@ -1673,6 +1675,7 @@ scr_objetivo As screen:
             ZIndex: =4
 
         btnCancelarOG_3 As button:
+            Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |-
                 =Set(varctnDetalleObjetivos,true);
                 Set(varctnTareaRC,false);
@@ -1683,6 +1686,7 @@ scr_objetivo As screen:
             ZIndex: =5
 
         btnGuardarOG_2 As button:
+            Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |-
                 =ForAll(
                     Gallery_Tareas.AllItems,

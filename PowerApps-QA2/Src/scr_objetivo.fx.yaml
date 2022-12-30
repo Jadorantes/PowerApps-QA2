@@ -1936,6 +1936,7 @@ scr_objetivo As screen:
             ZIndex: =6
 
         btnCancelarOG_4 As button:
+            Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |-
                 =Set(varctnDetalleObjetivos,true);
                 Set(varctnResultadosCDetalle,false);

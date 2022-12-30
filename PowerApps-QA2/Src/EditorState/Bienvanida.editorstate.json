@@ -119,7 +119,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "bienvenida",
-      "ParentIndex": 10,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -270,7 +270,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Fondo",
-      "ParentIndex": 8,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -472,7 +472,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image10",
-      "ParentIndex": 9,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2519,7 +2519,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "MensajeBienvenida",
-      "ParentIndex": 11,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1682,33 +1682,6 @@ scr_objetivo As screen:
             Y: =655
             ZIndex: =5
 
-        Icon1 As icon.Add:
-            Height: =48
-            Icon: =Icon.Add
-            OnSelect: |-
-                =Set(
-                    VarIDTR,
-                    Sum(
-                        VarIDTR,
-                        1
-                    )
-                );
-                Collect(
-                    TareaRC,
-                    {
-                        Co_IDTarea:VarIDTR,
-                        Co_TitleTarea:"",
-                        CO_PeriodoTiempoTarea:"",
-                        Co_FITarea:"",
-                        Co_FFTarea:"",
-                        Co_IDResultadoClaveTarea:""
-                    }
-                );
-            Width: =48
-            X: =1219
-            Y: =102
-            ZIndex: =6
-
         btnGuardarOG_2 As button:
             OnSelect: |-
                 =ForAll(
@@ -1760,7 +1733,7 @@ scr_objetivo As screen:
             ZIndex: =7
 
         Image18 As image:
-            Height: =55
+            Height: =42
             Image: =Agregar
             OnSelect: |-
                 =Set(
@@ -1781,9 +1754,9 @@ scr_objetivo As screen:
                         Co_IDResultadoClaveTarea:""
                     }
                 );
-            Width: =71
-            X: =1207
-            Y: =43
+            Width: =51
+            X: =1218
+            Y: =125
             ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:

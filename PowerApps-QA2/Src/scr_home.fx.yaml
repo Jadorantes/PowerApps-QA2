@@ -453,14 +453,14 @@ scr_home As screen:
             ZIndex: =4
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-            Height: =356
+            Height: =326
             Items: =MyPeerList
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =60
             Width: =766
             X: =600
-            Y: =252
+            Y: =280
             ZIndex: =5
 
             Image8 As image:

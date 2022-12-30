@@ -1759,8 +1759,17 @@ scr_objetivo As screen:
         Image18 As image:
             Height: =42
             Image: =Agregar
-            OnSelect: |-
-                =If(!IsBlank(txtTarea),
+            OnSelect: |+
+                =Set(
+                    VarIDTR,
+                    Sum(
+                        VarIDTR,
+                        1
+                    )
+                );
+                
+                If(IsBlank(txtTarea)
+                    ,Notify("Este campo no puede ir vacio"),
                 Collect(
                     TareaRC,
                     {
@@ -1771,16 +1780,8 @@ scr_objetivo As screen:
                         Co_FFTarea:"",
                         Co_IDResultadoClaveTarea:""
                     }
-                    ,Notify("Este campo no puede ir vacio")
                 ));
                 
-                Set(
-                    VarIDTR,
-                    Sum(
-                        VarIDTR,
-                        1
-                    )
-                );
             Width: =51
             X: =1218
             Y: =79

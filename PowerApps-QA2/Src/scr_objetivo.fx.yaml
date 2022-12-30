@@ -771,6 +771,18 @@ scr_objetivo As screen:
                 Y: =56
                 ZIndex: =8
 
+            Image16 As image:
+                Height: =65
+                Image: =Agregar
+                OnSelect: |-
+                    =Set(varIDRCOG,ThisItem.ID);
+                    Set(varctnRCOO,true);
+                    Set(varlbtTituloObjetivo,"Registro de Objetivos")
+                Width: =87
+                X: =1110
+                Y: =16
+                ZIndex: =9
+
         lbNombre_1 As label:
             Text: =User().FullName
             Width: =550
@@ -1365,25 +1377,6 @@ scr_objetivo As screen:
                 Y: =Title12.Y + Title12.Height + 4
                 ZIndex: =2
 
-            NextArrow11 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =Set(varIDRCEmple,ThisItem.ID);
-                    Set(varctnTareaRC,true);
-                    Set(varlbtTituloObjetivo,"Registro Tareas");
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="Ver los detalles del elemento"
-                Width: =60
-                X: =1210
-                Y: =22
-                ZIndex: =3
-
             Separator12 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
@@ -1419,24 +1412,29 @@ scr_objetivo As screen:
                 Y: =50
                 ZIndex: =6
 
-            NextArrow11_2 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.View
+            Image15 As image:
+                Height: =66
+                Image: =Ver
                 OnSelect: |-
                     =Set(varIDRCEmple,ThisItem.ID);
                     Set(varctnResultadosCDetalle,true);
                     Set(varlbtTituloObjetivo,"Detalle Tareas");
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="Ver los detalles del elemento"
-                Width: =60
-                X: =1098
+                Width: =52
+                X: =1082
                 Y: =22
-                ZIndex: =8
+                ZIndex: =9
+
+            Image15_1 As image:
+                Height: =66
+                Image: =Agregar
+                OnSelect: |-
+                    =Set(varIDRCEmple,ThisItem.ID);
+                    Set(varctnTareaRC,true);
+                    Set(varlbtTituloObjetivo,"Registro Tareas");
+                Width: =52
+                X: =1185
+                Y: =22
+                ZIndex: =10
 
         lblOGRC00_2 As label:
             Align: =Align.Center

@@ -590,7 +590,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Admin_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3047,7 +3047,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnDepartamentos",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3340,7 +3340,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnEmpleados",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3640,7 +3640,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnEstatusAd",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4968,7 +4968,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnPerfiles",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25736,7 +25736,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Menu_3",
-      "ParentIndex": 1,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1,5 +1,9 @@
 scr_home As screen:
 
+    Menu_1 As Menu:
+        Width: =Menu_1.MenuWidth
+        Y: =71
+
     "GalleryObjetivosDireccion As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =578
         Items: =Filter(Objetivo,NivelObjetivo="Direccion")
@@ -9,7 +13,7 @@ scr_home As screen:
         Width: =620
         X: =85
         Y: =165
-        ZIndex: =1
+        ZIndex: =2
 
         Title6 As label:
             Align: =Align.Justify
@@ -61,11 +65,11 @@ scr_home As screen:
         Width: =545
         X: =122
         Y: =105
-        ZIndex: =2
+        ZIndex: =3
 
     Header_1 As Header:
         Height: =105
-        ZIndex: =3
+        ZIndex: =4
 
     "GalleryObjetivosArea As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =578
@@ -76,7 +80,7 @@ scr_home As screen:
         Width: =590
         X: =755
         Y: =165
-        ZIndex: =4
+        ZIndex: =5
 
         Title6_1 As label:
             Height: =36
@@ -127,7 +131,7 @@ scr_home As screen:
         Width: =545
         X: =755
         Y: =105
-        ZIndex: =5
+        ZIndex: =6
 
     ValidacionUsuarioActivo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -135,7 +139,7 @@ scr_home As screen:
         Visible: =popUpUsr
         Width: =1366
         Y: =60
-        ZIndex: =6
+        ZIndex: =7
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
             Height: =560
@@ -548,7 +552,7 @@ scr_home As screen:
             =varValUsr
         Width: =1366
         Y: =60
-        ZIndex: =7
+        ZIndex: =8
 
         txtNombreUsr As text:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -686,7 +690,7 @@ scr_home As screen:
         Height: =60
         Width: =492
         X: =874
-        ZIndex: =8
+        ZIndex: =9
 
         Label4 As label:
             Align: =Align.Right
@@ -716,9 +720,4 @@ scr_home As screen:
             X: =1
             Y: =37
             ZIndex: =3
-
-    Menu_1 As Menu:
-        Width: =Menu_1.MenuWidth
-        Y: =71
-        ZIndex: =9
 

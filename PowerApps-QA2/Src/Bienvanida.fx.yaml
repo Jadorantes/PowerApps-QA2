@@ -78,8 +78,8 @@ Bienvanida As screen:
 
     Label2 As label:
         Text: ="Texto"
-        X: =522
-        Y: =364
+        X: =372
+        Y: =714
         ZIndex: =6
 
     BarraProgreso As group:

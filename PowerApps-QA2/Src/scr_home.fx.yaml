@@ -651,18 +651,9 @@ scr_home As screen:
             Y: =178
             ZIndex: =12
 
-        Icon2 As icon.ArrowLeft:
-            Color: =RGBA(255, 255, 255, 1)
-            Icon: =Icon.CancelBadge
-            OnSelect: =Set(varValUsr,true)
-            Visible: =varValUsr
-            X: =1080
-            Y: =47
-            ZIndex: =13
-
         ctnNotCorreo As groupContainer.manualLayoutContainer:
             Height: =702
-            Visible: =varPopUpMail
+            Visible: =false//varPopUpMail
             Width: =1366
             Y: =6
             ZIndex: =14
@@ -683,6 +674,13 @@ scr_home As screen:
                 X: =606
                 Y: =352
                 ZIndex: =2
+
+        Icon6 As icon.CancelBadge:
+            Color: =RGBA(0, 154, 62, 1)
+            Icon: =Icon.CancelBadge
+            X: =1055
+            Y: =47
+            ZIndex: =15
 
     Container2 As groupContainer.manualLayoutContainer:
         Height: =60

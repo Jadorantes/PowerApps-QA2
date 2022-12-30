@@ -65,7 +65,7 @@ scr_configuracion As screen:
             Set(varctnDepartamentoGeneal,true);
             Set(varctnDepartamentoABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
-        Text: ="Departamentos"
+        Text: ="Áreas"
         Width: =165
         X: =1143
         Y: =60

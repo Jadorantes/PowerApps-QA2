@@ -50,25 +50,6 @@ scr_objetivo As screen:
                 Y: =47
                 ZIndex: =2
 
-            NextArrow7 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =Set(varIDObjetivoEmple,ThisItem.ID);
-                    Set(varctnDetalleObjetivos,true);
-                    Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="Ver los detalles del elemento"
-                Width: =60
-                X: =Parent.TemplateWidth - Self.Width - 5
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =3
-
             Separator7 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
@@ -168,6 +149,18 @@ scr_objetivo As screen:
                 X: =775
                 Y: =47
                 ZIndex: =13
+
+            Image12 As image:
+                Height: =51
+                Image: =Agregar
+                OnSelect: |-
+                    =Set(varIDObjetivoEmple,ThisItem.ID);
+                    Set(varctnDetalleObjetivos,true);
+                    Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
+                Width: =70
+                X: =1195
+                Y: =31
+                ZIndex: =14
 
         TxBuscadorObje As text:
             Default: =

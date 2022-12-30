@@ -76,7 +76,7 @@ scr_home As screen:
         Items: =Filter(Objetivo,NivelObjetivo=valUsrRespDir)
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =Min(104, Self.Height - 60)
+        TemplateSize: =154
         Width: =590
         X: =755
         Y: =165

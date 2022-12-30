@@ -159,8 +159,8 @@ scr_objetivo As screen:
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
                 Width: =55
-                X: =1195
-                Y: =31
+                X: =1185
+                Y: =16
                 ZIndex: =14
 
         TxBuscadorObje As text:
@@ -180,8 +180,8 @@ scr_objetivo As screen:
                 Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
             Tooltip: ="Agregar Objetivo"
             Width: =57
-            X: =1202
-            Y: =9
+            X: =1187
+            Y: =22
             ZIndex: =3
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
@@ -1443,7 +1443,7 @@ scr_objetivo As screen:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             FontWeight: =FontWeight.Bold
-            Size: =24
+            Size: =25
             Text: ="OK"
             Width: =1100
             X: =196
@@ -1496,6 +1496,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Size: =15
             Text: ="ID_ResultadoClave"
             Width: =190
             X: =6
@@ -1666,6 +1667,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Size: =20
             Text: ="Resultado Clave"
             Width: =1100
             X: =196
@@ -1685,6 +1687,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Size: =20
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
             Width: =1100
             X: =196
@@ -1757,7 +1760,7 @@ scr_objetivo As screen:
             Height: =42
             Image: =Agregar
             OnSelect: |-
-                =Set(
+                =If(IsEmpty(txtTarea),Set(
                     VarIDTR,
                     Sum(
                         VarIDTR,
@@ -1774,7 +1777,8 @@ scr_objetivo As screen:
                         Co_FFTarea:"",
                         Co_IDResultadoClaveTarea:""
                     }
-                );
+                    ,Notify("Este campo no puede ir vacio")
+                ));
             Width: =51
             X: =1218
             Y: =79

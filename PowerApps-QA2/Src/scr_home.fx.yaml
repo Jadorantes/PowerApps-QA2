@@ -320,7 +320,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: ="Mi información General"
+                Text: ="Tu información General"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =60
@@ -334,7 +334,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: ="Mi Equipo"
+                Text: ="Tu equipo"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =598
@@ -405,7 +405,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =17
                 Text: =ThisItem.Puesto
                 VerticalAlign: =VerticalAlign.Top
                 Width: =351
@@ -414,10 +414,11 @@ scr_home As screen:
                 ZIndex: =18
 
         TituloValidacion As label:
+            Align: =Align.Center
             FontWeight: =FontWeight.Semibold
             Height: =43
             Size: =28
-            Text: ="Validación de mis datos de usuario"
+            Text: ="Valida tus datos de usuario"
             Width: =717
             X: =341
             Y: =5

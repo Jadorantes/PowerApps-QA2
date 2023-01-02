@@ -25909,7 +25909,14 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Tooltip",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Tooltip",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "AccessibleLabel",
         "PaddingLeft",
         "PaddingRight",

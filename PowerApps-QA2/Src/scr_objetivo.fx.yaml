@@ -1205,7 +1205,7 @@ scr_objetivo As screen:
                     PaddingRight: =10
                     PaddingTop: =10
                     TabIndex: =0
-                    Tooltip: ="Ver los detalles del elemento"
+                    Tooltip: ="Eliminar"
                     Width: =60
                     X: =1127
                     Y: =30

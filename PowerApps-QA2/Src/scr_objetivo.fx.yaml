@@ -1520,7 +1520,7 @@ scr_objetivo As screen:
             TemplatePadding: =0
             TemplateSize: =337
             Width: =1212
-            X: =6
+            X: =21
             Y: =99
             ZIndex: =1
 
@@ -1720,49 +1720,63 @@ scr_objetivo As screen:
 
         btnGuardarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
-            OnSelect: |-
-                =ForAll(
-                    Gallery_Tareas.AllItems,
-                    Patch(
+            OnSelect: |
+                =If(
+                    IsEmpty(Gallery_Tareas.AllItems),
+                    Notify("Necesitas llenar todos los valores"),
+                    ForAll(
+                        Gallery_Tareas.AllItems,
+                        Patch(
+                            TareaRC,
+                            {Co_IDTarea: Value(IlblIDTarea.Text)},
+                            {Co_TitleTarea: txtTarea.Text},
+                            {CO_PeriodoTiempoTarea: txtPTTarea.Text},
+                            {Co_FITarea: DtpFITarea.SelectedDate},
+                            {Co_FFTarea: DtpFFTarea.SelectedDate},
+                            {Co_IDResultadoClaveTarea: lblOGRC00_5.Text}
+                        )
+                    );
+                    ForAll(
                         TareaRC,
-                        {Co_IDTarea:Value(IlblIDTarea.Text)},
-                        {Co_TitleTarea:txtTarea.Text},
-                        {CO_PeriodoTiempoTarea:txtPTTarea.Text},
-                        {Co_FITarea:DtpFITarea.SelectedDate},
-                        {Co_FFTarea:DtpFFTarea.SelectedDate},
-                        {Co_IDResultadoClaveTarea:lblOGRC00_5.Text}
-                    )
-                );
-                ForAll(
-                    TareaRC,
-                    Patch(
-                        Tarea,
-                        Defaults(Tarea),{
-                            Title:Co_TitleTarea,
-                            PeriodoTiempoTarea:CO_PeriodoTiempoTarea,
-                            Fecha_Inicio:DateValue(Co_FITarea),
-                            Fecha_Fin:DateValue(Co_FFTarea),
-                            ID_ResultadoClave:Co_IDResultadoClaveTarea
+                        Patch(
+                            Tarea,
+                            Defaults(Tarea),
+                            {
+                                Title: Co_TitleTarea,
+                                PeriodoTiempoTarea: CO_PeriodoTiempoTarea,
+                                Fecha_Inicio: DateValue(Co_FITarea),
+                                Fecha_Fin: DateValue(Co_FFTarea),
+                                ID_ResultadoClave: Co_IDResultadoClaveTarea
+                            }
+                        )
+                    );
+                    Set(
+                        varctnDetalleObjetivos,
+                        true
+                    );
+                    Set(
+                        varctnTareaRC,
+                        false
+                    );
+                    Set(
+                        varlbtTituloObjetivo,
+                        "Detalle Resultado Clave"
+                    );
+                    Set(
+                        VarIDTR,
+                        1
+                    );
+                    ClearCollect(
+                        TareaRC,
+                        {
+                            Co_IDTarea: VarIDTR,
+                            Co_TitleTarea: "",
+                            CO_PeriodoTiempoTarea: "",
+                            Co_FITarea: "",
+                            Co_FFTarea: "",
+                            Co_IDResultadoClaveTarea: ""
                         }
                     )
-                );
-                Set(varctnDetalleObjetivos,true);
-                Set(varctnTareaRC,false);
-                Set(varlbtTituloObjetivo,"Detalle Resultado Clave");
-                Set(
-                    VarIDTR,
-                    1
-                );
-                ClearCollect(
-                    TareaRC,
-                    {
-                        Co_IDTarea:VarIDTR,
-                        Co_TitleTarea:"",
-                        CO_PeriodoTiempoTarea:"",
-                        Co_FITarea:"",
-                        Co_FFTarea:"",
-                        Co_IDResultadoClaveTarea:""
-                    }
                 );
             Text: ="Guardar"
             X: =449

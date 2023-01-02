@@ -373,7 +373,7 @@ scr_home As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =18
-                Text: ="Mi equipo de trabajo"
+                Text: ="Tu equipo de trabajo"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =600
@@ -425,6 +425,7 @@ scr_home As screen:
             ZIndex: =2
 
         Correcto As button:
+            BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |
                 =ForAll(RegistrosEmpleados,
@@ -446,6 +447,7 @@ scr_home As screen:
 
         Incorrecto As button:
             Fill: =RGBA(0, 154, 62, 1)
+            HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: =Set(varValUsr,true)
             Text: ="Datos Incorrectos"
             Width: =200
@@ -560,6 +562,7 @@ scr_home As screen:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Nombre)
             Height: =92
+            HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
             Y: =46
@@ -569,6 +572,7 @@ scr_home As screen:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Puesto)
             Height: =92
+            HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
             Y: =258
@@ -577,9 +581,11 @@ scr_home As screen:
         listArea As dropdown:
             BorderColor: =RGBA(0, 154, 62, 1)
             ChevronBackground: =RGBA(0, 154, 62, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Default: =LookUp(Empleado,Nombre=User().FullName,Departamento)
             Height: =62
             Items: =Distinct(Areas,Departamento)
+            PressedFill: =RGBA(0, 154, 62, 1)
             SelectionFill: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
@@ -609,6 +615,7 @@ scr_home As screen:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Responsable.DisplayName)
             Height: =84
+            HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
             Y: =409

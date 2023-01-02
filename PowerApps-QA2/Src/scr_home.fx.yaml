@@ -427,6 +427,7 @@ scr_home As screen:
         Correcto As button:
             BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Fill: =RGBA(0, 154, 62, 1)
+            HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =ForAll(RegistrosEmpleados,
                     Patch(Empleado,
@@ -595,6 +596,7 @@ scr_home As screen:
         Button2 As button:
             Fill: =RGBA(0, 154, 62, 1)
             Height: =62
+            HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =Office365Outlook.SendEmailV2(Concatenate("solicitudessp@frd.org.mx;",User().Email),"Actualización de los datos del usuario del OKR",Concatenate("Se requieren correcciones de los datos del usuario ",User().FullName,
                 "</br></br>Nombre ", txtNombreUsr, 

@@ -1721,8 +1721,7 @@ scr_objetivo As screen:
         btnGuardarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
             OnSelect: |
-                =If(
-                    IsEmpty(Gallery_Tareas.AllItems),
+                =If(IsBlank(txtTarea) || IsBlank(DtpFITarea.SelectedDate) || IsBlank(DtpFFTarea.SelectedDate),
                     Notify("Necesitas llenar todos los valores"),
                     ForAll(
                         Gallery_Tareas.AllItems,
@@ -1811,8 +1810,8 @@ scr_objetivo As screen:
                 
                 
             Width: =51
-            X: =1203
-            Y: =99
+            X: =1182
+            Y: =57
             ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:

@@ -864,7 +864,7 @@ scr_objetivo As screen:
             Form_RCOO As form:
                 DataSource: =Objetivo
                 DefaultMode: =FormMode.New
-                Height: =133
+                Height: =227
                 NumberOfColumns: =2
                 OnSuccess: |-
                     =ForAll(
@@ -905,7 +905,7 @@ scr_objetivo As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =221
                     Required: =true
                     Update: =DataCardValue19.Text
                     Width: =645
@@ -928,7 +928,7 @@ scr_objetivo As screen:
                         Default: =Parent.Default
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
-                        Height: =65
+                        Height: =164
                         Mode: =TextMode.MultiLine
                         PaddingLeft: =5
                         RadiusBottomLeft: =0
@@ -1171,13 +1171,13 @@ scr_objetivo As screen:
                         ZIndex: =4
 
             "Gallery_ResultadoClaveOG_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-                Height: =359
+                Height: =293
                 Items: =RegistroResultadosClaveOG
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =Min(104, Self.Height - 60)
+                TemplateSize: =209
                 Width: =1212
-                Y: =208
+                Y: =333
                 ZIndex: =8
 
                 lbTituloRCOG_1 As label:
@@ -1221,6 +1221,7 @@ scr_objetivo As screen:
                 inpResultadoClaveOG_1 As text:
                     BorderColor: =RGBA(0, 154, 62, 1)
                     Default: =ThisItem.Co_ResultadoClaveOG
+                    Height: =140
                     Mode: =TextMode.MultiLine
                     OnSelect: =Select(Parent)
                     Width: =600
@@ -1326,7 +1327,7 @@ scr_objetivo As screen:
                 Tooltip: ="Agregar un resultado"
                 Width: =64
                 X: =1212
-                Y: =237
+                Y: =372
                 ZIndex: =12
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
@@ -1345,7 +1346,7 @@ scr_objetivo As screen:
             TemplatePadding: =0
             TemplateSize: =Min(104, Self.Height - 60)
             Width: =1290
-            Y: =140
+            Y: =220
             ZIndex: =1
 
             Title12 As label:
@@ -1454,7 +1455,7 @@ scr_objetivo As screen:
             BorderThickness: =1
             FontWeight: =FontWeight.Bold
             Size: =25
-            Text: ="OK"
+            Text: ="Detalle OK"
             Width: =1100
             X: =196
             ZIndex: =3
@@ -1463,10 +1464,9 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            Height: =100
+            Height: =142
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,ID)
             Width: =190
-            X: =6
             Y: =40
             ZIndex: =4
 
@@ -1474,7 +1474,7 @@ scr_objetivo As screen:
             Align: =Align.Justify
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            Height: =100
+            Height: =157
             Size: =20
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,Title)
             Width: =1100
@@ -1541,6 +1541,7 @@ scr_objetivo As screen:
 
             NextArrow10 As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(0, 154, 62, 1)
                 Height: =55
                 Icon: =Icon.Trash
                 OnSelect: =Remove(TareaRC,ThisItem)
@@ -1563,6 +1564,7 @@ scr_objetivo As screen:
                 ZIndex: =4
 
             txtTarea As text:
+                BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =ThisItem.Co_TitleTarea
                 Height: =63
                 Mode: =TextMode.MultiLine
@@ -1619,6 +1621,7 @@ scr_objetivo As screen:
                 ZIndex: =8
 
             DtpFFTarea As datepicker:
+                Color: =RGBA(0, 154, 62, 1)
                 DefaultDate: =ThisItem.Co_FITarea
                 Height: =30
                 InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Now(), Self.Format, Self.Language))

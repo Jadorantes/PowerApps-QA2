@@ -1780,8 +1780,8 @@ scr_objetivo As screen:
                         1
                     )
                 );
-                If(IsBlank(txtTarea) || IsEmpty(DtpFITarea) || IsEmpty(DtpFFTarea)
-                    ,Notify("Este campo no puede ir vacio"),
+                If(IsBlank(txtTarea) || IsBlank(DtpFITarea.SelectedDate) || IsBlank(DtpFFTarea.SelectedDate)
+                    ,Notify("Tienes que llenar todos los campos"),
                 Collect(
                     TareaRC,
                     {

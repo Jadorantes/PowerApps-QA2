@@ -11,7 +11,7 @@ App As appinfo:
         Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
         Set(popUpUsr,If(valUsr="Activo","false","true"));
         Set(varUserExist,If(IsEmpty(Filter(Empleado,Nombre_Usuario.DisplayName=User().FullName))="true","false","true"));
-        Set(popValObj,If(IsEmpty(GalleryObjetivoEmp),"true","false"));
+        Set(popValObj,If(IsEmpty(GalleryObjetivoEmp.AllItems)="true","true","false"));
         Set(varPopUpMail,false);
         //Set(popUp;If(popUpUsr="true" && VarpopUpComprobacion="false";"false"));;
         Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));

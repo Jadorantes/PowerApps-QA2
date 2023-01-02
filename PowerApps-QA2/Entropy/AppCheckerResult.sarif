@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 397,
+                  "charOffset": 395,
                   "snippet": {
                     "text": "="
                   }
@@ -65,7 +65,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 478,
+                  "charOffset": 476,
                   "snippet": {
                     "text": "="
                   }
@@ -4223,17 +4223,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.MyUserID"
+                  "fullyQualifiedName": "App.valUsrResp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.MyUserID",
+                  "fullyQualifiedName": "App.valUsrResp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "MyUserID",
+                "member": "valUsrResp",
                 "module": "App",
                 "type": "App"
               }
@@ -4283,17 +4283,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.valUsrResp"
+                  "fullyQualifiedName": "App.MyUserID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.valUsrResp",
+                  "fullyQualifiedName": "App.MyUserID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "valUsrResp",
+                "member": "MyUserID",
                 "module": "App",
                 "type": "App"
               }

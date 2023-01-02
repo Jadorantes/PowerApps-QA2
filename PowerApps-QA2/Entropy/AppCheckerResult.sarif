@@ -55,47 +55,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.OnStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.OnStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 476,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnStart",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Boolean",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.ctnPopUpSinOK.Visible"
                 }
               ],
@@ -4223,17 +4182,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.MyUserID"
+                  "fullyQualifiedName": "App.valUsrResp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.MyUserID",
+                  "fullyQualifiedName": "App.valUsrResp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "MyUserID",
+                "member": "valUsrResp",
                 "module": "App",
                 "type": "App"
               }
@@ -4283,17 +4242,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.valUsrResp"
+                  "fullyQualifiedName": "App.MyUserID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.valUsrResp",
+                  "fullyQualifiedName": "App.MyUserID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "valUsrResp",
+                "member": "MyUserID",
                 "module": "App",
                 "type": "App"
               }

@@ -64,7 +64,12 @@ App As appinfo:
                     Titulo: "Configuraciones",
                     icono: Ajustesn,
                     nav:  scr_configuracion
-                } 
+                },
+                {
+                    Titulo: "Ayuda",
+                    icono: 'qm-ico',
+                    nav:  scr_configuracion
+                }  
             )
         );
         ClearCollect(

@@ -1,0 +1,55 @@
+scr_ayuda As screen:
+
+    Header_4 As Header:
+
+    Menu_4 As Menu:
+        Width: =Menu_4.MenuWidth
+        Y: =80
+        ZIndex: =2
+
+    "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        Height: =688
+        Items: =CustomGallerySample
+        TemplatePadding: =0
+        TemplateSize: =Min(440, Self.Height - 60)
+        Width: =1296
+        X: =70
+        Y: =80
+        ZIndex: =3
+
+        Image14 As image:
+            Height: =296
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth - 32
+            X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
+            Y: =16
+            ZIndex: =1
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 64
+            X: =32
+            Y: =Image14.Y + Image14.Height + 16
+            ZIndex: =2
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =Title2.X
+            Y: =Title2.Y + Title2.Height + 8
+            ZIndex: =3
+

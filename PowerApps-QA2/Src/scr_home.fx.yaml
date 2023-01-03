@@ -56,7 +56,7 @@ scr_home As screen:
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =60
-        Size: =26
+        Size: =25
         Text: ="Objetivos dirección"
         Width: =545
         X: =122

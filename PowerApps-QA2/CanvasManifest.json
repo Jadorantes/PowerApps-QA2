@@ -114,7 +114,7 @@
   "ScreenOrder": [
     "Bienvanida",
     "scr_home",
-    "Perfil",
+    "scr_ayuda",
     "scr_objetivo",
     "scr_resultado",
     "scr_configuracion"

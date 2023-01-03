@@ -4182,17 +4182,77 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.valUsrResp"
+                  "fullyQualifiedName": "scr_ayuda.Gallery6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.valUsrResp",
+                  "fullyQualifiedName": "scr_ayuda.Gallery6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "valUsrResp",
+                "member": "AccessibleLabel",
+                "module": "scr_ayuda",
+                "type": "scr_ayuda.Gallery6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_ayuda.Gallery6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_ayuda.Gallery6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scr_ayuda",
+                "type": "scr_ayuda.Gallery6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.MyUserID"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.MyUserID",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "MyUserID",
                 "module": "App",
                 "type": "App"
               }
@@ -4242,17 +4302,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.MyUserID"
+                  "fullyQualifiedName": "App.valUsrResp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.MyUserID",
+                  "fullyQualifiedName": "App.valUsrResp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "MyUserID",
+                "member": "valUsrResp",
                 "module": "App",
                 "type": "App"
               }
@@ -5375,7 +5435,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Los controles consumen recursos y, si una pantalla tiene demasiados controles, la aplicación puede dejar de responder o ralentizarse. La complejidad estimada de \"scr_objetivo\" es 422, que es superior al umbral máximo recomendado (300)."
+                "whyFix": "Los controles consumen recursos y, si una pantalla tiene demasiados controles, la aplicación puede dejar de responder o ralentizarse. La complejidad estimada de \"scr_objetivo\" es 423, que es superior al umbral máximo recomendado (300)."
               }
             }
           ],

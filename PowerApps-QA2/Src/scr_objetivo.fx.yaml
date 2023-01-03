@@ -214,9 +214,19 @@ scr_objetivo As screen:
                     Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"));
                 Text: ="Registrar"
                 Width: =252
-                X: =495
-                Y: =407
+                X: =328
+                Y: =412
                 ZIndex: =2
+
+            Button7 As button:
+                Fill: =RGBA(0, 121, 187, 1)
+                Height: =79
+                OnSelect: =Navigate(scr_ayuda)
+                Text: ="Ayuda"
+                Width: =252
+                X: =665
+                Y: =412
+                ZIndex: =3
 
     ctnObjetivoGeneral As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

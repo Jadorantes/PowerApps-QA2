@@ -4212,17 +4212,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varUserExist"
+                  "fullyQualifiedName": "App.MyUserID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varUserExist",
+                  "fullyQualifiedName": "App.MyUserID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varUserExist",
+                "member": "MyUserID",
                 "module": "App",
                 "type": "App"
               }
@@ -4242,17 +4242,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.MyUserID"
+                  "fullyQualifiedName": "App.varUserExist"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.MyUserID",
+                  "fullyQualifiedName": "App.varUserExist",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "MyUserID",
+                "member": "varUserExist",
                 "module": "App",
                 "type": "App"
               }

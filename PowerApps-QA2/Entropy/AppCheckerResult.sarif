@@ -4182,36 +4182,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.valUsrResp"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.valUsrResp",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "valUsrResp",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.MyUserID"
                 }
               ],
@@ -4253,6 +4223,36 @@
               },
               "properties": {
                 "member": "varUserExist",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.valUsrResp"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.valUsrResp",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "valUsrResp",
                 "module": "App",
                 "type": "App"
               }

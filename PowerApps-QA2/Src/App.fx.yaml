@@ -68,7 +68,7 @@ App As appinfo:
                 {
                     Titulo: "Ayuda",
                     icono: 'qm-ico',
-                    nav:  scr_configuracion
+                    nav:  scr_ayuda
                 }  
             )
         );

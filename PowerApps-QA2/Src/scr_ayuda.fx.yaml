@@ -2,23 +2,18 @@ scr_ayuda As screen:
 
     Header_4 As Header:
 
-    Menu_4 As Menu:
-        Width: =Menu_4.MenuWidth
-        Y: =80
-        ZIndex: =2
-
     "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         Height: =688
         Items: =CustomGallerySample
         TemplatePadding: =0
-        TemplateSize: =Min(440, Self.Height - 60)
+        TemplateSize: =1117
         Width: =1296
         X: =70
         Y: =80
-        ZIndex: =3
+        ZIndex: =2
 
         Image14 As image:
-            Height: =296
+            Height: =406
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth - 32
             X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
@@ -52,4 +47,9 @@ scr_ayuda As screen:
             X: =Title2.X
             Y: =Title2.Y + Title2.Height + 8
             ZIndex: =3
+
+    Menu_4 As Menu:
+        Width: =Menu_4.MenuWidth
+        Y: =80
+        ZIndex: =3
 

@@ -51,22 +51,22 @@ App As appinfo:
             Navegacion,
             Table(
                 {
-                    Titulo: "Inicio",
+                    Titulo: "INICIO",
                     icono: Homen,
                     nav: scr_home
                 },
                  {
-                    Titulo: "Objetivo",
+                    Titulo: "OBJETIVO",
                     icono: objn,
                     nav:  scr_objetivo
                 },
                 {
-                    Titulo: "Configuraciones",
+                    Titulo: "AJUSTES",
                     icono: Ajustesn,
                     nav:  scr_configuracion
                 },
                 {
-                    Titulo: "Ayuda",
+                    Titulo: "AYUDA",
                     icono: 'qm-ico',
                     nav:  scr_ayuda
                 }  

@@ -212,7 +212,7 @@ scr_objetivo As screen:
                     Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"));
-                Text: ="Registrar"
+                Text: ="Registrar OK"
                 Width: =252
                 X: =328
                 Y: =412
@@ -222,7 +222,7 @@ scr_objetivo As screen:
                 Fill: =RGBA(0, 121, 187, 1)
                 Height: =79
                 OnSelect: =Navigate(scr_ayuda)
-                Text: ="Ayuda"
+                Text: ="¿Cómo empezar?"
                 Width: =252
                 X: =665
                 Y: =412

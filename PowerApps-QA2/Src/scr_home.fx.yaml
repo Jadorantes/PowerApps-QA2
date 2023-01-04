@@ -5,8 +5,8 @@ scr_home As screen:
         Items: =Filter(Objetivo,NivelObjetivo="Direccion")
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =156
-        Width: =596
+        TemplateSize: =211
+        Width: =536
         X: =120
         Y: =182
         ZIndex: =1
@@ -15,7 +15,7 @@ scr_home As screen:
             Align: =Align.Justify
             Font: =Font.Arial
             FontWeight: =FontWeight.Normal
-            Height: =156
+            Height: =181
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -24,7 +24,7 @@ scr_home As screen:
             Size: =18
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =572
+            Width: =514
             X: =3
             ZIndex: =1
 
@@ -80,7 +80,7 @@ scr_home As screen:
         Items: =Filter(Objetivo,NivelObjetivo=valUsrRespDir)
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =154
+        TemplateSize: =231
         Width: =567
         X: =755
         Y: =165
@@ -137,7 +137,7 @@ scr_home As screen:
         Size: =23
         Text: ="Objetivos área"
         Width: =545
-        X: =800
+        X: =766
         Y: =102
         ZIndex: =6
 

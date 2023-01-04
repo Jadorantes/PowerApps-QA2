@@ -14,9 +14,9 @@ scr_objetivo As screen:
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =Min(104, Self.Height - 60)
+            TemplateSize: =326
             Width: =1296
-            Y: =92
+            Y: =105
             ZIndex: =1
 
             Title8 As label:

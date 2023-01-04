@@ -475,7 +475,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/03/2023 23:48:11",
+  "HeaderLastSavedDateTimeUTC": "01/04/2023 00:01:11",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "30971f61-f7b0-4fd0-969c-6f44d693efcf": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
@@ -487,6 +487,9 @@
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
+    "1-img": "e1885e57-7cdf-48d8-8238-5695c764601a.PNG",
+    "2-img": "44d7d85f-03eb-44e5-b2c7-7eebaedeb079.PNG",
+    "3-img": "38f9d10e-931a-46fb-982f-6ea02a856c22.PNG",
     "Agregar": "0001.png",
     "Ajustesn": "0002.png",
     "Area": "0003.png",
@@ -529,6 +532,9 @@
     "Ver": "0039.png"
   },
   "LocalResourceRootPaths": {
+    "1-img": "https://docserverpwaprodwus.blob.core.windows.net/15627311-0e42-4bd2-beab-48fda8680f00-1/resource/23d1fa32-35b5-4618-8cc9-66d1615dc718.PNG?sv=2017-04-17&sr=b&sig=Sk0%2FnefJPjLuEDju9zbzyyqCHzdr3FZ4Z1xiLasE31o%3D&spr=https&se=2023-01-05T00%3A13%3A53Z&sp=r",
+    "2-img": "https://docserverpwaprodwus.blob.core.windows.net/15627311-0e42-4bd2-beab-48fda8680f00-1/resource/d953a534-68d7-4f24-a366-7c07eeaff921.PNG?sv=2017-04-17&sr=b&sig=v81jbtcSUNFt9knw2YXWwrchCOITfMg6pqS%2BuDeb54w%3D&spr=https&se=2023-01-05T00%3A13%3A52Z&sp=r",
+    "3-img": "https://docserverpwaprodwus.blob.core.windows.net/15627311-0e42-4bd2-beab-48fda8680f00-1/resource/77088b07-f772-444a-8da5-aa65462ae2db.PNG?sv=2017-04-17&sr=b&sig=vUmYsygji5C%2Bls1pzO5HIamRBY0KqG5G1lFqu63G6%2Fs%3D&spr=https&se=2023-01-05T00%3A13%3A52Z&sp=r",
     "Agregar": "https://docserverpwaprodwus.blob.core.windows.net/15627311-0e42-4bd2-beab-48fda8680f00-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=FuRtcZRaPZ4bhmug6MMwaQY6hK2NAQ0sg8JqXBoiio8%3D&spr=https&se=2023-01-04T23%3A33%3A50Z&sp=r",
     "Ajustesn": "https://docserverpwaprodwus.blob.core.windows.net/15627311-0e42-4bd2-beab-48fda8680f00-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=z6orZ2XLR40BwT4R7VRHeYtu6zz%2FYtHLRPGkQhXCOEU%3D&spr=https&se=2023-01-04T23%3A33%3A50Z&sp=r",
     "Area": "https://docserverpwaprodwus.blob.core.windows.net/15627311-0e42-4bd2-beab-48fda8680f00-1/resource/Assets0Images00003.png?sv=2017-04-17&sr=b&sig=yOmA3P11%2FsNSFWHZdLQxegNkUAQAU1k%2FBkZ5fEoI%2BH4%3D&spr=https&se=2023-01-04T23%3A33%3A50Z&sp=r",
@@ -584,6 +590,7 @@
   },
   "OrderDataSource": {
     "Areas": 3,
+    "Ayuda": 21,
     "ComboBoxSample": 4,
     "CustomGallerySample": 5,
     "DropDownSample": 6,
@@ -1120,6 +1127,9 @@
     "Vista_Perfil": 368
   },
   "ResourcesJsonIndices": {
+    "Image-1-img": 43,
+    "Image-2-img": 41,
+    "Image-3-img": 42,
     "Image-Agregar": 1,
     "Image-Ajustesn": 2,
     "Image-Area": 3,

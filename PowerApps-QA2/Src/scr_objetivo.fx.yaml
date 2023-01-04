@@ -1328,6 +1328,7 @@ scr_objetivo As screen:
                     =If( IsBlank(DataCardValue19.Text) && IsBlank( inpResultadoClaveOG_1.Text) 
                     ,Disabled, Edit)
                 Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Verdana
                 OnSelect: |-
                     =ForAll(
                         Gallery_ResultadoClaveOG_1.AllItems,
@@ -1352,6 +1353,7 @@ scr_objetivo As screen:
 
             btnCancelarOG_1 As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Verdana
                 OnSelect: |-
                     =Set(varctnObjetivoEmpleado,true);
                     Set(varctnRCOO,false);

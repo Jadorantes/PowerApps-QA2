@@ -684,17 +684,26 @@ scr_home As screen:
             ZIndex: =11
 
             Button5 As button:
-                Fill: =RGBA(0, 154, 62, 1)
+                BorderThickness: =3
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
                 Height: =374
-                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+                HoverBorderColor: =
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =
+                PressedFill: =
                 Text: ="Se ha enviado una solicitud de corrección de datos a tu administrador"
                 Width: =982
-                X: =195
-                Y: =78
+                X: =180
+                Y: =70
                 ZIndex: =1
 
             Button6 As button:
                 DisabledColor: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =
                 OnSelect: =Exit();
                 Text: ="OK"
                 X: =606

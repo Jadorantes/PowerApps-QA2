@@ -4,7 +4,7 @@ scr_ayuda As screen:
 
     "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         Height: =688
-        Items: =CustomGallerySample
+        Items: =Ayuda
         TemplatePadding: =0
         TemplateSize: =1117
         Width: =1296
@@ -14,10 +14,10 @@ scr_ayuda As screen:
 
         Image14 As image:
             Height: =406
+            Image: =ThisItem.Imagen
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth - 32
-            X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
-            Y: =16
+            X: =32
             ZIndex: =1
 
         Title2 As label:
@@ -27,7 +27,7 @@ scr_ayuda As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.Descripcion
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 64
             X: =32
@@ -35,13 +35,13 @@ scr_ayuda As screen:
             ZIndex: =2
 
         Subtitle3 As label:
-            Height: =Self.Size * 1.8
+            Height: =202
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.SampleText
+            Text: =ThisItem.Descripcion
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2.Width
             X: =Title2.X

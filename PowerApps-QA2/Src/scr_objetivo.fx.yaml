@@ -1893,9 +1893,10 @@ scr_objetivo As screen:
                 
                 
                 
+            Tooltip: ="Agregar otra tarea"
             Width: =51
             X: =1182
-            Y: =79
+            Y: =99
             ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:

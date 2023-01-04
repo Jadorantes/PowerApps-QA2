@@ -202,38 +202,44 @@ scr_objetivo As screen:
             ZIndex: =4
 
             Button8 As button:
-                Fill: =RGBA(0, 154, 62, 1)
-                Height: =450
+                BorderThickness: =3
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Height: =429
+                HoverFill: =RGBA(255, 255, 255, 0)
+                PressedFill: =FFFFFF
                 Text: |-
-                    ="Aun no has registrado nada.   
-                    ¡Registra tu primer objetivo!"
-                Width: =762
-                X: =240
-                Y: =79
+                    ="Aún no has registrado ningún objetivo.   
+                    ¡Vamos!, ¿Qué esperas para empezar?"
+                Width: =1004
+                X: =164
+                Y: =170
                 ZIndex: =1
 
             Button11 As button:
-                Fill: =RGBA(0, 121, 187, 1)
-                Height: =79
+                Fill: =RGBA(0, 154, 62, 1)
+                Height: =51
                 OnSelect: |
                     =Set(varctnObjetivoEmpleado,false);
                     Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"));
                 Text: ="Registrar OK"
-                Width: =252
-                X: =328
-                Y: =412
+                Width: =229
+                X: =354
+                Y: =478
                 ZIndex: =2
 
             Button7 As button:
-                Fill: =RGBA(0, 121, 187, 1)
-                Height: =79
+                Fill: =RGBA(0, 154, 62, 1)
+                Height: =51
                 OnSelect: =Navigate(scr_ayuda)
                 Text: ="¿Cómo empezar?"
-                Width: =252
-                X: =665
-                Y: =412
+                Width: =229
+                X: =742
+                Y: =478
                 ZIndex: =3
 
     ctnObjetivoGeneral As groupContainer.manualLayoutContainer:

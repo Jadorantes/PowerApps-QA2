@@ -104,7 +104,7 @@ scr_objetivo As screen:
                 Size: =14
                 Text: ="Estatus aprobación"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =180
+                Width: =227
                 X: =623
                 Y: =16
                 ZIndex: =10
@@ -128,7 +128,7 @@ scr_objetivo As screen:
 
             Title8_4 As label:
                 Font: =Font.Verdana
-                Height: =26
+                Height: =31
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -137,7 +137,7 @@ scr_objetivo As screen:
                 Size: =14
                 Text: ="Estatus Ejecución"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =180
+                Width: =230
                 X: =922
                 Y: =16
                 ZIndex: =12
@@ -161,7 +161,7 @@ scr_objetivo As screen:
 
             Image12 As image:
                 Height: =36
-                Image: =Agregar
+                Image: =Ver
                 OnSelect: |-
                     =Set(varIDObjetivoEmple,ThisItem.ID);
                     Set(varctnDetalleObjetivos,true);

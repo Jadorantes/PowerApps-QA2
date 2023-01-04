@@ -21,6 +21,7 @@ scr_ayuda As screen:
             ZIndex: =1
 
         Title2 As label:
+            Font: =Font.Verdana
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -35,6 +36,7 @@ scr_ayuda As screen:
             ZIndex: =2
 
         Subtitle3 As label:
+            Font: =Font.Arial
             Height: =202
             OnSelect: =Select(Parent)
             PaddingBottom: =0

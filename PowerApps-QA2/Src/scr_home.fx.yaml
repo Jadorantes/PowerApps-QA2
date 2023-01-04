@@ -13,7 +13,7 @@ scr_home As screen:
 
         Title6 As label:
             Align: =Align.Justify
-            Font: =Font.Arial
+            Font: =Font.Verdana
             Height: =156
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -177,7 +177,7 @@ scr_home As screen:
 
             lbTNomEmp As label:
                 Align: =Align.Right
-                FontWeight: =FontWeight.Normal
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -193,6 +193,7 @@ scr_home As screen:
                 ZIndex: =3
 
             lbNomEmp As label:
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Semibold
                 Height: =36
                 OnSelect: =Select(Parent)
@@ -208,6 +209,7 @@ scr_home As screen:
                 ZIndex: =4
 
             lbResTEmp As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -223,6 +225,7 @@ scr_home As screen:
                 ZIndex: =5
 
             lbResEmp As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -239,7 +242,7 @@ scr_home As screen:
 
             lbTDirEmp As label:
                 Align: =Align.Right
-                FontWeight: =FontWeight.Normal
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -255,6 +258,7 @@ scr_home As screen:
                 ZIndex: =7
 
             lbDirEmp As label:
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =88
                 OnSelect: =Select(Parent)
@@ -271,7 +275,7 @@ scr_home As screen:
 
             lbTDepEmp As label:
                 Align: =Align.Right
-                FontWeight: =FontWeight.Normal
+                Font: =Font.Verdana
                 Height: =59
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -288,6 +292,7 @@ scr_home As screen:
 
             lbDepEmp As label:
                 AutoHeight: =true
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =69
                 OnSelect: =Select(Parent)
@@ -303,6 +308,7 @@ scr_home As screen:
                 ZIndex: =10
 
             lbTNomEmp_1 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -318,6 +324,7 @@ scr_home As screen:
 
             lbResTEmp_1 As label:
                 Align: =Align.Center
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -332,6 +339,7 @@ scr_home As screen:
                 ZIndex: =12
 
             lbResTEmp_2 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -355,6 +363,7 @@ scr_home As screen:
                 ZIndex: =14
 
             lbResEmp_1 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -370,6 +379,7 @@ scr_home As screen:
                 ZIndex: =15
 
             lbResTEmp_3 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -386,7 +396,7 @@ scr_home As screen:
 
             lbTNomEmp_2 As label:
                 Align: =Align.Right
-                FontWeight: =FontWeight.Normal
+                Font: =Font.Verdana
                 Height: =37
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -402,6 +412,7 @@ scr_home As screen:
                 ZIndex: =17
 
             lbTNomEmp_3 As label:
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Normal
                 Height: =68
                 OnSelect: =Select(Parent)
@@ -419,6 +430,7 @@ scr_home As screen:
 
         TituloValidacion As label:
             Align: =Align.Center
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Height: =43
             Size: =28
@@ -482,6 +494,7 @@ scr_home As screen:
 
             Title4 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Normal
                 Height: =32
                 OnSelect: =Select(Parent)
@@ -498,8 +511,7 @@ scr_home As screen:
                 ZIndex: =2
 
             Subtitle4 As label:
-                AutoHeight: =true
-                Height: =32
+                Height: =19
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -508,8 +520,8 @@ scr_home As screen:
                 Size: =12
                 Text: =ThisItem.Departamento
                 VerticalAlign: =VerticalAlign.Top
-                Width: =380
-                X: =362
+                Width: =376
+                X: =389
                 Y: =18
                 ZIndex: =3
 

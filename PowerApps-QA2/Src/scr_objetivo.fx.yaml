@@ -20,6 +20,7 @@ scr_objetivo As screen:
             ZIndex: =1
 
             Title8 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -36,6 +37,7 @@ scr_objetivo As screen:
 
             Subtitle7 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
                 Height: =33.4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -59,6 +61,7 @@ scr_objetivo As screen:
                 ZIndex: =4
 
             Title8_1 As label:
+                Font: =Font.Verdana
                 Height: =31
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -75,6 +78,7 @@ scr_objetivo As screen:
 
             Subtitle7_2 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
                 Height: =33.4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -90,6 +94,7 @@ scr_objetivo As screen:
                 ZIndex: =7
 
             Title8_3 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -106,6 +111,7 @@ scr_objetivo As screen:
 
             Subtitle7_4 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
                 Height: =33.4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -121,6 +127,7 @@ scr_objetivo As screen:
                 ZIndex: =11
 
             Title8_4 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -137,6 +144,7 @@ scr_objetivo As screen:
 
             Subtitle7_5 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
                 Height: =33.4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0

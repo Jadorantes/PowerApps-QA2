@@ -256,15 +256,15 @@ scr_home As screen:
 
             lbDirEmp As label:
                 FontWeight: =FontWeight.Lighter
-                Height: =36
+                Height: =88
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =varDir
+                Text: ="DIRECCIÓN GRAL DE TECNOLOGIAS DE LA INFORMACIÓN"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =310
+                Width: =351
                 X: =247
                 Y: =284
                 ZIndex: =8

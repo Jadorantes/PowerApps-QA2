@@ -782,16 +782,16 @@ scr_objetivo As screen:
                 ZIndex: =8
 
             Image16 As image:
-                Height: =52
+                Height: =40
                 Image: =Agregar
                 OnSelect: |-
                     =Set(varIDRCOG,ThisItem.ID);
                     Set(varctnRCOO,true);
                     Set(varlbtTituloObjetivo,"Registro de Objetivos")
                 Tooltip: ="Agregar un objetivo"
-                Width: =72
+                Width: =57
                 X: =1145
-                Y: =16
+                Y: =31
                 ZIndex: =9
 
         lbNombre_1 As label:

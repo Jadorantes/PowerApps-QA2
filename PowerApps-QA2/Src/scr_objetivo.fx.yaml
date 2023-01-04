@@ -1400,13 +1400,13 @@ scr_objetivo As screen:
         ZIndex: =5
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =485
+            Height: =448
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =Min(104, Self.Height - 60)
             Width: =1290
-            Y: =220
+            Y: =260
             ZIndex: =1
 
             Title12 As label:
@@ -1512,12 +1512,11 @@ scr_objetivo As screen:
         lblRCRC00_4 As label:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
-            BorderThickness: =1
             FontWeight: =FontWeight.Bold
             Size: =25
             Text: ="Detalle OK"
-            Width: =1100
-            X: =196
+            Width: =907
+            X: =191
             ZIndex: =3
 
         lblOGRC00_3 As label:
@@ -1553,6 +1552,18 @@ scr_objetivo As screen:
             Y: =656
             ZIndex: =6
 
+        Label5 As label:
+            Align: =Align.Center
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Height: =63
+            Size: =20
+            Text: ="Resultados clave"
+            Width: =1290
+            X: =6
+            Y: =197
+            ZIndex: =7
+
     ctnTareas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =708
@@ -1566,6 +1577,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Verdana
             Size: =15
             Text: ="ID_ResultadoClave"
             Width: =190
@@ -1585,6 +1597,7 @@ scr_objetivo As screen:
             ZIndex: =1
 
             Title11 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1626,6 +1639,7 @@ scr_objetivo As screen:
             txtTarea As text:
                 BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =ThisItem.Co_TitleTarea
+                Font: =Font.Arial
                 Height: =137
                 Mode: =TextMode.MultiLine
                 OnSelect: =Select(Parent)
@@ -1635,6 +1649,7 @@ scr_objetivo As screen:
                 ZIndex: =5
 
             Title11_1 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1651,6 +1666,7 @@ scr_objetivo As screen:
 
             DtpFITarea As datepicker:
                 DefaultDate: =ThisItem.Co_FITarea
+                Font: =Font.Arial
                 Height: =30
                 InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Now(), Self.Format, Self.Language))
                 OnChange: |
@@ -1666,6 +1682,7 @@ scr_objetivo As screen:
                 ZIndex: =7
 
             Title11_2 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1683,6 +1700,7 @@ scr_objetivo As screen:
             DtpFFTarea As datepicker:
                 Color: =RGBA(0, 154, 62, 1)
                 DefaultDate: =ThisItem.Co_FITarea
+                Font: =Font.Arial
                 Height: =30
                 InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Now(), Self.Format, Self.Language))
                 OnChange: |-
@@ -1696,6 +1714,7 @@ scr_objetivo As screen:
                 ZIndex: =9
 
             Title11_3 As label:
+                Font: =Font.Verdana
                 Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1713,6 +1732,7 @@ scr_objetivo As screen:
             txtPTTarea As text:
                 Default: =LookUp(ResultadoClave,ID=varIDRCEmple,PeriodoTiempo)
                 DisplayMode: =DisplayMode.View
+                Font: =Font.Arial
                 Height: =31
                 OnSelect: =Select(Parent)
                 Width: =270
@@ -1740,6 +1760,8 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
             Size: =20
             Text: ="Resultado Clave"
             Width: =1100
@@ -1750,6 +1772,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Arial
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
             Width: =190
             X: =6
@@ -1760,6 +1783,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Arial
             Size: =20
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
             Width: =1100
@@ -1984,15 +2008,6 @@ scr_objetivo As screen:
                 X: =732
                 Y: =58
                 ZIndex: =8
-
-            Image17 As image:
-                Height: =54
-                Image: =Agregar
-                OnSelect: =Select(Parent)
-                Width: =87
-                X: =1150
-                Y: =30
-                ZIndex: =9
 
         lblOGRC00_6 As label:
             Align: =Align.Center

@@ -663,6 +663,7 @@ scr_objetivo As screen:
         ZIndex: =4
 
         lbENombre_1 As label:
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Size: =20
             Text: ="Nombre"
@@ -682,6 +683,7 @@ scr_objetivo As screen:
             ZIndex: =1
 
             Title7 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -696,6 +698,7 @@ scr_objetivo As screen:
                 ZIndex: =1
 
             Subtitle6 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -717,6 +720,7 @@ scr_objetivo As screen:
                 ZIndex: =4
 
             Title7_1 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -731,6 +735,7 @@ scr_objetivo As screen:
                 ZIndex: =5
 
             Subtitle6_1 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -745,6 +750,7 @@ scr_objetivo As screen:
                 ZIndex: =6
 
             Title7_2 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -761,6 +767,7 @@ scr_objetivo As screen:
                 ZIndex: =7
 
             Subtitle6_2 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -788,14 +795,16 @@ scr_objetivo As screen:
                 ZIndex: =9
 
         lbNombre_1 As label:
+            Font: =Font.Arial
             Size: =18
             Text: =User().FullName
-            Width: =550
+            Width: =585
             X: =26
             Y: =40
             ZIndex: =2
 
         lbEPuesto_1 As label:
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Size: =20
             Text: ="Puesto"
@@ -804,9 +813,10 @@ scr_objetivo As screen:
             ZIndex: =3
 
         lbPuesto_1 As label:
+            Font: =Font.Arial
             Size: =18
             Text: =valUsrPuesto
-            Width: =550
+            Width: =585
             X: =628
             Y: =40
             ZIndex: =4

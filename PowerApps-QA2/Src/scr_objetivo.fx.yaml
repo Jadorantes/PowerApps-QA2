@@ -166,7 +166,7 @@ scr_objetivo As screen:
                     =Set(varIDObjetivoEmple,ThisItem.ID);
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
-                Tooltip: ="Agregar Resultado"
+                Tooltip: ="Detalle OK"
                 Width: =55
                 X: =1185
                 Y: =16

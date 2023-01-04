@@ -13,7 +13,7 @@ scr_home As screen:
 
         Title6 As label:
             Align: =Align.Justify
-            Font: =Font.Verdana
+            Font: =Font.Arial
             Height: =156
             OnSelect: =Select(Parent)
             PaddingBottom: =0

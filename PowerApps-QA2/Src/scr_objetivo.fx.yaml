@@ -844,6 +844,7 @@ scr_objetivo As screen:
                 Align: =Align.Center
                 BorderColor: =RGBA(230, 230, 230, 1)
                 BorderThickness: =1
+                Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
                 Text: ="ID_Objetivo"
                 ZIndex: =1
@@ -852,6 +853,7 @@ scr_objetivo As screen:
                 Align: =Align.Center
                 BorderColor: =RGBA(230, 230, 230, 1)
                 BorderThickness: =1
+                Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
                 Size: =15
                 Text: ="ID_ResultadoC"
@@ -863,6 +865,7 @@ scr_objetivo As screen:
                 Align: =Align.Center
                 BorderColor: =RGBA(230, 230, 230, 1)
                 BorderThickness: =1
+                Font: =Font.Verdana
                 FontWeight: =FontWeight.Semibold
                 Size: =20
                 Text: ="Resultado Clave"
@@ -958,6 +961,7 @@ scr_objetivo As screen:
                     DataCardKey19 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
+                        Font: =Font.Verdana
                         FontWeight: =FontWeight.Bold
                         Height: =34
                         Size: =20
@@ -973,6 +977,7 @@ scr_objetivo As screen:
                         Default: =Parent.Default
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
+                        Font: =Font.Arial
                         Height: =139
                         Mode: =TextMode.MultiLine
                         PaddingLeft: =5
@@ -1031,6 +1036,7 @@ scr_objetivo As screen:
                     DataCardKey17 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
+                        Font: =Font.Verdana
                         FontWeight: =FontWeight.Bold
                         Height: =34
                         Size: =20
@@ -1230,6 +1236,7 @@ scr_objetivo As screen:
                 ZIndex: =8
 
                 lbTituloRCOG_1 As label:
+                    Font: =Font.Verdana
                     Height: =36
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -1270,6 +1277,7 @@ scr_objetivo As screen:
                 inpResultadoClaveOG_1 As text:
                     BorderColor: =RGBA(0, 154, 62, 1)
                     Default: =ThisItem.Co_ResultadoClaveOG
+                    Font: =Font.Arial
                     Height: =112
                     Mode: =TextMode.MultiLine
                     OnSelect: =Select(Parent)
@@ -1279,6 +1287,7 @@ scr_objetivo As screen:
                     ZIndex: =5
 
                 lbPTRCOG_1 As label:
+                    Font: =Font.Verdana
                     Height: =36
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0

@@ -3732,66 +3732,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_home",
-                "type": "scr_home.GalleryObjetivosDireccion"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scr_home",
-                "type": "scr_home.GalleryObjetivosDireccion"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "scr_home.GalleryObjetivosArea.AccessibleLabel"
                 }
               ],
@@ -3835,6 +3775,66 @@
                 "member": "TabIndex",
                 "module": "scr_home",
                 "type": "scr_home.GalleryObjetivosArea"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_home",
+                "type": "scr_home.GalleryObjetivosDireccion"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_home.GalleryObjetivosDireccion.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scr_home",
+                "type": "scr_home.GalleryObjetivosDireccion"
               }
             }
           ],
@@ -4242,17 +4242,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.valUsrResp"
+                  "fullyQualifiedName": "App.MyUserID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.valUsrResp",
+                  "fullyQualifiedName": "App.MyUserID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "valUsrResp",
+                "member": "MyUserID",
                 "module": "App",
                 "type": "App"
               }
@@ -4302,17 +4302,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.MyUserID"
+                  "fullyQualifiedName": "App.valUsrResp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.MyUserID",
+                  "fullyQualifiedName": "App.valUsrResp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "MyUserID",
+                "member": "valUsrResp",
                 "module": "App",
                 "type": "App"
               }
@@ -4386,36 +4386,6 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Area"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Area",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Area",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
         },
         {
           "locations": [

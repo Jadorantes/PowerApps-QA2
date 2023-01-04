@@ -255,15 +255,14 @@ scr_home As screen:
                 ZIndex: =7
 
             lbDirEmp As label:
-                AutoHeight: =true
                 FontWeight: =FontWeight.Lighter
-                Height: =101
+                Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Direccion
+                Text: =varDir
                 VerticalAlign: =VerticalAlign.Top
                 Width: =310
                 X: =247
@@ -533,7 +532,6 @@ scr_home As screen:
                 Height: =703
                 Visible: =false//varUserExist
                 Width: =1366
-                Y: =5
                 ZIndex: =6
 
             Label1 As label:
@@ -543,7 +541,7 @@ scr_home As screen:
                 Text: ="El usuario no existe en la base de datos"
                 Visible: =false//varUserExist
                 Width: =785
-                X: =290
+                X: =273
                 Y: =254
                 ZIndex: =7
 

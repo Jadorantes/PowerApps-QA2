@@ -99,12 +99,12 @@ App As appinfo:
             {
                 Titulo:"Ventana de inicio",
                 Descripcion:"1.	Después de validar que tus datos de usuario sean correctos aparecerás dentro de la ventana de INICIO, donde podrás ver los objetivos clave (OK) registrados hasta el momento tanto de la dirección (DGTI) como los del área a la que perteneces.",
-                Imagen: 'img1'
+                Imagen: img1
             },
             {
                   Titulo:"Detalle de objetivos",
                   Descripcion:"2. Selecciona la opción OBJETIVO para ver o registrar tus objetivos, resultados y tareas.",
-                Imagen: 'img2'
+                Imagen: img2
             },
             {
                   Titulo:"Registro de objetivos",
@@ -112,12 +112,33 @@ App As appinfo:
         Si aun no has registrado nada saltara un PopUp con los enlaces necesarios tanto para registrar un objetivo como para aprender a hacerlo. 
         
         ",
-                Imagen: 'img3'
+                Imagen: img3
             },
             {
                   Titulo:"Registro de objetivos",
                   Descripcion:"4. Al momento de dar clic en cualquiera de las opciones para comenzar a registrar un OKR (PopUp o Botón en el menú de objetivo), aparecerán los resultados clave de tu líder a partir de los cuales podrás alinear tus objetivos a registrar dando clic en el icono de más. ",
-                Imagen: 'img4'
+                Imagen: img4
+            },
+            {
+                  Titulo:"Registro de objetivos",
+                  Descripcion:"5. Una vez estes dentro de la pantalla de registro podrás agregar tanto tu objetivo (OKR) como uno o más resultados clave alineados al mismo.",
+                Imagen: img5
+            },
+             {
+                  Titulo:"Registro de objetivos",
+                  Descripcion:"6. Cuando hayas registrado tanto tu objetivo como tus resultados clave, regresaras a la pantalla con los resultados clave de tu líder para poder seguir registrando. 
+        Para regresar a la lista de tus objetivos, da clic en CANCELAR.",
+                Imagen: img6
+            },
+            {
+                  Titulo:"Registro de objetivos",
+                  Descripcion:"7. Una vez hayas registrado un objetivo y resultados clave podrás ver el detalle de estos dando clic en el botón Ver.",
+                Imagen: img7
+            },
+             {
+                  Titulo:"Registro de objetivos",
+                  Descripcion:"8. Dentro de la pantalla de detalle del OKR podrás agregar una tarea alineada al resultado dando clic al icono de Más.",
+                Imagen: img8
             }
         );
         //VarpopUpComprobacion=true

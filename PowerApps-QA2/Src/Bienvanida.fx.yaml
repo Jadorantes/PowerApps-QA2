@@ -199,7 +199,7 @@ Bienvanida As screen:
                     //left: 652px;
                     //top: 110px;
             
-                    font-family: 'Poppins';
+                    font-family: 'Verdana';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 35px;
@@ -255,8 +255,8 @@ Bienvanida As screen:
             </div>"
         Visible: =varBVDU
         Width: =500
-        X: =433
-        Y: =696
+        X: =446
+        Y: =695
         ZIndex: =18
 
     TimerVDU As timer:
@@ -267,4 +267,36 @@ Bienvanida As screen:
         X: =924
         Y: =606
         ZIndex: =19
+
+    bienvenida_1 As htmlViewer:
+        DisabledFill: =RGBA(230, 230, 230, 1)
+        Font: =Font.Verdana
+        Height: =145
+        HtmlText: |-
+            ="<div 
+                style=""
+                    
+                    //width: 300px;
+                    //height: 30px;
+                    //left: 741px;
+                    //top: 55px;
+            
+                    font-family: 'Verdana';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 80px;
+                    //line-height: 64px;
+                    text-align: right;
+                    //letter-spacing: 0.2px; 
+            
+                    color:#FFFFFF; 
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
+                "">
+                OKR
+            </div>"
+        Width: =436
+        X: =672
+        Y: =254
+        ZIndex: =20
 

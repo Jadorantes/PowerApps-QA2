@@ -19,7 +19,7 @@ Bienvanida As screen:
     bienvenida As htmlViewer:
         DisabledFill: =RGBA(230, 230, 230, 1)
         Font: =Font.Verdana
-        Height: =80
+        Height: =105
         HtmlText: |-
             ="<div 
                 style=""
@@ -43,14 +43,14 @@ Bienvanida As screen:
                 "">
                 Bienvenido
             </div>"
-        Width: =328
-        X: =840
-        Y: =51
+        Width: =398
+        X: =822
+        Y: =26
         ZIndex: =4
 
     MensajeBienvenida As htmlViewer:
         Font: =Font.Verdana
-        Height: =121
+        Height: =156
         HtmlText: |-
             ="<div 
                 style=""
@@ -75,8 +75,8 @@ Bienvanida As screen:
                 Estás ingresando a la captura de tus
             </div>"
         Width: =463
-        X: =790
-        Y: =131
+        X: =789
+        Y: =111
         ZIndex: =5
 
     CargandoBD As htmlViewer:
@@ -239,7 +239,7 @@ Bienvanida As screen:
                     //left: 652px;
                     //top: 110px;
             
-                    font-family: 'Poppins';
+                    font-family: 'Verdana';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 35px;

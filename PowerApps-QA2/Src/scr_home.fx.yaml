@@ -437,7 +437,7 @@ scr_home As screen:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Height: =43
-            Size: =28
+            Size: =22
             Text: ="Valida tus datos de usuario"
             Width: =717
             X: =341
@@ -728,6 +728,7 @@ scr_home As screen:
 
     Container2 As groupContainer.manualLayoutContainer:
         Height: =82
+        Visible: =false
         Width: =893
         X: =471
         ZIndex: =9

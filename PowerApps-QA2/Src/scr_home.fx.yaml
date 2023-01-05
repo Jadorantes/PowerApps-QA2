@@ -204,7 +204,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =14
                 Text: =ThisItem.Nombre_Usuario.Email
                 VerticalAlign: =VerticalAlign.Top
                 Width: =368
@@ -270,7 +270,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =14
                 Text: =Proper("DIRECCIÓN GRAL DE TECNOLOGIAS DE LA INFORMACIÓN")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =351
@@ -304,7 +304,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =14
                 Text: =Proper(ThisItem.Departamento)
                 VerticalAlign: =VerticalAlign.Top
                 Width: =315
@@ -395,7 +395,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =14
                 Text: =Proper(ThisItem.Puesto)
                 VerticalAlign: =VerticalAlign.Top
                 Width: =386

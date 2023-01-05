@@ -601,11 +601,11 @@ scr_home As screen:
                 ));
                 //Exit();;
                 Set(varPopUpMail,true);
-            Text: ="Corrección Datos"
+            Text: ="Guardar"
             Visible: =varValUsr
             Width: =320
-            X: =523
-            Y: =575
+            X: =354
+            Y: =578
             ZIndex: =4
 
         txtJefeDirecto As text:
@@ -666,18 +666,6 @@ scr_home As screen:
             Y: =166
             ZIndex: =9
 
-        Icon6 As icon.CancelBadge:
-            Color: =RGBA(0, 154, 62, 1)
-            Height: =39
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Set(popUpUsr,"true");
-                Set(varValUsr,false);
-            Width: =49
-            X: =1055
-            Y: =66
-            ZIndex: =10
-
         ctnNotCorreo As groupContainer.manualLayoutContainer:
             Height: =702
             Visible: =varPopUpMail
@@ -711,6 +699,21 @@ scr_home As screen:
                 X: =606
                 Y: =352
                 ZIndex: =2
+
+        Button2_1 As button:
+            Fill: =RGBA(0, 154, 62, 1)
+            Font: =Font.Arial
+            Height: =62
+            HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+            OnSelect: |
+                =Set(popUpUsr,"true");
+                Set(varValUsr,false);
+            Text: ="Guardar"
+            Visible: =varValUsr
+            Width: =320
+            X: =755
+            Y: =578
+            ZIndex: =12
 
     Container2 As groupContainer.manualLayoutContainer:
         Height: =82

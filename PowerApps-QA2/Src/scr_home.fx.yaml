@@ -389,7 +389,7 @@ scr_home As screen:
             lbTNomEmp_3 As label:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Normal
-                Height: =90
+                Height: =110
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -400,7 +400,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =386
                 X: =189
-                Y: =370
+                Y: =385
                 ZIndex: =18
 
         TituloValidacion As label:
@@ -432,6 +432,7 @@ scr_home As screen:
                 );
                 Refresh(Empleado);
                 Set(popUpUsr,"false");
+            Size: =12
             Text: ="Datos Correctos"
             Width: =200
             X: =402
@@ -443,6 +444,7 @@ scr_home As screen:
             Font: =Font.Verdana
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: =Set(varValUsr,true)
+            Size: =12
             Text: ="Datos Incorrectos"
             Width: =200
             X: =754

@@ -161,7 +161,7 @@ scr_home As screen:
             ZIndex: =1
 
             Rectangle1 As rectangle:
-                Fill: =RGBA(230, 230, 230, 0.15)
+                Fill: =RGBA(0, 0, 0, 0)
                 Height: =559
                 OnSelect: =Select(Parent)
                 Width: =585

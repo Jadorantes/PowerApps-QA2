@@ -1412,7 +1412,7 @@ scr_objetivo As screen:
         ZIndex: =4
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =448
+            Height: =323
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
@@ -1422,6 +1422,7 @@ scr_objetivo As screen:
             ZIndex: =1
 
             Title12 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1436,6 +1437,7 @@ scr_objetivo As screen:
                 ZIndex: =1
 
             Subtitle11 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1457,6 +1459,7 @@ scr_objetivo As screen:
                 ZIndex: =4
 
             Title12_1 As label:
+                Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1471,6 +1474,7 @@ scr_objetivo As screen:
                 ZIndex: =5
 
             Subtitle11_1 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1514,8 +1518,9 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Size: =20
+            Size: =15
             Text: ="ID_Objetivo"
             Width: =190
             X: =6
@@ -1524,10 +1529,11 @@ scr_objetivo As screen:
         lblRCRC00_4 As label:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
             Size: =25
             Text: ="Detalle OK"
-            Width: =907
+            Width: =1105
             X: =191
             ZIndex: =3
 
@@ -1535,6 +1541,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Arial
             Height: =157
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,ID)
             Width: =196
@@ -1545,6 +1552,7 @@ scr_objetivo As screen:
             Align: =Align.Justify
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Arial
             Height: =157
             Size: =15
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,Title)
@@ -1560,8 +1568,8 @@ scr_objetivo As screen:
                 Set(varctnDetalleObjetivos,false);
                 Set(varlbtTituloObjetivo,"Detalle Objetivos");
             Text: ="Cancelar"
-            X: =548
-            Y: =656
+            X: =538
+            Y: =614
             ZIndex: =6
 
         Label5 As label:

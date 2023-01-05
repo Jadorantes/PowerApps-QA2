@@ -76,7 +76,7 @@ App As appinfo:
         ClearCollect(
             MyPeerList,
             //Filter(Empleado;Responsable.DisplayName=valUsrJefe)
-            Filter(Empleado,Responsable.DisplayName=Nombre)
+            Filter(Empleado,Responsable.DisplayName=valUsrResp)
         );
         Set(
             VarIDTR,

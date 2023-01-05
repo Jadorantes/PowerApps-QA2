@@ -220,7 +220,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: ="Jefe Directo"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -345,7 +345,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =16
+                Size: =15
                 Text: =ThisItem.Responsable.Department
                 VerticalAlign: =VerticalAlign.Top
                 Width: =380
@@ -361,7 +361,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: ="Personas a cargo"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -556,21 +556,21 @@ scr_home As screen:
         txtNombreUsr As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Nombre)
-            Height: =92
+            Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
-            Y: =46
+            Y: =61
             ZIndex: =1
 
         txtPuesto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Puesto)
-            Height: =92
+            Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
-            Y: =258
+            Y: =261
             ZIndex: =2
 
         listArea As dropdown:
@@ -578,17 +578,18 @@ scr_home As screen:
             ChevronBackground: =RGBA(0, 154, 62, 1)
             ChevronHoverBackground: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Default: =LookUp(Empleado,Nombre=User().FullName,Departamento)
-            Height: =62
+            Height: =51
             Items: =Distinct(Areas,Departamento)
             PressedFill: =RGBA(0, 154, 62, 1)
             SelectionFill: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
-            Y: =169
+            Y: =161
             ZIndex: =3
 
         Button2 As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Font: =Font.Arial
             Height: =62
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
@@ -610,61 +611,71 @@ scr_home As screen:
         txtJefeDirecto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Responsable.DisplayName)
-            Height: =84
+            Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
             X: =438
-            Y: =409
+            Y: =361
             ZIndex: =5
 
         Label3 As label:
+            Align: =Align.Right
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="NOMBRE"
             Visible: =varValUsr
-            X: =182
-            Y: =59
+            X: =191
+            Y: =66
             ZIndex: =6
 
         Label3_1 As label:
+            Align: =Align.Right
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="PUESTO"
             Visible: =varValUsr
-            X: =182
-            Y: =284
+            X: =191
+            Y: =266
             ZIndex: =7
 
         Label3_2 As label:
+            Align: =Align.Right
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Height: =102
+            Height: =46
             Size: =18
             Text: ="JEFE DIRECTO"
             Visible: =varValUsr
-            Width: =200
-            X: =182
-            Y: =413
+            Width: =242
+            X: =99
+            Y: =370
             ZIndex: =8
 
         Label3_3 As label:
+            Align: =Align.Right
             DisabledColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="AREA"
             Visible: =varValUsr
-            X: =182
-            Y: =178
+            X: =191
+            Y: =166
             ZIndex: =9
 
         Icon6 As icon.CancelBadge:
             Color: =RGBA(0, 154, 62, 1)
+            Height: =39
             Icon: =Icon.CancelBadge
             OnSelect: |
                 =Set(popUpUsr,"true");
                 Set(varValUsr,false);
+            Width: =49
             X: =1055
-            Y: =47
+            Y: =66
             ZIndex: =10
 
         ctnNotCorreo As groupContainer.manualLayoutContainer:

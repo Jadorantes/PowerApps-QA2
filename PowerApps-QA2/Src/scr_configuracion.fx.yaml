@@ -1,10 +1,9 @@
 scr_configuracion As screen:
 
     Admin_1 As Admin:
-        Height: =40
-        Width: =1318
-        X: =24
-        Y: =60
+        Height: =34
+        Width: =1342
+        Y: =66
 
     btnEmpleados As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -2006,8 +2005,9 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     Menu_3 As Menu:
+        Height: =668
         Width: =Menu_3.MenuWidth
-        Y: =82
+        Y: =100
         ZIndex: =12
 
     Header_3 As Header:

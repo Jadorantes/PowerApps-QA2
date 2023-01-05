@@ -1,13 +1,11 @@
 scr_objetivo As screen:
 
-    Header_2 As Header:
-
     ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
         Height: =708
         Width: =1296
         X: =70
         Y: =60
-        ZIndex: =2
+        ZIndex: =1
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             Height: =590
@@ -254,7 +252,7 @@ scr_objetivo As screen:
         Width: =1296
         X: =70
         Y: =60
-        ZIndex: =3
+        ZIndex: =2
 
         Form_ObjetivosGeneral As form:
             DataSource: =Objetivo
@@ -671,7 +669,7 @@ scr_objetivo As screen:
         Width: =1296
         X: =70
         Y: =60
-        ZIndex: =4
+        ZIndex: =3
 
         lbENombre_1 As label:
             Font: =Font.Verdana
@@ -1411,7 +1409,7 @@ scr_objetivo As screen:
         Width: =1296
         X: =70
         Y: =60
-        ZIndex: =5
+        ZIndex: =4
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             Height: =448
@@ -1585,7 +1583,7 @@ scr_objetivo As screen:
         Width: =1296
         X: =70
         Y: =60
-        ZIndex: =6
+        ZIndex: =5
 
         lblOGRC00_4 As label:
             Align: =Align.Center
@@ -1922,7 +1920,7 @@ scr_objetivo As screen:
         Width: =1296
         X: =70
         Y: =60
-        ZIndex: =7
+        ZIndex: =6
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             Height: =530
@@ -2087,10 +2085,13 @@ scr_objetivo As screen:
         Width: =500
         X: =468
         Y: =10
-        ZIndex: =8
+        ZIndex: =7
 
     Menu_2 As Menu:
         Width: =Menu_2.MenuWidth
         Y: =81
+        ZIndex: =8
+
+    Header_2 As Header:
         ZIndex: =9
 

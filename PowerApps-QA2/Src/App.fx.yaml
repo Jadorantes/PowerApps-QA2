@@ -15,6 +15,7 @@ App As appinfo:
         //Set(popUp;If(popUpUsr="true" && VarpopUpComprobacion="false";"false"));;
         Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
         //Obtener ID Usuario
+        
         Set(valUsr2,LookUp(Empleado,Nombre_Usuario.Email=User().Email,ID));
         Set(valUsrIDEm,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Title));
         Set(valUsrResp,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Departamento));
@@ -76,7 +77,7 @@ App As appinfo:
         ClearCollect(
             MyPeerList,
             //Filter(Empleado;Responsable.DisplayName=valUsrJefe)
-            Filter(Empleado,Responsable.DisplayName=valUsrResp)
+            Filter(Empleado,Responsable.DisplayName=valUsrJefe)
         );
         Set(
             VarIDTR,

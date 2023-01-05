@@ -312,7 +312,7 @@ scr_home As screen:
 
             lbTNomEmp_1 As label:
                 Font: =Font.Verdana
-                Height: =35
+                Height: =85
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0

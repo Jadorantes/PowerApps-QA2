@@ -179,7 +179,6 @@ scr_home As screen:
                 ZIndex: =2
 
             lbTNomEmp As label:
-                Align: =Align.Right
                 Font: =Font.Verdana
                 Height: =36
                 OnSelect: =Select(Parent)
@@ -187,6 +186,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =18
                 Text: |-
                     ="Email: "
                 VerticalAlign: =VerticalAlign.Top
@@ -244,41 +244,41 @@ scr_home As screen:
                 ZIndex: =6
 
             lbTDirEmp As label:
-                Align: =Align.Right
                 Font: =Font.Verdana
-                Height: =36
+                Height: =41
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =18
                 Text: |-
                     ="Dirección: "
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
                 X: =34
-                Y: =284
+                Y: =309
                 ZIndex: =7
 
             lbDirEmp As label:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                Height: =88
+                Height: =63
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: ="DIRECCIÓN GRAL DE TECNOLOGIAS DE LA INFORMACIÓN"
+                Text: =Proper("DIRECCIÓN GRAL DE TECNOLOGIAS DE LA INFORMACIÓN")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =351
                 X: =247
-                Y: =284
+                Y: =309
                 ZIndex: =8
 
             lbTDepEmp As label:
                 Font: =Font.Verdana
-                Height: =59
+                Height: =39
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -287,8 +287,8 @@ scr_home As screen:
                 Text: |-
                     ="Área: "
                 VerticalAlign: =VerticalAlign.Top
-                Width: =174
-                X: =73
+                Width: =207
+                X: =40
                 Y: =385
                 ZIndex: =9
 
@@ -374,6 +374,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =18
                 Text: |-
                     ="Puesto: "
                 VerticalAlign: =VerticalAlign.Top

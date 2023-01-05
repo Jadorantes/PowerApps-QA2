@@ -170,11 +170,11 @@ scr_home As screen:
                 ZIndex: =1
 
             ImaEmp As image:
-                Height: =60
+                Height: =66
                 Image: =ThisItem.Nombre_Usuario.Picture
                 OnSelect: =Select(Parent)
-                Width: =60
-                X: =128
+                Width: =119
+                X: =34
                 Y: =41
                 ZIndex: =2
 
@@ -186,7 +186,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: |-
                     ="Email: "
                 VerticalAlign: =VerticalAlign.Top
@@ -204,6 +204,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: =ThisItem.Nombre_Usuario.Email
                 VerticalAlign: =VerticalAlign.Top
                 Width: =310
@@ -310,7 +311,7 @@ scr_home As screen:
 
             lbTNomEmp_1 As label:
                 Font: =Font.Verdana
-                Height: =85
+                Height: =71
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -319,9 +320,9 @@ scr_home As screen:
                 Size: =15
                 Text: =ThisItem.Nombre
                 VerticalAlign: =VerticalAlign.Top
-                Width: =350
-                X: =212
-                Y: =54
+                Width: =409
+                X: =153
+                Y: =68
                 ZIndex: =11
 
             Image5 As image:

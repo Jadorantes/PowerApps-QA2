@@ -277,7 +277,6 @@ scr_home As screen:
                 ZIndex: =8
 
             lbTDepEmp As label:
-                Align: =Align.Right
                 Font: =Font.Verdana
                 Height: =59
                 OnSelect: =Select(Parent)
@@ -303,7 +302,7 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Departamento
+                Text: =Proper(ThisItem.Departamento)
                 VerticalAlign: =VerticalAlign.Top
                 Width: =310
                 X: =247
@@ -325,37 +324,6 @@ scr_home As screen:
                 X: =212
                 Y: =54
                 ZIndex: =11
-
-            lbResTEmp_1 As label:
-                Align: =Align.Center
-                Font: =Font.Verdana
-                Height: =36
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: ="Tu información General"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =500
-                X: =60
-                Y: =145
-                ZIndex: =12
-
-            lbResTEmp_2 As label:
-                Font: =Font.Verdana
-                Height: =36
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: ="Tu equipo"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =500
-                X: =598
-                Y: =1
-                ZIndex: =13
 
             Image5 As image:
                 Height: =48
@@ -391,7 +359,7 @@ scr_home As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =18
-                Text: ="Tu equipo de trabajo"
+                Text: ="Personas a cargo"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =600
@@ -399,7 +367,6 @@ scr_home As screen:
                 ZIndex: =16
 
             lbTNomEmp_2 As label:
-                Align: =Align.Right
                 Font: =Font.Verdana
                 Height: =37
                 OnSelect: =Select(Parent)
@@ -425,7 +392,7 @@ scr_home As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =17
-                Text: =ThisItem.Puesto
+                Text: =Proper(ThisItem.Puesto)
                 VerticalAlign: =VerticalAlign.Top
                 Width: =351
                 X: =247

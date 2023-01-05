@@ -1,17 +1,15 @@
 scr_configuracion As screen:
 
     Admin_1 As Admin:
-        Height: =41
+        Height: =40
         Width: =1318
-        X: =48
+        X: =24
         Y: =60
-
-    Header_3 As Header:
-        ZIndex: =2
 
     btnEmpleados As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Height: =20
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         OnSelect: |
@@ -27,12 +25,13 @@ scr_configuracion As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Empleado"
         X: =537
-        Y: =60
-        ZIndex: =3
+        Y: =80
+        ZIndex: =2
 
     btnPerfiles As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Height: =20
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         OnSelect: |-
@@ -47,12 +46,13 @@ scr_configuracion As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Perfiles"
         X: =745
-        Y: =60
-        ZIndex: =4
+        Y: =80
+        ZIndex: =3
 
     btnDepartamentos As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Height: =18
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         OnSelect: |-
@@ -68,12 +68,13 @@ scr_configuracion As screen:
         Text: ="Áreas"
         Width: =165
         X: =1143
-        Y: =60
-        ZIndex: =5
+        Y: =82
+        ZIndex: =4
 
     btnEstatusAd As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Height: =20
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         OnSelect: |-
@@ -88,8 +89,8 @@ scr_configuracion As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Estatus"
         X: =929
-        Y: =60
-        ZIndex: =6
+        Y: =80
+        ZIndex: =5
 
     ctnEmpleados As groupContainer.manualLayoutContainer:
         Height: =656
@@ -97,7 +98,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =7
+        ZIndex: =6
 
         Vista_Empleados As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1126,7 +1127,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =8
+        ZIndex: =7
 
         Vista_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1338,7 +1339,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =9
+        ZIndex: =8
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1630,7 +1631,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =10
+        ZIndex: =9
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
@@ -2004,6 +2005,14 @@ scr_configuracion As screen:
                 Y: =600
                 ZIndex: =3
 
+    Menu_3 As Menu:
+        Width: =Menu_3.MenuWidth
+        Y: =82
+        ZIndex: =12
+
+    Header_3 As Header:
+        ZIndex: =13
+
     Mensaje_Permisos As group:
         Height: =5
         Width: =5
@@ -2018,7 +2027,7 @@ scr_configuracion As screen:
             Width: =1293
             X: =73
             Y: =112
-            ZIndex: =12
+            ZIndex: =10
 
         lbTexto As label:
             Align: =Align.Center
@@ -2029,10 +2038,5 @@ scr_configuracion As screen:
             Width: =600
             X: =419
             Y: =400
-            ZIndex: =13
-
-    Menu_3 As Menu:
-        Width: =Menu_3.MenuWidth
-        Y: =80
-        ZIndex: =14
+            ZIndex: =11
 

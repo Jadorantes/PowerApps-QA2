@@ -99,12 +99,12 @@ App As appinfo:
             {
                 Titulo:"Ventana de inicio",
                 Descripcion:"1.	Después de validar que tus datos de usuario sean correctos aparecerás dentro de la ventana de INICIO, donde podrás ver los objetivos clave (OK) registrados hasta el momento tanto de la dirección (DGTI) como los del área a la que perteneces.",
-                Imagen: '1-img'
+                Imagen: 'img1'
             },
             {
                   Titulo:"Detalle de objetivos",
                   Descripcion:"2. Selecciona la opción OBJETIVO para ver o registrar tus objetivos, resultados y tareas.",
-                Imagen: '2-img'
+                Imagen: 'img2'
             },
             {
                   Titulo:"Registro de objetivos",
@@ -112,12 +112,12 @@ App As appinfo:
         Si aun no has registrado nada saltara un PopUp con los enlaces necesarios tanto para registrar un objetivo como para aprender a hacerlo. 
         
         ",
-                Imagen: R1
+                Imagen: 'img3'
             },
             {
                   Titulo:"Registro de objetivos",
                   Descripcion:"4. Al momento de dar clic en cualquiera de las opciones para comenzar a registrar un OKR (PopUp o Botón en el menú de objetivo), aparecerán los resultados clave de tu líder a partir de los cuales podrás alinear tus objetivos a registrar dando clic en el icono de más. ",
-                Imagen: 'ROK-img'
+                Imagen: 'img4'
             }
         );
         //VarpopUpComprobacion=true

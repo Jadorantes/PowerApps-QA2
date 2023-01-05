@@ -87,6 +87,7 @@ scr_home As screen:
         ZIndex: =5
 
         Title6_1 As label:
+            Align: =Align.Justify
             Font: =Font.Arial
             FontWeight: =FontWeight.Normal
             Height: =138

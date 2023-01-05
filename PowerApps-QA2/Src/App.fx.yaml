@@ -78,7 +78,8 @@ App As appinfo:
         ClearCollect(
             MyPeerList,
             //Filter(Empleado;Responsable.DisplayName=valUsrJefe)
-            Filter(Empleado,Responsable.DisplayName=valUsrMe)
+            //Filter(Empleado;Departamento=valUsrResp)
+            Filter(Empleado,Responsable.DisplayName="RAUL GERARDO BOTELLO CERON")
         );
         Set(
             VarIDTR,

@@ -3,6 +3,7 @@
     "Admin": 9,
     "Component1": 6,
     "Header": 7,
+    "Header_2": 7,
     "Menu": 8
   },
   "ControlUniqueGuids": {},
@@ -203,7 +204,7 @@
     "galMenu": 10,
     "Header": 5,
     "Header_1": 378,
-    "Header_2": 17,
+    "Header_2": 466,
     "Header_3": 209,
     "Header_4": 201,
     "Header_5": 443,
@@ -474,7 +475,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/05/2023 23:40:18",
+  "HeaderLastSavedDateTimeUTC": "01/05/2023 23:48:44",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "30971f61-f7b0-4fd0-969c-6f44d693efcf": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
@@ -1342,7 +1343,7 @@
     "galMenu": 447,
     "Header": 3,
     "Header_1": 19,
-    "Header_2": 90,
+    "Header_2": 3,
     "Header_3": 276,
     "Header_4": 83,
     "Header_5": 253,
@@ -1674,7 +1675,7 @@
     "ControlCount": {
       "02f390211a9948f1bd262c9df508cd24": 6,
       "1ad60f7079e34193a9c3a18cb59ba034": 2,
-      "506fd33b098f40f79398950882792782": 6,
+      "506fd33b098f40f79398950882792782": 7,
       "a6c673aa15834ec999ce5618f106cb55": 1,
       "attachments": 1,
       "button": 38,

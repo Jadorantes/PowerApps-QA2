@@ -21,7 +21,7 @@ scr_home As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =18
+            Size: =15
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
             Width: =514
@@ -59,7 +59,7 @@ scr_home As screen:
         Font: =Font.Verdana
         FontWeight: =FontWeight.Bold
         Height: =60
-        Size: =23
+        Size: =22
         Text: ="Objetivos dirección"
         Width: =545
         X: =136
@@ -96,10 +96,10 @@ scr_home As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =18
+            Size: =15
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =460
+            Width: =514
             X: =32
             Y: =16
             ZIndex: =1
@@ -135,7 +135,7 @@ scr_home As screen:
         Font: =Font.Verdana
         FontWeight: =FontWeight.Bold
         Height: =60
-        Size: =23
+        Size: =22
         Text: ="Objetivos área"
         Width: =545
         X: =766
@@ -716,8 +716,7 @@ scr_home As screen:
             ZIndex: =12
 
     Container2 As groupContainer.manualLayoutContainer:
-        Height: =82
-        Visible: =false
+        Height: =60
         Width: =893
         X: =471
         ZIndex: =9
@@ -729,15 +728,14 @@ scr_home As screen:
             Size: =20
             Text: =User().FullName
             Width: =732
-            X: =42
-            Y: =10
+            X: =41
             ZIndex: =1
 
         Image2 As image:
-            Height: =60
+            Height: =52
             Image: =User().Image
-            X: =773
-            Y: =10
+            Width: =85
+            X: =787
             ZIndex: =2
 
         Label4_1 As label:
@@ -748,7 +746,7 @@ scr_home As screen:
             Size: =12
             Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Puesto)
             Width: =712
-            X: =62
-            Y: =46
+            X: =61
+            Y: =27
             ZIndex: =3
 

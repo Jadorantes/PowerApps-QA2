@@ -1404,11 +1404,11 @@ scr_objetivo As screen:
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =708
+        Height: =687
         Visible: =varctnDetalleObjetivos
         Width: =1296
         X: =70
-        Y: =60
+        Y: =81
         ZIndex: =4
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":

@@ -321,7 +321,7 @@ scr_home As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =ThisItem.Nombre
+                Text: =Proper(ThisItem.Nombre)
                 VerticalAlign: =VerticalAlign.Top
                 Width: =409
                 X: =153

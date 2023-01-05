@@ -241,7 +241,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
                 X: =661
-                Y: =107
+                Y: =100
                 ZIndex: =6
 
             lbTDirEmp As label:
@@ -339,23 +339,23 @@ scr_home As screen:
 
             lbResEmp_1 As label:
                 Font: =Font.Arial
-                Height: =74
+                Height: =56
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: =ThisItem.Responsable.Department
                 VerticalAlign: =VerticalAlign.Top
-                Width: =380
-                X: =961
-                Y: =107
+                Width: =739
+                X: =661
+                Y: =125
                 ZIndex: =15
 
             lbResTEmp_3 As label:
                 Font: =Font.Verdana
-                Height: =36
+                Height: =47
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -366,7 +366,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =600
-                Y: =168
+                Y: =170
                 ZIndex: =16
 
             lbTNomEmp_2 As label:
@@ -452,14 +452,14 @@ scr_home As screen:
             ZIndex: =4
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-            Height: =326
+            Height: =317
             Items: =MyPeerList
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =60
-            Width: =766
+            Width: =718
             X: =600
-            Y: =280
+            Y: =288
             ZIndex: =5
 
             Image8 As image:

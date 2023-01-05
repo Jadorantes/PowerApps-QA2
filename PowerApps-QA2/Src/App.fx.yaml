@@ -98,22 +98,25 @@ App As appinfo:
             Ayuda,
             {
                 Titulo:"Ventana de inicio",
-                Descripcion:"En la ventana de inicio podras ver tanto los objetivos principales como los objetivos   del area",
+                Descripcion:"1.	Después de validar que tus datos de usuario sean correctos aparecerás dentro de la ventana de INICIO, donde podrás ver los objetivos clave (OK) registrados hasta el momento tanto de la dirección (DGTI) como los del área a la que perteneces.",
                 Imagen: '1-img'
             },
             {
                   Titulo:"Detalle de objetivos",
-                  Descripcion:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  Descripcion:"2. Selecciona la opción OBJETIVO para ver o registrar tus objetivos, resultados y tareas.",
                 Imagen: '2-img'
             },
             {
                   Titulo:"Registro de objetivos",
-                  Descripcion:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  Descripcion:"3. Una vez dentro de OBJETIVO podrás ver el listado de tus objetivos registrados hasta el momento. 
+        Si aun no has registrado nada saltara un PopUp con los enlaces necesarios tanto para registrar un objetivo como para aprender a hacerlo. 
+        
+        ",
                 Imagen: R1
             },
             {
                   Titulo:"Registro de objetivos",
-                  Descripcion:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  Descripcion:"4. Al momento de dar clic en cualquiera de las opciones para comenzar a registrar un OKR (PopUp o Botón en el menú de objetivo), aparecerán los resultados clave de tu líder a partir de los cuales podrás alinear tus objetivos a registrar dando clic en el icono de más. ",
                 Imagen: 'ROK-img'
             }
         );

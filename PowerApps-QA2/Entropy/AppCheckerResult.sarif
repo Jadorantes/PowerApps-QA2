@@ -419,17 +419,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Items"
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Items",
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 32,
+                  "charOffset": 30,
                   "snippet": {
                     "text": "="
                   }
@@ -438,7 +438,7 @@
               "properties": {
                 "member": "Items",
                 "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
+                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
               }
             }
           ],
@@ -460,17 +460,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items"
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items",
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Items",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 30,
+                  "charOffset": 32,
                   "snippet": {
                     "text": "="
                   }
@@ -479,7 +479,7 @@
               "properties": {
                 "member": "Items",
                 "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
               }
             }
           ],
@@ -1842,186 +1842,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.AccessibleLabel"
                 }
               ],
@@ -2305,6 +2125,186 @@
                 "member": "TabIndex",
                 "module": "scr_objetivo",
                 "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado.Image15_1"
               }
             }
           ],

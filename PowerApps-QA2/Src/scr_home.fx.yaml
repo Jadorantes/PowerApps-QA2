@@ -312,12 +312,13 @@ scr_home As screen:
 
             lbTNomEmp_1 As label:
                 Font: =Font.Verdana
-                Height: =36
+                Height: =35
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: =ThisItem.Nombre
                 VerticalAlign: =VerticalAlign.Top
                 Width: =350

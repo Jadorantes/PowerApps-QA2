@@ -708,7 +708,7 @@ scr_home As screen:
             OnSelect: |
                 =Set(popUpUsr,"true");
                 Set(varValUsr,false);
-            Text: ="Guardar"
+            Text: ="Cancelar"
             Visible: =varValUsr
             Width: =320
             X: =755

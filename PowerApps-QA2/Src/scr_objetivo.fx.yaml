@@ -742,7 +742,7 @@ scr_objetivo As screen:
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =352
-                X: =401
+                X: =423
                 Y: =16
                 ZIndex: =5
 
@@ -758,7 +758,7 @@ scr_objetivo As screen:
                 Text: =ThisItem.PeriodoTiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =401
+                X: =423
                 Y: =52
                 ZIndex: =6
 
@@ -781,7 +781,7 @@ scr_objetivo As screen:
 
             Subtitle6_2 As label:
                 Font: =Font.Arial
-                Height: =32
+                Height: =216
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0

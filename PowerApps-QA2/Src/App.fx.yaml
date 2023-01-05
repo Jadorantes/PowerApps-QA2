@@ -79,7 +79,7 @@ App As appinfo:
             MyPeerList,
             //Filter(Empleado;Responsable.DisplayName=valUsrJefe)
             //Filter(Empleado;Departamento=valUsrResp)
-            Filter(Empleado,Responsable.DisplayName="valUsrMe")
+            Filter(Empleado,Responsable.DisplayName=valUsrMe)
         );
         Set(
             VarIDTR,

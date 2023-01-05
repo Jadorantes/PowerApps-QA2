@@ -190,7 +190,7 @@ scr_home As screen:
                 Text: |-
                     ="Email: "
                 VerticalAlign: =VerticalAlign.Top
-                Width: =200
+                Width: =155
                 X: =34
                 Y: =147
                 ZIndex: =3
@@ -207,8 +207,8 @@ scr_home As screen:
                 Size: =15
                 Text: =ThisItem.Nombre_Usuario.Email
                 VerticalAlign: =VerticalAlign.Top
-                Width: =310
-                X: =247
+                Width: =368
+                X: =189
                 Y: =147
                 ZIndex: =4
 
@@ -252,11 +252,11 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: |-
                     ="Dirección: "
                 VerticalAlign: =VerticalAlign.Top
-                Width: =200
+                Width: =155
                 X: =34
                 Y: =216
                 ZIndex: =7
@@ -264,31 +264,33 @@ scr_home As screen:
             lbDirEmp As label:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                Height: =73
+                Height: =65
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: =Proper("DIRECCIÓN GRAL DE TECNOLOGIAS DE LA INFORMACIÓN")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =351
-                X: =247
+                X: =189
                 Y: =216
                 ZIndex: =8
 
             lbTDepEmp As label:
                 Font: =Font.Verdana
-                Height: =41
+                Height: =43
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: |-
                     ="Área: "
                 VerticalAlign: =VerticalAlign.Top
-                Width: =207
+                Width: =113
                 X: =40
                 Y: =305
                 ZIndex: =9
@@ -296,16 +298,17 @@ scr_home As screen:
             lbDepEmp As label:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                Height: =80
+                Height: =65
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: =Proper(ThisItem.Departamento)
                 VerticalAlign: =VerticalAlign.Top
-                Width: =310
-                X: =247
+                Width: =315
+                X: =189
                 Y: =305
                 ZIndex: =10
 
@@ -374,11 +377,11 @@ scr_home As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: |-
                     ="Puesto: "
                 VerticalAlign: =VerticalAlign.Top
-                Width: =207
+                Width: =113
                 X: =40
                 Y: =385
                 ZIndex: =17
@@ -386,18 +389,18 @@ scr_home As screen:
             lbTNomEmp_3 As label:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Normal
-                Height: =75
+                Height: =90
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =17
+                Size: =15
                 Text: =Proper(ThisItem.Puesto)
                 VerticalAlign: =VerticalAlign.Top
-                Width: =351
-                X: =247
-                Y: =385
+                Width: =386
+                X: =189
+                Y: =370
                 ZIndex: =18
 
         TituloValidacion As label:
@@ -415,6 +418,7 @@ scr_home As screen:
         Correcto As button:
             BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Fill: =RGBA(0, 154, 62, 1)
+            Font: =Font.Verdana
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =ForAll(RegistrosEmpleados,
@@ -436,6 +440,7 @@ scr_home As screen:
 
         Incorrecto As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Font: =Font.Verdana
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: =Set(varValUsr,true)
             Text: ="Datos Incorrectos"

@@ -1291,7 +1291,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Align",
         "VerticalAlign",
@@ -3779,7 +3786,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Align",
         "VerticalAlign",
@@ -6177,7 +6191,14 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -6456,7 +6477,14 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9122,7 +9150,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbTNomEmp_2",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9389,7 +9417,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbTNomEmp_3",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

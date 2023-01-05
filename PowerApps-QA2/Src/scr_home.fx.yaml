@@ -258,7 +258,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =155
                 X: =34
-                Y: =216
+                Y: =217
                 ZIndex: =7
 
             lbDirEmp As label:
@@ -275,7 +275,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =351
                 X: =189
-                Y: =216
+                Y: =217
                 ZIndex: =8
 
             lbTDepEmp As label:
@@ -292,7 +292,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =113
                 X: =40
-                Y: =305
+                Y: =287
                 ZIndex: =9
 
             lbDepEmp As label:
@@ -309,7 +309,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =315
                 X: =189
-                Y: =305
+                Y: =287
                 ZIndex: =10
 
             lbTNomEmp_1 As label:
@@ -339,7 +339,7 @@ scr_home As screen:
 
             lbResEmp_1 As label:
                 Font: =Font.Arial
-                Height: =32
+                Height: =74
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -383,7 +383,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =113
                 X: =40
-                Y: =385
+                Y: =357
                 ZIndex: =17
 
             lbTNomEmp_3 As label:
@@ -400,7 +400,7 @@ scr_home As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =386
                 X: =189
-                Y: =385
+                Y: =357
                 ZIndex: =18
 
         TituloValidacion As label:

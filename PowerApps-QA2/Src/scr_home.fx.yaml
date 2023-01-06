@@ -418,8 +418,8 @@ scr_home As screen:
         Correcto As button:
             BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Fill: =RGBA(0, 154, 62, 1)
-            Font: =Font.Verdana
-            Height: =70
+            Font: =Font.Arial
+            Height: =60
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =ForAll(RegistrosEmpleados,
@@ -433,24 +433,22 @@ scr_home As screen:
                 );
                 Refresh(Empleado);
                 Set(popUpUsr,"false");
-            Size: =12
             Text: ="Datos Correctos"
             Width: =227
-            X: =373
-            Y: =618
+            X: =456
+            Y: =578
             ZIndex: =3
 
         Incorrecto As button:
             Fill: =RGBA(0, 154, 62, 1)
-            Font: =Font.Verdana
-            Height: =70
+            Font: =Font.Arial
+            Height: =60
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: =Set(varValUsr,true)
-            Size: =12
             Text: ="Datos Incorrectos"
             Width: =227
-            X: =763
-            Y: =618
+            X: =750
+            Y: =578
             ZIndex: =4
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -525,7 +523,6 @@ scr_home As screen:
                 Height: =703
                 Visible: =false//varUserExist
                 Width: =1366
-                Y: =5
                 ZIndex: =6
 
             Label1 As label:
@@ -559,21 +556,25 @@ scr_home As screen:
         txtNombreUsr As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Nombre)
+            Font: =Font.Arial
             Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
+            Size: =14
             Width: =572
-            X: =397
-            Y: =97
+            X: =508
+            Y: =102
             ZIndex: =1
 
         txtPuesto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Puesto)
+            Font: =Font.Arial
             Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
+            Size: =14
             Width: =572
-            X: =397
-            Y: =277
+            X: =508
+            Y: =282
             ZIndex: =2
 
         listArea As dropdown:
@@ -581,19 +582,21 @@ scr_home As screen:
             ChevronBackground: =RGBA(0, 154, 62, 1)
             ChevronHoverBackground: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Default: =LookUp(Empleado,Nombre=User().FullName,Departamento)
+            Font: =Font.Arial
             Height: =51
             Items: =Distinct(Areas,Departamento)
             PressedFill: =RGBA(0, 154, 62, 1)
             SelectionFill: =RGBA(0, 154, 62, 1)
+            Size: =14
             Width: =572
-            X: =397
-            Y: =187
+            X: =508
+            Y: =192
             ZIndex: =3
 
         Button2 As button:
             Fill: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
-            Height: =70
+            Height: =60
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =Office365Outlook.SendEmailV2(Concatenate("solicitudessp@frd.org.mx;",User().Email),"Actualización de los datos del usuario del OKR",Concatenate("Se requieren correcciones de los datos del usuario ",User().FullName,
@@ -607,18 +610,20 @@ scr_home As screen:
             Text: ="Guardar"
             Visible: =varValUsr
             Width: =227
-            X: =397
-            Y: =560
+            X: =456
+            Y: =578
             ZIndex: =4
 
         txtJefeDirecto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =LookUp(Empleado,Nombre=User().FullName,Responsable.DisplayName)
+            Font: =Font.Arial
             Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
+            Size: =14
             Width: =572
-            X: =397
-            Y: =367
+            X: =508
+            Y: =372
             ZIndex: =5
 
         Label3 As label:
@@ -627,8 +632,8 @@ scr_home As screen:
             Size: =15
             Text: ="NOMBRE"
             Visible: =varValUsr
-            X: =174
-            Y: =108
+            X: =285
+            Y: =113
             ZIndex: =6
 
         Label3_1 As label:
@@ -637,8 +642,8 @@ scr_home As screen:
             Size: =15
             Text: ="PUESTO"
             Visible: =varValUsr
-            X: =174
-            Y: =288
+            X: =285
+            Y: =293
             ZIndex: =7
 
         Label3_2 As label:
@@ -649,8 +654,8 @@ scr_home As screen:
             Text: ="JEFE DIRECTO"
             Visible: =varValUsr
             Width: =194
-            X: =174
-            Y: =370
+            X: =285
+            Y: =375
             ZIndex: =8
 
         Label3_3 As label:
@@ -661,8 +666,8 @@ scr_home As screen:
             Size: =15
             Text: ="AREA"
             Visible: =varValUsr
-            X: =174
-            Y: =198
+            X: =285
+            Y: =203
             ZIndex: =9
 
         ctnNotCorreo As groupContainer.manualLayoutContainer:
@@ -702,7 +707,7 @@ scr_home As screen:
         Button2_1 As button:
             Fill: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
-            Height: =70
+            Height: =60
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =Set(popUpUsr,"true");
@@ -710,8 +715,8 @@ scr_home As screen:
             Text: ="Cancelar"
             Visible: =varValUsr
             Width: =227
-            X: =742
-            Y: =560
+            X: =750
+            Y: =578
             ZIndex: =12
 
     Container2 As groupContainer.manualLayoutContainer:

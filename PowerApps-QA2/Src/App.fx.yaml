@@ -10,7 +10,6 @@ App As appinfo:
         Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
         Set(popUpUsr,If(valUsr="Activo","false","true"));
         Set(varUserExist,If(IsEmpty(Filter(Empleado,Nombre_Usuario.DisplayName=User().FullName))="true","false","true"));
-        Set(popValObj,If(CountRows(GalleryObjetivoEmp.AllItems)=0,"true","false"));
         Set(varPopUpMail,false);
         //Set(popUp;If(popUpUsr="true" && VarpopUpComprobacion="false";"false"));;
         Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
@@ -146,6 +145,9 @@ App As appinfo:
                 Imagen: img8
             }
         );
+        
+        Set(popValObj,If(CountRows(GalleryObjetivoEmp.AllItems)=0,"true","false"));
+        
         //VarpopUpComprobacion=true
     StartScreen: =If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Puesto)="DGA DE TECNOLOGIAS DE INFORMACION",scr_objetivo)
 

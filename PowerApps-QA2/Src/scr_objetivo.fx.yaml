@@ -176,6 +176,7 @@ scr_objetivo As screen:
         TxBuscadorObje As text:
             Default: =
             HintText: ="Buscar por nombre"
+            Size: =14
             X: =60
             Y: =47
             ZIndex: =2

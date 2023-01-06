@@ -3,10 +3,10 @@ scr_objetivo As screen:
     Header_2 As Header:
 
     ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
-        Height: =673
+        Height: =686
         Width: =1296
         X: =70
-        Y: =93
+        Y: =80
         ZIndex: =2
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":

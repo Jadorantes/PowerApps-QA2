@@ -2102,3 +2102,6 @@ scr_objetivo As screen:
         Y: =81
         ZIndex: =8
 
+    Header_2 As Header:
+        ZIndex: =9
+

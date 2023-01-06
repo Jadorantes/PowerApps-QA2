@@ -678,7 +678,7 @@ scr_objetivo As screen:
         lbENombre_1 As label:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Size: =20
+            Size: =18
             Text: ="Nombre"
             Width: =350
             X: =26
@@ -825,7 +825,7 @@ scr_objetivo As screen:
         lbEPuesto_1 As label:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Size: =20
+            Size: =18
             Text: ="Puesto"
             Width: =350
             X: =737

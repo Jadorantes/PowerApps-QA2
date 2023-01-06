@@ -17,7 +17,7 @@ scr_objetivo As screen:
             TemplatePadding: =0
             TemplateSize: =326
             Width: =1296
-            Y: =87
+            Y: =104
             ZIndex: =1
 
             Title8 As label:
@@ -37,9 +37,8 @@ scr_objetivo As screen:
                 ZIndex: =1
 
             Subtitle7 As label:
-                AutoHeight: =true
                 Font: =Font.Arial
-                Height: =33.4
+                Height: =254
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -48,7 +47,7 @@ scr_objetivo As screen:
                 Size: =14
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
-                Width: =200
+                Width: =232
                 X: =57
                 Y: =47
                 ZIndex: =2
@@ -73,8 +72,8 @@ scr_objetivo As screen:
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =277
-                X: =300
-                Y: =16
+                X: =317
+                Y: =18
                 ZIndex: =6
 
             Subtitle7_2 As label:
@@ -90,7 +89,7 @@ scr_objetivo As screen:
                 Text: =ThisItem.Periodo_Tiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =300
+                X: =317
                 Y: =47
                 ZIndex: =7
 
@@ -168,9 +167,9 @@ scr_objetivo As screen:
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
                 Tooltip: ="Detalle OK"
-                Width: =55
-                X: =1185
-                Y: =16
+                Width: =39
+                X: =1195
+                Y: =33
                 ZIndex: =14
 
         TxBuscadorObje As text:
@@ -190,9 +189,9 @@ scr_objetivo As screen:
                 Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                 Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
             Tooltip: ="Agregar Objetivo"
-            Width: =57
-            X: =1187
-            Y: =22
+            Width: =50
+            X: =1191
+            Y: =34
             ZIndex: =3
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
@@ -1479,8 +1478,8 @@ scr_objetivo As screen:
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
-                X: =532
-                Y: =10
+                X: =659
+                Y: =16
                 ZIndex: =5
 
             Subtitle11_1 As label:
@@ -1495,34 +1494,34 @@ scr_objetivo As screen:
                 Text: =ThisItem.PeriodoTiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
-                X: =532
-                Y: =50
+                X: =659
+                Y: =52
                 ZIndex: =6
 
             Image15 As image:
-                Height: =66
+                Height: =46
                 Image: =Ver
                 OnSelect: |-
                     =Set(varIDRCEmple,ThisItem.ID);
                     Set(varctnResultadosCDetalle,true);
                     Set(varlbtTituloObjetivo,"Detalle Tareas");
                 Tooltip: ="Ver detalle"
-                Width: =52
-                X: =1082
-                Y: =22
+                Width: =39
+                X: =1079
+                Y: =62
                 ZIndex: =9
 
             Image15_1 As image:
-                Height: =66
+                Height: =46
                 Image: =Agregar
                 OnSelect: |-
                     =Set(varIDRCEmple,ThisItem.ID);
                     Set(varctnTareaRC,true);
                     Set(varlbtTituloObjetivo,"Registro Tareas");
                 Tooltip: ="Registrar tarea"
-                Width: =52
-                X: =1185
-                Y: =22
+                Width: =39
+                X: =1180
+                Y: =62
                 ZIndex: =10
 
         lblOGRC00_2 As label:
@@ -1618,14 +1617,14 @@ scr_objetivo As screen:
 
         "Gallery_Tareas As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderColor: =RGBA(0, 154, 62, 1)
-            Height: =535
+            Height: =495
             Items: =TareaRC
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =337
             Width: =1254
             X: =21
-            Y: =99
+            Y: =139
             ZIndex: =1
 
             Title11 As label:
@@ -1767,6 +1766,7 @@ scr_objetivo As screen:
                 Font: =Font.Arial
                 Height: =31
                 OnSelect: =Select(Parent)
+                Size: =14
                 Width: =270
                 X: =447
                 Y: =48
@@ -1795,7 +1795,7 @@ scr_objetivo As screen:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
             Height: =39
-            Size: =20
+            Size: =18
             Text: ="Resultado Clave"
             Width: =1065
             X: =231
@@ -1806,6 +1806,7 @@ scr_objetivo As screen:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             Font: =Font.Arial
+            Height: =82
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
             Width: =225
             X: =6
@@ -1817,6 +1818,7 @@ scr_objetivo As screen:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             Font: =Font.Arial
+            Height: =82
             Size: =15
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
             Width: =1065
@@ -1900,7 +1902,7 @@ scr_objetivo As screen:
             ZIndex: =7
 
         Image18 As image:
-            Height: =42
+            Height: =46
             Image: =Agregar
             OnSelect: |+
                 =Set(
@@ -1927,9 +1929,9 @@ scr_objetivo As screen:
                 
                 
             Tooltip: ="Agregar otra tarea"
-            Width: =51
-            X: =1204
-            Y: =79
+            Width: =39
+            X: =1210
+            Y: =139
             ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
@@ -1942,14 +1944,14 @@ scr_objetivo As screen:
         ZIndex: =7
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =530
+            Height: =490
             Items: =Filter(Tarea,ID_ResultadoClave=varIDRCEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =Min(104, Self.Height - 60)
+            TemplateSize: =119
             Width: =1290
             X: =6
-            Y: =92
+            Y: =132
             ZIndex: =2
 
             Title9 As label:
@@ -1959,11 +1961,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: ="Nombre" 
                 VerticalAlign: =VerticalAlign.Top
                 Width: =400
-                X: =32
-                Y: =16
+                X: =47
+                Y: =20
                 ZIndex: =1
 
             Subtitle8 As label:
@@ -1994,10 +1997,11 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: ="Fecha de inicio" 
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =432
+                X: =495
                 Y: =22
                 ZIndex: =5
 
@@ -2022,10 +2026,11 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =15
                 Text: ="Fecha de finalización" 
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =732
+                X: =909
                 Y: =22
                 ZIndex: =7
 
@@ -2047,6 +2052,8 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            FontWeight: =FontWeight.Semibold
+            Size: =15
             Text: ="ID_ResultadoClave"
             Width: =190
             X: =6
@@ -2057,6 +2064,8 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            FontWeight: =FontWeight.Semibold
+            Size: =18
             Text: ="Resultado Clave"
             Width: =1100
             X: =196
@@ -2067,6 +2076,7 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Height: =80
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
             Width: =190
             X: =6
@@ -2074,9 +2084,10 @@ scr_objetivo As screen:
             ZIndex: =5
 
         lblRCRC00_9 As label:
-            Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Height: =80
+            Size: =15
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
             Width: =1100
             X: =196

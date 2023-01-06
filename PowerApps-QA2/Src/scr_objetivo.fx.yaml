@@ -25,7 +25,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
@@ -42,7 +42,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =12
+                Size: =14
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
@@ -60,16 +60,16 @@ scr_objetivo As screen:
 
             Title8_1 As label:
                 Font: =Font.Verdana
-                Height: =31
+                Height: =26
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =255
+                Width: =277
                 X: =300
                 Y: =16
                 ZIndex: =6
@@ -83,7 +83,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =12
+                Size: =14
                 Text: =ThisItem.Periodo_Tiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
@@ -99,7 +99,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Estatus aprobación"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =227
@@ -116,7 +116,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =12
+                Size: =14
                 Text: =ThisItem.EstatusAprobacion
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
@@ -132,7 +132,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Estatus Ejecución"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =230
@@ -149,7 +149,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =12
+                Size: =14
                 Text: =ThisItem.EstatusEjecucion
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180

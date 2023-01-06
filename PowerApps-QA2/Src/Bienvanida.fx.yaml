@@ -1,7 +1,7 @@
 Bienvanida As screen:
 
     Fondo As image:
-        Height: =768
+        Height: =767
         Image: =Back_inicio
         ImagePosition: =ImagePosition.Stretch
         Width: =1366

@@ -63,7 +63,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"<div \r\n    style=\"\"border:1px white;\r\n            box-shadow: 0px 2px 0px Gainsboro; \r\n            border-radius:14px; \r\n            height:\"& 66 & \"px;\r\n            width: \"& 100 & \"%;\r\n        \"\">\r\n</div>\"",
+            "InvariantScript": "\"<div \r\n    style=\"\"border:1px white;\r\n            box-shadow: 0px 2px 0px Gainsboro; \r\n            border-radius:14px; \r\n            height:\"& 66 & \"px;\r\n            width: \"& 100 & \"%;\r\n        \r\n</div>\"",
             "Property": "HtmlText",
             "RuleProviderType": "Unknown"
           },
@@ -493,7 +493,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638085574614886355",
+    "LastModifiedTimestamp": "638085603891121332",
     "Name": "Header",
     "Rules": [
       {
@@ -552,7 +552,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638085574614886355",
+  "LastModifiedTimestamp": "638085603891121332",
   "Name": "506fd33b098f40f79398950882792782",
   "OverridableProperties": {},
   "TemplateOriginalName": "e75d2ac9724f4f7f89ff0335607181c3",

@@ -15,7 +15,7 @@ Header As CanvasComponent:
                         border-radius:14px; 
                         height:"& 66 & "px;
                         width: "& 100 & "%;
-                    "">
+                    
             </div>"
         Width: =1370
         ZIndex: =1

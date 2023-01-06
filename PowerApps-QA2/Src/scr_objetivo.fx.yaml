@@ -1580,15 +1580,16 @@ scr_objetivo As screen:
 
         btnCancelarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
-            Height: =47
+            Font: =Font.Arial
+            Height: =60
             OnSelect: |-
                 =Set(varctnObjetivoEmpleado,true);
                 Set(varctnDetalleObjetivos,false);
                 Set(varlbtTituloObjetivo,"Detalle Objetivos");
             Text: ="Cancelar"
             Width: =227
-            X: =531
-            Y: =599
+            X: =537
+            Y: =578
             ZIndex: =6
 
         Label5 As label:

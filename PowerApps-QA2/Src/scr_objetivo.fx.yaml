@@ -1349,8 +1349,8 @@ scr_objetivo As screen:
                     =If( IsBlank(DataCardValue19.Text) && IsBlank( inpResultadoClaveOG_1.Text) 
                     ,Disabled, Edit)
                 Fill: =RGBA(0, 154, 62, 1)
-                Font: =Font.Verdana
-                Height: =47
+                Font: =Font.Arial
+                Height: =60
                 OnSelect: |-
                     =ForAll(
                         Gallery_ResultadoClaveOG_1.AllItems,
@@ -1370,22 +1370,22 @@ scr_objetivo As screen:
                     Set(popValObj,"false")
                 Text: ="Guardar"
                 Width: =227
-                X: =374
-                Y: =554
+                X: =456
+                Y: =578
                 ZIndex: =10
 
             btnCancelarOG_1 As button:
                 Fill: =RGBA(0, 154, 62, 1)
-                Font: =Font.Verdana
-                Height: =47
+                Font: =Font.Arial
+                Height: =60
                 OnSelect: |-
                     =Set(varctnObjetivoEmpleado,true);
                     Set(varctnRCOO,false);
                     Set(varlbtTituloObjetivo,"Detale Resultado Claves Jefe Directo");
                 Text: ="Cancelar"
                 Width: =227
-                X: =709
-                Y: =554
+                X: =750
+                Y: =578
                 ZIndex: =11
 
             Image9 As image:

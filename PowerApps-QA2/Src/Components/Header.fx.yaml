@@ -23,9 +23,8 @@ Header As CanvasComponent:
     Image1 As image:
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =63
+        Height: =60
         Image: ='DGATI LETRAS NEGRAS HORIZONTAL2'
         Width: =274
-        X: =11
         ZIndex: =2
 

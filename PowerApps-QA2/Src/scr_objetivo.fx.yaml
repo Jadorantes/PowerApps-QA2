@@ -1,10 +1,10 @@
 scr_objetivo As screen:
 
     ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
-        Height: =708
+        Height: =688
         Width: =1296
         X: =70
-        Y: =60
+        Y: =80
         ZIndex: =1
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":

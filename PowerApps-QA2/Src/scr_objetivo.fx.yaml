@@ -166,7 +166,7 @@ scr_objetivo As screen:
                     =Set(varIDObjetivoEmple,ThisItem.ID);
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
-                Tooltip: ="Detalle OK"
+                Tooltip: ="ver detalle"
                 Width: =39
                 X: =1195
                 Y: =33
@@ -1596,8 +1596,8 @@ scr_objetivo As screen:
                 Set(varlbtTituloObjetivo,"Detalle Objetivos");
             Text: ="Cancelar"
             Width: =227
-            X: =537
-            Y: =578
+            X: =531
+            Y: =558
             ZIndex: =6
 
         Label5 As label:
@@ -2143,12 +2143,12 @@ scr_objetivo As screen:
         Align: =Align.Center
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
-        Height: =50
+        Height: =30
         Size: =20
         Text: =varlbtTituloObjetivo
-        Width: =295
-        X: =583
-        Y: =13
+        Width: =502
+        X: =467
+        Y: =26
         ZIndex: =8
 
     Menu_2 As Menu:

@@ -3342,7 +3342,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnDetallesResultadosClave",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3485,7 +3485,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivoGeneral",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3628,7 +3628,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivoOtros",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3757,7 +3757,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivosEmpleado",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4179,7 +4179,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnTareas",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

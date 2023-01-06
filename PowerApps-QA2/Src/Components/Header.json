@@ -59,7 +59,7 @@
         "Name": "HtmlText1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 444,
+        "PublishOrderIndex": 443,
         "Rules": [
           {
             "Category": "Data",
@@ -227,7 +227,14 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          "Fill",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Fill",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "DisabledFill",
           "PressedFill",
           "HoverFill",
@@ -270,7 +277,7 @@
         "Name": "Image1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 445,
+        "PublishOrderIndex": 444,
         "Rules": [
           {
             "Category": "Data",
@@ -292,31 +299,31 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "11",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "10",
+            "InvariantScript": "0",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "300",
+            "InvariantScript": "274",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "55",
+            "InvariantScript": "63",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 0)",
+            "InvariantScript": "RGBA(255, 255, 255, 1)",
             "Property": "Fill",
             "RuleProviderType": "Unknown"
           },
@@ -493,7 +500,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638085612124453873",
+    "LastModifiedTimestamp": "638085612856573269",
     "Name": "Header",
     "Rules": [
       {
@@ -552,7 +559,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638085612124453873",
+  "LastModifiedTimestamp": "638085612856573269",
   "Name": "506fd33b098f40f79398950882792782",
   "OverridableProperties": {},
   "TemplateOriginalName": "e75d2ac9724f4f7f89ff0335607181c3",

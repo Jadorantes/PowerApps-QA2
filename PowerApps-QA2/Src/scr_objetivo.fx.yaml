@@ -986,7 +986,7 @@ scr_objetivo As screen:
                         Font: =Font.Verdana
                         FontWeight: =FontWeight.Bold
                         Height: =34
-                        Size: =20
+                        Size: =15
                         Text: ="Objetivo"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -1061,7 +1061,7 @@ scr_objetivo As screen:
                         Font: =Font.Verdana
                         FontWeight: =FontWeight.Bold
                         Height: =34
-                        Size: =20
+                        Size: =15
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -1265,6 +1265,7 @@ scr_objetivo As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =15
                     Text: ="Resultado Clave"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =600
@@ -1316,6 +1317,7 @@ scr_objetivo As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =15
                     Text: ="Fecha de cumplimiento"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =400
@@ -1341,6 +1343,7 @@ scr_objetivo As screen:
                 lblIDRCOG_1 As label:
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.Co_ID
+                    Visible: =false
                     X: =257
                     Y: =10
                     ZIndex: =8

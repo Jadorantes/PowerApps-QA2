@@ -173,6 +173,7 @@ scr_objetivo As screen:
                 ZIndex: =14
 
         TxBuscadorObje As text:
+            BorderColor: =RGBA(0, 154, 62, 1)
             Default: =
             HintText: ="Buscar por nombre"
             Size: =14

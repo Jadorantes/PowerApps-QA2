@@ -1,22 +1,23 @@
 scr_objetivo As screen:
 
     Header_2 As Header:
+        Height: =82
 
     ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
-        Height: =686
+        Height: =703
         Width: =1296
         X: =70
-        Y: =80
+        Y: =63
         ZIndex: =2
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =590
+            Height: =599
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =326
             Width: =1296
-            Y: =105
+            Y: =87
             ZIndex: =1
 
             Title8 As label:
@@ -250,11 +251,11 @@ scr_objetivo As screen:
 
     ctnObjetivoGeneral As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =675
+        Height: =705
         Visible: =varctnResultadoClaveEmpleado
         Width: =1296
         X: =70
-        Y: =93
+        Y: =63
         ZIndex: =3
 
         Form_ObjetivosGeneral As form:
@@ -667,11 +668,11 @@ scr_objetivo As screen:
 
     ctnObjetivoOtros As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =675
+        Height: =705
         Visible: =varctnResultadoClaveEmpleado2
         Width: =1296
         X: =70
-        Y: =93
+        Y: =63
         ZIndex: =4
 
         lbENombre_1 As label:
@@ -1406,11 +1407,11 @@ scr_objetivo As screen:
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =675
+        Height: =705
         Visible: =varctnDetalleObjetivos
         Width: =1296
         X: =70
-        Y: =93
+        Y: =63
         ZIndex: =5
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -1590,11 +1591,11 @@ scr_objetivo As screen:
 
     ctnTareas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =675
+        Height: =705
         Visible: =varctnTareaRC
         Width: =1296
         X: =70
-        Y: =93
+        Y: =63
         ZIndex: =6
 
         lblOGRC00_4 As label:
@@ -1927,11 +1928,11 @@ scr_objetivo As screen:
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =673
+        Height: =703
         Visible: =varctnResultadosCDetalle
         Width: =1296
         X: =70
-        Y: =93
+        Y: =63
         ZIndex: =7
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":

@@ -842,6 +842,7 @@ scr_objetivo As screen:
 
         Button1 As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Font: =Font.Arial
             Height: =60
             OnSelect: |-
                 =Set(varctnObjetivoEmpleado,true);

@@ -1385,6 +1385,7 @@ scr_configuracion As screen:
                     ZIndex: =1
 
                 Subtitle2_1 As label:
+                    Font: =Font.Verdana
                     Height: =49
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -1425,6 +1426,7 @@ scr_configuracion As screen:
                     ZIndex: =4
 
                 Subtitle2_2 As label:
+                    Font: =Font.Verdana
                     Height: =49
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -1440,6 +1442,7 @@ scr_configuracion As screen:
 
             AgregarEstatus As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
                 OnSelect: |-
                     =NewForm(Form_Estatus);
                     Set(varctnEstatusGeneal,false);

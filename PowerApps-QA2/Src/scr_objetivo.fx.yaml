@@ -1623,7 +1623,7 @@ scr_objetivo As screen:
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =337
-            Width: =1212
+            Width: =1254
             X: =21
             Y: =99
             ZIndex: =1
@@ -1636,7 +1636,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =400
@@ -1657,8 +1657,8 @@ scr_objetivo As screen:
                 TabIndex: =0
                 Tooltip: ="Ver los detalles del elemento"
                 Width: =55
-                X: =1157
-                Y: =40
+                X: =1179
+                Y: =42
                 ZIndex: =3
 
             Separator11 As rectangle:
@@ -1688,12 +1688,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Fecha Inicio"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =726
-                Y: =17
+                X: =739
+                Y: =22
                 ZIndex: =6
 
             DtpFITarea As datepicker:
@@ -1709,8 +1709,8 @@ scr_objetivo As screen:
                     //Reset(DtpFFTarea);;
                 OnSelect: =Select(Parent)
                 Width: =200
-                X: =726
-                Y: =49
+                X: =739
+                Y: =52
                 ZIndex: =7
 
             Title11_2 As label:
@@ -1721,12 +1721,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Fecha Fin"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =952
-                Y: =17
+                X: =979
+                Y: =14
                 ZIndex: =8
 
             DtpFFTarea As datepicker:
@@ -1741,8 +1741,8 @@ scr_objetivo As screen:
                     );
                 OnSelect: =Select(Parent)
                 Width: =200
-                X: =952
-                Y: =49
+                X: =979
+                Y: =52
                 ZIndex: =9
 
             Title11_3 As label:
@@ -1753,7 +1753,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =15
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =270
@@ -1928,8 +1928,8 @@ scr_objetivo As screen:
                 
             Tooltip: ="Agregar otra tarea"
             Width: =51
-            X: =1182
-            Y: =99
+            X: =1204
+            Y: =79
             ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:

@@ -1423,7 +1423,7 @@ scr_objetivo As screen:
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =Min(104, Self.Height - 60)
+            TemplateSize: =241
             Width: =1290
             Y: =260
             ZIndex: =1
@@ -1436,7 +1436,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -1446,15 +1446,16 @@ scr_objetivo As screen:
 
             Subtitle11 As label:
                 Font: =Font.Arial
-                Height: =32
+                Height: =152
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =14
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
-                Width: =500
+                Width: =477
                 X: =32
                 Y: =Title12.Y + Title12.Height + 4
                 ZIndex: =2
@@ -1474,7 +1475,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =18
+                Size: =15
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -1490,6 +1491,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =14
                 Text: =ThisItem.PeriodoTiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -1540,7 +1542,7 @@ scr_objetivo As screen:
             BorderColor: =RGBA(230, 230, 230, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
-            Size: =25
+            Size: =20
             Text: ="Detalle OK"
             Width: =1105
             X: =191
@@ -1586,7 +1588,7 @@ scr_objetivo As screen:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Height: =63
-            Size: =20
+            Size: =18
             Text: ="Resultados clave"
             Width: =1290
             X: =6

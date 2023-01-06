@@ -3199,7 +3199,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnDetalleObjetivos",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3342,7 +3342,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnDetallesResultadosClave",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3485,7 +3485,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivoGeneral",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3628,7 +3628,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivoOtros",
-      "ParentIndex": 3,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3757,7 +3757,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivosEmpleado",
-      "ParentIndex": 8,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3893,7 +3893,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnPopUpSinOK",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4036,7 +4036,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnResultadoClaveOO",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4179,7 +4179,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnTareas",
-      "ParentIndex": 4,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14947,7 +14947,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ImaOKR",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16334,7 +16334,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbENombre_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16900,7 +16900,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbEPuesto_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23411,7 +23411,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbNombre_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24462,7 +24462,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbPuesto_1",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -26138,7 +26138,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Menu_2",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -38011,7 +38011,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TxBuscadorObje",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

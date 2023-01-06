@@ -1,10 +1,10 @@
 scr_objetivo As screen:
 
     ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
-        Height: =684
+        Height: =673
         Width: =1296
         X: =70
-        Y: =82
+        Y: =93
         ZIndex: =1
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -192,12 +192,12 @@ scr_objetivo As screen:
             ZIndex: =3
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
-            Height: =648
+            Height: =664
             Visible: |-
                 =popValObj
                 //false
             Width: =1296
-            Y: =36
+            Y: =9
             ZIndex: =4
 
             Button8 As button:
@@ -248,11 +248,11 @@ scr_objetivo As screen:
 
     ctnObjetivoGeneral As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =686
+        Height: =675
         Visible: =varctnResultadoClaveEmpleado
         Width: =1296
         X: =70
-        Y: =82
+        Y: =93
         ZIndex: =2
 
         Form_ObjetivosGeneral As form:
@@ -665,11 +665,11 @@ scr_objetivo As screen:
 
     ctnObjetivoOtros As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =686
+        Height: =675
         Visible: =varctnResultadoClaveEmpleado2
         Width: =1296
         X: =70
-        Y: =82
+        Y: =93
         ZIndex: =3
 
         lbENombre_1 As label:
@@ -1404,11 +1404,11 @@ scr_objetivo As screen:
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =687
+        Height: =675
         Visible: =varctnDetalleObjetivos
         Width: =1296
         X: =70
-        Y: =81
+        Y: =93
         ZIndex: =4
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -1588,11 +1588,11 @@ scr_objetivo As screen:
 
     ctnTareas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =686
+        Height: =675
         Visible: =varctnTareaRC
         Width: =1296
         X: =70
-        Y: =82
+        Y: =93
         ZIndex: =5
 
         lblOGRC00_4 As label:
@@ -1822,8 +1822,8 @@ scr_objetivo As screen:
                 Set(varctnTareaRC,false);
                 Set(varlbtTituloObjetivo,"Detalle Resultados Clave");
             Text: ="Cancelar"
-            X: =638
-            Y: =655
+            X: =646
+            Y: =634
             ZIndex: =5
 
         btnGuardarOG_2 As button:
@@ -1886,8 +1886,8 @@ scr_objetivo As screen:
                     )
                 );
             Text: ="Guardar"
-            X: =449
-            Y: =655
+            X: =425
+            Y: =634
             ZIndex: =7
 
         Image18 As image:
@@ -1925,11 +1925,11 @@ scr_objetivo As screen:
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =686
+        Height: =673
         Visible: =varctnResultadosCDetalle
         Width: =1296
         X: =70
-        Y: =82
+        Y: =93
         ZIndex: =6
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -2103,6 +2103,6 @@ scr_objetivo As screen:
         ZIndex: =8
 
     Header_2 As Header:
-        Height: =81
+        Height: =82
         ZIndex: =9
 

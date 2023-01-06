@@ -435,8 +435,8 @@ scr_home As screen:
                 Set(popUpUsr,"false");
             Text: ="Datos Correctos"
             Width: =227
-            X: =456
-            Y: =578
+            X: =446
+            Y: =628
             ZIndex: =3
 
         Incorrecto As button:
@@ -447,8 +447,8 @@ scr_home As screen:
             OnSelect: =Set(varValUsr,true)
             Text: ="Datos Incorrectos"
             Width: =227
-            X: =750
-            Y: =578
+            X: =763
+            Y: =636
             ZIndex: =4
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -523,6 +523,7 @@ scr_home As screen:
                 Height: =703
                 Visible: =false//varUserExist
                 Width: =1366
+                Y: =5
                 ZIndex: =6
 
             Label1 As label:

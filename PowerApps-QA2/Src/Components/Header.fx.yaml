@@ -16,7 +16,6 @@ Header As CanvasComponent:
                         height:"& 66 & "px;
                         width: "& 100 & "%;
                     "">
-                    .
             </div>"
         Width: =1370
         ZIndex: =1

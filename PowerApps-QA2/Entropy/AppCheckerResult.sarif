@@ -55,6 +55,47 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 30,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Number"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.ctnPopUpSinOK.Visible"
                 }
               ],
@@ -439,47 +480,6 @@
                 "member": "Items",
                 "module": "scr_objetivo",
                 "type": "scr_objetivo.ctnDetalleObjetivos.Gallery_RCEmpleado"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text",
-              "Number"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 30,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
               }
             }
           ],
@@ -942,19 +942,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel"
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel",
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje"
+                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
               }
             }
           ],
@@ -966,6 +966,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1026,6 +1056,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnObjetivosEmpleado.TxBuscadorObje"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2245,66 +2305,6 @@
                 "member": "TabIndex",
                 "module": "scr_objetivo",
                 "type": "scr_objetivo.ctnTareas.Image18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnDetallesResultadosClave.Gallery4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnDetallesResultadosClave.Gallery4"
               }
             }
           ],

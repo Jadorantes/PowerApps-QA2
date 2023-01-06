@@ -2096,8 +2096,8 @@ scr_objetivo As screen:
         Size: =20
         Text: =varlbtTituloObjetivo
         Width: =500
-        X: =656
-        Y: =696
+        X: =86
+        Y: =686
         ZIndex: =8
 
     Menu_2 As Menu:

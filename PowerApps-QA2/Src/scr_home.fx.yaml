@@ -435,7 +435,7 @@ scr_home As screen:
                 Set(popUpUsr,"false");
             Text: ="Datos Correctos"
             Width: =227
-            X: =411
+            X: =448
             Y: =628
             ZIndex: =3
 
@@ -447,7 +447,7 @@ scr_home As screen:
             OnSelect: =Set(varValUsr,true)
             Text: ="Datos Incorrectos"
             Width: =227
-            X: =708
+            X: =783
             Y: =628
             ZIndex: =4
 

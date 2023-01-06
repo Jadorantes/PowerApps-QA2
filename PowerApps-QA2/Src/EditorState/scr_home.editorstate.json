@@ -46,8 +46,22 @@
         "VerticalAlign",
         "X",
         "Y",
-        "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         "RadiusTopLeft",
         "RadiusTopRight",
@@ -324,8 +338,22 @@
         "VerticalAlign",
         "X",
         "Y",
-        "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         "RadiusTopLeft",
         "RadiusTopRight",
@@ -628,7 +656,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3951,7 +3979,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Incorrecto",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4530,7 +4558,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4854,7 +4882,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_1",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14023,7 +14051,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "txtNombreUsr",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14300,7 +14328,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "txtPuesto",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

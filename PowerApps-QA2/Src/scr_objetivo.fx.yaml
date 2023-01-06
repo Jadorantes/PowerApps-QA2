@@ -685,7 +685,7 @@ scr_objetivo As screen:
             ZIndex: =1
 
         "GalleryObjetivosOtro As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =527
+            Height: =469
             Items: =Filter(ResultadoClave,'Creado por'.DisplayName=LookUp(Empleado,Nombre_Usuario.DisplayName=lbNombre_1.Text,Responsable.DisplayName))
             Layout: =Layout.Vertical
             TemplatePadding: =0
@@ -842,13 +842,15 @@ scr_objetivo As screen:
 
         Button1 As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Height: =47
             OnSelect: |-
                 =Set(varctnObjetivoEmpleado,true);
                 Set(varctnResultadoClaveEmpleado2,false);
                 Set(varlbtTituloObjetivo,"Detalle Objetivos")
             Text: ="Cancelar"
-            X: =577
-            Y: =632
+            Width: =227
+            X: =534
+            Y: =624
             ZIndex: =5
 
         ctnResultadoClaveOO As groupContainer.manualLayoutContainer:
@@ -1347,6 +1349,7 @@ scr_objetivo As screen:
                     ,Disabled, Edit)
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Verdana
+                Height: =47
                 OnSelect: |-
                     =ForAll(
                         Gallery_ResultadoClaveOG_1.AllItems,
@@ -1365,19 +1368,22 @@ scr_objetivo As screen:
                     SubmitForm(Form_RCOO);
                     Set(popValObj,"false")
                 Text: ="Guardar"
-                X: =470
+                Width: =227
+                X: =374
                 Y: =554
                 ZIndex: =10
 
             btnCancelarOG_1 As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Verdana
+                Height: =47
                 OnSelect: |-
                     =Set(varctnObjetivoEmpleado,true);
                     Set(varctnRCOO,false);
                     Set(varlbtTituloObjetivo,"Detale Resultado Claves Jefe Directo");
                 Text: ="Cancelar"
-                X: =700
+                Width: =227
+                X: =709
                 Y: =554
                 ZIndex: =11
 
@@ -1573,13 +1579,15 @@ scr_objetivo As screen:
 
         btnCancelarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Height: =47
             OnSelect: |-
                 =Set(varctnObjetivoEmpleado,true);
                 Set(varctnDetalleObjetivos,false);
                 Set(varlbtTituloObjetivo,"Detalle Objetivos");
             Text: ="Cancelar"
-            X: =538
-            Y: =614
+            Width: =227
+            X: =531
+            Y: =599
             ZIndex: =6
 
         Label5 As label:
@@ -1828,17 +1836,20 @@ scr_objetivo As screen:
 
         btnCancelarOG_3 As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Height: =70
             OnSelect: |-
                 =Set(varctnDetalleObjetivos,true);
                 Set(varctnTareaRC,false);
                 Set(varlbtTituloObjetivo,"Detalle Resultados Clave");
             Text: ="Cancelar"
-            X: =646
-            Y: =634
+            Width: =227
+            X: =701
+            Y: =604
             ZIndex: =5
 
         btnGuardarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
+            Height: =70
             OnSelect: |
                 =If(IsBlank(txtTarea) || IsBlank(DtpFITarea.SelectedDate) || IsBlank(DtpFFTarea.SelectedDate),
                     Notify("Necesitas llenar todos los valores"),
@@ -1897,8 +1908,9 @@ scr_objetivo As screen:
                     )
                 );
             Text: ="Guardar"
-            X: =425
-            Y: =634
+            Width: =227
+            X: =360
+            Y: =604
             ZIndex: =7
 
         Image18 As image:
@@ -2112,7 +2124,7 @@ scr_objetivo As screen:
         Height: =50
         Size: =20
         Text: =varlbtTituloObjetivo
-        Width: =500
+        Width: =295
         X: =86
         Y: =686
         ZIndex: =8

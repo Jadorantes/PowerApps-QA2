@@ -419,6 +419,7 @@ scr_home As screen:
             BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             Fill: =RGBA(0, 154, 62, 1)
             Font: =Font.Verdana
+            Height: =70
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =ForAll(RegistrosEmpleados,
@@ -434,21 +435,22 @@ scr_home As screen:
                 Set(popUpUsr,"false");
             Size: =12
             Text: ="Datos Correctos"
-            Width: =200
-            X: =402
-            Y: =648
+            Width: =227
+            X: =373
+            Y: =618
             ZIndex: =3
 
         Incorrecto As button:
             Fill: =RGBA(0, 154, 62, 1)
             Font: =Font.Verdana
+            Height: =70
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: =Set(varValUsr,true)
             Size: =12
             Text: ="Datos Incorrectos"
-            Width: =200
-            X: =754
-            Y: =648
+            Width: =227
+            X: =763
+            Y: =618
             ZIndex: =4
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -523,6 +525,7 @@ scr_home As screen:
                 Height: =703
                 Visible: =false//varUserExist
                 Width: =1366
+                Y: =5
                 ZIndex: =6
 
             Label1 As label:
@@ -590,7 +593,7 @@ scr_home As screen:
         Button2 As button:
             Fill: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
-            Height: =62
+            Height: =70
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =Office365Outlook.SendEmailV2(Concatenate("solicitudessp@frd.org.mx;",User().Email),"Actualización de los datos del usuario del OKR",Concatenate("Se requieren correcciones de los datos del usuario ",User().FullName,
@@ -603,7 +606,7 @@ scr_home As screen:
                 Set(varPopUpMail,true);
             Text: ="Guardar"
             Visible: =varValUsr
-            Width: =195
+            Width: =227
             X: =397
             Y: =560
             ZIndex: =4
@@ -699,15 +702,15 @@ scr_home As screen:
         Button2_1 As button:
             Fill: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
-            Height: =62
+            Height: =70
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |
                 =Set(popUpUsr,"true");
                 Set(varValUsr,false);
             Text: ="Cancelar"
             Visible: =varValUsr
-            Width: =195
-            X: =774
+            Width: =227
+            X: =742
             Y: =560
             ZIndex: =12
 

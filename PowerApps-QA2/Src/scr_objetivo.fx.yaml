@@ -1970,13 +1970,14 @@ scr_objetivo As screen:
             Items: =Filter(Tarea,ID_ResultadoClave=varIDRCEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =119
+            TemplateSize: =276
             Width: =1290
             X: =6
             Y: =132
             ZIndex: =2
 
             Title9 As label:
+                FontWeight: =FontWeight.Bold
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1987,17 +1988,19 @@ scr_objetivo As screen:
                 Text: ="Nombre" 
                 VerticalAlign: =VerticalAlign.Top
                 Width: =400
-                X: =47
-                Y: =20
+                X: =32
+                Y: =22
                 ZIndex: =1
 
             Subtitle8 As label:
-                Height: =32
+                Font: =Font.Arial
+                Height: =167
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =14
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
                 Width: =400
@@ -2013,6 +2016,7 @@ scr_objetivo As screen:
                 ZIndex: =4
 
             Title9_1 As label:
+                FontWeight: =FontWeight.Bold
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -2023,25 +2027,28 @@ scr_objetivo As screen:
                 Text: ="Fecha de inicio" 
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =495
-                Y: =22
+                X: =480
+                Y: =24
                 ZIndex: =5
 
             Subtitle8_1 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =14
                 Text: =ThisItem.Fecha_Inicio
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =432
+                X: =480
                 Y: =58
                 ZIndex: =6
 
             Title9_2 As label:
+                FontWeight: =FontWeight.Bold
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -2052,22 +2059,24 @@ scr_objetivo As screen:
                 Text: ="Fecha de finalización" 
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =909
-                Y: =22
+                X: =894
+                Y: =24
                 ZIndex: =7
 
             Subtitle8_2 As label:
+                Font: =Font.Arial
                 Height: =32
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =14
                 Text: =ThisItem.Fecha_Fin
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
-                X: =732
-                Y: =58
+                X: =894
+                Y: =54
                 ZIndex: =8
 
         lblOGRC00_6 As label:
@@ -2086,12 +2095,13 @@ scr_objetivo As screen:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
+            Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="Resultado Clave"
             Width: =1100
             X: =196
-            Y: =13
+            Y: =12
             ZIndex: =4
 
         lblOGRC00_7 As label:
@@ -2131,14 +2141,14 @@ scr_objetivo As screen:
 
     lbtTituloObjetivo As label:
         Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
         Height: =50
         Size: =20
         Text: =varlbtTituloObjetivo
         Width: =295
-        X: =86
-        Y: =686
+        X: =583
+        Y: =13
         ZIndex: =8
 
     Menu_2 As Menu:

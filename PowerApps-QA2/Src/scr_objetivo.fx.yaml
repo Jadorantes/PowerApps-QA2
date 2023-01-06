@@ -2099,9 +2099,10 @@ scr_objetivo As screen:
 
     Menu_2 As Menu:
         Width: =Menu_2.MenuWidth
-        Y: =81
+        Y: =82
         ZIndex: =8
 
     Header_2 As Header:
+        Height: =81
         ZIndex: =9
 

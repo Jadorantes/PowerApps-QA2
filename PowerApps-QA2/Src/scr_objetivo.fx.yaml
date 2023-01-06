@@ -1,5 +1,7 @@
 scr_objetivo As screen:
 
+    Header_2 As Header:
+
     ctnObjetivosEmpleado As groupContainer.manualLayoutContainer:
         Height: =673
         Width: =1296
@@ -2101,7 +2103,4 @@ scr_objetivo As screen:
         Width: =Menu_2.MenuWidth
         Y: =82
         ZIndex: =9
-
-    Header_2 As Header:
-        ZIndex: =10
 

@@ -3199,7 +3199,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnDetalleObjetivos",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3342,7 +3342,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnDetallesResultadosClave",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3485,7 +3485,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivoGeneral",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3628,7 +3628,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivoOtros",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3757,7 +3757,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnObjetivosEmpleado",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4179,7 +4179,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnTareas",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25258,7 +25258,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbtTituloObjetivo",
-      "ParentIndex": 1,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -26138,7 +26138,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Menu_2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

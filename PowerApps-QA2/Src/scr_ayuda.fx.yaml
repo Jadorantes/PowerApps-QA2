@@ -55,3 +55,13 @@ scr_ayuda As screen:
         Y: =80
         ZIndex: =3
 
+    Image17 As image:
+        Height: =57
+        Image: ='objetivo-ico'
+        OnSelect: =Navigate(scr_objetivo)
+        Tooltip: ="Agregar objetivo"
+        Width: =72
+        X: =1255
+        Y: =11
+        ZIndex: =4
+

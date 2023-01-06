@@ -60,7 +60,7 @@
         "Name": "IcoHamburger",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 446,
+        "PublishOrderIndex": 447,
         "Rules": [
           {
             "Category": "Design",
@@ -252,7 +252,7 @@
             "Name": "galleryTemplate5",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 448,
+            "PublishOrderIndex": 449,
             "Rules": [
               {
                 "Category": "Design",
@@ -388,7 +388,7 @@
             "Name": "Image6",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 449,
+            "PublishOrderIndex": 450,
             "Rules": [
               {
                 "Category": "Data",
@@ -649,7 +649,7 @@
             "Name": "Rectangle8",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 450,
+            "PublishOrderIndex": 451,
             "Rules": [
               {
                 "Category": "Design",
@@ -865,7 +865,7 @@
             "Name": "Title5",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 451,
+            "PublishOrderIndex": 452,
             "Rules": [
               {
                 "Category": "Data",
@@ -1170,7 +1170,7 @@
         "Name": "galMenu",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 447,
+        "PublishOrderIndex": 448,
         "Rules": [
           {
             "Category": "Data",
@@ -1373,7 +1373,7 @@
         "Name": "Rectangle2",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 452,
+        "PublishOrderIndex": 453,
         "Rules": [
           {
             "Category": "Design",
@@ -1528,7 +1528,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638086295531774925",
+    "LastModifiedTimestamp": "638086304895536173",
     "Name": "Menu",
     "Rules": [
       {
@@ -1618,7 +1618,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638086295531774925",
+  "LastModifiedTimestamp": "638086304895536173",
   "Name": "02f390211a9948f1bd262c9df508cd24",
   "OverridableProperties": {},
   "TemplateOriginalName": "152d9fd109cf4c89bd33612b115f3e27",

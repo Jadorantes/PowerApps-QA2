@@ -559,8 +559,8 @@ scr_home As screen:
             Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
-            X: =438
-            Y: =61
+            X: =397
+            Y: =97
             ZIndex: =1
 
         txtPuesto As text:
@@ -569,8 +569,8 @@ scr_home As screen:
             Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
-            X: =438
-            Y: =261
+            X: =397
+            Y: =277
             ZIndex: =2
 
         listArea As dropdown:
@@ -583,8 +583,8 @@ scr_home As screen:
             PressedFill: =RGBA(0, 154, 62, 1)
             SelectionFill: =RGBA(0, 154, 62, 1)
             Width: =572
-            X: =438
-            Y: =161
+            X: =397
+            Y: =187
             ZIndex: =3
 
         Button2 As button:
@@ -603,9 +603,9 @@ scr_home As screen:
                 Set(varPopUpMail,true);
             Text: ="Guardar"
             Visible: =varValUsr
-            Width: =320
-            X: =354
-            Y: =578
+            Width: =195
+            X: =397
+            Y: =560
             ZIndex: =4
 
         txtJefeDirecto As text:
@@ -614,56 +614,52 @@ scr_home As screen:
             Height: =51
             HoverBorderColor: =RGBA(0, 154, 62, 1)
             Width: =572
-            X: =438
-            Y: =361
+            X: =397
+            Y: =367
             ZIndex: =5
 
         Label3 As label:
-            Align: =Align.Right
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Size: =18
+            Size: =15
             Text: ="NOMBRE"
             Visible: =varValUsr
-            X: =191
-            Y: =66
+            X: =174
+            Y: =108
             ZIndex: =6
 
         Label3_1 As label:
-            Align: =Align.Right
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Size: =18
+            Size: =15
             Text: ="PUESTO"
             Visible: =varValUsr
-            X: =191
-            Y: =266
+            X: =174
+            Y: =288
             ZIndex: =7
 
         Label3_2 As label:
-            Align: =Align.Right
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Height: =46
-            Size: =18
+            Height: =51
+            Size: =15
             Text: ="JEFE DIRECTO"
             Visible: =varValUsr
-            Width: =242
-            X: =99
+            Width: =194
+            X: =174
             Y: =370
             ZIndex: =8
 
         Label3_3 As label:
-            Align: =Align.Right
             DisabledColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =RGBA(255, 255, 255, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Size: =18
+            Size: =15
             Text: ="AREA"
             Visible: =varValUsr
-            X: =191
-            Y: =166
+            X: =174
+            Y: =198
             ZIndex: =9
 
         ctnNotCorreo As groupContainer.manualLayoutContainer:
@@ -710,9 +706,9 @@ scr_home As screen:
                 Set(varValUsr,false);
             Text: ="Cancelar"
             Visible: =varValUsr
-            Width: =320
-            X: =755
-            Y: =578
+            Width: =195
+            X: =774
+            Y: =560
             ZIndex: =12
 
     Container2 As groupContainer.manualLayoutContainer:

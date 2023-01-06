@@ -4530,7 +4530,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4854,7 +4854,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14023,7 +14023,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "txtNombreUsr",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14300,7 +14300,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "txtPuesto",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1,10 +1,5 @@
 scr_configuracion As screen:
 
-    Admin_1 As Admin:
-        Height: =34
-        Width: =1342
-        Y: =66
-
     btnEmpleados As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
@@ -23,8 +18,8 @@ scr_configuracion As screen:
             Set(varctnEmpleadosABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Empleado"
-        X: =537
-        Y: =80
+        X: =259
+        Y: =525
         ZIndex: =2
 
     btnPerfiles As button:
@@ -44,8 +39,8 @@ scr_configuracion As screen:
             Set(varctnPerfilABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Perfiles"
-        X: =745
-        Y: =80
+        X: =603
+        Y: =505
         ZIndex: =3
 
     btnDepartamentos As button:
@@ -66,8 +61,8 @@ scr_configuracion As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Áreas"
         Width: =165
-        X: =1143
-        Y: =82
+        X: =1093
+        Y: =425
         ZIndex: =4
 
     btnEstatusAd As button:
@@ -87,8 +82,8 @@ scr_configuracion As screen:
             Set(varctnEstatusABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Estatus"
-        X: =929
-        Y: =80
+        X: =873
+        Y: =400
         ZIndex: =5
 
     ctnEmpleados As groupContainer.manualLayoutContainer:

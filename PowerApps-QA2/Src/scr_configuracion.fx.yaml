@@ -3,6 +3,7 @@ scr_configuracion As screen:
     btnEmpleados As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.Arial
         Height: =20
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -17,14 +18,15 @@ scr_configuracion As screen:
             Set(varctnEmpleadosGeneal,true);
             Set(varctnEmpleadosABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
-        Text: ="Empleado"
-        X: =1142
-        Y: =678
+        Text: ="Usuarios"
+        X: =122
+        Y: =313
         ZIndex: =2
 
     btnPerfiles As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.Arial
         Height: =20
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -39,13 +41,14 @@ scr_configuracion As screen:
             Set(varctnPerfilABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Perfiles"
-        X: =766
-        Y: =698
+        X: =889
+        Y: =313
         ZIndex: =3
 
     btnDepartamentos As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.Arial
         Height: =18
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -59,15 +62,16 @@ scr_configuracion As screen:
             Set(varctnDepartamentoGeneal,true);
             Set(varctnDepartamentoABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
-        Text: ="Áreas"
+        Text: ="Área"
         Width: =165
-        X: =904
-        Y: =700
+        X: =122
+        Y: =580
         ZIndex: =4
 
     btnEstatusAd As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.Arial
         Height: =20
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -82,8 +86,8 @@ scr_configuracion As screen:
             Set(varctnEstatusABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Estatus"
-        X: =1019
-        Y: =658
+        X: =904
+        Y: =580
         ZIndex: =5
 
     ctnEmpleados As groupContainer.manualLayoutContainer:
@@ -2128,4 +2132,16 @@ scr_configuracion As screen:
         X: =666
         Y: =185
         ZIndex: =23
+
+    Label2 As label:
+        Color: =RGBA(0, 154, 62, 1)
+        Font: =Font.Verdana
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Size: =20
+        Text: ="Seleccione una actividad"
+        Width: =415
+        X: =104
+        Y: =100
+        ZIndex: =24
 

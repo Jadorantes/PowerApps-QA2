@@ -4362,36 +4362,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.usuarioAdministrador"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.usuarioAdministrador",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "usuarioAdministrador",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.valUsrResp"
                 }
               ],

@@ -13,7 +13,7 @@ Header As CanvasComponent:
                 style=""border:1px white;
                         box-shadow: 0px 2px 0px Gainsboro; 
                         border-radius:14px; 
-                        height:"& 66 & "px;
+                        height:"& 55 & "px;
                         width: "& 100 & "%;
                     "">
             </div>"

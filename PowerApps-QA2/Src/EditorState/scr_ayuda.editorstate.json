@@ -32,7 +32,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DatosUsuario_3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -685,7 +685,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image17",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

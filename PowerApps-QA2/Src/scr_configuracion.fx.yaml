@@ -129,7 +129,7 @@ scr_configuracion As screen:
                 ZIndex: =3
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                Height: =475
+                Height: =417
                 Items: |-
                     =Search(If((IsBlank(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsEmpty(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsBlank(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') Or IsEmpty(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') ),Empleado,Filter(Empleado,Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult' Or Departamento=DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento')),TiNombreEd.Text,"Nombre"
                     

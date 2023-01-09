@@ -721,7 +721,7 @@ scr_home As screen:
             ZIndex: =12
 
     Container2 As groupContainer.manualLayoutContainer:
-        Height: =60
+        Height: =102
         Width: =893
         X: =471
         ZIndex: =9
@@ -754,4 +754,37 @@ scr_home As screen:
             X: =61
             Y: =27
             ZIndex: =3
+
+        Label4_2 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =12
+            Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Nombre_Usuario.Email)
+            Width: =712
+            X: =176
+            Y: =52
+            ZIndex: =4
+
+        Label4_3 As label:
+            Align: =Align.Right
+            Color: =RGBA(54, 176, 75, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =12
+            Text: |-
+                =Text(CurrentTime, "mm/dd/yyyy hh:mm:ss")
+            Width: =712
+            X: =176
+            Y: =77
+            ZIndex: =5
+
+        Timer2 As timer:
+            AutoStart: =true
+            Duration: =1000
+            OnTimerStart: =Set(CurrentTime, Now())
+            Repeat: =true
+            X: =40
+            Y: =40
+            ZIndex: =6
 

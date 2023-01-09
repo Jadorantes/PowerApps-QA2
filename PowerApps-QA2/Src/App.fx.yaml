@@ -6,6 +6,8 @@ App As appinfo:
         Set(varBCCS,false);
         Set(varBVDU,false);
         Set(MyUserID,UsuariosdeOffice365.MyProfile().Id);
+        //Horario
+        Set(CurrentTime, Now());
         //PopUp Validacion Usuario
         Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
         Set(popUpUsr,If(valUsr="Activo","false","true"));

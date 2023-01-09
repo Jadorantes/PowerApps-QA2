@@ -108,12 +108,14 @@ scr_configuracion As screen:
 
             TiNombreEd As text:
                 Default: =
+                Font: =Font.Arial
                 HintText: ="Buscar usuario"
                 X: =40
                 Y: =40
                 ZIndex: =1
 
             LbDepartamentoEd As label:
+                Font: =Font.Verdana
                 Text: ="Dirección"
                 X: =40
                 Y: =102
@@ -150,6 +152,7 @@ scr_configuracion As screen:
                     ZIndex: =1
 
                 Title1 As label:
+                    Font: =Font.Verdana
                     Height: =30
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -165,6 +168,7 @@ scr_configuracion As screen:
                     ZIndex: =2
 
                 Subtitle1 As label:
+                    Font: =Font.Arial
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -187,6 +191,7 @@ scr_configuracion As screen:
                     ZIndex: =5
 
                 Title1_1 As label:
+                    Font: =Font.Verdana
                     Height: =30
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -252,6 +257,7 @@ scr_configuracion As screen:
 
             CargaMasiva As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
                 OnSelect: =Set(varPopUpCM,true);
                 Text: ="Carga masiva"
                 X: =861
@@ -260,6 +266,7 @@ scr_configuracion As screen:
 
             AgregarUsuario As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
                 OnSelect: |-
                     =NewForm(Form_Empleados);
                     Set(varctnEmpleadosGeneal,false);
@@ -274,6 +281,7 @@ scr_configuracion As screen:
                 ZIndex: =6
 
             LbDepartamentoEd_1 As label:
+                Font: =Font.Verdana
                 Text: ="Departamento"
                 X: =549
                 Y: =98

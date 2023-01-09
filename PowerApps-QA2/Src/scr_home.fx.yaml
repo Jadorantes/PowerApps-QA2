@@ -720,7 +720,7 @@ scr_home As screen:
             Y: =578
             ZIndex: =12
 
-    Container2 As groupContainer.manualLayoutContainer:
+    DatosUsuario As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =471

@@ -61,7 +61,79 @@ scr_ayuda As screen:
         OnSelect: =Navigate(scr_objetivo)
         Tooltip: ="Agregar objetivo"
         Width: =54
-        X: =1255
-        Y: =11
+        X: =1262
+        Y: =80
         ZIndex: =4
+
+    DatosUsuario_3 As groupContainer.manualLayoutContainer:
+        Height: =82
+        Width: =893
+        X: =473
+        ZIndex: =5
+
+        Label4_12 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            LineHeight: =1
+            Size: =14
+            Text: =User().FullName
+            Width: =732
+            X: =41
+            ZIndex: =1
+
+        Image2_3 As image:
+            Height: =52
+            Image: =User().Image
+            Width: =85
+            X: =787
+            ZIndex: =2
+
+        Label4_13 As label:
+            Align: =Align.Right
+            Color: =RGBA(54, 176, 75, 1)
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Puesto)
+            Width: =712
+            X: =61
+            Y: =21
+            ZIndex: =3
+
+        Label4_14 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Size: =10
+            Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Nombre_Usuario.Email)
+            Width: =712
+            X: =61
+            Y: =34
+            ZIndex: =4
+
+        Label4_15 As label:
+            Align: =Align.Right
+            Color: =RGBA(54, 176, 75, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =20
+            Size: =12
+            Text: |-
+                =Text( CurrentTime, "dddd dd ""de"" mmmm ""de"" yyyy hh:mm:ss")
+                //Text( DateTimeValue( CurrentTime ); DateTimeFormat.LongDateTime )
+            Width: =712
+            X: =176
+            Y: =62
+            ZIndex: =5
+
+        Timer2_3 As timer:
+            AutoStart: =true
+            Duration: =1000
+            OnTimerStart: =Set(CurrentTime, Now())
+            Repeat: =true
+            Visible: =false
+            X: =40
+            Y: =40
+            ZIndex: =6
 

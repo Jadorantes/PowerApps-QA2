@@ -779,7 +779,7 @@ scr_home As screen:
                 //Text( DateTimeValue( CurrentTime ); DateTimeFormat.LongDateTime )
             Width: =712
             X: =176
-            Y: =60
+            Y: =64
             ZIndex: =5
 
         Timer2 As timer:

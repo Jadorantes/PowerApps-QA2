@@ -49,7 +49,7 @@ scr_configuracion As screen:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.Arial
-        Height: =18
+        Height: =35
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         OnSelect: |-
@@ -2066,6 +2066,16 @@ scr_configuracion As screen:
     Image20 As image:
         Height: =95
         Image: ='menu-1'
+        OnSelect: |-
+            =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+            Set(varctnEmpleados,true);
+            Set(varctnPerfil,false);
+            Set(varctnEstatus,false);
+            Set(varctnDepartamento,false);
+            Reset(TiNombreEd);
+            Reset(DdDepartamentoEd);
+            Set(varctnEmpleadosGeneal,true);
+            Set(varctnEmpleadosABD,false);
         Width: =104
         X: =150
         Y: =192

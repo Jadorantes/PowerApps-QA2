@@ -2060,26 +2060,31 @@ scr_configuracion As screen:
             ZIndex: =11
 
     Image20 As image:
+        Image: ='menu-1'
         X: =237
         Y: =190
         ZIndex: =14
 
     Image20_1 As image:
+        Image: ='menu-2'
         X: =434
         Y: =190
         ZIndex: =15
 
     Image20_2 As image:
+        Image: ='menu-3'
         X: =633
         Y: =190
         ZIndex: =16
 
     Image20_3 As image:
+        Image: ='menu-4'
         X: =866
         Y: =190
         ZIndex: =17
 
     Image20_4 As image:
+        Image: ='menu-5'
         X: =1067
         Y: =190
         ZIndex: =18

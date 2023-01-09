@@ -39,8 +39,8 @@ scr_configuracion As screen:
             Set(varctnPerfilABD,false);
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Perfiles"
-        X: =1142
-        Y: =615
+        X: =766
+        Y: =698
         ZIndex: =3
 
     btnDepartamentos As button:
@@ -61,8 +61,8 @@ scr_configuracion As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Text: ="Áreas"
         Width: =165
-        X: =1100
-        Y: =538
+        X: =904
+        Y: =700
         ZIndex: =4
 
     btnEstatusAd As button:
@@ -2060,32 +2060,72 @@ scr_configuracion As screen:
             ZIndex: =11
 
     Image20 As image:
+        Height: =95
         Image: ='menu-1'
-        X: =237
-        Y: =190
+        Width: =104
+        X: =150
+        Y: =192
         ZIndex: =14
 
     Image20_1 As image:
+        Height: =95
         Image: ='menu-2'
-        X: =434
+        Width: =104
+        X: =400
         Y: =190
         ZIndex: =15
 
     Image20_2 As image:
+        Height: =95
         Image: ='menu-3'
-        X: =633
+        Width: =104
+        X: =650
         Y: =190
         ZIndex: =16
 
     Image20_3 As image:
+        Height: =95
         Image: ='menu-4'
-        X: =866
+        Width: =104
+        X: =900
         Y: =190
         ZIndex: =17
 
     Image20_4 As image:
+        Height: =95
         Image: ='menu-5'
-        X: =1067
+        Width: =104
+        X: =1150
         Y: =190
         ZIndex: =18
+
+    Image21 As image:
+        Image: ='menu-6'
+        X: =154
+        Y: =456
+        ZIndex: =19
+
+    Image21_1 As image:
+        Image: ='menu-7'
+        X: =404
+        Y: =456
+        ZIndex: =20
+
+    Image21_2 As image:
+        Image: ='menu-8'
+        X: =654
+        Y: =456
+        ZIndex: =21
+
+    Image21_3 As image:
+        Image: ='menu-10'
+        X: =904
+        Y: =456
+        ZIndex: =22
+
+    Image21_4 As image:
+        Image: ='menu-10'
+        X: =1154
+        Y: =456
+        ZIndex: =23
 

@@ -387,6 +387,7 @@ scr_configuracion As screen:
             ZIndex: =2
 
             Form_Empleados As form:
+                BorderColor: =RGBA(0, 154, 62, 1)
                 DataSource: =Empleado
                 DefaultMode: =FormMode.New
                 Height: =567
@@ -412,6 +413,7 @@ scr_configuracion As screen:
 
                     DataCardKey20 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -474,6 +476,7 @@ scr_configuracion As screen:
 
                     DataCardKey21 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -574,6 +577,7 @@ scr_configuracion As screen:
 
                     DataCardKey7 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -642,6 +646,7 @@ scr_configuracion As screen:
 
                     DataCardKey9 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -710,6 +715,7 @@ scr_configuracion As screen:
 
                     DataCardKey3 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: ="ID_Empleado"
                         Width: =Parent.Width - 60
@@ -778,6 +784,7 @@ scr_configuracion As screen:
 
                     DataCardKey10 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -846,6 +853,7 @@ scr_configuracion As screen:
 
                     DataCardKey11 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -913,6 +921,7 @@ scr_configuracion As screen:
 
                     DataCardKey14 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -981,6 +990,7 @@ scr_configuracion As screen:
 
                     DataCardKey16 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -1049,6 +1059,7 @@ scr_configuracion As screen:
 
                     DataCardKey18 As label:
                         AutoHeight: =true
+                        Font: =Font.Verdana
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60

@@ -2005,7 +2005,8 @@ scr_configuracion As screen:
     Menu_3 As Menu:
         Height: =668
         Width: =Menu_3.MenuWidth
-        Y: =100
+        X: =3
+        Y: =86
         ZIndex: =6
 
     Header_3 As Header:
@@ -2070,7 +2071,7 @@ scr_configuracion As screen:
                 //Text( DateTimeValue( CurrentTime ); DateTimeFormat.LongDateTime )
             Width: =712
             X: =176
-            Y: =62
+            Y: =63
             ZIndex: =5
 
         Timer2_4 As timer:

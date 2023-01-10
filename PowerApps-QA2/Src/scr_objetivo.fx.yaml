@@ -29,34 +29,20 @@ scr_objetivo As screen:
         ZIndex: =3
 
         "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =599
+            Height: =550
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =326
-            Width: =1296
-            Y: =104
+            TemplateSize: =550
+            Width: =1263
+            X: =17
+            Y: =136
             ZIndex: =1
 
-            Title8 As label:
-                Font: =Font.Verdana
-                Height: =26
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =15
-                Text: ="Nombre"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =200
-                X: =57
-                Y: =16
-                ZIndex: =1
-
             Subtitle7 As label:
+                AutoHeight: =true
                 Font: =Font.Arial
-                Height: =254
+                Height: =174
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -66,8 +52,8 @@ scr_objetivo As screen:
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
                 Width: =232
-                X: =57
-                Y: =47
+                X: =41
+                Y: =12
                 ZIndex: =2
 
             Separator7 As rectangle:
@@ -77,22 +63,6 @@ scr_objetivo As screen:
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - 1
                 ZIndex: =4
-
-            Title8_1 As label:
-                Font: =Font.Verdana
-                Height: =26
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =15
-                Text: ="Fecha de cumplimiento"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =277
-                X: =317
-                Y: =18
-                ZIndex: =6
 
             Subtitle7_2 As label:
                 AutoHeight: =true
@@ -107,25 +77,9 @@ scr_objetivo As screen:
                 Text: =ThisItem.Periodo_Tiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =317
-                Y: =47
+                X: =319
+                Y: =12
                 ZIndex: =7
-
-            Title8_3 As label:
-                Font: =Font.Verdana
-                Height: =26
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =15
-                Text: ="Estatus aprobación"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =227
-                X: =623
-                Y: =16
-                ZIndex: =10
 
             Subtitle7_4 As label:
                 AutoHeight: =true
@@ -140,25 +94,9 @@ scr_objetivo As screen:
                 Text: =ThisItem.EstatusAprobacion
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
-                X: =621
-                Y: =47
+                X: =624
+                Y: =12
                 ZIndex: =11
-
-            Title8_4 As label:
-                Font: =Font.Verdana
-                Height: =31
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =15
-                Text: ="Estatus Ejecución"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =230
-                X: =922
-                Y: =16
-                ZIndex: =12
 
             Subtitle7_5 As label:
                 AutoHeight: =true
@@ -174,7 +112,7 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
                 X: =922
-                Y: =47
+                Y: =12
                 ZIndex: =13
 
             Image12 As image:
@@ -271,6 +209,70 @@ scr_objetivo As screen:
                 X: =742
                 Y: =478
                 ZIndex: =3
+
+        Title8 As label:
+            Font: =Font.Verdana
+            Height: =26
+            OnSelect: |
+                =false
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Nombre"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =200
+            X: =60
+            Y: =112
+            ZIndex: =5
+
+        Title8_2 As label:
+            Font: =Font.Verdana
+            Height: =26
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Fecha de cumplimiento"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =277
+            X: =334
+            Y: =112
+            ZIndex: =6
+
+        Title8_5 As label:
+            Font: =Font.Verdana
+            Height: =26
+            OnSelect: |
+                =false
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Estatus aprobación"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =227
+            X: =640
+            Y: =110
+            ZIndex: =7
+
+        Title8_6 As label:
+            Font: =Font.Verdana
+            Height: =31
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Estatus Ejecución"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =230
+            X: =939
+            Y: =110
+            ZIndex: =8
 
     ctnObjetivoGeneral As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

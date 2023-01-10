@@ -21,13 +21,13 @@ scr_ayuda As screen:
         ZIndex: =2
 
     "Gallery6 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
-        Height: =688
+        Height: =658
         Items: =Ayuda
         TemplatePadding: =0
-        TemplateSize: =1282
-        Width: =1296
-        X: =70
-        Y: =80
+        TemplateSize: =1249
+        Width: =1257
+        X: =87
+        Y: =95
         ZIndex: =3
 
         Image14 As image:
@@ -79,8 +79,8 @@ scr_ayuda As screen:
         OnSelect: =Navigate(scr_objetivo)
         Tooltip: ="Agregar objetivo"
         Width: =54
-        X: =1262
-        Y: =80
+        X: =1290
+        Y: =692
         ZIndex: =5
 
     DatosUsuario_3 As groupContainer.manualLayoutContainer:
@@ -142,7 +142,7 @@ scr_ayuda As screen:
                 //Text( DateTimeValue( CurrentTime ); DateTimeFormat.LongDateTime )
             Width: =712
             X: =176
-            Y: =62
+            Y: =63
             ZIndex: =5
 
         Timer2_3 As timer:

@@ -2051,11 +2051,12 @@ scr_configuracion As screen:
         Align: =Align.Center
         Font: =Font.Verdana
         Height: =218
+        Size: =25
         Text: ="No tienes permisos para visualizar esta sección"
         Visible: =usuarioAdministrador
-        Width: =382
-        X: =488
-        Y: =287
+        Width: =842
+        X: =288
+        Y: =298
         ZIndex: =25
 
     Label6 As label:

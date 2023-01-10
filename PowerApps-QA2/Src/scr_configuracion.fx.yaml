@@ -2118,7 +2118,7 @@ scr_configuracion As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |-
-                =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnEmpleados,false);
                 Set(varctnPerfil,true);
                 Set(varctnEstatus,false);
@@ -2126,6 +2126,7 @@ scr_configuracion As screen:
                 Reset(TiPerfil);
                 Set(varctnPerfilGeneal,true);
                 Set(varctnPerfilABD,false);
+                Set(varMenuConf,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Perfiles"
             Visible: =varMenuConf
@@ -2174,6 +2175,7 @@ scr_configuracion As screen:
                 Reset(TiEstatus);
                 Set(varctnEstatusGeneal,true);
                 Set(varctnEstatusABD,false);
+                Set(varMenuConf,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Estatus"
             Visible: =varMenuConf

@@ -2093,28 +2093,12 @@ scr_configuracion As screen:
         Y: =97
         ZIndex: =26
 
-    HtmlText3 As htmlViewer:
-        Height: =653
-        HtmlText: |-
-            ="<div style='width:100%; height:"& scr_objetivo.Height -130 &"px;
-                background: #D9D9D9;
-                opacity: 0.3;
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
-            //RGBA(217, 217, 217, 0.3);
-                '>
-            </div>"
-        Width: =1243
-        X: =87
-        Y: =91
-        ZIndex: =27
-
-    Group2 As group:
+    Group1 As group:
         Height: =5
         Width: =5
-        X: =60
-        Y: =60
-        ZIndex: =30
+        X: =40
+        Y: =40
+        ZIndex: =28
 
         btnEmpleados As button:
             Color: =RGBA(0, 0, 0, 1)
@@ -2278,4 +2262,21 @@ scr_configuracion As screen:
             X: =105
             Y: =134
             ZIndex: =16
+
+        HtmlText3 As htmlViewer:
+            Height: =653
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -130 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                //RGBA(217, 217, 217, 0.3);
+                    '>
+                </div>"
+            Visible: =varMenuConf
+            Width: =1243
+            X: =87
+            Y: =91
+            ZIndex: =27
 

@@ -622,7 +622,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AgregarDepartamento",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5509,7 +5509,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button12",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6000,7 +6000,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnDepartamento",
-      "ParentIndex": 2,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6136,7 +6136,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnEmpleados",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6272,7 +6272,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnEstatus",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6408,7 +6408,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnPerfil",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23616,7 +23616,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryDepartamento",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27616,7 +27616,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29381,7 +29381,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -30789,7 +30789,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Menu_3",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -32503,7 +32503,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle4",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -40190,7 +40190,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TiDepartamento",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -200,7 +200,11 @@ scr_objetivo As screen:
         TxBuscadorObje As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =
-            HintText: ="Buscar por nombre"
+            HintText: ="Buscar por OKR"
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
             Size: =14
             X: =60
             Y: =47

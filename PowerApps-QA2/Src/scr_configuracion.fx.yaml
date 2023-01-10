@@ -1165,6 +1165,17 @@ scr_configuracion As screen:
                 Y: =40
                 ZIndex: =6
 
+            Button13 As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
+                OnSelect: |-
+                    =Set(varctnPerfil,false);
+                    Set(varMenuConf,true)
+                Text: ="Cancelar"
+                X: =562
+                Y: =554
+                ZIndex: =7
+
         ABC_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnPerfilABD

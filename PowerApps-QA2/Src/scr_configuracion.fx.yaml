@@ -290,12 +290,14 @@ scr_configuracion As screen:
                     ZIndex: =14
 
             Button10 As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
                 OnSelect: |-
                     =Set(varctnEmpleados,false);
                     Set(varMenuConf,true)
-                Text: ="Botón"
-                X: =358
-                Y: =562
+                Text: ="Cancelar"
+                X: =562
+                Y: =575
                 ZIndex: =15
 
         ABC_Empleados As groupContainer.manualLayoutContainer:
@@ -2102,8 +2104,8 @@ scr_configuracion As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Usuarios"
             Visible: =varMenuConf
-            X: =118
-            Y: =310
+            X: =282
+            Y: =505
             ZIndex: =2
 
         btnPerfiles As button:
@@ -2125,8 +2127,8 @@ scr_configuracion As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Perfiles"
             Visible: =varMenuConf
-            X: =885
-            Y: =310
+            X: =520
+            Y: =505
             ZIndex: =3
 
         btnDepartamentos As button:
@@ -2150,8 +2152,8 @@ scr_configuracion As screen:
             Text: ="Área"
             Visible: =varMenuConf
             Width: =165
-            X: =118
-            Y: =577
+            X: =737
+            Y: =497
             ZIndex: =4
 
         btnEstatusAd As button:
@@ -2173,8 +2175,8 @@ scr_configuracion As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Estatus"
             Visible: =varMenuConf
-            X: =900
-            Y: =577
+            X: =998
+            Y: =496
             ZIndex: =5
 
         Image20 As image:
@@ -2193,52 +2195,18 @@ scr_configuracion As screen:
                 Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =104
-            X: =146
-            Y: =189
+            X: =305
+            Y: =373
             ZIndex: =6
-
-        Image20_1 As image:
-            Height: =95
-            Image: ='menu-2'
-            Visible: =varMenuConf
-            Width: =104
-            X: =396
-            Y: =187
-            ZIndex: =7
-
-        Image20_2 As image:
-            Height: =95
-            Image: ='menu-3'
-            Visible: =varMenuConf
-            Width: =104
-            X: =1146
-            Y: =463
-            ZIndex: =8
 
         Image20_3 As image:
             Height: =95
             Image: ='menu-4'
             Visible: =varMenuConf
             Width: =104
-            X: =913
-            Y: =453
+            X: =1026
+            Y: =373
             ZIndex: =9
-
-        Image20_4 As image:
-            Height: =95
-            Image: ='menu-5'
-            Visible: =varMenuConf
-            Width: =104
-            X: =663
-            Y: =458
-            ZIndex: =10
-
-        Image21 As image:
-            Image: ='menu-6'
-            Visible: =varMenuConf
-            X: =396
-            Y: =458
-            ZIndex: =11
 
         Image21_1 As image:
             Image: ='menu-7'
@@ -2252,30 +2220,16 @@ scr_configuracion As screen:
                 Set(varctnDepartamentoABD,false);
                 Set(varMenuConf,!varMenuConf);
             Visible: =varMenuConf
-            X: =150
-            Y: =453
+            X: =770
+            Y: =368
             ZIndex: =12
-
-        Image21_2 As image:
-            Image: ='menu-8'
-            Visible: =varMenuConf
-            X: =1150
-            Y: =182
-            ZIndex: =13
 
         Image21_3 As image:
             Image: ='menu-9'
             Visible: =varMenuConf
-            X: =915
-            Y: =182
+            X: =545
+            Y: =368
             ZIndex: =14
-
-        Image21_4 As image:
-            Image: ='menu-10'
-            Visible: =varMenuConf
-            X: =662
-            Y: =182
-            ZIndex: =15
 
         Label2 As label:
             Color: =RGBA(0, 154, 62, 1)
@@ -2286,7 +2240,7 @@ scr_configuracion As screen:
             Text: ="Seleccione una actividad"
             Visible: =varMenuConf
             Width: =415
-            X: =100
-            Y: =97
+            X: =105
+            Y: =171
             ZIndex: =16
 

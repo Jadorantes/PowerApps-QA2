@@ -1567,11 +1567,11 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     ctnDepartamento As groupContainer.manualLayoutContainer:
-        Height: =656
+        Height: =671
         Visible: =varctnDepartamento
         Width: =1293
         X: =73
-        Y: =112
+        Y: =97
         ZIndex: =21
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
@@ -1599,7 +1599,7 @@ scr_configuracion As screen:
                 TemplatePadding: =0
                 TemplateSize: =105
                 Width: =1285
-                Y: =146
+                Y: =109
                 ZIndex: =1
 
                 Title3_2 As label:
@@ -1703,6 +1703,15 @@ scr_configuracion As screen:
                 X: =996
                 Y: =40
                 ZIndex: =6
+
+            Button12 As button:
+                OnSelect: |-
+                    =Set(varctnDepartamento,false);
+                    Set(varMenuConf,true)
+                Text: ="Botón"
+                X: =546
+                Y: =588
+                ZIndex: =7
 
         ABC_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
@@ -2092,7 +2101,7 @@ scr_configuracion As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |-
-                =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnEmpleados,false);
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,false);
@@ -2100,6 +2109,7 @@ scr_configuracion As screen:
                 Reset(TiDepartamento);
                 Set(varctnDepartamentoGeneal,true);
                 Set(varctnDepartamentoABD,false);
+                Set(varMenuConf,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Área"
             Visible: =varMenuConf
@@ -2117,7 +2127,7 @@ scr_configuracion As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |-
                 =Set(varctnEmpleados,false);
-                Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                //Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,true);
                 Set(varctnDepartamento,false);
@@ -2144,7 +2154,7 @@ scr_configuracion As screen:
                 Reset(DdDepartamentoEd);
                 Set(varctnEmpleadosGeneal,true);
                 Set(varctnEmpleadosABD,false);
-                Set(varMenuConf,!varMenuConf);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =104
             X: =150
@@ -2196,6 +2206,15 @@ scr_configuracion As screen:
 
         Image21_1 As image:
             Image: ='menu-7'
+            OnSelect: |-
+                =Set(varctnEmpleados,false);
+                Set(varctnPerfil,false);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,true);
+                Reset(TiDepartamento);
+                Set(varctnDepartamentoGeneal,true);
+                Set(varctnDepartamentoABD,false);
+                Set(varMenuConf,!varMenuConf);
             Visible: =varMenuConf
             X: =154
             Y: =456

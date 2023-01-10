@@ -2127,9 +2127,7 @@ scr_configuracion As screen:
                 Set(varctnEmpleadosGeneal,true);
                 Set(varctnEmpleadosABD,false);
                 Set(varMenuConf,false);
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             Width: =179
             X: =263
             Y: =334
@@ -2148,9 +2146,7 @@ scr_configuracion As screen:
                 Set(varctnPerfilGeneal,true);
                 Set(varctnPerfilABD,false);
                 Set(varMenuConf,false);
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             Width: =179
             X: =508
             Y: =334
@@ -2169,9 +2165,7 @@ scr_configuracion As screen:
                 Set(varctnPerfilGeneal,true);
                 Set(varctnPerfilABD,false);
                 Set(varMenuConf,false);
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             Width: =179
             X: =752
             Y: =334
@@ -2190,9 +2184,7 @@ scr_configuracion As screen:
                 Set(varctnDepartamentoGeneal,true);
                 Set(varctnDepartamentoABD,false);
                 Set(varMenuConf,false);
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             Width: =179
             X: =997
             Y: =334
@@ -2204,9 +2196,7 @@ scr_configuracion As screen:
             FontWeight: =FontWeight.Semibold
             Size: =15
             Text: ="Perfil"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             X: =521
             Y: =503
             ZIndex: =15
@@ -2217,9 +2207,7 @@ scr_configuracion As screen:
             FontWeight: =FontWeight.Semibold
             Size: =15
             Text: ="Área"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             X: =766
             Y: =503
             ZIndex: =16
@@ -2230,9 +2218,7 @@ scr_configuracion As screen:
             FontWeight: =FontWeight.Semibold
             Size: =15
             Text: ="Estatus"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             X: =1010
             Y: =503
             ZIndex: =17
@@ -2276,9 +2262,7 @@ scr_configuracion As screen:
             Size: =15
             Text: ="Usuarios"
             Tooltip: =
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             X: =276
             Y: =503
             ZIndex: =18
@@ -2290,9 +2274,7 @@ scr_configuracion As screen:
             Height: =67
             Size: =20
             Text: ="Selecciona una actividad"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =varMenuConf
             Width: =442
             X: =108
             Y: =100

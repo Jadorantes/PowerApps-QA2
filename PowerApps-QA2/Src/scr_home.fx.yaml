@@ -1,5 +1,22 @@
 scr_home As screen:
 
+    FondoHO As htmlViewer:
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: |
+            =682
+        HtmlText: |-
+            ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+                background: #D9D9D9;
+                opacity: 0.3;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                '>
+            </div>"
+        Width: =1272
+        X: =82
+        Y: =79
+        ZIndex: =1
+
     "GalleryObjetivosDireccion As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =560
         Items: =Filter(Objetivo,NivelObjetivo="Direccion")
@@ -9,7 +26,7 @@ scr_home As screen:
         Width: =536
         X: =120
         Y: =182
-        ZIndex: =1
+        ZIndex: =2
 
         Title6 As label:
             Align: =Align.Justify
@@ -64,16 +81,16 @@ scr_home As screen:
         Width: =545
         X: =136
         Y: =102
-        ZIndex: =2
+        ZIndex: =3
 
     Menu_1 As Menu:
         Width: =Menu_1.MenuWidth
         Y: =82
-        ZIndex: =3
+        ZIndex: =4
 
     Header_1 As Header:
         Height: =82
-        ZIndex: =4
+        ZIndex: =5
 
     "GalleryObjetivosArea As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Height: =578
@@ -84,7 +101,7 @@ scr_home As screen:
         Width: =567
         X: =755
         Y: =165
-        ZIndex: =5
+        ZIndex: =6
 
         Title6_1 As label:
             Align: =Align.Justify
@@ -140,7 +157,7 @@ scr_home As screen:
         Width: =545
         X: =766
         Y: =102
-        ZIndex: =6
+        ZIndex: =7
 
     ValidacionUsuarioActivo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -148,7 +165,7 @@ scr_home As screen:
         Visible: =popUpUsr
         Width: =1366
         Y: =60
-        ZIndex: =7
+        ZIndex: =8
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
             Height: =560
@@ -552,7 +569,7 @@ scr_home As screen:
             =varValUsr
         Width: =1366
         Y: =60
-        ZIndex: =8
+        ZIndex: =9
 
         txtNombreUsr As text:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -724,7 +741,7 @@ scr_home As screen:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =9
+        ZIndex: =10
 
         Label4_20 As label:
             Align: =Align.Right
@@ -779,7 +796,7 @@ scr_home As screen:
                 //Text( DateTimeValue( CurrentTime ); DateTimeFormat.LongDateTime )
             Width: =712
             X: =176
-            Y: =62
+            Y: =63
             ZIndex: =5
 
         Timer2_5 As timer:

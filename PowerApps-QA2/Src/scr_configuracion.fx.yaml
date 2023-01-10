@@ -1,12 +1,29 @@
 scr_configuracion As screen:
 
+    FondoConfiguraciones As htmlViewer:
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: |
+            =682
+        HtmlText: |-
+            ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+                background: #D9D9D9;
+                opacity: 0.3;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                '>
+            </div>"
+        Width: =1272
+        X: =82
+        Y: =79
+        ZIndex: =1
+
     ctnEmpleados As groupContainer.manualLayoutContainer:
         Height: =656
         Visible: =varctnEmpleados
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =11
+        ZIndex: =2
 
         Vista_Empleados As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -1068,7 +1085,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =12
+        ZIndex: =3
 
         Vista_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1291,7 +1308,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =13
+        ZIndex: =4
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -1598,7 +1615,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =97
-        ZIndex: =14
+        ZIndex: =5
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1989,16 +2006,16 @@ scr_configuracion As screen:
         Height: =668
         Width: =Menu_3.MenuWidth
         Y: =100
-        ZIndex: =15
+        ZIndex: =6
 
     Header_3 As Header:
-        ZIndex: =16
+        ZIndex: =7
 
     DatosUsuario_4 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =17
+        ZIndex: =8
 
         Label4_16 As label:
             Align: =Align.Right
@@ -2073,7 +2090,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =100
-        ZIndex: =18
+        ZIndex: =9
 
     Label4 As label:
         Align: =Align.Center
@@ -2085,7 +2102,7 @@ scr_configuracion As screen:
         Width: =842
         X: =288
         Y: =298
-        ZIndex: =19
+        ZIndex: =10
 
     Group7 As group:
         Height: =5
@@ -2112,7 +2129,7 @@ scr_configuracion As screen:
             Width: =179
             X: =263
             Y: =334
-            ZIndex: =20
+            ZIndex: =11
 
         Image2_6 As image:
             Height: =146
@@ -2132,7 +2149,7 @@ scr_configuracion As screen:
             Width: =179
             X: =508
             Y: =334
-            ZIndex: =21
+            ZIndex: =12
 
         Image2_7 As image:
             Height: =146
@@ -2141,7 +2158,7 @@ scr_configuracion As screen:
             Width: =179
             X: =752
             Y: =334
-            ZIndex: =22
+            ZIndex: =13
 
         Image2_8 As image:
             Height: =146
@@ -2150,26 +2167,26 @@ scr_configuracion As screen:
             Width: =179
             X: =997
             Y: =334
-            ZIndex: =23
+            ZIndex: =14
 
         Label2_1 As label:
             Text: ="Texto"
             Visible: =varMenuConf
             X: =522
             Y: =516
-            ZIndex: =25
+            ZIndex: =15
 
         Label2_2 As label:
             Text: ="Texto"
             Visible: =varMenuConf
             X: =767
             Y: =516
-            ZIndex: =26
+            ZIndex: =16
 
         Label2_3 As label:
             Text: ="Texto"
             Visible: =varMenuConf
             X: =1011
             Y: =516
-            ZIndex: =27
+            ZIndex: =17
 

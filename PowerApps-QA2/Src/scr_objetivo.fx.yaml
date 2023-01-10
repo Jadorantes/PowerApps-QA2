@@ -1,6 +1,6 @@
 scr_objetivo As screen:
 
-    HtmlText2 As htmlViewer:
+    FondoOB As htmlViewer:
         Fill: =RGBA(0, 0, 0, 0)
         Height: |
             =682
@@ -2173,12 +2173,6 @@ scr_objetivo As screen:
         Y: =26
         ZIndex: =9
 
-    Menu_2 As Menu:
-        Height: =684
-        Width: =70
-        Y: =82
-        ZIndex: =10
-
     DatosUsuario_1 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
@@ -2250,4 +2244,9 @@ scr_objetivo As screen:
             X: =40
             Y: =40
             ZIndex: =6
+
+    Menu_2 As Menu:
+        Width: =Menu_2.MenuWidth
+        Y: =82
+        ZIndex: =12
 

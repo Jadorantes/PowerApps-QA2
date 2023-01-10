@@ -115,7 +115,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galMenu",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -255,14 +255,7 @@
         "PressedBorderColor",
         "HoverBorderColor",
         "BorderStyle",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Width",
         "Height",
         "X",
         "Y",
@@ -286,7 +279,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HtmlText3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -425,7 +418,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IcoHamburger",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -955,7 +948,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle2",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

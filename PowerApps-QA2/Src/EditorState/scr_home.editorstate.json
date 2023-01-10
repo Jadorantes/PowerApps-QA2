@@ -1931,7 +1931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DatosUsuario",
-      "ParentIndex": 1,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2074,7 +2074,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EnvioCorreoDatos",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2577,7 +2577,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryObjetivosArea",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2750,7 +2750,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryObjetivosDireccion",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10627,7 +10627,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbTObjetivoArea",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10917,7 +10917,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbTObjetivoDireccion",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11504,7 +11504,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Menu_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15596,7 +15596,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ValidacionUsuarioActivo",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

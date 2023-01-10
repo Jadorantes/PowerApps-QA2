@@ -2089,7 +2089,7 @@ scr_configuracion As screen:
 
     Group1 As group:
         Height: =0
-        Width: =5
+        Width: =395
         X: =40
         Y: =40
         ZIndex: =28

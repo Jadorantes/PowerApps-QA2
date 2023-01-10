@@ -2113,8 +2113,8 @@ scr_objetivo As screen:
             Size: =10
             Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Puesto)
             Width: =712
-            X: =75
-            Y: =27
+            X: =61
+            Y: =21
             ZIndex: =3
 
         Label4_6 As label:
@@ -2125,7 +2125,7 @@ scr_objetivo As screen:
             Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Nombre_Usuario.Email)
             Width: =712
             X: =61
-            Y: =38
+            Y: =34
             ZIndex: =4
 
         Label4_7 As label:

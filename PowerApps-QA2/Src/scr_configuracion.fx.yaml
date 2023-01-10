@@ -2194,6 +2194,16 @@ scr_configuracion As screen:
             Align: =Align.Center
             Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
+            OnSelect: |
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
+                Set(varctnPerfil,true);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,false);
+                Reset(TiPerfil);
+                Set(varctnPerfilGeneal,true);
+                Set(varctnPerfilABD,false);
+                Set(varMenuConf,false);
             Size: =15
             Text: ="Perfil"
             Visible: =varMenuConf
@@ -2205,6 +2215,16 @@ scr_configuracion As screen:
             Align: =Align.Center
             Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
+            OnSelect: |-
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
+                Set(varctnPerfil,true);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,false);
+                Reset(TiPerfil);
+                Set(varctnPerfilGeneal,true);
+                Set(varctnPerfilABD,false);
+                Set(varMenuConf,false);
             Size: =15
             Text: ="Área"
             Visible: =varMenuConf
@@ -2216,6 +2236,16 @@ scr_configuracion As screen:
             Align: =Align.Center
             Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
+            OnSelect: |-
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
+                Set(varctnPerfil,false);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,true);
+                Reset(TiDepartamento);
+                Set(varctnDepartamentoGeneal,true);
+                Set(varctnDepartamentoABD,false);
+                Set(varMenuConf,false);
             Size: =15
             Text: ="Estatus"
             Visible: =varMenuConf

@@ -838,7 +838,9 @@ scr_objetivo As screen:
                 ZIndex: =9
 
         lbNombre_1 As label:
+            Color: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
             Size: =15
             Text: =User().FullName
             Width: =585
@@ -856,7 +858,9 @@ scr_objetivo As screen:
             ZIndex: =3
 
         lbPuesto_1 As label:
+            Color: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
             Size: =15
             Text: =valUsrPuesto
             Width: =585
@@ -1413,7 +1417,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -1429,7 +1433,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =11
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
                 Width: =477
@@ -1452,7 +1456,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -1468,7 +1472,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =14
+                Size: =11
                 Text: =ThisItem.PeriodoTiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
@@ -1508,18 +1512,18 @@ scr_objetivo As screen:
             Color: =RGBA(0, 154, 62, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
-            Size: =20
+            Size: =15
             Text: ="Detalle OK"
             Width: =1296
             ZIndex: =3
 
         lblRCRC00_5 As label:
             Align: =Align.Justify
+            AutoHeight: =true
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             Font: =Font.Arial
             Height: =157
-            Size: =15
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,Title)
             Width: =1296
             Y: =40
@@ -1545,11 +1549,11 @@ scr_objetivo As screen:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
             Height: =63
-            Size: =18
+            Size: =14
             Text: ="Resultados clave"
             Width: =1290
             X: =6
-            Y: =197
+            Y: =177
             ZIndex: =7
 
     ctnTareas As groupContainer.manualLayoutContainer:
@@ -2072,8 +2076,8 @@ scr_objetivo As screen:
         Size: =15
         Text: =varlbtTituloObjetivo
         Width: =626
-        X: =308
-        Y: =20
+        X: =405
+        Y: =22
         ZIndex: =9
 
     DatosUsuario_1 As groupContainer.manualLayoutContainer:
@@ -2109,8 +2113,8 @@ scr_objetivo As screen:
             Size: =10
             Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Puesto)
             Width: =712
-            X: =61
-            Y: =21
+            X: =75
+            Y: =27
             ZIndex: =3
 
         Label4_6 As label:
@@ -2121,7 +2125,7 @@ scr_objetivo As screen:
             Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Nombre_Usuario.Email)
             Width: =712
             X: =61
-            Y: =34
+            Y: =38
             ZIndex: =4
 
         Label4_7 As label:

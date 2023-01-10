@@ -1431,7 +1431,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AgregarUsuario",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2701,7 +2701,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnCargar",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5265,7 +5265,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button10",
-      "ParentIndex": 0,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5530,7 +5530,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CargaMasiva",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16674,7 +16674,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DdDepartamentoEd",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16970,7 +16970,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DdDepartamentoEd_1",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23192,7 +23192,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery2",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24168,7 +24168,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon_CerrarPPCM",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29393,7 +29393,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbDepartamentoEd",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29662,7 +29662,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbDepartamentoEd_1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29946,7 +29946,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbRespuesta",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -30263,7 +30263,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbTitulo",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -31955,7 +31955,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ppCargaMasiva",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -37600,7 +37600,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "SubirDocumentos",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -40732,7 +40732,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TiNombreEd",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

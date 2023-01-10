@@ -2101,7 +2101,7 @@ scr_configuracion As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |-
-                =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnEmpleados,false);
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,false);
@@ -2109,6 +2109,7 @@ scr_configuracion As screen:
                 Reset(TiDepartamento);
                 Set(varctnDepartamentoGeneal,true);
                 Set(varctnDepartamentoABD,false);
+                Set(varMenuConf,!varMenuConf);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Área"
             Visible: =varMenuConf
@@ -2205,6 +2206,15 @@ scr_configuracion As screen:
 
         Image21_1 As image:
             Image: ='menu-7'
+            OnSelect: |-
+                =Set(varctnEmpleados,false);
+                Set(varctnPerfil,false);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,true);
+                Reset(TiDepartamento);
+                Set(varctnDepartamentoGeneal,true);
+                Set(varctnDepartamentoABD,false);
+                Set(varMenuConf,!varMenuConf);
             Visible: =varMenuConf
             X: =154
             Y: =456

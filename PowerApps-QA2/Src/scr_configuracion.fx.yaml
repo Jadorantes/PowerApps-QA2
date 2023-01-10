@@ -6,7 +6,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =18
+        ZIndex: =17
 
         Vista_Empleados As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -1064,7 +1064,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =19
+        ZIndex: =18
 
         Vista_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1276,7 +1276,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =20
+        ZIndex: =19
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
             Fill: =RGBA(217, 217, 217, 1)
@@ -1572,7 +1572,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =97
-        ZIndex: =21
+        ZIndex: =20
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1961,16 +1961,16 @@ scr_configuracion As screen:
         Height: =668
         Width: =Menu_3.MenuWidth
         Y: =100
-        ZIndex: =22
+        ZIndex: =21
 
     Header_3 As Header:
-        ZIndex: =23
+        ZIndex: =22
 
     DatosUsuario_4 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =25
+        ZIndex: =23
 
         Label4_16 As label:
             Align: =Align.Right
@@ -2038,12 +2038,47 @@ scr_configuracion As screen:
             Y: =40
             ZIndex: =6
 
-    Group3 As group:
+    Rectangle4 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =668
+        Visible: =usuarioAdministrador
+        Width: =1293
+        X: =73
+        Y: =100
+        ZIndex: =24
+
+    Label4 As label:
+        Align: =Align.Center
+        Font: =Font.Verdana
+        Height: =218
+        Text: ="No tienes permisos para visualizar esta sección"
+        Visible: =usuarioAdministrador
+        Width: =382
+        X: =488
+        Y: =287
+        ZIndex: =25
+
+    Label6 As label:
+        Text: =varMenuConf
+        X: =520
+        Y: =97
+        ZIndex: =26
+
+    Group2 As group:
         Height: =5
         Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =25
+        X: =60
+        Y: =60
+        ZIndex: =30
+
+        Rectangle6 As rectangle:
+            Fill: =RGBA(217, 217, 217, 1)
+            Height: =647
+            Visible: =varMenuConf
+            Width: =1242
+            X: =88
+            Y: =97
+            ZIndex: =1
 
         btnEmpleados As button:
             Color: =RGBA(0, 0, 0, 1)
@@ -2066,9 +2101,9 @@ scr_configuracion As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Usuarios"
             Visible: =varMenuConf
-            X: =122
-            Y: =313
-            ZIndex: =1
+            X: =118
+            Y: =310
+            ZIndex: =2
 
         btnPerfiles As button:
             Color: =RGBA(0, 0, 0, 1)
@@ -2089,9 +2124,9 @@ scr_configuracion As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Perfiles"
             Visible: =varMenuConf
-            X: =889
-            Y: =313
-            ZIndex: =2
+            X: =885
+            Y: =310
+            ZIndex: =3
 
         btnDepartamentos As button:
             Color: =RGBA(0, 0, 0, 1)
@@ -2114,9 +2149,9 @@ scr_configuracion As screen:
             Text: ="Área"
             Visible: =varMenuConf
             Width: =165
-            X: =122
-            Y: =580
-            ZIndex: =3
+            X: =118
+            Y: =577
+            ZIndex: =4
 
         btnEstatusAd As button:
             Color: =RGBA(0, 0, 0, 1)
@@ -2137,9 +2172,9 @@ scr_configuracion As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Estatus"
             Visible: =varMenuConf
-            X: =904
-            Y: =580
-            ZIndex: =4
+            X: =900
+            Y: =577
+            ZIndex: =5
 
         Image20 As image:
             Height: =95
@@ -2157,52 +2192,52 @@ scr_configuracion As screen:
                 Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =104
-            X: =150
-            Y: =192
-            ZIndex: =7
+            X: =146
+            Y: =189
+            ZIndex: =6
 
         Image20_1 As image:
             Height: =95
             Image: ='menu-2'
             Visible: =varMenuConf
             Width: =104
-            X: =400
-            Y: =190
-            ZIndex: =8
+            X: =396
+            Y: =187
+            ZIndex: =7
 
         Image20_2 As image:
             Height: =95
             Image: ='menu-3'
             Visible: =varMenuConf
             Width: =104
-            X: =1150
-            Y: =466
-            ZIndex: =9
+            X: =1146
+            Y: =463
+            ZIndex: =8
 
         Image20_3 As image:
             Height: =95
             Image: ='menu-4'
             Visible: =varMenuConf
             Width: =104
-            X: =917
-            Y: =456
-            ZIndex: =10
+            X: =913
+            Y: =453
+            ZIndex: =9
 
         Image20_4 As image:
             Height: =95
             Image: ='menu-5'
             Visible: =varMenuConf
             Width: =104
-            X: =667
-            Y: =461
-            ZIndex: =11
+            X: =663
+            Y: =458
+            ZIndex: =10
 
         Image21 As image:
             Image: ='menu-6'
             Visible: =varMenuConf
-            X: =400
-            Y: =461
-            ZIndex: =12
+            X: =396
+            Y: =458
+            ZIndex: =11
 
         Image21_1 As image:
             Image: ='menu-7'
@@ -2216,30 +2251,30 @@ scr_configuracion As screen:
                 Set(varctnDepartamentoABD,false);
                 Set(varMenuConf,!varMenuConf);
             Visible: =varMenuConf
-            X: =154
-            Y: =456
-            ZIndex: =13
+            X: =150
+            Y: =453
+            ZIndex: =12
 
         Image21_2 As image:
             Image: ='menu-8'
             Visible: =varMenuConf
-            X: =1154
-            Y: =185
-            ZIndex: =14
+            X: =1150
+            Y: =182
+            ZIndex: =13
 
         Image21_3 As image:
             Image: ='menu-9'
             Visible: =varMenuConf
-            X: =919
-            Y: =185
-            ZIndex: =15
+            X: =915
+            Y: =182
+            ZIndex: =14
 
         Image21_4 As image:
             Image: ='menu-10'
             Visible: =varMenuConf
-            X: =666
-            Y: =185
-            ZIndex: =16
+            X: =662
+            Y: =182
+            ZIndex: =15
 
         Label2 As label:
             Color: =RGBA(0, 154, 62, 1)
@@ -2250,34 +2285,7 @@ scr_configuracion As screen:
             Text: ="Seleccione una actividad"
             Visible: =varMenuConf
             Width: =415
-            X: =104
-            Y: =100
-            ZIndex: =17
-
-    Rectangle4 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =668
-        Visible: =usuarioAdministrador
-        Width: =1293
-        X: =73
-        Y: =100
-        ZIndex: =26
-
-    Label4 As label:
-        Align: =Align.Center
-        Font: =Font.Verdana
-        Height: =218
-        Size: =25
-        Text: ="No tienes permisos para visualizar esta sección"
-        Visible: =usuarioAdministrador
-        Width: =382
-        X: =488
-        Y: =287
-        ZIndex: =27
-
-    Label6 As label:
-        Text: =varMenuConf
-        X: =520
-        Y: =97
-        ZIndex: =28
+            X: =100
+            Y: =97
+            ZIndex: =16
 

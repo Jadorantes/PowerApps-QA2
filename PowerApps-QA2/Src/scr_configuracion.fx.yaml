@@ -2255,7 +2255,7 @@ scr_configuracion As screen:
         ZIndex: =27
 
     Label6 As label:
-        Text: =!varMenuConf
+        Text: =varMenuConf
         X: =520
         Y: =97
         ZIndex: =28

@@ -14,7 +14,7 @@ scr_objetivo As screen:
             </div>"
         Width: =1272
         X: =82
-        Y: =82
+        Y: =79
         ZIndex: =1
 
     Header_2 As Header:
@@ -2176,7 +2176,6 @@ scr_objetivo As screen:
     Menu_2 As Menu:
         Height: =684
         Width: =70
-        X: =-2
         Y: =82
         ZIndex: =10
 
@@ -2239,7 +2238,7 @@ scr_objetivo As screen:
                 //Text( DateTimeValue( CurrentTime ); DateTimeFormat.LongDateTime )
             Width: =712
             X: =176
-            Y: =62
+            Y: =63
             ZIndex: =5
 
         Timer2_1 As timer:

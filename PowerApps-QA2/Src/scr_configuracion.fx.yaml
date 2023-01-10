@@ -1706,7 +1706,7 @@ scr_configuracion As screen:
 
             Button12 As button:
                 OnSelect: |-
-                    =Set(varctnDepartamentoGeneal,false);
+                    =Set(varctnDepartamento,false);
                     Set(varMenuConf,true)
                 Text: ="Botón"
                 X: =546

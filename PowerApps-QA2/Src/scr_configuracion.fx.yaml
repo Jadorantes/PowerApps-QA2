@@ -1567,11 +1567,11 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     ctnDepartamento As groupContainer.manualLayoutContainer:
-        Height: =656
+        Height: =671
         Visible: =varctnDepartamento
         Width: =1293
         X: =73
-        Y: =112
+        Y: =97
         ZIndex: =21
 
         Vista_Departamento As groupContainer.manualLayoutContainer:

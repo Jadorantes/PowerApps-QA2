@@ -1294,7 +1294,7 @@ scr_configuracion As screen:
         ZIndex: =13
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(217, 217, 217, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =656
             Visible: =varctnEstatusGeneal
             Width: =1285
@@ -2086,12 +2086,6 @@ scr_configuracion As screen:
         X: =288
         Y: =298
         ZIndex: =19
-
-    Label6 As label:
-        Text: =varMenuConf
-        X: =520
-        Y: =97
-        ZIndex: =20
 
     Group1 As group:
         Height: =5

@@ -6,7 +6,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =17
+        ZIndex: =11
 
         Vista_Empleados As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -1068,7 +1068,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =18
+        ZIndex: =12
 
         Vista_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1291,10 +1291,10 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =19
+        ZIndex: =13
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(217, 217, 217, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =656
             Visible: =varctnEstatusGeneal
             Width: =1285
@@ -1598,7 +1598,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =97
-        ZIndex: =20
+        ZIndex: =14
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1624,7 +1624,7 @@ scr_configuracion As screen:
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =105
-                Width: =1285
+                Width: =1276
                 Y: =109
                 ZIndex: =1
 
@@ -1676,8 +1676,8 @@ scr_configuracion As screen:
                     TabIndex: =0
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =48
-                    X: =Parent.TemplateWidth - Self.Width - 5
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    X: =1205
+                    Y: =29
                     ZIndex: =3
 
                 Separator3_2 As rectangle:
@@ -1989,16 +1989,16 @@ scr_configuracion As screen:
         Height: =668
         Width: =Menu_3.MenuWidth
         Y: =100
-        ZIndex: =21
+        ZIndex: =15
 
     Header_3 As Header:
-        ZIndex: =22
+        ZIndex: =16
 
     DatosUsuario_4 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =23
+        ZIndex: =17
 
         Label4_16 As label:
             Align: =Align.Right
@@ -2073,7 +2073,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =100
-        ZIndex: =24
+        ZIndex: =18
 
     Label4 As label:
         Align: =Align.Center
@@ -2085,190 +2085,12 @@ scr_configuracion As screen:
         Width: =842
         X: =288
         Y: =298
-        ZIndex: =25
+        ZIndex: =19
 
-    Label6 As label:
-        Text: =varMenuConf
-        X: =520
-        Y: =97
-        ZIndex: =26
-
-    Group2 As group:
+    Group1 As group:
         Height: =5
         Width: =5
-        X: =60
-        Y: =60
-        ZIndex: =30
-
-        Rectangle6 As rectangle:
-            Fill: =RGBA(217, 217, 217, 1)
-            Height: =647
-            Visible: =varMenuConf
-            Width: =1242
-            X: =88
-            Y: =97
-            ZIndex: =1
-
-        btnEmpleados As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.Arial
-            Height: =20
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |
-                =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
-                Set(varctnEmpleados,true);
-                Set(varctnPerfil,false);
-                Set(varctnEstatus,false);
-                Set(varctnDepartamento,false);
-                Reset(TiNombreEd);
-                Reset(DdDepartamentoEd);
-                Set(varctnEmpleadosGeneal,true);
-                Set(varctnEmpleadosABD,false);
-                Set(varMenuConf,false);
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Text: ="Usuarios"
-            Visible: =varMenuConf
-            X: =282
-            Y: =505
-            ZIndex: =2
-
-        btnPerfiles As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.Arial
-            Height: =20
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |-
-                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
-                Set(varctnEmpleados,false);
-                Set(varctnPerfil,true);
-                Set(varctnEstatus,false);
-                Set(varctnDepartamento,false);
-                Reset(TiPerfil);
-                Set(varctnPerfilGeneal,true);
-                Set(varctnPerfilABD,false);
-                Set(varMenuConf,false);
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Text: ="Perfiles"
-            Visible: =varMenuConf
-            X: =520
-            Y: =505
-            ZIndex: =3
-
-        btnDepartamentos As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.Arial
-            Height: =35
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |-
-                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
-                Set(varctnEmpleados,false);
-                Set(varctnPerfil,false);
-                Set(varctnEstatus,false);
-                Set(varctnDepartamento,true);
-                Reset(TiDepartamento);
-                Set(varctnDepartamentoGeneal,true);
-                Set(varctnDepartamentoABD,false);
-                Set(varMenuConf,false);
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Text: ="Área"
-            Visible: =varMenuConf
-            Width: =165
-            X: =737
-            Y: =497
-            ZIndex: =4
-
-        btnEstatusAd As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.Arial
-            Height: =20
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |-
-                =Set(varctnEmpleados,false);
-                //Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
-                Set(varctnPerfil,false);
-                Set(varctnEstatus,true);
-                Set(varctnDepartamento,false);
-                Reset(TiEstatus);
-                Set(varctnEstatusGeneal,true);
-                Set(varctnEstatusABD,false);
-                Set(varMenuConf,false);
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Text: ="Estatus"
-            Visible: =varMenuConf
-            X: =998
-            Y: =496
-            ZIndex: =5
-
-        Image20 As image:
-            Height: =95
-            Image: ='menu-1'
-            OnSelect: |-
-                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
-                Set(varctnEmpleados,true);
-                Set(varctnPerfil,false);
-                Set(varctnEstatus,false);
-                Set(varctnDepartamento,false);
-                Reset(TiNombreEd);
-                Reset(DdDepartamentoEd);
-                Set(varctnEmpleadosGeneal,true);
-                Set(varctnEmpleadosABD,false);
-                Set(varMenuConf,false);
-            Visible: =varMenuConf
-            Width: =104
-            X: =305
-            Y: =373
-            ZIndex: =6
-
-        Image20_3 As image:
-            Height: =95
-            Image: ='menu-4'
-            Visible: =varMenuConf
-            Width: =104
-            X: =1026
-            Y: =373
-            ZIndex: =9
-
-        Image21_1 As image:
-            Image: ='menu-7'
-            OnSelect: |-
-                =Set(varctnEmpleados,false);
-                Set(varctnPerfil,false);
-                Set(varctnEstatus,false);
-                Set(varctnDepartamento,true);
-                Reset(TiDepartamento);
-                Set(varctnDepartamentoGeneal,true);
-                Set(varctnDepartamentoABD,false);
-                Set(varMenuConf,!varMenuConf);
-            Visible: =varMenuConf
-            X: =770
-            Y: =368
-            ZIndex: =12
-
-        Image21_3 As image:
-            Image: ='menu-9'
-            Visible: =varMenuConf
-            X: =545
-            Y: =368
-            ZIndex: =14
-
-        Label2 As label:
-            Color: =RGBA(0, 154, 62, 1)
-            Font: =Font.Verdana
-            FontWeight: =FontWeight.Bold
-            Height: =37
-            Size: =20
-            Text: ="Seleccione una actividad"
-            Visible: =varMenuConf
-            Width: =415
-            X: =105
-            Y: =171
-            ZIndex: =16
+        X: =40
+        Y: =40
+        ZIndex: =28
 

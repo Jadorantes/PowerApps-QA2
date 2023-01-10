@@ -2127,7 +2127,7 @@ scr_configuracion As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |-
                 =Set(varctnEmpleados,false);
-                Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                //Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,true);
                 Set(varctnDepartamento,false);

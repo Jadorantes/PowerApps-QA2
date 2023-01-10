@@ -2088,7 +2088,7 @@ scr_configuracion As screen:
         ZIndex: =19
 
     Group1 As group:
-        Height: =5
+        Height: =0
         Width: =5
         X: =40
         Y: =40

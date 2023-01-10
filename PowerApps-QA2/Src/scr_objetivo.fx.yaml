@@ -2174,7 +2174,9 @@ scr_objetivo As screen:
         ZIndex: =9
 
     Menu_2 As Menu:
-        Width: =Menu_2.MenuWidth
+        Height: =684
+        Width: =70
+        X: =-2
         Y: =82
         ZIndex: =10
 

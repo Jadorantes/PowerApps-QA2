@@ -202,7 +202,6 @@ scr_configuracion As screen:
 
             DdDepartamentoEd_1 As dropdown:
                 ChevronBackground: =RGBA(0, 154, 62, 1)
-                Fill: =RGBA(0, 0, 0, 0)
                 Items: =Filter(Areas,Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
                 SelectionFill: =RGBA(0, 154, 62, 1)
                 X: =699

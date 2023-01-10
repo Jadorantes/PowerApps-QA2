@@ -6,7 +6,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =17
+        ZIndex: =11
 
         Vista_Empleados As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -1068,7 +1068,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =18
+        ZIndex: =12
 
         Vista_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1291,7 +1291,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =112
-        ZIndex: =19
+        ZIndex: =13
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
             Fill: =RGBA(217, 217, 217, 1)
@@ -1598,7 +1598,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =97
-        ZIndex: =20
+        ZIndex: =14
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
@@ -1989,16 +1989,16 @@ scr_configuracion As screen:
         Height: =668
         Width: =Menu_3.MenuWidth
         Y: =100
-        ZIndex: =21
+        ZIndex: =15
 
     Header_3 As Header:
-        ZIndex: =22
+        ZIndex: =16
 
     DatosUsuario_4 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =23
+        ZIndex: =17
 
         Label4_16 As label:
             Align: =Align.Right
@@ -2073,7 +2073,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =100
-        ZIndex: =24
+        ZIndex: =18
 
     Label4 As label:
         Align: =Align.Center
@@ -2085,13 +2085,13 @@ scr_configuracion As screen:
         Width: =842
         X: =288
         Y: =298
-        ZIndex: =25
+        ZIndex: =19
 
     Label6 As label:
         Text: =varMenuConf
         X: =520
         Y: =97
-        ZIndex: =26
+        ZIndex: =20
 
     Group1 As group:
         Height: =5
@@ -2099,6 +2099,23 @@ scr_configuracion As screen:
         X: =40
         Y: =40
         ZIndex: =28
+
+        HtmlText3 As htmlViewer:
+            Height: =653
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -130 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                //RGBA(217, 217, 217, 0.3);
+                    '>
+                </div>"
+            Visible: =varMenuConf
+            Width: =1243
+            X: =87
+            Y: =91
+            ZIndex: =1
 
         btnEmpleados As button:
             Color: =RGBA(0, 0, 0, 1)
@@ -2108,7 +2125,7 @@ scr_configuracion As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |
-                =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnEmpleados,true);
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,false);
@@ -2221,34 +2238,55 @@ scr_configuracion As screen:
         Image20_3 As image:
             Height: =95
             Image: ='menu-4'
+            OnSelect: |-
+                =Set(varctnEmpleados,false);
+                //Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnPerfil,false);
+                Set(varctnEstatus,true);
+                Set(varctnDepartamento,false);
+                Reset(TiEstatus);
+                Set(varctnEstatusGeneal,true);
+                Set(varctnEstatusABD,false);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =104
             X: =1026
             Y: =373
-            ZIndex: =9
+            ZIndex: =7
 
         Image21_1 As image:
             Image: ='menu-7'
             OnSelect: |-
-                =Set(varctnEmpleados,false);
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,false);
                 Set(varctnDepartamento,true);
                 Reset(TiDepartamento);
                 Set(varctnDepartamentoGeneal,true);
                 Set(varctnDepartamentoABD,false);
-                Set(varMenuConf,!varMenuConf);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             X: =770
             Y: =368
-            ZIndex: =12
+            ZIndex: =8
 
         Image21_3 As image:
             Image: ='menu-9'
+            OnSelect: |-
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
+                Set(varctnPerfil,true);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,false);
+                Reset(TiPerfil);
+                Set(varctnPerfilGeneal,true);
+                Set(varctnPerfilABD,false);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             X: =545
             Y: =368
-            ZIndex: =14
+            ZIndex: =9
 
         Label2 As label:
             Color: =RGBA(0, 154, 62, 1)
@@ -2261,22 +2299,5 @@ scr_configuracion As screen:
             Width: =415
             X: =105
             Y: =134
-            ZIndex: =16
-
-        HtmlText3 As htmlViewer:
-            Height: =653
-            HtmlText: |-
-                ="<div style='width:100%; height:"& scr_objetivo.Height -130 &"px;
-                    background: #D9D9D9;
-                    opacity: 0.3;
-                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                //RGBA(217, 217, 217, 0.3);
-                    '>
-                </div>"
-            Visible: =varMenuConf
-            Width: =1243
-            X: =87
-            Y: =91
-            ZIndex: =27
+            ZIndex: =10
 

@@ -1707,10 +1707,12 @@ scr_configuracion As screen:
                 ZIndex: =6
 
             Button12 As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
                 OnSelect: |-
                     =Set(varctnDepartamento,false);
                     Set(varMenuConf,true)
-                Text: ="Botón"
+                Text: ="Cancelar"
                 X: =546
                 Y: =588
                 ZIndex: =7

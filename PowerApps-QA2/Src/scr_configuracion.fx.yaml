@@ -2152,13 +2152,6 @@ scr_configuracion As screen:
             Y: =334
             ZIndex: =23
 
-        Label2 As label:
-            Text: ="Texto"
-            Visible: =varMenuConf
-            X: =277
-            Y: =516
-            ZIndex: =24
-
         Label2_1 As label:
             Text: ="Texto"
             Visible: =varMenuConf

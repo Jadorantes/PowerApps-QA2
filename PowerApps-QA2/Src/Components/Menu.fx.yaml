@@ -16,10 +16,11 @@ Menu As CanvasComponent:
                 opacity: 0.3;
                 box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 10px;
-                margin-left: -10px;
+                margin-left: -2px;
+                margin-top: -10px;
                 '>
             </div>"
-        Width: =80
+        Width: =74
         ZIndex: =1
 
     IcoHamburger As icon.Hamburger:

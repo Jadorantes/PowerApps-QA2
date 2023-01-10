@@ -289,6 +289,15 @@ scr_configuracion As screen:
                     Y: =66
                     ZIndex: =14
 
+            Button10 As button:
+                OnSelect: |-
+                    =Set(varctnEmpleados,false);
+                    Set(varMenuConf,true)
+                Text: ="Botón"
+                X: =358
+                Y: =562
+                ZIndex: =15
+
         ABC_Empleados As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnEmpleadosABD
@@ -1048,15 +1057,6 @@ scr_configuracion As screen:
                 X: =682
                 Y: =600
                 ZIndex: =3
-
-        Button9 As button:
-            OnSelect: |-
-                =Set(varctnEmpleados,false);
-                Set(varMenuConf,true)
-            Text: ="Cancelar"
-            X: =558
-            Y: =566
-            ZIndex: =3
 
     ctnPerfil As groupContainer.manualLayoutContainer:
         Height: =656

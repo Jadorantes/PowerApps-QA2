@@ -1431,7 +1431,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AgregarUsuario",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2701,7 +2701,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnCargar",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5208,17 +5208,10 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Button9": {
+    "Button10": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         "BorderColor",
         "DisabledBorderColor",
         "PressedBorderColor",
@@ -5271,8 +5264,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button9",
-      "ParentIndex": 2,
+      "Name": "Button10",
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5537,7 +5530,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CargaMasiva",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16681,7 +16674,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DdDepartamentoEd",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16977,7 +16970,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DdDepartamentoEd_1",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23199,7 +23192,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery2",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24175,7 +24168,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon_CerrarPPCM",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29400,7 +29393,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbDepartamentoEd",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29669,7 +29662,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LbDepartamentoEd_1",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29953,7 +29946,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbRespuesta",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -30270,7 +30263,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbTitulo",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -31886,7 +31879,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "popupCargaMasiva",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -31962,7 +31955,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ppCargaMasiva",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -37607,7 +37600,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "SubirDocumentos",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -40739,7 +40732,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TiNombreEd",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

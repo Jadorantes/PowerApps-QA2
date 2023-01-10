@@ -12,6 +12,7 @@ scr_configuracion As screen:
                 border-radius: 10px;
                 '>
             </div>"
+        Visible: =varMenuConf
         Width: =1272
         X: =82
         Y: =79
@@ -2105,12 +2106,12 @@ scr_configuracion As screen:
         Y: =298
         ZIndex: =10
 
-    Group7 As group:
+    Group2 As group:
         Height: =5
         Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =28
+        X: =60
+        Y: =60
+        ZIndex: =20
 
         Image2 As image:
             Height: =146
@@ -2141,10 +2142,9 @@ scr_configuracion As screen:
                 Set(varctnPerfil,true);
                 Set(varctnEstatus,false);
                 Set(varctnDepartamento,false);
-                Reset(TiNombreEd);
-                Reset(DdDepartamentoEd);
-                Set(varctnEmpleadosGeneal,true);
-                Set(varctnEmpleadosABD,false);
+                Reset(TiPerfil);
+                Set(varctnPerfilGeneal,true);
+                Set(varctnPerfilABD,false);
                 Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =179
@@ -2190,4 +2190,56 @@ scr_configuracion As screen:
             X: =1011
             Y: =516
             ZIndex: =17
+
+        Label2_4 As label:
+            OnSelect: |
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(
+                    varctnEmpleados,
+                    true
+                );
+                Set(
+                    varctnPerfil,
+                    false
+                );
+                Set(
+                    varctnEstatus,
+                    false
+                );
+                Set(
+                    varctnDepartamento,
+                    false
+                );
+                Reset(TiNombreEd);
+                Reset(DdDepartamentoEd);
+                Set(
+                    varctnEmpleadosGeneal,
+                    true
+                );
+                Set(
+                    varctnEmpleadosABD,
+                    false
+                );
+                Set(
+                    varMenuConf,
+                    false
+                );
+            Text: ="Texto"
+            Tooltip: =
+            Visible: =varMenuConf
+            X: =277
+            Y: =516
+            ZIndex: =18
+
+        Label2 As label:
+            Color: =RGBA(0, 154, 62, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Height: =67
+            Size: =20
+            Text: ="Selecciona una actividad"
+            Width: =442
+            X: =108
+            Y: =100
+            ZIndex: =19
 

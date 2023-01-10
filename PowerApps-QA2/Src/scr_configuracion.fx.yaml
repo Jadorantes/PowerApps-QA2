@@ -1052,7 +1052,7 @@ scr_configuracion As screen:
         Button9 As button:
             OnSelect: |-
                 =Set(varctnEmpleados,false);
-                Set(varMenuConf,!varMenuConf)
+                Set(varMenuConf,true)
             Text: ="Cancelar"
             X: =558
             Y: =566

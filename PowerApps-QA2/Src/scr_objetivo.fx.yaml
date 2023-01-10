@@ -5,18 +5,11 @@ scr_objetivo As screen:
         Height: |
             =682
         HtmlText: |-
-            =/*"<div style=""
-                height:"& 100 & "%;
-                width: "& 100 & "%;
-                background-color: RGBA(217, 217, 217);
-                 
-            </div>"*/
-            "<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+            ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
                 background: #D9D9D9;
                 opacity: 0.3;
                 box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 10px;
-            //RGBA(217, 217, 217, 0.3);
                 '>
             </div>"
         Width: =1272
@@ -2176,7 +2169,7 @@ scr_objetivo As screen:
         Size: =20
         Text: =varlbtTituloObjetivo
         Width: =502
-        X: =467
+        X: =432
         Y: =26
         ZIndex: =9
 

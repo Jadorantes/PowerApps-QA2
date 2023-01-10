@@ -1624,7 +1624,7 @@ scr_configuracion As screen:
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =105
-                Width: =1285
+                Width: =1276
                 Y: =109
                 ZIndex: =1
 
@@ -1676,8 +1676,8 @@ scr_configuracion As screen:
                     TabIndex: =0
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =48
-                    X: =Parent.TemplateWidth - Self.Width - 5
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    X: =1205
+                    Y: =29
                     ZIndex: =3
 
                 Separator3_2 As rectangle:

@@ -14,7 +14,7 @@ scr_configuracion As screen:
             </div>"
         Visible: =varMenuConf
         Width: =1272
-        X: =82
+        X: =83
         Y: =79
         ZIndex: =1
 
@@ -2114,7 +2114,7 @@ scr_configuracion As screen:
         ZIndex: =20
 
         Image2 As image:
-            Height: =146
+            Height: =110
             Image: ='menu-1'
             OnSelect: |-
                 =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
@@ -2128,13 +2128,13 @@ scr_configuracion As screen:
                 Set(varctnEmpleadosABD,false);
                 Set(varMenuConf,false);
             Visible: =varMenuConf
-            Width: =179
-            X: =263
-            Y: =334
+            Width: =163
+            X: =269
+            Y: =352
             ZIndex: =10
 
         Image2_6 As image:
-            Height: =146
+            Height: =110
             Image: ='menu-9'
             OnSelect: |
                 =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
@@ -2147,13 +2147,13 @@ scr_configuracion As screen:
                 Set(varctnPerfilABD,false);
                 Set(varMenuConf,false);
             Visible: =varMenuConf
-            Width: =179
-            X: =508
-            Y: =334
+            Width: =163
+            X: =517
+            Y: =352
             ZIndex: =11
 
         Image2_7 As image:
-            Height: =146
+            Height: =110
             Image: ='menu-7'
             OnSelect: |-
                 =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
@@ -2166,13 +2166,13 @@ scr_configuracion As screen:
                 Set(varctnPerfilABD,false);
                 Set(varMenuConf,false);
             Visible: =varMenuConf
-            Width: =179
+            Width: =163
             X: =752
-            Y: =334
+            Y: =352
             ZIndex: =12
 
         Image2_8 As image:
-            Height: =146
+            Height: =110
             Image: ='menu-4'
             OnSelect: |-
                 =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
@@ -2185,9 +2185,9 @@ scr_configuracion As screen:
                 Set(varctnDepartamentoABD,false);
                 Set(varMenuConf,false);
             Visible: =varMenuConf
-            Width: =179
+            Width: =163
             X: =997
-            Y: =334
+            Y: =352
             ZIndex: =13
 
         Label2_1 As label:

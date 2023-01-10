@@ -2265,8 +2265,10 @@ scr_configuracion As screen:
 
     Label4 As label:
         Align: =Align.Center
+        Font: =Font.Verdana
         Height: =218
-        Text: ="No tienes permisos"
+        Size: =25
+        Text: ="No tienes permisos para visualizar esta sección"
         Visible: =usuarioAdministrador
         Width: =382
         X: =488

@@ -2003,21 +2003,14 @@ scr_configuracion As screen:
                 Y: =600
                 ZIndex: =3
 
-    Menu_3 As Menu:
-        Height: =668
-        Width: =Menu_3.MenuWidth
-        X: =3
-        Y: =86
-        ZIndex: =6
-
     Header_3 As Header:
-        ZIndex: =7
+        ZIndex: =6
 
     DatosUsuario_4 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =8
+        ZIndex: =7
 
         Label4_16 As label:
             Align: =Align.Right
@@ -2092,7 +2085,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =100
-        ZIndex: =9
+        ZIndex: =8
 
     Label4 As label:
         Align: =Align.Center
@@ -2104,7 +2097,14 @@ scr_configuracion As screen:
         Width: =842
         X: =288
         Y: =298
-        ZIndex: =10
+        ZIndex: =9
+
+    Menu_3 As Menu:
+        Height: =668
+        Width: =Menu_3.MenuWidth
+        X: =3
+        Y: =86
+        ZIndex: =19
 
     Group2 As group:
         Height: =5
@@ -2131,7 +2131,7 @@ scr_configuracion As screen:
             Width: =179
             X: =263
             Y: =334
-            ZIndex: =11
+            ZIndex: =10
 
         Image2_6 As image:
             Height: =146
@@ -2150,7 +2150,7 @@ scr_configuracion As screen:
             Width: =179
             X: =508
             Y: =334
-            ZIndex: =12
+            ZIndex: =11
 
         Image2_7 As image:
             Height: =146
@@ -2169,7 +2169,7 @@ scr_configuracion As screen:
             Width: =179
             X: =752
             Y: =334
-            ZIndex: =13
+            ZIndex: =12
 
         Image2_8 As image:
             Height: =146
@@ -2188,7 +2188,7 @@ scr_configuracion As screen:
             Width: =179
             X: =997
             Y: =334
-            ZIndex: =14
+            ZIndex: =13
 
         Label2_1 As label:
             Align: =Align.Center
@@ -2209,7 +2209,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =521
             Y: =503
-            ZIndex: =15
+            ZIndex: =14
 
         Label2_2 As label:
             Align: =Align.Center
@@ -2230,7 +2230,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =766
             Y: =503
-            ZIndex: =16
+            ZIndex: =15
 
         Label2_3 As label:
             Align: =Align.Center
@@ -2251,7 +2251,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =1010
             Y: =503
-            ZIndex: =17
+            ZIndex: =16
 
         Label2_4 As label:
             Align: =Align.Center
@@ -2295,7 +2295,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =276
             Y: =503
-            ZIndex: =18
+            ZIndex: =17
 
         Label2 As label:
             Color: =RGBA(0, 154, 62, 1)
@@ -2308,5 +2308,5 @@ scr_configuracion As screen:
             Width: =442
             X: =108
             Y: =100
-            ZIndex: =19
+            ZIndex: =18
 

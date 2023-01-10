@@ -33,7 +33,7 @@ scr_objetivo As screen:
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =550
+            TemplateSize: =180
             Width: =1263
             X: =17
             Y: =136
@@ -54,15 +54,7 @@ scr_objetivo As screen:
                 Width: =232
                 X: =41
                 Y: =12
-                ZIndex: =2
-
-            Separator7 As rectangle:
-                Height: =1
-                OnSelect: =Select(Parent)
-                Visible: =false
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
-                ZIndex: =4
+                ZIndex: =1
 
             Subtitle7_2 As label:
                 AutoHeight: =true
@@ -79,7 +71,7 @@ scr_objetivo As screen:
                 Width: =200
                 X: =319
                 Y: =12
-                ZIndex: =7
+                ZIndex: =2
 
             Subtitle7_4 As label:
                 AutoHeight: =true
@@ -96,7 +88,7 @@ scr_objetivo As screen:
                 Width: =180
                 X: =624
                 Y: =12
-                ZIndex: =11
+                ZIndex: =3
 
             Subtitle7_5 As label:
                 AutoHeight: =true
@@ -113,7 +105,7 @@ scr_objetivo As screen:
                 Width: =180
                 X: =922
                 Y: =12
-                ZIndex: =13
+                ZIndex: =4
 
             Image12 As image:
                 Height: =36
@@ -126,7 +118,14 @@ scr_objetivo As screen:
                 Width: =39
                 X: =1195
                 Y: =33
-                ZIndex: =14
+                ZIndex: =5
+
+            Separator7 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =6
 
         TxBuscadorObje As text:
             BorderColor: =RGBA(0, 154, 62, 1)

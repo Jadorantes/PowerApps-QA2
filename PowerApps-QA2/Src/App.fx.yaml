@@ -73,7 +73,7 @@ App As appinfo:
                 },
                 {
                     Titulo: "AYUDA",
-                    icono: 'qm-ico',
+                    icono: question,
                     nav:  scr_ayuda
                 }  
             )

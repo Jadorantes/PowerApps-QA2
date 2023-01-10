@@ -885,26 +885,12 @@ scr_objetivo As screen:
             Width: =1296
             ZIndex: =6
 
-            lblOGRC00 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(230, 230, 230, 1)
-                BorderThickness: =1
-                Font: =Font.Verdana
-                FontWeight: =FontWeight.Bold
-                Text: ="ID_Objetivo"
+            lblOGRC00_1 As label:
+                Text: =LookUp(ResultadoClave,ID=varIDRCOG,IdObjetivo)
+                Visible: =false
+                X: =26
+                Y: =631
                 ZIndex: =1
-
-            lblRCRC00 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(230, 230, 230, 1)
-                BorderThickness: =1
-                Font: =Font.Verdana
-                FontWeight: =FontWeight.Bold
-                Size: =15
-                Text: ="ID_ResultadoC"
-                Width: =198
-                X: =150
-                ZIndex: =2
 
             lblRCRC00_1 As label:
                 Align: =Align.Center
@@ -912,50 +898,27 @@ scr_objetivo As screen:
                 BorderThickness: =1
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Semibold
-                Size: =20
+                Size: =15
                 Text: ="Resultado Clave"
-                Width: =947
-                X: =349
-                ZIndex: =3
-
-            lblOGRC00_1 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(230, 230, 230, 1)
-                BorderThickness: =1
-                Height: =35
-                Text: =LookUp(ResultadoClave,ID=varIDRCOG,IdObjetivo)
-                Y: =40
-                ZIndex: =4
-
-            lblRCRC00_2 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(230, 230, 230, 1)
-                BorderThickness: =1
-                Height: =35
-                Text: |-
-                    =LookUp(ResultadoClave,ID=varIDRCOG,ID
-                    )
-                Width: =198
-                X: =150
-                Y: =40
-                ZIndex: =5
+                Width: =1296
+                ZIndex: =2
 
             lblRCRC00_3 As label:
-                Align: =Align.Center
+                Align: =Align.Justify
                 BorderColor: =RGBA(230, 230, 230, 1)
                 BorderThickness: =1
-                Height: =35
-                Size: =18
+                FontWeight: =FontWeight.Semibold
+                Height: =43
+                Size: =12
                 Text: =LookUp(ResultadoClave,ID=varIDRCOG,Title)
-                Width: =942
-                X: =348
+                Width: =1290
                 Y: =40
-                ZIndex: =6
+                ZIndex: =3
 
             Form_RCOO As form:
                 DataSource: =Objetivo
                 DefaultMode: =FormMode.New
-                Height: =227
+                Height: =210
                 NumberOfColumns: =2
                 OnSuccess: |-
                     =ForAll(
@@ -985,9 +948,8 @@ scr_objetivo As screen:
                         }
                     );
                 Width: =1290
-                X: =2
-                Y: =75
-                ZIndex: =7
+                Y: =90
+                ZIndex: =4
 
                 Title_DataCard3 As typedDataCard.textualMultiLineEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -996,10 +958,11 @@ scr_objetivo As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =222
+                    Height: =100
                     Required: =true
                     Update: =DataCardValue19.Text
-                    Width: =645
+                    Width: =1290
+                    WidthFit: =true
                     X: =0
                     Y: =0
                     ZIndex: =1
@@ -1010,7 +973,7 @@ scr_objetivo As screen:
                         Font: =Font.Verdana
                         FontWeight: =FontWeight.Bold
                         Height: =34
-                        Size: =15
+                        Size: =12
                         Text: ="Objetivo"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -1020,21 +983,23 @@ scr_objetivo As screen:
 
                     DataCardValue19 As text:
                         BorderColor: =RGBA(0, 154, 62, 1)
+                        Clear: =true
                         Default: =Parent.Default
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.Arial
-                        Height: =139
+                        Height: =56
                         Mode: =TextMode.MultiLine
                         PaddingLeft: =5
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
+                        Size: =11
                         Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =56
+                        Width: =1228
+                        X: =32
+                        Y: =48
                         ZIndex: =2
 
                     ErrorMessage21 As label:
@@ -1070,13 +1035,13 @@ scr_objetivo As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Periodo_Tiempo")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =115
+                    Height: =80
                     Required: |
                         =true
                     Update: =DataCardValue17.Selected.Result
                     Width: =645
-                    X: =1
-                    Y: =0
+                    X: =0
+                    Y: =1
                     ZIndex: =1
 
                     DataCardKey17 As label:
@@ -1085,7 +1050,7 @@ scr_objetivo As screen:
                         Font: =Font.Verdana
                         FontWeight: =FontWeight.Bold
                         Height: =34
-                        Size: =15
+                        Size: =12
                         Text: |-
                             =
                             "Fecha de cumplimiento"
@@ -1093,7 +1058,6 @@ scr_objetivo As screen:
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
-                        Y: =25
                         ZIndex: =1
 
                     DataCardValue17 As dropdown:
@@ -1101,13 +1065,15 @@ scr_objetivo As screen:
                         ChevronBackground: =RGBA(0, 154, 62, 1)
                         Default: =Parent.Default
                         DisplayMode: =Parent.DisplayMode
-                        Height: =50
+                        Font: =Font.Arial
+                        Height: =32
                         Items: =Distinct(PeriodoTiempo,Title)
                         SelectionFill: =RGBA(0, 154, 62, 1)
+                        Size: =11
                         Tooltip: =Parent.DisplayName
-                        Width: =517
+                        Width: =284
                         X: =30
-                        Y: =71
+                        Y: =32
                         ZIndex: =2
 
                     ErrorMessage18 As label:
@@ -1142,14 +1108,14 @@ scr_objetivo As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"NivelObjetivo")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =74
                     MaxLength: =DataSourceInfo([@Objetivo], DataSourceInfo.MaxLength, "NivelObjetivo")
                     Required: =false
                     Update: =DataCardValue8.Text
                     Visible: |
                         =false
                     Width: =645
-                    X: =0
+                    X: =1
                     Y: =1
                     ZIndex: =8
 
@@ -1218,8 +1184,8 @@ scr_objetivo As screen:
                     Update: =DataCardValue13.Text
                     Visible: =false
                     Width: =645
-                    X: =1
-                    Y: =1
+                    X: =0
+                    Y: =2
                     ZIndex: =8
 
                     DataCardKey13 As label:
@@ -1234,7 +1200,7 @@ scr_objetivo As screen:
 
                     DataCardValue13 As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =lblRCRC00_2.Text
+                        Default: =//lblRCRC00_2.Text
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
@@ -1275,14 +1241,14 @@ scr_objetivo As screen:
                         ZIndex: =4
 
             "Gallery_ResultadoClaveOG_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-                Height: =180
+                Height: =282
                 Items: =RegistroResultadosClaveOG
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =214
-                Width: =1212
-                Y: =333
-                ZIndex: =8
+                TemplateSize: =135
+                Width: =1259
+                Y: =284
+                ZIndex: =5
 
                 lbTituloRCOG_1 As label:
                     Font: =Font.Verdana
@@ -1292,12 +1258,11 @@ scr_objetivo As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =15
+                    Size: =12
                     Text: ="Resultado Clave"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =600
                     X: =32
-                    Y: =16
                     ZIndex: =1
 
                 NextArrow6_1 As icon.ChevronRight:
@@ -1305,7 +1270,15 @@ scr_objetivo As screen:
                     Color: =RGBA(0, 154, 62, 1)
                     Height: =60
                     Icon: =Icon.Trash
-                    OnSelect: =If(CountRows(RegistroResultadosClaveOG)=1,Notify("No se puede eliminar"),Remove(RegistroResultadosClaveOG,ThisItem))
+                    OnSelect: |-
+                        =If(
+                            CountRows(RegistroResultadosClaveOG) = 1,
+                            Notify("No se puede eliminar"),
+                            Remove(
+                                RegistroResultadosClaveOG,
+                                ThisItem
+                            )
+                        )
                     PaddingBottom: =10
                     PaddingLeft: =10
                     PaddingRight: =10
@@ -1321,51 +1294,22 @@ scr_objetivo As screen:
                     Height: =1
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - 1
+                    Y: =116
                     ZIndex: =4
 
                 inpResultadoClaveOG_1 As text:
                     BorderColor: =RGBA(0, 154, 62, 1)
+                    Clear: =true
                     Default: =ThisItem.Co_ResultadoClaveOG
                     Font: =Font.Arial
-                    Height: =112
+                    Height: =54
                     Mode: =TextMode.MultiLine
                     OnSelect: =Select(Parent)
-                    Width: =600
+                    Size: =11
+                    Width: =1083
                     X: =32
-                    Y: =52
+                    Y: =36
                     ZIndex: =5
-
-                lbPTRCOG_1 As label:
-                    Font: =Font.Verdana
-                    Height: =36
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =15
-                    Text: ="Fecha de cumplimiento"
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =400
-                    X: =679
-                    Y: =10
-                    ZIndex: =6
-
-                lisPTRCOG_1 As dropdown:
-                    ChevronBackground: =RGBA(0, 154, 62, 1)
-                    Default: =DataCardValue17.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'
-                    DisplayMode: |-
-                        =If(
-                            StartsWith(DataCardValue17.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult', "Anual"), DisplayMode.Edit, DisplayMode.Disabled
-                        )
-                    Items: =Distinct(PeriodoTiempo,Nombre)
-                    OnSelect: =Select(Parent)
-                    SelectionFill: =RGBA(0, 154, 62, 1)
-                    Width: =400
-                    X: =679
-                    Y: =50
-                    ZIndex: =7
 
                 lblIDRCOG_1 As label:
                     OnSelect: =Select(Parent)
@@ -1375,9 +1319,35 @@ scr_objetivo As screen:
                     Y: =10
                     ZIndex: =8
 
+                Image19 As image:
+                    Height: =40
+                    Image: =Agregar
+                    OnSelect: |-
+                        =Set(
+                            VarIDOG,
+                            Sum(
+                                VarIDOG,
+                                1
+                            )
+                        );
+                        If(IsBlank(inpResultadoClaveOG_1)
+                            ,Notify("Este campo no puede ir vacio"),
+                        Collect(
+                           RegistroResultadosClaveOG,
+                           {
+                               Co_ID:VarIDOG,
+                               Co_ResultadoClaveOG:"",
+                               Co_PeriodoTiempoOG:""
+                            }
+                        ));
+                    Width: =40
+                    X: =1187
+                    Y: =40
+                    ZIndex: =10
+
             btnGuardarOG_1 As button:
                 DisplayMode: |-
-                    =If( IsBlank(DataCardValue19.Text) && IsBlank( inpResultadoClaveOG_1.Text) 
+                    =If( IsBlank(DataCardValue19.Text) || IsBlank(inpResultadoClaveOG_1.Text) 
                     ,Disabled, Edit)
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
@@ -1390,9 +1360,6 @@ scr_objetivo As screen:
                             {Co_ID:Value(lblIDRCOG_1.Text)},
                             {
                                 Co_ResultadoClaveOG:inpResultadoClaveOG_1.Text
-                            },
-                            {
-                                Co_PeriodoTiempoOG:lisPTRCOG_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'
                             }
                         )
                     );
@@ -1401,9 +1368,9 @@ scr_objetivo As screen:
                     Set(popValObj,"false")
                 Text: ="Guardar"
                 Width: =227
-                X: =456
-                Y: =578
-                ZIndex: =10
+                X: =451
+                Y: =611
+                ZIndex: =6
 
             btnCancelarOG_1 As button:
                 Fill: =RGBA(0, 154, 62, 1)
@@ -1415,36 +1382,9 @@ scr_objetivo As screen:
                     Set(varlbtTituloObjetivo,"Detale Resultado Claves Jefe Directo");
                 Text: ="Cancelar"
                 Width: =227
-                X: =750
-                Y: =578
-                ZIndex: =11
-
-            Image9 As image:
-                Height: =47
-                Image: =Agregar
-                OnSelect: |-
-                    =Set(
-                        VarIDOG,
-                        Sum(
-                            VarIDOG,
-                            1
-                        )
-                    );
-                    If(IsBlank(inpResultadoClaveOG_1)
-                        ,Notify("Este campo no puede ir vacio"),
-                    Collect(
-                       RegistroResultadosClaveOG,
-                       {
-                           Co_ID:VarIDOG,
-                           Co_ResultadoClaveOG:"",
-                           Co_PeriodoTiempoOG:""
-                        }
-                    ));
-                Tooltip: ="Agregar un resultado"
-                Width: =64
-                X: =1212
-                Y: =357
-                ZIndex: =12
+                X: =745
+                Y: =611
+                ZIndex: =7
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1621,28 +1561,16 @@ scr_objetivo As screen:
         Y: =82
         ZIndex: =7
 
-        lblOGRC00_4 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(230, 230, 230, 1)
-            BorderThickness: =1
-            Font: =Font.Verdana
-            Height: =39
-            Size: =15
-            Text: ="ID_ResultadoClave"
-            Width: =225
-            X: =6
-            ZIndex: =1
-
         "Gallery_Tareas As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderColor: =RGBA(0, 154, 62, 1)
             Height: =495
             Items: =TareaRC
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =337
-            Width: =1254
-            X: =21
-            Y: =139
+            TemplateSize: =211
+            Width: =1274
+            X: =6
+            Y: =121
             ZIndex: =1
 
             Title11 As label:
@@ -1653,7 +1581,7 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =400
@@ -1674,8 +1602,8 @@ scr_objetivo As screen:
                 TabIndex: =0
                 Tooltip: ="Ver los detalles del elemento"
                 Width: =55
-                X: =1179
-                Y: =42
+                X: =1050
+                Y: =48
                 ZIndex: =3
 
             Separator11 As rectangle:
@@ -1689,10 +1617,11 @@ scr_objetivo As screen:
                 BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =ThisItem.Co_TitleTarea
                 Font: =Font.Arial
-                Height: =137
+                Height: =67
                 Mode: =TextMode.MultiLine
                 OnSelect: =Select(Parent)
-                Width: =400
+                Size: =11
+                Width: =998
                 X: =32
                 Y: =48
                 ZIndex: =5
@@ -1705,12 +1634,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: ="Fecha Inicio"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =739
-                Y: =22
+                X: =376
+                Y: =126
                 ZIndex: =6
 
             DtpFITarea As datepicker:
@@ -1726,8 +1655,8 @@ scr_objetivo As screen:
                     //Reset(DtpFFTarea);;
                 OnSelect: =Select(Parent)
                 Width: =200
-                X: =739
-                Y: =52
+                X: =371
+                Y: =163
                 ZIndex: =7
 
             Title11_2 As label:
@@ -1738,12 +1667,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: ="Fecha Fin"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =979
-                Y: =14
+                X: =641
+                Y: =126
                 ZIndex: =8
 
             DtpFFTarea As datepicker:
@@ -1758,8 +1687,8 @@ scr_objetivo As screen:
                     );
                 OnSelect: =Select(Parent)
                 Width: =200
-                X: =979
-                Y: =52
+                X: =645
+                Y: =156
                 ZIndex: =9
 
             Title11_3 As label:
@@ -1770,12 +1699,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =12
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =270
-                X: =456
-                Y: =22
+                X: =32
+                Y: =130
                 ZIndex: =10
 
             txtPTTarea As text:
@@ -1786,8 +1715,8 @@ scr_objetivo As screen:
                 OnSelect: =Select(Parent)
                 Size: =14
                 Width: =270
-                X: =447
-                Y: =48
+                X: =32
+                Y: =163
                 ZIndex: =11
 
             IlblIDTarea As label:
@@ -1806,6 +1735,35 @@ scr_objetivo As screen:
                 Y: =40
                 ZIndex: =12
 
+            Image20 As image:
+                Height: =38
+                Image: =Agregar
+                OnSelect: |
+                    =Set(
+                        VarIDTR,
+                        Sum(
+                            VarIDTR,
+                            1
+                        )
+                    );
+                    If(IsBlank(txtTarea) || IsBlank(DtpFITarea.SelectedDate) || IsBlank(DtpFFTarea.SelectedDate)
+                        ,Notify("Tienes que llenar todos los campos"),
+                    Collect(
+                        TareaRC,
+                        {
+                            Co_IDTarea:VarIDTR,
+                            Co_TitleTarea:"",
+                            CO_PeriodoTiempoTarea:"",
+                            Co_FITarea:"",
+                            Co_FFTarea:"",
+                            Co_IDResultadoClaveTarea:""
+                        }
+                    ));
+                Width: =36
+                X: =1118
+                Y: =56
+                ZIndex: =13
+
         lblRCRC00_6 As label:
             Align: =Align.Center
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -1813,10 +1771,10 @@ scr_objetivo As screen:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
             Height: =39
-            Size: =18
+            Size: =15
             Text: ="Resultado Clave"
-            Width: =1065
-            X: =231
+            Width: =1290
+            X: =6
             ZIndex: =2
 
         lblOGRC00_5 As label:
@@ -1826,21 +1784,21 @@ scr_objetivo As screen:
             Font: =Font.Arial
             Height: =82
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
+            Visible: =false
             Width: =225
             X: =6
             Y: =39
             ZIndex: =3
 
         lblRCRC00_7 As label:
-            Align: =Align.Center
+            Align: =Align.Justify
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             Font: =Font.Arial
             Height: =82
-            Size: =15
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
-            Width: =1065
-            X: =231
+            Width: =1290
+            X: =6
             Y: =39
             ZIndex: =4
 
@@ -1922,39 +1880,6 @@ scr_objetivo As screen:
             X: =360
             Y: =604
             ZIndex: =7
-
-        Image18 As image:
-            Height: =46
-            Image: =Agregar
-            OnSelect: |+
-                =Set(
-                    VarIDTR,
-                    Sum(
-                        VarIDTR,
-                        1
-                    )
-                );
-                If(IsBlank(txtTarea) || IsBlank(DtpFITarea.SelectedDate) || IsBlank(DtpFFTarea.SelectedDate)
-                    ,Notify("Tienes que llenar todos los campos"),
-                Collect(
-                    TareaRC,
-                    {
-                        Co_IDTarea:VarIDTR,
-                        Co_TitleTarea:"",
-                        CO_PeriodoTiempoTarea:"",
-                        Co_FITarea:"",
-                        Co_FFTarea:"",
-                        Co_IDResultadoClaveTarea:""
-                    }
-                ));
-                
-                
-                
-            Tooltip: ="Agregar otra tarea"
-            Width: =39
-            X: =1210
-            Y: =139
-            ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -2143,11 +2068,12 @@ scr_objetivo As screen:
         Align: =Align.Center
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
-        Height: =56
-        Size: =20
+        Height: =17
+        Size: =15
         Text: =varlbtTituloObjetivo
-        Width: =584
-        X: =349
+        Width: =626
+        X: =308
+        Y: =20
         ZIndex: =9
 
     DatosUsuario_1 As groupContainer.manualLayoutContainer:

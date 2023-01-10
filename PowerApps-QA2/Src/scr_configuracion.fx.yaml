@@ -2155,6 +2155,16 @@ scr_configuracion As screen:
         Image2_7 As image:
             Height: =146
             Image: ='menu-7'
+            OnSelect: |-
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
+                Set(varctnPerfil,true);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,false);
+                Reset(TiPerfil);
+                Set(varctnPerfilGeneal,true);
+                Set(varctnPerfilABD,false);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =179
             X: =752
@@ -2164,6 +2174,16 @@ scr_configuracion As screen:
         Image2_8 As image:
             Height: =146
             Image: ='menu-4'
+            OnSelect: |-
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnEmpleados,false);
+                Set(varctnPerfil,false);
+                Set(varctnEstatus,false);
+                Set(varctnDepartamento,true);
+                Reset(TiDepartamento);
+                Set(varctnDepartamentoGeneal,true);
+                Set(varctnDepartamentoABD,false);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =179
             X: =997

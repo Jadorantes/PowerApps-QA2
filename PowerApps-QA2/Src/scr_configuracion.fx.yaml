@@ -9,7 +9,7 @@ scr_configuracion As screen:
         ZIndex: =18
 
         Vista_Empleados As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(217, 217, 217, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =656
             Visible: =varctnEmpleadosGeneal
             Width: =1285
@@ -40,7 +40,7 @@ scr_configuracion As screen:
                 ZIndex: =3
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-                Height: =417
+                Height: =382
                 Items: |-
                     =Search(If((IsBlank(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsEmpty(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsBlank(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') Or IsEmpty(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') ),Empleado,Filter(Empleado,Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult' Or Departamento=DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento')),TiNombreEd.Text,"Nombre"
                     
@@ -1050,10 +1050,12 @@ scr_configuracion As screen:
                 ZIndex: =3
 
         Button9 As button:
-            OnSelect: =Set(varctnEmpleados,false)
+            OnSelect: |-
+                =Set(varctnEmpleados,false);
+                Set(varMenuConf,!varMenuConf)
             Text: ="Cancelar"
             X: =558
-            Y: =580
+            Y: =566
             ZIndex: =3
 
     ctnPerfil As groupContainer.manualLayoutContainer:
@@ -2054,9 +2056,7 @@ scr_configuracion As screen:
                 
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Usuarios"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =122
             Y: =313
             ZIndex: =1
@@ -2079,9 +2079,7 @@ scr_configuracion As screen:
                 Set(varctnPerfilABD,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Perfiles"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =889
             Y: =313
             ZIndex: =2
@@ -2104,9 +2102,7 @@ scr_configuracion As screen:
                 Set(varctnDepartamentoABD,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Área"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             Width: =165
             X: =122
             Y: =580
@@ -2130,9 +2126,7 @@ scr_configuracion As screen:
                 Set(varctnEstatusABD,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Estatus"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =904
             Y: =580
             ZIndex: =4
@@ -2141,7 +2135,7 @@ scr_configuracion As screen:
             Height: =95
             Image: ='menu-1'
             OnSelect: |-
-                =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
+                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnEmpleados,true);
                 Set(varctnPerfil,false);
                 Set(varctnEstatus,false);
@@ -2150,10 +2144,8 @@ scr_configuracion As screen:
                 Reset(DdDepartamentoEd);
                 Set(varctnEmpleadosGeneal,true);
                 Set(varctnEmpleadosABD,false);
-                Set(varMenuConf,false);
-            Visible: |-
-                =true
-                //varMenuConf
+                Set(varMenuConf,!varMenuConf);
+            Visible: =!varMenuConf
             Width: =104
             X: =150
             Y: =192
@@ -2162,9 +2154,7 @@ scr_configuracion As screen:
         Image20_1 As image:
             Height: =95
             Image: ='menu-2'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             Width: =104
             X: =400
             Y: =190
@@ -2173,9 +2163,7 @@ scr_configuracion As screen:
         Image20_2 As image:
             Height: =95
             Image: ='menu-3'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             Width: =104
             X: =1150
             Y: =466
@@ -2184,9 +2172,7 @@ scr_configuracion As screen:
         Image20_3 As image:
             Height: =95
             Image: ='menu-4'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             Width: =104
             X: =917
             Y: =456
@@ -2195,9 +2181,7 @@ scr_configuracion As screen:
         Image20_4 As image:
             Height: =95
             Image: ='menu-5'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             Width: =104
             X: =667
             Y: =461
@@ -2205,45 +2189,35 @@ scr_configuracion As screen:
 
         Image21 As image:
             Image: ='menu-6'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =400
             Y: =461
             ZIndex: =12
 
         Image21_1 As image:
             Image: ='menu-7'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =154
             Y: =456
             ZIndex: =13
 
         Image21_2 As image:
             Image: ='menu-8'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =1154
             Y: =185
             ZIndex: =14
 
         Image21_3 As image:
             Image: ='menu-9'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =919
             Y: =185
             ZIndex: =15
 
         Image21_4 As image:
             Image: ='menu-10'
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             X: =666
             Y: =185
             ZIndex: =16
@@ -2255,9 +2229,7 @@ scr_configuracion As screen:
             Height: =37
             Size: =20
             Text: ="Seleccione una actividad"
-            Visible: |-
-                =true
-                //varMenuConf
+            Visible: =!varMenuConf
             Width: =415
             X: =104
             Y: =100
@@ -2281,4 +2253,10 @@ scr_configuracion As screen:
         X: =488
         Y: =287
         ZIndex: =27
+
+    Label6 As label:
+        Text: =!varMenuConf
+        X: =520
+        Y: =97
+        ZIndex: =28
 

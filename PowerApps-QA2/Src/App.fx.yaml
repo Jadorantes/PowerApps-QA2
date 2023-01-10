@@ -9,6 +9,7 @@ App As appinfo:
         //Horario
         Set(CurrentTime, Now());
         //PopUp Validacion Usuario
+        Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
         Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
         Set(popUpUsr,If(valUsr="Activo","false","true"));
         Set(varUserExist,If(IsEmpty(Filter(Empleado,Nombre_Usuario.DisplayName=User().FullName))="true","false","true"));

@@ -25,6 +25,7 @@ App As appinfo:
         Set(valUsrJefe,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Responsable.DisplayName));
         Set(valUsrPuesto,LookUp(Empleado,Nombre=User().FullName,Puesto));
         Set(varDir,LookUp(Empleado,Nombre=User().FullName,Direccion));
+        Set(varMenuConf,usuarioAdministrador);
         //Coleccion Datos
         ClearCollect(
             RegistrosEmpleados,

@@ -141,6 +141,7 @@ scr_configuracion As screen:
                         Set(varctnEmpleadosGeneal,false);
                         Set(varctnEmpleadosABD,true);
                         Set(varctnEmpleadosABDGuardar,true);
+                        Set(varMenuConf,false);
                     PaddingBottom: =10
                     PaddingLeft: =10
                     PaddingRight: =10
@@ -160,6 +161,7 @@ scr_configuracion As screen:
                         Set(varctnEmpleadosGeneal,false);
                         Set(varctnEmpleadosABD,true);
                         Set(varctnEmpleadosABDGuardar,false);
+                        Set(varMenuConf,false);
                     Width: =33
                     X: =1217
                     Y: =29
@@ -184,6 +186,7 @@ scr_configuracion As screen:
                     Set(varctnEmpleadosABDGuardar,true);
                     Reset(DdDepartamentoEd);
                     Reset(TiNombreEd);
+                    Set(varMenuConf,false);
                 Text: ="Agregar usuario"
                 Width: =200
                 X: =1059
@@ -1406,6 +1409,17 @@ scr_configuracion As screen:
                 Y: =40
                 ZIndex: =6
 
+            Button14 As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
+                OnSelect: |-
+                    =Set(varctnEstatus,false);
+                    Set(varMenuConf,true)
+                Text: ="Cancelar"
+                X: =562
+                Y: =523
+                ZIndex: =7
+
         ABC_Estatus As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnEstatusABD
@@ -2103,7 +2117,7 @@ scr_configuracion As screen:
             Height: =20
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |+
+            OnSelect: |
                 =Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
                 Set(varctnEmpleados,true);
                 Set(varctnPerfil,false);
@@ -2113,7 +2127,7 @@ scr_configuracion As screen:
                 Reset(DdDepartamentoEd);
                 Set(varctnEmpleadosGeneal,true);
                 Set(varctnEmpleadosABD,false);
-                
+                Set(varMenuConf,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Usuarios"
             Visible: =varMenuConf

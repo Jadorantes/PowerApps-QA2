@@ -2109,7 +2109,7 @@ scr_configuracion As screen:
                 Reset(TiDepartamento);
                 Set(varctnDepartamentoGeneal,true);
                 Set(varctnDepartamentoABD,false);
-                Set(varMenuConf,!varMenuConf);
+                Set(varMenuConf,false);
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Área"
             Visible: =varMenuConf
@@ -2154,7 +2154,7 @@ scr_configuracion As screen:
                 Reset(DdDepartamentoEd);
                 Set(varctnEmpleadosGeneal,true);
                 Set(varctnEmpleadosABD,false);
-                Set(varMenuConf,!varMenuConf);
+                Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =104
             X: =150

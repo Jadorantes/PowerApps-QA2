@@ -7,15 +7,6 @@ Bienvanida As screen:
         Width: =1366
         ZIndex: =1
 
-    Image10 As image:
-        Height: =99
-        Image: ='Logo dgati blanco'
-        ImagePosition: =ImagePosition.Stretch
-        Width: =422
-        X: =100
-        Y: =42
-        ZIndex: =2
-
     bienvenida As htmlViewer:
         DisabledFill: =RGBA(230, 230, 230, 1)
         Font: =Font.Verdana
@@ -44,11 +35,12 @@ Bienvanida As screen:
                 Bienvenido
             </div>"
         Width: =398
-        X: =822
-        Y: =26
+        X: =35
+        Y: =58
         ZIndex: =4
 
     MensajeBienvenida As htmlViewer:
+        AutoHeight: =true
         Font: =Font.Verdana
         Height: =156
         HtmlText: |-
@@ -65,8 +57,8 @@ Bienvanida As screen:
                     font-weight: 700;
                     font-size: 40px;
                     //line-height: 64px;
-                    text-align: center;
-                    //letter-spacing: 0.2px; 
+                    //text-align: center;
+                    letter-spacing: 0.2px; 
             
                     color:#FFFFFF; 
                     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -75,8 +67,8 @@ Bienvanida As screen:
                 Estás ingresando a la captura de tus
             </div>"
         Width: =463
-        X: =789
-        Y: =111
+        X: =50
+        Y: =204
         ZIndex: =5
 
     CargandoBD As htmlViewer:
@@ -99,7 +91,7 @@ Bienvanida As screen:
                     //letter-spacing: 0.2px; 
             
                     color:#FFFFFF; 
-                    //text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
             
                 "">
                 Cargando Base de Datos
@@ -271,7 +263,7 @@ Bienvanida As screen:
     bienvenida_1 As htmlViewer:
         DisabledFill: =RGBA(230, 230, 230, 1)
         Font: =Font.Verdana
-        Height: =145
+        Height: =196
         HtmlText: |-
             ="<div 
                 style=""
@@ -284,19 +276,28 @@ Bienvanida As screen:
                     font-family: 'Verdana';
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 80px;
+                    font-size: 150px;
                     //line-height: 64px;
-                    text-align: right;
+                    text-align: center;
                     //letter-spacing: 0.2px; 
             
                     color:#FFFFFF; 
-                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
             
                 "">
                 OKR
             </div>"
-        Width: =436
-        X: =672
-        Y: =254
+        Size: =20
+        Width: =397
+        X: =62
+        Y: =372
         ZIndex: =20
+
+    Image32 As image:
+        Height: =361
+        Image: ='DGA TI BLANCO'
+        Width: =370
+        X: =819
+        Y: =207
+        ZIndex: =21
 

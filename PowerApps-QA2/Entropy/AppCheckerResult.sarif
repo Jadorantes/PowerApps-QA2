@@ -1842,6 +1842,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.inpResultadoClaveOG_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.inpResultadoClaveOG_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.inpResultadoClaveOG_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19.AccessibleLabel"
                 }
               ],
@@ -1872,19 +1902,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.inpResultadoClaveOG_1.AccessibleLabel"
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.inpResultadoClaveOG_1.AccessibleLabel",
+                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.inpResultadoClaveOG_1"
+                "type": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19"
               }
             }
           ],
@@ -1894,8 +1924,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2292,79 +2322,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.txtPTTarea.AccessibleLabel"
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.Image20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.txtPTTarea.AccessibleLabel",
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.Image20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.txtPTTarea"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFITarea.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFITarea.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFITarea"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFFTarea.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFFTarea.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFFTarea"
+                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.Image20"
               }
             }
           ],
@@ -2412,19 +2382,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.Image20.AccessibleLabel"
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFFTarea.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.Image20.AccessibleLabel",
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFFTarea.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.Image20"
+                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFFTarea"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.txtPTTarea.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.txtPTTarea.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.txtPTTarea"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFITarea.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFITarea.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_objetivo",
+                "type": "scr_objetivo.ctnTareas.Gallery_Tareas.DtpFITarea"
               }
             }
           ],
@@ -4902,107 +4932,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19.TabIndex"
+                  "fullyQualifiedName": "App.MyUserID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19.TabIndex",
+                  "fullyQualifiedName": "App.MyUserID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "scr_objetivo",
-                "type": "scr_objetivo.ctnObjetivoOtros.ctnResultadoClaveOO.Gallery_ResultadoClaveOG_1.Image19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.varDir"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varDir",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varDir",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.valUsrJefe"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.valUsrJefe",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "valUsrJefe",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.valUsrResp"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.valUsrResp",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "valUsrResp",
+                "member": "MyUserID",
                 "module": "App",
                 "type": "App"
               }
@@ -5052,17 +4992,77 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.MyUserID"
+                  "fullyQualifiedName": "App.valUsrResp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.MyUserID",
+                  "fullyQualifiedName": "App.valUsrResp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "MyUserID",
+                "member": "valUsrResp",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.valUsrJefe"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.valUsrJefe",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "valUsrJefe",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varDir"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varDir",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varDir",
                 "module": "App",
                 "type": "App"
               }

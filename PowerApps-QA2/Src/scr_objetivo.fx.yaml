@@ -1531,6 +1531,7 @@ scr_objetivo As screen:
                     <table>
                     </div>"
                 Size: =14
+                Visible: =false
                 Width: =1272
                 X: =24
                 Y: =60

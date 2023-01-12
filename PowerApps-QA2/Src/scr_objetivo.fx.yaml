@@ -28,21 +28,22 @@ scr_objetivo As screen:
         Y: =63
         ZIndex: =3
 
-        "GalleryObjetivoEmp As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =550
+        "GalleryObjetivoEmp As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
+            Height: =544
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =180
-            Width: =1263
-            X: =17
+            TemplateSize: =Min(220, Self.Height - 60)
+            Width: =1265
+            X: =15
             Y: =136
             ZIndex: =1
 
-            Subtitle7 As label:
+            Title14 As label:
                 AutoHeight: =true
                 Font: =Font.Arial
-                Height: =174
+                FontWeight: =FontWeight.Normal
+                Height: =117
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -51,15 +52,14 @@ scr_objetivo As screen:
                 Size: =14
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
-                Width: =232
-                X: =41
+                Width: =273
+                X: =32
                 Y: =12
                 ZIndex: =1
 
-            Subtitle7_2 As label:
+            Body4 As label:
                 AutoHeight: =true
-                Font: =Font.Arial
-                Height: =33.4
+                Height: =Self.Size * 4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -68,15 +68,34 @@ scr_objetivo As screen:
                 Size: =14
                 Text: =ThisItem.Periodo_Tiempo
                 VerticalAlign: =VerticalAlign.Top
-                Width: =200
+                Width: =Title14.Width
                 X: =319
                 Y: =12
                 ZIndex: =2
 
-            Subtitle7_4 As label:
+            Image21 As image:
+                Height: =39
+                Image: =Ver
+                OnSelect: |-
+                    =Set(varIDObjetivoEmple,ThisItem.ID);
+                    Set(varctnDetalleObjetivos,true);
+                    Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
+                Width: =39
+                X: =1195
+                Y: =Title14.Y
+                ZIndex: =3
+
+            Separator10 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =1210
+                X: =30
+                Y: =
+                ZIndex: =4
+
+            Body4_1 As label:
                 AutoHeight: =true
-                Font: =Font.Arial
-                Height: =33.4
+                Height: =Self.Size * 4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -85,15 +104,14 @@ scr_objetivo As screen:
                 Size: =14
                 Text: =ThisItem.EstatusAprobacion
                 VerticalAlign: =VerticalAlign.Top
-                Width: =180
+                Width: =Title14.Width
                 X: =624
                 Y: =12
-                ZIndex: =3
+                ZIndex: =5
 
-            Subtitle7_5 As label:
+            Body4_2 As label:
                 AutoHeight: =true
-                Font: =Font.Arial
-                Height: =33.4
+                Height: =Self.Size * 4
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -102,29 +120,9 @@ scr_objetivo As screen:
                 Size: =14
                 Text: =ThisItem.EstatusEjecucion
                 VerticalAlign: =VerticalAlign.Top
-                Width: =180
+                Width: =Title14.Width
                 X: =922
                 Y: =12
-                ZIndex: =4
-
-            Image12 As image:
-                Height: =36
-                Image: =Ver
-                OnSelect: |-
-                    =Set(varIDObjetivoEmple,ThisItem.ID);
-                    Set(varctnDetalleObjetivos,true);
-                    Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
-                Tooltip: ="ver detalle"
-                Width: =39
-                X: =1195
-                Y: =33
-                ZIndex: =5
-
-            Separator7 As rectangle:
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
                 ZIndex: =6
 
         TxBuscadorObje As text:

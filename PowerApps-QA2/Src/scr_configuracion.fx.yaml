@@ -195,7 +195,7 @@ scr_configuracion As screen:
                     TabIndex: =0
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =48
-                    X: =1154
+                    X: =1128
                     Y: =20
                     ZIndex: =8
 
@@ -209,13 +209,14 @@ scr_configuracion As screen:
                         Set(varctnEmpleadosABDGuardar,false);
                         Set(varMenuConf,false);
                     Width: =33
-                    X: =1217
+                    X: =1191
                     Y: =29
                     ZIndex: =9
 
             CargaMasiva As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: =Set(varPopUpCM,true);
                 Text: ="Carga masiva"
                 X: =861
@@ -225,6 +226,7 @@ scr_configuracion As screen:
             AgregarUsuario As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =NewForm(Form_Empleados);
                     Set(varctnEmpleadosGeneal,false);
@@ -257,6 +259,7 @@ scr_configuracion As screen:
             Button10 As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =Set(varctnEmpleados,false);
                     Set(varMenuConf,true)
@@ -311,6 +314,8 @@ scr_configuracion As screen:
                     ZIndex: =13
 
                 btnCargar As button:
+                    Fill: =RGBA(0, 154, 62, 1)
+                    HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                     OnSelect: |-
                         =Set(
                             varFlowImpor,
@@ -1067,6 +1072,7 @@ scr_configuracion As screen:
 
             btnGuardarEmpleado As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |
                     =SubmitForm(Form_Empleados);
                     ResetForm(Form_Empleados);
@@ -1081,6 +1087,7 @@ scr_configuracion As screen:
 
             btnCancelarEmpleado As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =ResetForm(Form_Empleados);
                     RequestHide();

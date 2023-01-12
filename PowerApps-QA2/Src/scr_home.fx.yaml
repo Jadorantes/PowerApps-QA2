@@ -17,6 +17,54 @@ scr_home As screen:
         Y: =79
         ZIndex: =1
 
+    btnObjetivoArea As button:
+        BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+        Fill: =RGBA(0, 154, 62, 1)
+        Font: =Font.Arial
+        Height: =60
+        HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+        OnSelect: |
+            =ForAll(RegistrosEmpleados,
+                Patch(Empleado,
+                    LookUp(Empleado,ID=RegistrosEmpleados[@IDempleado]),
+                    {
+                        Tipo_Acceso: TipoAcceso,
+                        Estatus_Empleado: Estatus
+                    }
+                )
+            );
+            Refresh(Empleado);
+            Set(popUpUsr,"false");
+        Text: ="Objetivos del Área"
+        Width: =227
+        X: =914
+        Y: =654
+        ZIndex: =2
+
+    btnObjetivoGeneral As button:
+        BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+        Fill: =RGBA(0, 154, 62, 1)
+        Font: =Font.Arial
+        Height: =60
+        HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+        OnSelect: |
+            =ForAll(RegistrosEmpleados,
+                Patch(Empleado,
+                    LookUp(Empleado,ID=RegistrosEmpleados[@IDempleado]),
+                    {
+                        Tipo_Acceso: TipoAcceso,
+                        Estatus_Empleado: Estatus
+                    }
+                )
+            );
+            Refresh(Empleado);
+            Set(popUpUsr,"false");
+        Text: ="Objetivos Generales"
+        Width: =227
+        X: =284
+        Y: =654
+        ZIndex: =3
+
     Menu_1 As Menu:
         Width: =Menu_1.MenuWidth
         Y: =82
@@ -32,7 +80,23 @@ scr_home As screen:
         Visible: =popUpUsr
         Width: =1366
         Y: =60
-        ZIndex: =8
+        ZIndex: =6
+
+        FondoVUA As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =703
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1335
+            X: =17
+            Y: =5
+            ZIndex: =1
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
             Height: =560
@@ -42,7 +106,7 @@ scr_home As screen:
             TemplateSize: =560
             Width: =1366
             Y: =76
-            ZIndex: =1
+            ZIndex: =2
 
             Rectangle1 As rectangle:
                 Fill: =RGBA(0, 0, 0, 0)
@@ -297,7 +361,7 @@ scr_home As screen:
             Width: =717
             X: =341
             Y: =5
-            ZIndex: =2
+            ZIndex: =3
 
         Correcto As button:
             BorderColor: =ColorFade(RGBA(0, 154, 62, 100), -20%)
@@ -316,12 +380,14 @@ scr_home As screen:
                     )
                 );
                 Refresh(Empleado);
+                Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
+                Set(popUpUsr1,If(valUsr="Activo","true","false"));
                 Set(popUpUsr,"false");
             Text: ="Datos Correctos"
             Width: =227
-            X: =448
-            Y: =628
-            ZIndex: =3
+            X: =376
+            Y: =605
+            ZIndex: =4
 
         Incorrecto As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -331,9 +397,9 @@ scr_home As screen:
             OnSelect: =Set(varValUsr,true)
             Text: ="Datos Incorrectos"
             Width: =227
-            X: =783
-            Y: =628
-            ZIndex: =4
+            X: =763
+            Y: =605
+            ZIndex: =5
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
             Height: =317
@@ -344,7 +410,7 @@ scr_home As screen:
             Width: =718
             X: =600
             Y: =288
-            ZIndex: =5
+            ZIndex: =6
 
             Image8 As image:
                 Height: =48
@@ -408,7 +474,7 @@ scr_home As screen:
                 Visible: =false//varUserExist
                 Width: =1366
                 Y: =5
-                ZIndex: =6
+                ZIndex: =7
 
             Label1 As label:
                 Align: =Align.Center
@@ -419,7 +485,7 @@ scr_home As screen:
                 Width: =785
                 X: =273
                 Y: =254
-                ZIndex: =7
+                ZIndex: =8
 
             Button4 As button:
                 OnSelect: =Exit()
@@ -427,7 +493,7 @@ scr_home As screen:
                 Visible: =false//varUserExist
                 X: =603
                 Y: =648
-                ZIndex: =8
+                ZIndex: =9
 
     EnvioCorreoDatos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -436,7 +502,23 @@ scr_home As screen:
             =varValUsr
         Width: =1366
         Y: =60
-        ZIndex: =9
+        ZIndex: =7
+
+        FondoVUA_ECD As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =690
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1337
+            X: =13
+            Y: =5
+            ZIndex: =1
 
         txtNombreUsr As text:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -448,7 +530,7 @@ scr_home As screen:
             Width: =572
             X: =508
             Y: =102
-            ZIndex: =1
+            ZIndex: =2
 
         txtPuesto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -460,7 +542,7 @@ scr_home As screen:
             Width: =572
             X: =508
             Y: =282
-            ZIndex: =2
+            ZIndex: =3
 
         listArea As dropdown:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -476,7 +558,7 @@ scr_home As screen:
             Width: =572
             X: =508
             Y: =192
-            ZIndex: =3
+            ZIndex: =4
 
         Button2 As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -497,7 +579,7 @@ scr_home As screen:
             Width: =227
             X: =456
             Y: =578
-            ZIndex: =4
+            ZIndex: =5
 
         txtJefeDirecto As text:
             BorderColor: =RGBA(0, 154, 62, 1)
@@ -509,7 +591,7 @@ scr_home As screen:
             Width: =572
             X: =508
             Y: =372
-            ZIndex: =5
+            ZIndex: =6
 
         Label3 As label:
             Font: =Font.Verdana
@@ -519,7 +601,7 @@ scr_home As screen:
             Visible: =varValUsr
             X: =285
             Y: =113
-            ZIndex: =6
+            ZIndex: =7
 
         Label3_1 As label:
             Font: =Font.Verdana
@@ -529,7 +611,7 @@ scr_home As screen:
             Visible: =varValUsr
             X: =285
             Y: =293
-            ZIndex: =7
+            ZIndex: =8
 
         Label3_2 As label:
             Font: =Font.Verdana
@@ -541,7 +623,7 @@ scr_home As screen:
             Width: =194
             X: =285
             Y: =375
-            ZIndex: =8
+            ZIndex: =9
 
         Label3_3 As label:
             DisabledColor: =RGBA(255, 255, 255, 1)
@@ -553,14 +635,29 @@ scr_home As screen:
             Visible: =varValUsr
             X: =285
             Y: =203
-            ZIndex: =9
+            ZIndex: =10
+
+        Button2_1 As button:
+            Fill: =RGBA(0, 154, 62, 1)
+            Font: =Font.Arial
+            Height: =60
+            HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
+            OnSelect: |
+                =Set(popUpUsr,"true");
+                Set(varValUsr,false);
+            Text: ="Cancelar"
+            Visible: =varValUsr
+            Width: =227
+            X: =750
+            Y: =578
+            ZIndex: =11
 
         ctnNotCorreo As groupContainer.manualLayoutContainer:
             Height: =702
             Visible: =varPopUpMail
             Width: =1366
             Y: =6
-            ZIndex: =11
+            ZIndex: =12
 
             Button5 As button:
                 BorderThickness: =3
@@ -589,26 +686,12 @@ scr_home As screen:
                 Y: =352
                 ZIndex: =2
 
-        Button2_1 As button:
-            Fill: =RGBA(0, 154, 62, 1)
-            Font: =Font.Arial
-            Height: =60
-            HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
-            OnSelect: |
-                =Set(popUpUsr,"true");
-                Set(varValUsr,false);
-            Text: ="Cancelar"
-            Visible: =varValUsr
-            Width: =227
-            X: =750
-            Y: =578
-            ZIndex: =12
-
     DatosUsuario As groupContainer.manualLayoutContainer:
         Height: =82
+        Visible: =popUpUsr1
         Width: =893
         X: =473
-        ZIndex: =10
+        ZIndex: =8
 
         Label4_20 As label:
             Align: =Align.Right

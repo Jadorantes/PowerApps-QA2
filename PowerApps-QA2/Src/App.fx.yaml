@@ -12,6 +12,7 @@ App As appinfo:
         Set(usuarioAdministrador,If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Tipo_Acceso)="Administrador",false,true));
         Set(valUsr,LookUp(Empleado,Nombre_Usuario.Email=User().Email,Estatus_Empleado));
         Set(popUpUsr,If(valUsr="Activo","false","true"));
+        Set(popUpUsr1,If(valUsr="Activo","true","false"));
         Set(varUserExist,If(IsEmpty(Filter(Empleado,Nombre_Usuario.DisplayName=User().FullName))="true","false","true"));
         Set(varPopUpMail,false);
         //Set(popUp;If(popUpUsr="true" && VarpopUpComprobacion="false";"false"));;
@@ -32,7 +33,7 @@ App As appinfo:
             RegistrosEmpleados,
             {
                 IDempleado:valUsr2,
-                TipoAcceso:"Usuario",
+                TipoAcceso:"Colaborador",
                 Estatus:"Activo"
             }
         );

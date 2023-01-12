@@ -2,7 +2,7 @@ Bienvanida As screen:
 
     Fondo As image:
         Height: =767
-        Image: =Back_inicio
+        Image: ='12'
         ImagePosition: =ImagePosition.Stretch
         Width: =1366
         ZIndex: =1
@@ -298,6 +298,6 @@ Bienvanida As screen:
         Image: ='DGA TI BLANCO'
         Width: =370
         X: =819
-        Y: =207
+        Y: =99
         ZIndex: =21
 

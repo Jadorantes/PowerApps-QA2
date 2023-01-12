@@ -2051,7 +2051,7 @@ scr_objetivo As screen:
             Text: ="Cancelar"
             Width: =227
             X: =701
-            Y: =604
+            Y: =591
             ZIndex: =6
 
         btnGuardarOG_2 As button:
@@ -2117,7 +2117,7 @@ scr_objetivo As screen:
             Text: ="Guardar"
             Width: =227
             X: =360
-            Y: =604
+            Y: =591
             ZIndex: =7
 
         HtmlText2_4 As htmlViewer:

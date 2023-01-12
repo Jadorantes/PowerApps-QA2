@@ -24,7 +24,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =92
-        ZIndex: =2
+        ZIndex: =11
 
         FondoAgregarUsuario As htmlViewer:
             Height: =650
@@ -1094,50 +1094,66 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     ctnPerfil As groupContainer.manualLayoutContainer:
-        Height: =656
+        Height: =668
         Visible: =varctnPerfil
         Width: =1293
         X: =73
-        Y: =112
-        ZIndex: =3
+        Y: =86
+        ZIndex: =12
+
+        FondoEmpleado_1 As htmlViewer:
+            Height: =674
+            HtmlText: |-
+                ="<div style='width:100%; height:"& ctnPerfil.Height -19 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1275
+            X: =10
+            Y: =-6
+            ZIndex: =1
 
         Vista_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnPerfilGeneal
             Width: =1285
             X: =8
-            ZIndex: =1
+            ZIndex: =2
 
             TiPerfil As text:
                 BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =
                 HintText: ="Buscar Perfil"
+                HoverBorderColor: =RGBA(0, 154, 62, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
                 X: =40
                 Y: =40
                 ZIndex: =1
 
             "GalleryPerfil As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
                 Height: =475
-                Items: |-
-                    =Filter(
-                        Perfil_1,
-                        IsBlank(TiPerfil.Text) Or IsEmpty(TiPerfil.Text) Or Nombre= TiPerfil.Text
-                    )
+                Items: |+
+                    =Search(Filter(Perfil_1,!IsBlank(Title)),TiPerfil.Text,"Title")
+                    
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =60
-                Width: =1285
+                Width: =1270
                 Y: =119
                 ZIndex: =1
 
                 Title3 As label:
+                    Font: =Font.Verdana
                     Height: =30
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =12
+                    Size: =13
                     Text: |
                         =ThisItem.ID
                     VerticalAlign: =VerticalAlign.Top
@@ -1146,17 +1162,19 @@ scr_configuracion As screen:
                     ZIndex: =1
 
                 Subtitle2 As label:
-                    Height: =49
+                    Font: =Font.Verdana
+                    Height: =29
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =13
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
                     Width: =913
                     X: =299
-                    Y: =10
+                    Y: =23
                     ZIndex: =2
 
                 NextArrow3 As icon.ChevronRight:
@@ -1174,19 +1192,21 @@ scr_configuracion As screen:
                     TabIndex: =0
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =48
-                    X: =Parent.TemplateWidth - Self.Width - 5
+                    X: =1219
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =3
 
                 Separator3 As rectangle:
                     Height: =1
                     OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
+                    Width: =1250
+                    X: =15
                     Y: =Parent.TemplateHeight - 1
                     ZIndex: =4
 
             AgregarPerfil As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =NewForm(Form_Perfil);
                     Set(varctnPerfilGeneal,false);
@@ -1201,20 +1221,39 @@ scr_configuracion As screen:
             Button13 As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =Set(varctnPerfil,false);
                     Set(varMenuConf,true)
                 Text: ="Cancelar"
                 X: =562
-                Y: =554
+                Y: =600
                 ZIndex: =7
+
+            Label15 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="ID"
+                X: =22
+                Y: =93
+                ZIndex: =8
+
+            Label15_1 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Perfil"
+                X: =292
+                Y: =92
+                ZIndex: =9
 
         ABC_Perfil As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnPerfilABD
             Width: =1285
             X: =8
-            ZIndex: =2
+            ZIndex: =3
 
             Form_Perfil As form:
                 DataSource: =Perfil_1
@@ -1293,6 +1332,8 @@ scr_configuracion As screen:
                         ZIndex: =4
 
             btnGuardarPerfil As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |
                     =SubmitForm(Form_Perfil);
                     ResetForm(Form_Perfil);
@@ -1305,6 +1346,8 @@ scr_configuracion As screen:
                 ZIndex: =2
 
             btnCancelarPerfil As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =ResetForm(Form_Perfil);
                     RequestHide();
@@ -1317,20 +1360,35 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     ctnEstatus As groupContainer.manualLayoutContainer:
-        Height: =656
+        Height: =676
         Visible: =varctnEstatus
         Width: =1293
         X: =73
-        Y: =112
-        ZIndex: =4
+        Y: =92
+        ZIndex: =13
+
+        FondoEmpleado_3 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =656
+            HtmlText: |-
+                ="<div style='width:100%; height:"& ctnPerfil.Height -25 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1275
+            X: =10
+            Y: =-8
+            ZIndex: =1
 
         Vista_Estatus As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
             Height: =656
             Visible: =varctnEstatusGeneal
             Width: =1285
             X: =8
-            ZIndex: =1
+            ZIndex: =2
 
             TiEstatus As text:
                 BorderColor: =RGBA(0, 154, 62, 1)
@@ -1341,17 +1399,13 @@ scr_configuracion As screen:
                 ZIndex: =1
 
             "GalleryEstatus As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-                Height: =447
-                Items: |-
-                    =Filter(
-                        Estatus,
-                        IsBlank(TiEstatus.Text) Or IsEmpty(TiEstatus.Text) Or 'Nombre (Title)'= TiEstatus.Text
-                    )
+                Height: =432
+                Items: =Search(Filter(Estatus,!IsBlank(Title)),TiEstatus.Text,"Title")
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =60
                 Width: =1285
-                Y: =116
+                Y: =132
                 ZIndex: =1
 
                 Title3_1 As label:
@@ -1428,6 +1482,7 @@ scr_configuracion As screen:
             AgregarEstatus As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =NewForm(Form_Estatus);
                     Set(varctnEstatusGeneal,false);
@@ -1442,6 +1497,7 @@ scr_configuracion As screen:
             Button14 As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =Set(varctnEstatus,false);
                     Set(varMenuConf,true)
@@ -1450,12 +1506,39 @@ scr_configuracion As screen:
                 Y: =523
                 ZIndex: =7
 
+            Label16 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="ID"
+                X: =25
+                Y: =92
+                ZIndex: =8
+
+            Label16_1 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Estatus"
+                X: =293
+                Y: =92
+                ZIndex: =9
+
+            Label16_2 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Lista"
+                X: =577
+                Y: =92
+                ZIndex: =10
+
         ABC_Estatus As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnEstatusABD
             Width: =1285
             X: =8
-            ZIndex: =2
+            ZIndex: =3
 
             Form_Estatus As form:
                 DataSource: =Estatus
@@ -1600,6 +1683,8 @@ scr_configuracion As screen:
                         ZIndex: =4
 
             btnGuardarEstatus As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |
                     =SubmitForm(Form_Estatus);
                     ResetForm(Form_Estatus);
@@ -1612,6 +1697,8 @@ scr_configuracion As screen:
                 ZIndex: =2
 
             btnCancelarEstatus As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =ResetForm(Form_Estatus);
                     RequestHide();
@@ -1624,19 +1711,33 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     ctnDepartamento As groupContainer.manualLayoutContainer:
-        Height: =671
+        Height: =689
         Visible: =varctnDepartamento
         Width: =1293
         X: =73
-        Y: =97
-        ZIndex: =5
+        Y: =79
+        ZIndex: =14
+
+        FondoEmpleado_2 As htmlViewer:
+            Height: =671
+            HtmlText: |-
+                ="<div style='width:100%; height:"& ctnPerfil.Height -10 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1275
+            X: =10
+            ZIndex: =4
 
         Vista_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnDepartamentoGeneal
             Width: =1285
             X: =8
-            ZIndex: =1
+            ZIndex: =5
 
             TiDepartamento As text:
                 Default: =
@@ -1647,16 +1748,12 @@ scr_configuracion As screen:
 
             "GalleryDepartamento As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
                 Height: =447
-                Items: |-
-                    =Filter(
-                        Areas,
-                        IsBlank(TiDepartamento.Text) Or IsEmpty(TiDepartamento.Text) Or Departamento= TiDepartamento.Text
-                    )
+                Items: =Search(Filter(Areas,!IsBlank(Departamento)),TiDepartamento.Text,"Direccion","Departamento")
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =105
+                TemplateSize: =If(Subtitle2_3.Height+1<100,60,Subtitle2_3.Height)
                 Width: =1276
-                Y: =109
+                Y: =129
                 ZIndex: =1
 
                 Title3_2 As label:
@@ -1676,17 +1773,18 @@ scr_configuracion As screen:
                     ZIndex: =1
 
                 Subtitle2_3 As label:
-                    AutoHeight: =true
                     Font: =Font.Verdana
-                    Height: =49
+                    FontWeight: =FontWeight.Bold
+                    Height: =67
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =13
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =250
+                    Width: =285
                     X: =100
                     Y: =10
                     ZIndex: =2
@@ -1708,24 +1806,26 @@ scr_configuracion As screen:
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =48
                     X: =1205
-                    Y: =29
+                    Y: =3
                     ZIndex: =3
 
                 Separator3_2 As rectangle:
                     Height: =1
                     OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - 1
+                    Width: =1230
+                    X: =15
                     ZIndex: =4
 
                 Subtitle2_4 As label:
                     AutoHeight: =true
+                    Font: =Font.Verdana
                     Height: =49
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =13
                     Text: =ThisItem.Direccion
                     VerticalAlign: =VerticalAlign.Top
                     Width: =350
@@ -1735,12 +1835,14 @@ scr_configuracion As screen:
 
                 Subtitle2_5 As label:
                     AutoHeight: =true
+                    Font: =Font.Verdana
                     Height: =49
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =13
                     Text: =ThisItem.Departamento
                     VerticalAlign: =VerticalAlign.Top
                     Width: =350
@@ -1750,6 +1852,7 @@ scr_configuracion As screen:
 
             AgregarDepartamento As button:
                 Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =NewForm(Form_Departamento);
                     Set(varctnDepartamentoGeneal,false);
@@ -1764,20 +1867,49 @@ scr_configuracion As screen:
             Button12 As button:
                 Fill: =RGBA(0, 154, 62, 1)
                 Font: =Font.Arial
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =Set(varctnDepartamento,false);
                     Set(varMenuConf,true)
                 Text: ="Cancelar"
                 X: =546
-                Y: =588
+                Y: =601
                 ZIndex: =7
+
+            Label11 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="Dirección"
+                X: =396
+                Y: =80
+                ZIndex: =8
+
+            Label11_2 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="Área"
+                X: =99
+                Y: =80
+                ZIndex: =9
+
+            Label11_3 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="Departamento"
+                Width: =250
+                X: =800
+                Y: =80
+                ZIndex: =10
 
         ABC_Departamento As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnDepartamentoABD
             Width: =1285
             X: =8
-            ZIndex: =2
+            ZIndex: =6
 
             Form_Departamento As form:
                 DataSource: =Areas
@@ -1807,7 +1939,7 @@ scr_configuracion As screen:
                     DataCardKey30 As label:
                         AutoHeight: =true
                         Height: =34
-                        Text: =Parent.DisplayName
+                        Text: ="Dirección"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
@@ -1875,7 +2007,7 @@ scr_configuracion As screen:
                     DataCardKey31 As label:
                         AutoHeight: =true
                         Height: =34
-                        Text: =Parent.DisplayName
+                        Text: ="Área"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
@@ -1943,7 +2075,7 @@ scr_configuracion As screen:
                     DataCardKey32 As label:
                         AutoHeight: =true
                         Height: =34
-                        Text: =Parent.DisplayName
+                        Text: ="Departamento"
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
@@ -1993,6 +2125,8 @@ scr_configuracion As screen:
                         ZIndex: =4
 
             btnGuardarDepartamento As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |
                     =SubmitForm(Form_Departamento);
                     ResetForm(Form_Departamento);
@@ -2005,6 +2139,8 @@ scr_configuracion As screen:
                 ZIndex: =2
 
             btnCancelarDepartamento As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
                 OnSelect: |-
                     =ResetForm(Form_Departamento);
                     RequestHide();
@@ -2017,13 +2153,13 @@ scr_configuracion As screen:
                 ZIndex: =3
 
     Header_3 As Header:
-        ZIndex: =6
+        ZIndex: =15
 
     DatosUsuario_4 As groupContainer.manualLayoutContainer:
         Height: =82
         Width: =893
         X: =473
-        ZIndex: =7
+        ZIndex: =16
 
         Label4_16 As label:
             Align: =Align.Right
@@ -2098,7 +2234,7 @@ scr_configuracion As screen:
         Width: =1293
         X: =73
         Y: =100
-        ZIndex: =8
+        ZIndex: =17
 
     Label4 As label:
         Align: =Align.Center
@@ -2110,7 +2246,7 @@ scr_configuracion As screen:
         Width: =842
         X: =288
         Y: =298
-        ZIndex: =9
+        ZIndex: =18
 
     Menu_3 As Menu:
         Height: =668
@@ -2144,7 +2280,7 @@ scr_configuracion As screen:
             Width: =163
             X: =269
             Y: =352
-            ZIndex: =10
+            ZIndex: =2
 
         Image2_6 As image:
             Height: =110
@@ -2163,30 +2299,11 @@ scr_configuracion As screen:
             Width: =163
             X: =517
             Y: =352
-            ZIndex: =11
+            ZIndex: =3
 
         Image2_7 As image:
             Height: =110
             Image: ='menu-7'
-            OnSelect: |-
-                =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
-                Set(varctnEmpleados,false);
-                Set(varctnPerfil,true);
-                Set(varctnEstatus,false);
-                Set(varctnDepartamento,false);
-                Reset(TiPerfil);
-                Set(varctnPerfilGeneal,true);
-                Set(varctnPerfilABD,false);
-                Set(varMenuConf,false);
-            Visible: =varMenuConf
-            Width: =163
-            X: =752
-            Y: =352
-            ZIndex: =12
-
-        Image2_8 As image:
-            Height: =110
-            Image: ='menu-4'
             OnSelect: |-
                 =//Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
                 Set(varctnEmpleados,false);
@@ -2199,9 +2316,28 @@ scr_configuracion As screen:
                 Set(varMenuConf,false);
             Visible: =varMenuConf
             Width: =163
+            X: =752
+            Y: =352
+            ZIndex: =4
+
+        Image2_8 As image:
+            Height: =110
+            Image: ='menu-4'
+            OnSelect: |-
+                =Set(varctnEmpleados,false);
+                //Set(usuarioAdministrador;If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Tipo_Acceso)="Administrador";false;true));;
+                Set(varctnPerfil,false);
+                Set(varctnEstatus,true);
+                Set(varctnDepartamento,false);
+                Reset(TiEstatus);
+                Set(varctnEstatusGeneal,true);
+                Set(varctnEstatusABD,false);
+                Set(varMenuConf,false);
+            Visible: =varMenuConf
+            Width: =163
             X: =997
             Y: =352
-            ZIndex: =13
+            ZIndex: =5
 
         Label2_1 As label:
             Align: =Align.Center
@@ -2222,7 +2358,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =521
             Y: =503
-            ZIndex: =14
+            ZIndex: =6
 
         Label2_2 As label:
             Align: =Align.Center
@@ -2243,7 +2379,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =766
             Y: =503
-            ZIndex: =15
+            ZIndex: =7
 
         Label2_3 As label:
             Align: =Align.Center
@@ -2264,7 +2400,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =1010
             Y: =503
-            ZIndex: =16
+            ZIndex: =8
 
         Label2_4 As label:
             Align: =Align.Center
@@ -2308,7 +2444,7 @@ scr_configuracion As screen:
             Visible: =varMenuConf
             X: =276
             Y: =503
-            ZIndex: =17
+            ZIndex: =9
 
         Label2 As label:
             Color: =RGBA(0, 154, 62, 1)
@@ -2321,5 +2457,5 @@ scr_configuracion As screen:
             Width: =442
             X: =108
             Y: =100
-            ZIndex: =18
+            ZIndex: =10
 

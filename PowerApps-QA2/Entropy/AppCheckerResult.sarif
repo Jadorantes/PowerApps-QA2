@@ -501,39 +501,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_configuracion.ctnPerfil.Vista_Perfil.GalleryPerfil.Items"
+                  "fullyQualifiedName": "scr_configuracion.ctnDepartamento.Vista_Departamento.GalleryDepartamento.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnPerfil.Vista_Perfil.GalleryPerfil.Items",
+                  "fullyQualifiedName": "scr_configuracion.ctnDepartamento.Vista_Departamento.GalleryDepartamento.Items",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 6,
-                  "charOffset": 80,
+                  "charLength": 1,
+                  "charOffset": 20,
                   "snippet": {
-                    "text": "Nombre"
+                    "text": "!"
                   }
                 }
               },
               "properties": {
                 "member": "Items",
                 "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnPerfil.Vista_Perfil.GalleryPerfil"
+                "type": "scr_configuracion.ctnDepartamento.Vista_Departamento.GalleryDepartamento"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Nombre"
+              "Not"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 3
         },
         {
@@ -551,9 +551,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 86,
+                  "charOffset": 23,
                   "snippet": {
-                    "text": "="
+                    "text": "!"
                   }
                 }
               },
@@ -566,55 +566,55 @@
           ],
           "message": {
             "arguments": [
-              "Filter"
+              "Not"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 2
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_configuracion.ctnPerfil.Vista_Perfil.GalleryPerfil.Items"
+                  "fullyQualifiedName": "scr_configuracion.ctnEstatus.Vista_Estatus.GalleryEstatus.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnPerfil.Vista_Perfil.GalleryPerfil.Items",
+                  "fullyQualifiedName": "scr_configuracion.ctnEstatus.Vista_Estatus.GalleryEstatus.Items",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 2,
-                  "charOffset": 77,
+                  "charLength": 1,
+                  "charOffset": 22,
                   "snippet": {
-                    "text": "Or"
+                    "text": "!"
                   }
                 }
               },
               "properties": {
                 "member": "Items",
                 "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnPerfil.Vista_Perfil.GalleryPerfil"
+                "type": "scr_configuracion.ctnEstatus.Vista_Estatus.GalleryEstatus"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Filter"
+              "Not"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 2
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6202,6 +6202,35 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scr_configuracion"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "scr_configuracion",
+                "type": "scr_configuracion"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "scr_configuracion.FondoConfiguraciones.HtmlText"
                 }
               ],
@@ -6435,10 +6464,10 @@
               }
             },
             {
-              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly on large data sets. The \"{0}\" operation is not supported by this connector."
                 }
               },
               "properties": {

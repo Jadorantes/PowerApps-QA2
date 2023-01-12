@@ -697,25 +697,32 @@ scr_objetivo As screen:
         Y: =82
         ZIndex: =5
 
-        lbENombre_1 As label:
-            Font: =Font.Verdana
-            FontWeight: =FontWeight.Semibold
-            Size: =18
-            Text: ="Nombre"
-            Width: =350
-            X: =26
+        FondoDOB_2 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =690
+            HtmlText: |-
+                ="<div style='width:100%; height:"& ctnObjetivoOtros.Height -20 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1272
+            X: =10
+            Y: =-4
             ZIndex: =1
 
         "GalleryObjetivosOtro As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =469
+            Height: =439
             Items: =Filter(ResultadoClave,'Creado por'.DisplayName=LookUp(Empleado,Nombre_Usuario.DisplayName=lbNombre_1.Text,Responsable.DisplayName))
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =291
+            TemplateSize: =If(Subtitle6.Height+90<100,50,Subtitle6.Height +20,Subtitle6_2.Height +30)
             Width: =1262
             X: =26
-            Y: =105
-            ZIndex: =1
+            Y: =135
+            ZIndex: =2
 
             Title7 As label:
                 Font: =Font.Verdana
@@ -728,12 +735,14 @@ scr_objetivo As screen:
                 Size: =15
                 Text: ="Resultado Clave"
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =500
                 X: =32
                 Y: =16
                 ZIndex: =1
 
             Subtitle6 As label:
+                AutoHeight: =true
                 Font: =Font.Arial
                 Height: =216
                 OnSelect: =Select(Parent)
@@ -746,14 +755,13 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =352
                 X: =32
-                Y: =Title7.Y + Title7.Height + 4
+                Y: =12
                 ZIndex: =2
 
             Separator6 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
                 ZIndex: =4
 
             Title7_1 As label:
@@ -767,6 +775,7 @@ scr_objetivo As screen:
                 Size: =15
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =352
                 X: =423
                 Y: =16
@@ -785,7 +794,7 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
                 X: =423
-                Y: =52
+                Y: =16
                 ZIndex: =6
 
             Title7_2 As label:
@@ -801,12 +810,14 @@ scr_objetivo As screen:
                     ="Objetivo Principal
                     "
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =300
                 X: =845
                 Y: =16
                 ZIndex: =7
 
             Subtitle6_2 As label:
+                AutoHeight: =true
                 Font: =Font.Arial
                 Height: =216
                 OnSelect: =Select(Parent)
@@ -819,7 +830,7 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
                 X: =845
-                Y: =56
+                Y: =16
                 ZIndex: =8
 
             Image16 As image:
@@ -835,6 +846,15 @@ scr_objetivo As screen:
                 Y: =31
                 ZIndex: =9
 
+        lbENombre_1 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =18
+            Text: ="Nombre"
+            Width: =350
+            X: =26
+            ZIndex: =3
+
         lbNombre_1 As label:
             Color: =RGBA(0, 154, 62, 1)
             Font: =Font.Arial
@@ -844,7 +864,7 @@ scr_objetivo As screen:
             Width: =585
             X: =26
             Y: =40
-            ZIndex: =2
+            ZIndex: =4
 
         lbEPuesto_1 As label:
             Font: =Font.Verdana
@@ -853,7 +873,7 @@ scr_objetivo As screen:
             Text: ="Puesto"
             Width: =350
             X: =737
-            ZIndex: =3
+            ZIndex: =5
 
         lbPuesto_1 As label:
             Color: =RGBA(0, 154, 62, 1)
@@ -864,7 +884,7 @@ scr_objetivo As screen:
             Width: =585
             X: =535
             Y: =40
-            ZIndex: =4
+            ZIndex: =6
 
         Button1 As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -876,23 +896,66 @@ scr_objetivo As screen:
                 Set(varlbtTituloObjetivo,"Detalle Objetivos")
             Text: ="Cancelar"
             Width: =227
-            X: =534
-            Y: =578
-            ZIndex: =5
+            X: =532
+            Y: =610
+            ZIndex: =7
+
+        Label12 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Text: ="Resultado Clave"
+            Width: =250
+            X: =50
+            Y: =95
+            ZIndex: =8
+
+        Label12_1 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Text: ="Fecha de cumplimiento"
+            Width: =250
+            X: =442
+            Y: =95
+            ZIndex: =9
+
+        Label12_4 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Text: ="Objetivo Principal"
+            Width: =250
+            X: =864
+            Y: =95
+            ZIndex: =10
 
         ctnResultadoClaveOO As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =701
             Visible: =varctnRCOO
             Width: =1296
-            ZIndex: =6
+            ZIndex: =11
+
+            FondoRCOO As htmlViewer:
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =683
+                HtmlText: |-
+                    ="<div style='width:100%; height:"& ctnResultadoClaveOO.Height -30 &"px;
+                        background: #D9D9D9;
+                        opacity: 0.3;
+                        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 10px;
+                        '>
+                    </div>"
+                Width: =1270
+                X: =10
+                Y: =-4
+                ZIndex: =1
 
             lblOGRC00_1 As label:
                 Text: =LookUp(ResultadoClave,ID=varIDRCOG,IdObjetivo)
                 Visible: =false
                 X: =26
                 Y: =631
-                ZIndex: =1
+                ZIndex: =2
 
             lblRCRC00_1 As label:
                 Align: =Align.Center
@@ -902,8 +965,9 @@ scr_objetivo As screen:
                 FontWeight: =FontWeight.Semibold
                 Size: =15
                 Text: ="Resultado Clave"
+                Visible: =false
                 Width: =1296
-                ZIndex: =2
+                ZIndex: =3
 
             lblRCRC00_3 As label:
                 Align: =Align.Justify
@@ -913,9 +977,10 @@ scr_objetivo As screen:
                 Height: =43
                 Size: =12
                 Text: =LookUp(ResultadoClave,ID=varIDRCOG,Title)
+                Visible: =false
                 Width: =1290
                 Y: =40
-                ZIndex: =3
+                ZIndex: =4
 
             Form_RCOO As form:
                 DataSource: =Objetivo
@@ -929,7 +994,7 @@ scr_objetivo As screen:
                             ResultadoClave,
                             Defaults(ResultadoClave),{
                                 Title:Co_ResultadoClaveOG,
-                                PeriodoTiempo:Co_PeriodoTiempoOG,
+                                PeriodoTiempo:Form_RCOO.LastSubmit.Periodo_Tiempo,
                                 IdObjetivo:Form_RCOO.LastSubmit.ID
                             }
                         )
@@ -949,9 +1014,10 @@ scr_objetivo As screen:
                            Co_PeriodoTiempoOG:""
                         }
                     );
-                Width: =1290
+                Width: =1256
+                X: =24
                 Y: =90
-                ZIndex: =4
+                ZIndex: =5
 
                 Title_DataCard3 As typedDataCard.textualMultiLineEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -963,7 +1029,7 @@ scr_objetivo As screen:
                     Height: =100
                     Required: =true
                     Update: =DataCardValue19.Text
-                    Width: =1290
+                    Width: =1250
                     WidthFit: =true
                     X: =0
                     Y: =0
@@ -990,7 +1056,7 @@ scr_objetivo As screen:
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.Arial
-                        Height: =56
+                        Height: =60
                         Mode: =TextMode.MultiLine
                         PaddingLeft: =5
                         RadiusBottomLeft: =0
@@ -999,7 +1065,7 @@ scr_objetivo As screen:
                         RadiusTopRight: =0
                         Size: =11
                         Tooltip: =Parent.DisplayName
-                        Width: =1228
+                        Width: =1200
                         X: =32
                         Y: =48
                         ZIndex: =2
@@ -1041,7 +1107,7 @@ scr_objetivo As screen:
                     Required: |
                         =true
                     Update: =DataCardValue17.Selected.Result
-                    Width: =645
+                    Width: =628
                     X: =0
                     Y: =1
                     ZIndex: =1
@@ -1116,7 +1182,7 @@ scr_objetivo As screen:
                     Update: =DataCardValue8.Text
                     Visible: |
                         =false
-                    Width: =645
+                    Width: =628
                     X: =1
                     Y: =1
                     ZIndex: =8
@@ -1185,7 +1251,7 @@ scr_objetivo As screen:
                     Required: =false
                     Update: =DataCardValue13.Text
                     Visible: =false
-                    Width: =645
+                    Width: =628
                     X: =0
                     Y: =2
                     ZIndex: =8
@@ -1247,10 +1313,11 @@ scr_objetivo As screen:
                 Items: =RegistroResultadosClaveOG
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =135
-                Width: =1259
-                Y: =284
-                ZIndex: =5
+                TemplateSize: =79
+                Width: =1270
+                X: =12
+                Y: =338
+                ZIndex: =6
 
                 lbTituloRCOG_1 As label:
                     Font: =Font.Verdana
@@ -1263,6 +1330,7 @@ scr_objetivo As screen:
                     Size: =12
                     Text: ="Resultado Clave"
                     VerticalAlign: =VerticalAlign.Top
+                    Visible: =false
                     Width: =600
                     X: =32
                     ZIndex: =1
@@ -1289,14 +1357,12 @@ scr_objetivo As screen:
                     Tooltip: ="Eliminar"
                     Width: =60
                     X: =1127
-                    Y: =30
                     ZIndex: =3
 
                 Separator8_1 As rectangle:
                     Height: =1
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
-                    Y: =116
                     ZIndex: =4
 
                 inpResultadoClaveOG_1 As text:
@@ -1304,13 +1370,13 @@ scr_objetivo As screen:
                     Clear: =true
                     Default: =ThisItem.Co_ResultadoClaveOG
                     Font: =Font.Arial
-                    Height: =54
+                    Height: =60
                     Mode: =TextMode.MultiLine
                     OnSelect: =Select(Parent)
                     Size: =11
                     Width: =1083
-                    X: =32
-                    Y: =36
+                    X: =35
+                    Y: =10
                     ZIndex: =5
 
                 lblIDRCOG_1 As label:
@@ -1344,7 +1410,7 @@ scr_objetivo As screen:
                         ));
                     Width: =40
                     X: =1187
-                    Y: =40
+                    Y: =9
                     ZIndex: =10
 
             btnGuardarOG_1 As button:
@@ -1372,7 +1438,7 @@ scr_objetivo As screen:
                 Width: =227
                 X: =451
                 Y: =611
-                ZIndex: =6
+                ZIndex: =7
 
             btnCancelarOG_1 As button:
                 Fill: =RGBA(0, 154, 62, 1)
@@ -1386,7 +1452,53 @@ scr_objetivo As screen:
                 Width: =227
                 X: =745
                 Y: =611
-                ZIndex: =7
+                ZIndex: =8
+
+            HtmlText2_2 As htmlViewer:
+                AutoHeight: =true
+                Font: =Font.Arial
+                Height: =66
+                HtmlText: |-
+                    ="<div style='width:98%; //height:"& HtmlText2_2.Height -1 &"px;
+                        background: #FFFFFF;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 10px;
+                        center;
+                    '>
+                    <table style='width:100%; border: 1px solid #CCCCCC;'>
+                    <tr>
+                    <td><div style='color: #009439;font-family:"&Verdana&"; font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;'><center>Resultado Clave</div></center></td>
+                    </tr>
+                    </table>
+                    <table style='width:100%; border: 1px solid #CCCCCC;'>
+                    <tr>
+                    <td style='font-family: "&Arial&";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;'><center>"&LookUp(ResultadoClave,ID=varIDRCOG,Title)&"</center></td>
+                    </tr>
+                    <table>
+                    </div>"
+                Size: =14
+                Width: =1272
+                X: =24
+                Y: =10
+                ZIndex: =9
+
+            Label13 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="Resultado Clave"
+                Width: =250
+                X: =37
+                Y: =298
+                ZIndex: =10
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

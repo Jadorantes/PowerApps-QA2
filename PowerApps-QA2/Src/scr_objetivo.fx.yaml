@@ -1390,22 +1390,36 @@ scr_objetivo As screen:
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =686
+        Height: =679
         Visible: =varctnDetalleObjetivos
-        Width: =1296
-        X: =70
+        Width: =1272
+        X: =82
         Y: =82
         ZIndex: =6
 
+        FondoDOB As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =679
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1272
+            ZIndex: =1
+
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =323
+            Height: =270
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =241
-            Width: =1290
-            Y: =260
-            ZIndex: =1
+            Width: =1263
+            Y: =221
+            ZIndex: =2
 
             Title12 As label:
                 Font: =Font.Verdana
@@ -1512,6 +1526,7 @@ scr_objetivo As screen:
             FontWeight: =FontWeight.Bold
             Size: =15
             Text: ="Detalle OK"
+            Visible: =false
             Width: =1296
             ZIndex: =3
 
@@ -1523,9 +1538,10 @@ scr_objetivo As screen:
             Font: =Font.Arial
             Height: =157
             Text: =LookUp(Objetivo,ID=varIDObjetivoEmple,Title)
+            Visible: =false
             Width: =1296
             Y: =40
-            ZIndex: =5
+            ZIndex: =4
 
         btnCancelarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -1539,20 +1555,62 @@ scr_objetivo As screen:
             Width: =227
             X: =531
             Y: =558
-            ZIndex: =6
+            ZIndex: =5
 
         Label5 As label:
             Align: =Align.Center
             Color: =RGBA(0, 154, 62, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Semibold
-            Height: =63
+            Height: =60
             Size: =14
             Text: ="Resultados clave"
-            Width: =1290
-            X: =6
-            Y: =177
+            Width: =1266
+            X: =3
+            Y: =113
+            ZIndex: =6
+
+        HtmlText2 As htmlViewer:
+            AutoHeight: =true
+            Font: =Font.Arial
+            Height: =66
+            HtmlText: |-
+                ="<div style='width:98%; //height:"& HtmlText2.Height -1 &"px;
+                    background: #FFFFFF;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 10px;
+                    center;
+                '>
+                <table style='width:100%; border: 1px solid #CCCCCC;'>
+                <tr>
+                <td><div style='color: #009439;font-family:"&Verdana&"; font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;'><center>Objetivo General</div></center></td>
+                </tr>
+                </table>
+                <table style='width:100%; border: 1px solid #CCCCCC;'>
+                <tr>
+                <td style='font-family: "&Arial&";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;'><center>"&LookUp(Objetivo,ID=varIDObjetivoEmple,Title)&"</center></td>
+                </tr>
+                <table>
+                </div>"
+            Size: =14
+            Width: =1272
+            X: =13
+            Y: =19
             ZIndex: =7
+
+        Label6 As label:
+            Text: ="Texto"
+            X: =31
+            Y: =173
+            ZIndex: =8
 
     ctnTareas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

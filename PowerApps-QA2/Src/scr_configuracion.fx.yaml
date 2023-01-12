@@ -23,16 +23,43 @@ scr_configuracion As screen:
         Visible: =varctnEmpleados
         Width: =1293
         X: =73
-        Y: =112
+        Y: =92
         ZIndex: =2
 
+        FondoAgregarUsuario As htmlViewer:
+            Height: =650
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -129 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1275
+            X: =10
+            ZIndex: =1
+
         Vista_Empleados As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
             Height: =656
             Visible: =varctnEmpleadosGeneal
             Width: =1285
             X: =8
-            ZIndex: =1
+            ZIndex: =2
+
+            FondoEmpleado As htmlViewer:
+                Height: =650
+                HtmlText: |-
+                    ="<div style='width:100%; height:"& scr_objetivo.Height -129 &"px;
+                        background: #D9D9D9;
+                        opacity: 0.3;
+                        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 10px;
+                        '>
+                    </div>"
+                Width: =1275
+                Y: =-6
+                ZIndex: =1
 
             TiNombreEd As text:
                 Default: =
@@ -40,14 +67,14 @@ scr_configuracion As screen:
                 HintText: ="Buscar usuario"
                 X: =40
                 Y: =40
-                ZIndex: =1
+                ZIndex: =2
 
             LbDepartamentoEd As label:
                 Font: =Font.Verdana
                 Text: ="Dirección"
                 X: =40
                 Y: =102
-                ZIndex: =2
+                ZIndex: =3
 
             DdDepartamentoEd As dropdown:
                 ChevronBackground: =RGBA(0, 154, 62, 1)
@@ -55,7 +82,7 @@ scr_configuracion As screen:
                 SelectionFill: =RGBA(0, 154, 62, 1)
                 X: =190
                 Y: =102
-                ZIndex: =3
+                ZIndex: =4
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 Height: =382
@@ -66,9 +93,10 @@ scr_configuracion As screen:
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =90
-                Width: =1285
+                Width: =1241
+                X: =18
                 Y: =160
-                ZIndex: =4
+                ZIndex: =5
 
                 Image4 As image:
                     Height: =60
@@ -192,7 +220,7 @@ scr_configuracion As screen:
                 Text: ="Carga masiva"
                 X: =861
                 Y: =40
-                ZIndex: =5
+                ZIndex: =6
 
             AgregarUsuario As button:
                 Fill: =RGBA(0, 154, 62, 1)
@@ -209,14 +237,14 @@ scr_configuracion As screen:
                 Width: =200
                 X: =1059
                 Y: =40
-                ZIndex: =6
+                ZIndex: =7
 
             LbDepartamentoEd_1 As label:
                 Font: =Font.Verdana
                 Text: ="Departamento"
                 X: =549
                 Y: =98
-                ZIndex: =7
+                ZIndex: =8
 
             DdDepartamentoEd_1 As dropdown:
                 ChevronBackground: =RGBA(0, 154, 62, 1)
@@ -224,7 +252,18 @@ scr_configuracion As screen:
                 SelectionFill: =RGBA(0, 154, 62, 1)
                 X: =699
                 Y: =98
-                ZIndex: =8
+                ZIndex: =9
+
+            Button10 As button:
+                Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
+                OnSelect: |-
+                    =Set(varctnEmpleados,false);
+                    Set(varMenuConf,true)
+                Text: ="Cancelar"
+                X: =562
+                Y: =575
+                ZIndex: =10
 
             popupCargaMasiva As group:
                 Height: =5
@@ -240,7 +279,7 @@ scr_configuracion As screen:
                     Width: =842
                     X: =203
                     Y: =40
-                    ZIndex: =9
+                    ZIndex: =11
 
                 SubirDocumentos As attachments:
                     BorderColor: =
@@ -257,7 +296,7 @@ scr_configuracion As screen:
                     Width: =596
                     X: =344
                     Y: =130
-                    ZIndex: =10
+                    ZIndex: =12
 
                 lbTitulo As label:
                     Align: =Align.Center
@@ -269,7 +308,7 @@ scr_configuracion As screen:
                     Width: =434
                     X: =425
                     Y: =66
-                    ZIndex: =11
+                    ZIndex: =13
 
                 btnCargar As button:
                     OnSelect: |-
@@ -288,7 +327,7 @@ scr_configuracion As screen:
                     Visible: =varPopUpCM
                     X: =562
                     Y: =337
-                    ZIndex: =12
+                    ZIndex: =14
 
                 lbRespuesta As label:
                     Height: =105
@@ -297,7 +336,7 @@ scr_configuracion As screen:
                     Width: =434
                     X: =425
                     Y: =402
-                    ZIndex: =13
+                    ZIndex: =15
 
                 Icon_CerrarPPCM As icon.Cancel:
                     Height: =32
@@ -307,25 +346,14 @@ scr_configuracion As screen:
                     Width: =32
                     X: =983
                     Y: =66
-                    ZIndex: =14
-
-            Button10 As button:
-                Fill: =RGBA(0, 154, 62, 1)
-                Font: =Font.Arial
-                OnSelect: |-
-                    =Set(varctnEmpleados,false);
-                    Set(varMenuConf,true)
-                Text: ="Cancelar"
-                X: =562
-                Y: =575
-                ZIndex: =15
+                    ZIndex: =16
 
         ABC_Empleados As groupContainer.manualLayoutContainer:
             Height: =656
             Visible: =varctnEmpleadosABD
             Width: =1285
             X: =8
-            ZIndex: =2
+            ZIndex: =3
 
             Form_Empleados As form:
                 BorderColor: =RGBA(0, 154, 62, 1)
@@ -462,6 +490,68 @@ scr_configuracion As screen:
                         Y: =DataCardKey21.Y
                         ZIndex: =4
 
+                Tipo_Acceso_DataCard2 As typedDataCard.allowedValuesStringEditCard:
+                    AllowedValues: =DataSourceInfo([@Empleado], DataSourceInfo.AllowedValues, "Tipo_Acceso")
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Tipo_Acceso"
+                    Default: =ThisItem.Tipo_Acceso
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Tipo_Acceso")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue1.Selected.Result
+                    Width: =428
+                    X: =2
+                    Y: =2
+                    ZIndex: =1
+
+                    DataCardKey1 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue1 As dropdown:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Distinct(Perfil_1,Nombre)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage1 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1.Y + DataCardValue1.Height
+                        ZIndex: =3
+
+                    StarVisible1 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1.Y
+                        ZIndex: =4
+
                 ID_DataCard2 As typedDataCard.textualViewCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="ID"
@@ -473,7 +563,7 @@ scr_configuracion As screen:
                     Required: =false
                     Visible: =false
                     Width: =428
-                    X: =1
+                    X: =0
                     Y: =3
                     ZIndex: =1
 
@@ -499,6 +589,68 @@ scr_configuracion As screen:
                         X: =30
                         Y: =DataCardKey22.Y + DataCardKey22.Height + 5
                         ZIndex: =2
+
+                Estatus_Empleado_DataCard2 As typedDataCard.allowedValuesStringEditCard:
+                    AllowedValues: =DataSourceInfo([@Empleado], DataSourceInfo.AllowedValues, "Estatus_Empleado")
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Estatus_Empleado"
+                    Default: =ThisItem.Estatus_Empleado
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Estatus_Empleado")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue4.Selected.Result
+                    Width: =428
+                    X: =1
+                    Y: =3
+                    ZIndex: =1
+
+                    DataCardKey4 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue4 As dropdown:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Distinct(Estatus,'Nombre (Title)')
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage5 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue4.Y + DataCardValue4.Height
+                        ZIndex: =3
+
+                    StarVisible5 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey4.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey4.Y
+                        ZIndex: =4
 
                 Empresa_DataCard1 As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -534,10 +686,10 @@ scr_configuracion As screen:
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
                         PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -603,10 +755,10 @@ scr_configuracion As screen:
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
                         PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -672,10 +824,10 @@ scr_configuracion As screen:
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
                         PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -741,10 +893,10 @@ scr_configuracion As screen:
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
                         PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -810,10 +962,10 @@ scr_configuracion As screen:
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
                         PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -911,145 +1063,6 @@ scr_configuracion As screen:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey14.Y
-                        ZIndex: =4
-
-                Tipo_Acceso_DataCard1 As typedDataCard.textualEditCard:
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="Tipo_Acceso"
-                    Default: =ThisItem.Tipo_Acceso
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Tipo_Acceso")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    MaxLength: =DataSourceInfo([@Empleado], DataSourceInfo.MaxLength, "Tipo_Acceso")
-                    Required: =false
-                    Update: =DataCardValue16.Text
-                    Width: =428
-                    X: =2
-                    Y: =2
-                    ZIndex: =2
-
-                    DataCardKey16 As label:
-                        AutoHeight: =true
-                        Font: =Font.Verdana
-                        Height: =34
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue16 As text:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Parent.Default
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey16.Y + DataCardKey16.Height + 5
-                        ZIndex: =2
-
-                    ErrorMessage15 As label:
-                        AutoHeight: =true
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue16.Y + DataCardValue16.Height
-                        ZIndex: =3
-
-                    StarVisible15 As label:
-                        Align: =Align.Center
-                        Height: =DataCardKey16.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey16.Y
-                        ZIndex: =4
-
-                Estatus_Empleado_DataCard1 As typedDataCard.textualEditCard:
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="Estatus_Empleado"
-                    Default: =ThisItem.Estatus_Empleado
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Estatus_Empleado")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    MaxLength: =DataSourceInfo([@Empleado], DataSourceInfo.MaxLength, "Estatus_Empleado")
-                    Required: =false
-                    Update: =DataCardValue18.Text
-                    Width: =428
-                    X: =0
-                    Y: =3
-                    ZIndex: =2
-
-                    DataCardKey18 As label:
-                        AutoHeight: =true
-                        Font: =Font.Verdana
-                        Height: =34
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue18 As text:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Color: =RGBA(0, 154, 62, 1)
-                        Default: =Parent.Default
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey18.Y + DataCardKey18.Height + 5
-                        ZIndex: =2
-
-                    ErrorMessage17 As label:
-                        AutoHeight: =true
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue18.Y + DataCardValue18.Height
-                        ZIndex: =3
-
-                    StarVisible17 As label:
-                        Align: =Align.Center
-                        Height: =DataCardKey18.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey18.Y
                         ZIndex: =4
 
             btnGuardarEmpleado As button:

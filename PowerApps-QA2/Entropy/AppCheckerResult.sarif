@@ -3803,19 +3803,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard1.DataCardValue16.AccessibleLabel"
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard2.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard1.DataCardValue16.AccessibleLabel",
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard2.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard1.DataCardValue16"
+                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard2.DataCardValue1"
               }
             }
           ],
@@ -3833,19 +3833,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Estatus_Empleado_DataCard1.DataCardValue18.AccessibleLabel"
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Estatus_Empleado_DataCard2.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Estatus_Empleado_DataCard1.DataCardValue18.AccessibleLabel",
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Estatus_Empleado_DataCard2.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Estatus_Empleado_DataCard1.DataCardValue18"
+                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Estatus_Empleado_DataCard2.DataCardValue4"
               }
             }
           ],
@@ -6305,6 +6305,66 @@
                 "member": "HtmlText",
                 "module": "scr_home",
                 "type": "scr_home.FondoHO"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.FondoAgregarUsuario.HtmlText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.FondoAgregarUsuario.HtmlText",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "HtmlText",
+                "module": "scr_configuracion",
+                "type": "scr_configuracion.ctnEmpleados.FondoAgregarUsuario"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.FondoEmpleado.HtmlText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.FondoEmpleado.HtmlText",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "HtmlText",
+                "module": "scr_configuracion",
+                "type": "scr_configuracion.ctnEmpleados.Vista_Empleados.FondoEmpleado"
               }
             }
           ],

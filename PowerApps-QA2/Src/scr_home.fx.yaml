@@ -24,17 +24,7 @@ scr_home As screen:
         Height: =60
         HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
         OnSelect: |
-            =ForAll(RegistrosEmpleados,
-                Patch(Empleado,
-                    LookUp(Empleado,ID=RegistrosEmpleados[@IDempleado]),
-                    {
-                        Tipo_Acceso: TipoAcceso,
-                        Estatus_Empleado: Estatus
-                    }
-                )
-            );
-            Refresh(Empleado);
-            Set(popUpUsr,"false");
+            =
         Text: ="Objetivos del Área"
         Width: =227
         X: =914
@@ -48,17 +38,7 @@ scr_home As screen:
         Height: =60
         HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
         OnSelect: |
-            =ForAll(RegistrosEmpleados,
-                Patch(Empleado,
-                    LookUp(Empleado,ID=RegistrosEmpleados[@IDempleado]),
-                    {
-                        Tipo_Acceso: TipoAcceso,
-                        Estatus_Empleado: Estatus
-                    }
-                )
-            );
-            Refresh(Empleado);
-            Set(popUpUsr,"false");
+            =
         Text: ="Objetivos Generales"
         Width: =227
         X: =284

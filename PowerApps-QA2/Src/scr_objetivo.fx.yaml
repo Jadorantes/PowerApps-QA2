@@ -1500,6 +1500,42 @@ scr_objetivo As screen:
                 Y: =298
                 ZIndex: =10
 
+            HtmlText2_3 As htmlViewer:
+                AutoHeight: =true
+                Font: =Font.Arial
+                Height: =66
+                HtmlText: |-
+                    ="<div style='width:98%; //height:"& HtmlText2_3.Height -1 &"px;
+                        background: #FFFFFF;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 10px;
+                        center;
+                    '>
+                    <table style='width:100%; border: 1px solid #CCCCCC;'>
+                    <tr>
+                    <td><div style='color: #009439;font-family:"&Verdana&"; font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;'><center>Objetivo General</div></center></td>
+                    </tr>
+                    </table>
+                    <table style='width:100%; border: 1px solid #CCCCCC;'>
+                    <tr>
+                    <td style='font-family: "&Arial&";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;'><center>"&LookUp(Objetivo,ID=varIDObjetivoEmple,Title)&"</center></td>
+                    </tr>
+                    <table>
+                    </div>"
+                Size: =14
+                Width: =1272
+                X: =24
+                Y: =60
+                ZIndex: =11
+
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =679
@@ -1746,6 +1782,22 @@ scr_objetivo As screen:
         Y: =82
         ZIndex: =7
 
+        FondoTareas As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =679
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -100 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1272
+            X: =10
+            Y: =-4
+            ZIndex: =1
+
         "Gallery_Tareas As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderColor: =RGBA(0, 154, 62, 1)
             Height: =495
@@ -1756,7 +1808,7 @@ scr_objetivo As screen:
             Width: =1274
             X: =6
             Y: =121
-            ZIndex: =1
+            ZIndex: =2
 
             Title11 As label:
                 Font: =Font.Verdana
@@ -1958,9 +2010,10 @@ scr_objetivo As screen:
             Height: =39
             Size: =15
             Text: ="Resultado Clave"
+            Visible: =false
             Width: =1290
             X: =6
-            ZIndex: =2
+            ZIndex: =3
 
         lblOGRC00_5 As label:
             Align: =Align.Center
@@ -1973,7 +2026,7 @@ scr_objetivo As screen:
             Width: =225
             X: =6
             Y: =39
-            ZIndex: =3
+            ZIndex: =4
 
         lblRCRC00_7 As label:
             Align: =Align.Justify
@@ -1982,10 +2035,11 @@ scr_objetivo As screen:
             Font: =Font.Arial
             Height: =82
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
+            Visible: =false
             Width: =1290
             X: =6
             Y: =39
-            ZIndex: =4
+            ZIndex: =5
 
         btnCancelarOG_3 As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -1998,7 +2052,7 @@ scr_objetivo As screen:
             Width: =227
             X: =701
             Y: =604
-            ZIndex: =5
+            ZIndex: =6
 
         btnGuardarOG_2 As button:
             Fill: =RGBA(0, 154, 62, 1)
@@ -2065,6 +2119,42 @@ scr_objetivo As screen:
             X: =360
             Y: =604
             ZIndex: =7
+
+        HtmlText2_4 As htmlViewer:
+            AutoHeight: =true
+            Font: =Font.Arial
+            Height: =66
+            HtmlText: |-
+                ="<div style='width:98%; //height:"& HtmlText2_4.Height -1 &"px;
+                    background: #FFFFFF;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 10px;
+                    center;
+                '>
+                <table style='width:100%; border: 1px solid #CCCCCC;'>
+                <tr>
+                <td><div style='color: #009439;font-family:"&Verdana&"; font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;'><center>Resultado Clave</div></center></td>
+                </tr>
+                </table>
+                <table style='width:100%; border: 1px solid #CCCCCC;'>
+                <tr>
+                <td style='font-family: "&Arial&";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;'><center>"&LookUp(ResultadoClave,ID=varIDRCEmple,Title)&"</center></td>
+                </tr>
+                <table>
+                </div>"
+            Size: =14
+            Width: =1272
+            X: =24
+            Y: =16
+            ZIndex: =8
 
     ctnDetallesResultadosClave As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

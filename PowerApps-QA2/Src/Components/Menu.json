@@ -52,7 +52,7 @@
         "Name": "HtmlText3",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 490,
+        "PublishOrderIndex": 493,
         "Rules": [
           {
             "Category": "Data",
@@ -223,7 +223,7 @@
         "Name": "IcoHamburger",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 491,
+        "PublishOrderIndex": 494,
         "Rules": [
           {
             "Category": "Design",
@@ -426,7 +426,7 @@
         "Name": "Rectangle2",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 492,
+        "PublishOrderIndex": 495,
         "Rules": [
           {
             "Category": "Design",
@@ -564,7 +564,7 @@
             "Name": "galleryTemplate5",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 494,
+            "PublishOrderIndex": 497,
             "Rules": [
               {
                 "Category": "Design",
@@ -700,7 +700,7 @@
             "Name": "Image6",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 495,
+            "PublishOrderIndex": 498,
             "Rules": [
               {
                 "Category": "Data",
@@ -961,7 +961,7 @@
             "Name": "Rectangle8",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 496,
+            "PublishOrderIndex": 499,
             "Rules": [
               {
                 "Category": "Design",
@@ -1177,7 +1177,7 @@
             "Name": "Title5",
             "Parent": "galMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 497,
+            "PublishOrderIndex": 500,
             "Rules": [
               {
                 "Category": "Data",
@@ -1482,7 +1482,7 @@
         "Name": "galMenu",
         "Parent": "Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 493,
+        "PublishOrderIndex": 496,
         "Rules": [
           {
             "Category": "Data",

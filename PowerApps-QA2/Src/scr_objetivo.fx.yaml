@@ -1416,7 +1416,7 @@ scr_objetivo As screen:
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =241
+            TemplateSize: =Min(220, Self.Height - 60)
             Width: =1263
             Y: =221
             ZIndex: =2
@@ -1432,12 +1432,14 @@ scr_objetivo As screen:
                 Size: =12
                 Text: ="Nombre"
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =500
                 X: =32
                 Y: =16
                 ZIndex: =1
 
             Subtitle11 As label:
+                AutoHeight: =true
                 Font: =Font.Arial
                 Height: =152
                 OnSelect: =Select(Parent)
@@ -1445,19 +1447,20 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =11
+                Size: =13
                 Text: =ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
                 Width: =477
                 X: =32
-                Y: =Title12.Y + Title12.Height + 4
+                Y: =9
                 ZIndex: =2
 
             Separator12 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
+                Width: |
+                    =1260
+                X: =10
                 ZIndex: =4
 
             Title12_1 As label:
@@ -1471,6 +1474,7 @@ scr_objetivo As screen:
                 Size: =12
                 Text: ="Fecha de cumplimiento"
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =500
                 X: =659
                 Y: =16
@@ -1484,12 +1488,12 @@ scr_objetivo As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =11
+                Size: =13
                 Text: =ThisItem.PeriodoTiempo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =500
                 X: =659
-                Y: =52
+                Y: =9
                 ZIndex: =6
 
             Image15 As image:
@@ -1501,8 +1505,8 @@ scr_objetivo As screen:
                     Set(varlbtTituloObjetivo,"Detalle Tareas");
                 Tooltip: ="Ver detalle"
                 Width: =39
-                X: =1079
-                Y: =62
+                X: =1069
+                Y: =6
                 ZIndex: =9
 
             Image15_1 As image:
@@ -1514,8 +1518,8 @@ scr_objetivo As screen:
                     Set(varlbtTituloObjetivo,"Registro Tareas");
                 Tooltip: ="Registrar tarea"
                 Width: =39
-                X: =1180
-                Y: =62
+                X: =1177
+                Y: =6
                 ZIndex: =10
 
         lblRCRC00_4 As label:
@@ -1553,8 +1557,8 @@ scr_objetivo As screen:
                 Set(varlbtTituloObjetivo,"Detalle Objetivos");
             Text: ="Cancelar"
             Width: =227
-            X: =531
-            Y: =558
+            X: =522
+            Y: =619
             ZIndex: =5
 
         Label5 As label:
@@ -1607,10 +1611,19 @@ scr_objetivo As screen:
             ZIndex: =7
 
         Label6 As label:
-            Text: ="Texto"
-            X: =31
+            FontWeight: =FontWeight.Bold
+            Text: ="Nombre"
+            X: =25
             Y: =173
             ZIndex: =8
+
+        Label6_1 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Fecha de cumplimiento"
+            Width: =250
+            X: =653
+            Y: =181
+            ZIndex: =9
 
     ctnTareas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1950,15 +1963,31 @@ scr_objetivo As screen:
         Y: =82
         ZIndex: =8
 
+        FondoDRC As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =670
+            HtmlText: |-
+                ="<div style='width:100%; height:"& scr_objetivo.Height -110 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1271
+            X: =10
+            Y: =5
+            ZIndex: =1
+
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =490
+            Height: =445
             Items: =Filter(Tarea,ID_ResultadoClave=varIDRCEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =276
-            Width: =1290
+            TemplateSize: =If(Subtitle8.Height+1<100,130,Subtitle8.Height)
+            Width: =1275
             X: =6
-            Y: =132
+            Y: =177
             ZIndex: =2
 
             Title9 As label:
@@ -1972,12 +2001,14 @@ scr_objetivo As screen:
                 Size: =15
                 Text: ="Nombre" 
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =400
                 X: =32
                 Y: =22
                 ZIndex: =1
 
             Subtitle8 As label:
+                AutoHeight: =true
                 Font: =Font.Arial
                 Height: =167
                 OnSelect: =Select(Parent)
@@ -1990,14 +2021,14 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =400
                 X: =32
-                Y: =Title9.Y + Title9.Height + 4
+                Y: =14
                 ZIndex: =2
 
             Separator9 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
+                Width: =1240
+                X: =20
                 ZIndex: =4
 
             Title9_1 As label:
@@ -2011,6 +2042,7 @@ scr_objetivo As screen:
                 Size: =15
                 Text: ="Fecha de inicio" 
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =300
                 X: =480
                 Y: =24
@@ -2029,7 +2061,7 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
                 X: =480
-                Y: =58
+                Y: =14
                 ZIndex: =6
 
             Title9_2 As label:
@@ -2043,6 +2075,7 @@ scr_objetivo As screen:
                 Size: =15
                 Text: ="Fecha de finalización" 
                 VerticalAlign: =VerticalAlign.Top
+                Visible: =false
                 Width: =300
                 X: =894
                 Y: =24
@@ -2061,7 +2094,7 @@ scr_objetivo As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =300
                 X: =894
-                Y: =54
+                Y: =14
                 ZIndex: =8
 
         lblOGRC00_6 As label:
@@ -2071,6 +2104,7 @@ scr_objetivo As screen:
             FontWeight: =FontWeight.Semibold
             Size: =15
             Text: ="ID_ResultadoClave"
+            Visible: =false
             Width: =190
             X: =6
             Y: =13
@@ -2084,6 +2118,7 @@ scr_objetivo As screen:
             FontWeight: =FontWeight.Semibold
             Size: =18
             Text: ="Resultado Clave"
+            Visible: =false
             Width: =1100
             X: =196
             Y: =12
@@ -2095,6 +2130,7 @@ scr_objetivo As screen:
             BorderThickness: =1
             Height: =80
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,ID)
+            Visible: =false
             Width: =190
             X: =6
             Y: =52
@@ -2106,6 +2142,7 @@ scr_objetivo As screen:
             Height: =80
             Size: =15
             Text: =LookUp(ResultadoClave,ID=varIDRCEmple,Title)
+            Visible: =false
             Width: =1100
             X: =196
             Y: =52
@@ -2123,6 +2160,60 @@ scr_objetivo As screen:
             X: =537
             Y: =578
             ZIndex: =7
+
+        HtmlText2_1 As htmlViewer:
+            AutoHeight: =true
+            Font: =Font.Arial
+            Height: =66
+            HtmlText: |-
+                ="<div style='width:98%; //height:"& HtmlText2_1.Height -1 &"px;
+                    background: #FFFFFF;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 10px;
+                    center;
+                '>
+                <table style='width: 100%;border-collapse: collapse;'>
+                <tr style='border: 1px solid #CCCCCC;'>
+                <td style='border: 1px solid #CCCCCC; color: #009439;font-family:"&Verdana&"; font-style: normal;font-weight: 700;font-size: 18px;line-height: 18px;'><center>Objetivo</center></td>
+                <td style='border: 1px solid #CCCCCC;color: #009439;font-family:"&Verdana&"; font-style: normal;font-weight: 700;font-size: 18px;line-height: 18px;'><center>Resultado Clave</center></td>
+                </tr>
+                <tr style='border: 1px solid #CCCCCC;'>
+                <td style='border: 1px solid #CCCCCC;font-family: "&Arial&";font-style: normal;font-weight: 500;font-size: 18px;line-height: 22px;text-align: center;'><center>"&LookUp(Objetivo,ID=varIDObjetivoEmple,Title)&"</center></td>
+                <td style='border: 1px solid #CCCCCC;font-family: "&Arial&";font-style: normal;font-weight: 500;font-size: 18px;line-height: 22px;text-align: center;'><center>"&LookUp(ResultadoClave,ID=varIDRCEmple,Title)&"</center></td>
+                </tr>
+                <table>
+                </div>"
+            Size: =14
+            Width: =1272
+            X: =25
+            Y: =13
+            ZIndex: =8
+
+        Label10 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Text: ="Nombre"
+            X: =30
+            Y: =132
+            ZIndex: =9
+
+        Label10_1 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Text: ="Fecha de inicio"
+            Width: =250
+            X: =480
+            Y: =137
+            ZIndex: =10
+
+        Label10_4 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Text: ="Fecha de finalización"
+            Width: =250
+            X: =892
+            Y: =134
+            ZIndex: =11
 
     lbtTituloObjetivo As label:
         Align: =Align.Center

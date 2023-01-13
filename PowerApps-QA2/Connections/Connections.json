@@ -1,24 +1,4 @@
 {
-  "30971f61-f7b0-4fd0-969c-6f44d693efcf": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Excel Online (Empresas)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1600/1.0.1600.3026/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "8beab477-406e-4371-9cd8-6138a2aba091"
-    ],
-    "id": "30971f61-f7b0-4fd0-969c-6f44d693efcf"
-  },
   "4795ab98-1e69-471e-abb2-0bdd7f7329af": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -77,9 +57,26 @@
     ],
     "dependencies": {},
     "dependents": [
-      "8beab477-406e-4371-9cd8-6138a2aba091"
+      "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc"
     ],
     "id": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
+  },
+  "4fe9d8ee-ee83-4d41-a9f2-0f797a35f3f0": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc"
+    ],
+    "id": "4fe9d8ee-ee83-4d41-a9f2-0f797a35f3f0"
   },
   "503ec02b-985e-4414-9c78-c56d6b28cb82": {
     "connectionParameters": {
@@ -118,61 +115,22 @@
     "dependents": [],
     "id": "7701a481-7185-4254-8848-586dee13d327"
   },
-  "8beab477-406e-4371-9cd8-6138a2aba091": {
+  "c213761e-0a71-44a6-a4ff-4dc3833e6ec2": {
     "connectionParameters": {
-      "sku": "Enterprise",
-      "workFlowCallbackUri": "https://prod-27.westus.logic.azure.com:443/workflows/8799ef36fe71425895e5d6097f5ea693/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=LdcMbCtFSGfSyu77L6U7E22l5kuUteihxwwKN8KYXsM",
-      "workflowEndpoint": "/subscriptions/655be0f1-fb2c-4c5a-9fbf-ff414e1b901b/resourceGroups/956304DE810745CC972302ABE58C25A4-298F37B7C3DF41D38AD759B3247B5931/providers/Microsoft.Logic/workflows/15620dcd-6e54-4723-b9a2-13259a39e827",
-      "workflowName": "15620dcd-6e54-4723-b9a2-13259a39e827",
-      "workflowPath": "/subscriptions/655be0f1-fb2c-4c5a-9fbf-ff414e1b901b/resourceGroups/956304DE810745CC972302ABE58C25A4-298F37B7C3DF41D38AD759B3247B5931/providers/Microsoft.Logic/workflows/15620dcd-6e54-4723-b9a2-13259a39e827"
+      "sku": "Enterprise"
     },
     "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Flujos lógicos",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "30971f61-f7b0-4fd0-969c-6f44d693efcf": {
-          "value": "shared_excelonlinebusiness"
-        },
-        "4795ab98-1e69-471e-abb2-0bdd7f7329af": {
-          "value": "shared_sharepointonline"
-        },
-        "d1c164fd-9d0c-4b19-b76e-98f962ed82a2": {
-          "value": "shared_office365"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "15620dcd-6e54-4723-b9a2-13259a39e827"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "30971f61-f7b0-4fd0-969c-6f44d693efcf"
-        },
-        "shared_office365": {
-          "value": "d1c164fd-9d0c-4b19-b76e-98f962ed82a2"
-        },
-        "shared_sharepointonline": {
-          "value": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "15620dcd-6e54-4723-b9a2-13259a39e827"
-        }
-      }
+      "displayName": "Excel Online (Empresas)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1600/1.0.1600.3026/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
     },
     "datasets": {},
-    "dataSources": [
-      "ImportarExcelListas"
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc"
     ],
-    "dependencies": {
-      "shared_excelonlinebusiness": "30971f61-f7b0-4fd0-969c-6f44d693efcf",
-      "shared_office365": "d1c164fd-9d0c-4b19-b76e-98f962ed82a2",
-      "shared_sharepointonline": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
-    },
-    "dependents": [],
-    "id": "8beab477-406e-4371-9cd8-6138a2aba091"
+    "id": "c213761e-0a71-44a6-a4ff-4dc3833e6ec2"
   },
   "d1c164fd-9d0c-4b19-b76e-98f962ed82a2": {
     "connectionParameters": {
@@ -191,9 +149,43 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [
-      "8beab477-406e-4371-9cd8-6138a2aba091"
-    ],
+    "dependents": [],
     "id": "d1c164fd-9d0c-4b19-b76e-98f962ed82a2"
+  },
+  "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-30.westus.logic.azure.com:443/workflows/a4956a0846ae4c21b81467fbda2d7771/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=v9rYHXx0i_20oggC4iu021hNMvAwynVcdQ_vKl4Oq6c",
+      "workflowEndpoint": "/subscriptions/655be0f1-fb2c-4c5a-9fbf-ff414e1b901b/resourceGroups/956304de810745cc972302abe58c25a4-298f37b7c3df41d38ad759b3247b5931/providers/Microsoft.Logic/workflows/ff21d415-7b77-4347-b8a3-a9fd164f7701",
+      "workflowName": "ff21d415-7b77-4347-b8a3-a9fd164f7701",
+      "workflowPath": "/subscriptions/655be0f1-fb2c-4c5a-9fbf-ff414e1b901b/resourceGroups/956304de810745cc972302abe58c25a4-298f37b7c3df41d38ad759b3247b5931/providers/Microsoft.Logic/workflows/ff21d415-7b77-4347-b8a3-a9fd164f7701"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ff21d415-7b77-4347-b8a3-a9fd164f7701"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ff21d415-7b77-4347-b8a3-a9fd164f7701"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ImportarExcelListas"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "c213761e-0a71-44a6-a4ff-4dc3833e6ec2",
+      "shared_office365": "4fe9d8ee-ee83-4d41-a9f2-0f797a35f3f0",
+      "shared_sharepointonline": "4795ab98-1e69-471e-abb2-0bdd7f7329af"
+    },
+    "dependents": [],
+    "id": "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc"
   }
 }

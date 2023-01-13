@@ -1407,7 +1407,7 @@ scr_configuracion As screen:
 
             "GalleryEstatus As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
                 Height: =432
-                Items: =Search(Filter(Estatus,!IsBlank(Title)),TiEstatus.Text,"Title")
+                Items: =Search(Filter(Estatus,!IsBlank('Nombre (Title)')),TiEstatus.Text,"Title")
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =60

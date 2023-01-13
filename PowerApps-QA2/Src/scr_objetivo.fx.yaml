@@ -80,6 +80,7 @@ scr_objetivo As screen:
                     =Set(varIDObjetivoEmple,ThisItem.ID);
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
+                Tooltip: ="Ver detalles del Objetivo"
                 Width: =39
                 X: =1156
                 Y: =12
@@ -124,6 +125,26 @@ scr_objetivo As screen:
                 Y: =12
                 ZIndex: =6
 
+            Image21_1 As image:
+                Height: =39
+                Image: =Agregar
+                OnSelect: |-
+                    =/*Set(varIDObjetivoEmple;ThisItem.ID);;
+                    Set(varctnDetalleObjetivos;true);;
+                    Set(varlbtTituloObjetivo;"Detalle Resultados Clave")*/
+                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral);Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo),Set(varctnResultadoClaveEmpleado,false))
+                    
+                    
+                    /*Set(varctnObjetivoEmpleado;false);;
+                    Set(varctnResultadoClaveEmpleado;If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION";true;false));;
+                    Set(varctnResultadoClaveEmpleado2;If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION";true;false));;
+                    Set(varlbtTituloObjetivo;If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION";"Registro Objetivo";"Detalle Resultados Claves Jefe Directo"))*/
+                Tooltip: ="Registrar Resultados Claves"
+                Width: =39
+                X: =1212
+                Y: =12
+                ZIndex: =7
+
         TxBuscadorObje As text:
             BorderColor: =RGBA(0, 154, 62, 1)
             Default: =
@@ -141,7 +162,8 @@ scr_objetivo As screen:
             Height: =65
             Image: ='objetivo-ico'
             OnSelect: |
-                =Set(varctnObjetivoEmpleado,false);
+                =ResetForm(Form_ObjetivosGeneral);
+                Set(varctnObjetivoEmpleado,false);
                 Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                 Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                 Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
@@ -435,6 +457,7 @@ scr_objetivo As screen:
             DataSource: =Objetivo
             DefaultMode: =FormMode.New
             Height: =227
+            Item: =GalleryObjetivoEmp.Selected
             OnSuccess: |
                 =ForAll(
                     RegistroResultadosClaveOG,
@@ -794,6 +817,59 @@ scr_objetivo As screen:
             X: =60
             Y: =313
             ZIndex: =13
+
+        btnActualizarOG As button:
+            DisplayMode: |-
+                =If( IsBlank(DataCardValue40.Text) || IsBlank(inpResultadoClaveOG.Text) 
+                ,Disabled, Edit)
+            Fill: =RGBA(0, 154, 62, 1)
+            Height: =60
+            OnSelect: |-
+                =ForAll(
+                    Gallery_ResultadoClaveOG.AllItems,
+                    Patch(
+                        RegistroResultadosClaveOG,
+                        {Co_ID:Value(lblIDRCOG.Text)},
+                        {
+                            Co_ResultadoClaveOG:inpResultadoClaveOG.Text
+                        }
+                    )
+                );
+                /*Set(varNivelObjetivo;If(lbPuesto.Text="DGA DE TECNOLOGIAS DE INFORMACION";"Direccion"));;
+                SubmitForm(Form_ObjetivosGeneral);;
+                Set(popValObj;"false");;*/
+                ForAll(
+                    RegistroResultadosClaveOG,
+                    Patch(
+                        ResultadoClave,
+                        Defaults(ResultadoClave),{
+                            Title:Co_ResultadoClaveOG,
+                            PeriodoTiempo:varOBGPT,
+                            IdObjetivo:varOBGID
+                        }
+                    )
+                );
+                Set(varctnObjetivoEmpleado,true);
+                Set(varctnResultadoClaveEmpleado,false);
+                Set(varlbtTituloObjetivo,"Detalle Objetivos");
+                NewForm(Form_ObjetivosGeneral);
+                Set(
+                    VarIDOG,
+                    1
+                );
+                ClearCollect(
+                   RegistroResultadosClaveOG,
+                   {
+                       Co_ID:VarIDOG,
+                       Co_ResultadoClaveOG:"",
+                       Co_PeriodoTiempoOG:""
+                    }
+                );
+            Text: ="Guardar"
+            Width: =227
+            X: =193
+            Y: =611
+            ZIndex: =14
 
     ctnObjetivoOtros As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

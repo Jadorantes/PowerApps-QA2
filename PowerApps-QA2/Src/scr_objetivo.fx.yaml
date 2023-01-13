@@ -33,7 +33,7 @@ scr_objetivo As screen:
             Items: =Search(Filter(Objetivo,'Creado por'.DisplayName=User().FullName),TxBuscadorObje.Text,"Title")
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =Min(220, Self.Height - 60)
+            TemplateSize: =Min(50, Self.Height - 60)
             Width: =1265
             X: =15
             Y: =136
@@ -132,7 +132,10 @@ scr_objetivo As screen:
                     =/*Set(varIDObjetivoEmple;ThisItem.ID);;
                     Set(varctnDetalleObjetivos;true);;
                     Set(varlbtTituloObjetivo;"Detalle Resultados Clave")*/
-                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral);Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo),Set(varctnResultadoClaveEmpleado,false))
+                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral);Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true)
+                    
+                    
+                    ,Set(varctnResultadoClaveEmpleado,false))
                     
                     
                     /*Set(varctnObjetivoEmpleado;false);;
@@ -161,12 +164,14 @@ scr_objetivo As screen:
         ImaOKR As image:
             Height: =65
             Image: ='objetivo-ico'
-            OnSelect: |
+            OnSelect: |-
                 =ResetForm(Form_ObjetivosGeneral);
                 Set(varctnObjetivoEmpleado,false);
                 Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                 Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
-                Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"))
+                Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"));
+                Set(varbtnGuardar,true);
+                Set(varbtnActualizar,false);
             Tooltip: ="Agregar Objetivo"
             Width: =50
             X: =1191
@@ -762,6 +767,7 @@ scr_objetivo As screen:
                 SubmitForm(Form_ObjetivosGeneral);
                 Set(popValObj,"false");
             Text: ="Guardar"
+            Visible: =varbtnGuardar
             Width: =227
             X: =451
             Y: =611
@@ -866,8 +872,9 @@ scr_objetivo As screen:
                     }
                 );
             Text: ="Guardar"
+            Visible: =varbtnActualizar
             Width: =227
-            X: =193
+            X: =451
             Y: =611
             ZIndex: =14
 
@@ -1707,11 +1714,11 @@ scr_objetivo As screen:
             ZIndex: =1
 
         "Gallery_RCEmpleado As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =270
+            Height: =398
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =Min(220, Self.Height - 60)
+            TemplateSize: =Min(50, Self.Height - 60)
             Width: =1263
             Y: =221
             ZIndex: =2

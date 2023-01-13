@@ -905,7 +905,9 @@ scr_objetivo As screen:
 
         "GalleryObjetivosOtro As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             Height: =439
-            Items: =Filter(ResultadoClave,'Creado por'.DisplayName=LookUp(Empleado,Nombre_Usuario.DisplayName=lbNombre_1.Text,Responsable.DisplayName))
+            Items: |-
+                =//Filter(ResultadoClave;'Creado por'.DisplayName=LookUp(Empleado;Nombre_Usuario.DisplayName=lbNombre_1.Text;Responsable.DisplayName))
+                Filter(ResultadoClave,'Creado por'.DisplayName=lbNombre_1.Text)
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: |-
@@ -1052,7 +1054,7 @@ scr_objetivo As screen:
             Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
             Size: =15
-            Text: =User().FullName
+            Text: =LookUp(Empleado,Nombre_Usuario.DisplayName=User().FullName,Responsable.DisplayName)
             Width: =585
             X: =26
             Y: =40
@@ -1072,7 +1074,9 @@ scr_objetivo As screen:
             Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
             Size: =15
-            Text: =valUsrPuesto
+            Text: |-
+                =//valUsrPuesto
+                LookUp(Empleado,Nombre_Usuario.DisplayName=lbNombre_1.Text,Puesto)
             Width: =585
             X: =535
             Y: =40

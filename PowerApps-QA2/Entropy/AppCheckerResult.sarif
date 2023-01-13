@@ -4853,6 +4853,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_configuracion",
+                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_configuracion",
+                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.MyUserID"
                 }
               ],

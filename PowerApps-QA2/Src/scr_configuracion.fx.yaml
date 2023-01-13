@@ -80,15 +80,28 @@ scr_configuracion As screen:
                 ChevronBackground: =RGBA(0, 154, 62, 1)
                 Items: =Distinct(Areas,Direccion)
                 SelectionFill: =RGBA(0, 154, 62, 1)
-                X: =190
+                Width: =400
+                X: =137
                 Y: =102
                 ZIndex: =4
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 Height: =382
                 Items: |-
-                    =Search(If((IsBlank(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsEmpty(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsBlank(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') Or IsEmpty(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') ),Empleado,Filter(Empleado,Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult' Or Departamento=DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento')),TiNombreEd.Text,"Nombre"
+                    =/*Filter(Empleado;IsBlank(DdDepartamentoEd.SelectedText.Result) Or IsEmpty(DdDepartamentoEd.SelectedText.Result) Or Direccion=DdDepartamentoEd.SelectedText.Result;
+                        IsBlank(DdDepartamentoEd_1.SelectedText.Departamento) Or IsEmpty(DdDepartamentoEd_1.SelectedText.Departamento) Or Departamento=DdDepartamentoEd_1.SelectedText.Departamento)*/
                     
+                    Search(
+                    	If((
+                    	IsBlank(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsEmpty(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') And 
+                        IsBlank(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') Or IsEmpty(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento')
+                        ),
+                    	Empleado,
+                    		Filter(
+                    		Empleado,
+                    		IsBlank(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or IsEmpty(DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') Or Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                        		IsBlank(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') Or IsEmpty(DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento') Or Departamento=DdDepartamentoEd_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartamento')),
+                    	TiNombreEd.Text,"Nombre"
                     )
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
@@ -155,7 +168,7 @@ scr_configuracion As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =12
-                    Text: =ThisItem.Title
+                    Text: =ThisItem.Responsable.DisplayName
                     VerticalAlign: =VerticalAlign.Top
                     Width: =500
                     X: =668
@@ -252,8 +265,9 @@ scr_configuracion As screen:
                 ChevronBackground: =RGBA(0, 154, 62, 1)
                 Items: =Filter(Areas,Direccion=DdDepartamentoEd.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
                 SelectionFill: =RGBA(0, 154, 62, 1)
-                X: =699
-                Y: =98
+                Width: =400
+                X: =684
+                Y: =102
                 ZIndex: =9
 
             Button10 As button:
@@ -495,6 +509,74 @@ scr_configuracion As screen:
                         Y: =DataCardKey21.Y
                         ZIndex: =4
 
+                Ciudad_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Ciudad"
+                    Default: =ThisItem.Ciudad
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Ciudad")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Empleado], DataSourceInfo.MaxLength, "Ciudad")
+                    Required: =false
+                    Update: =DataCardValue2.Text
+                    Width: =428
+                    X: =2
+                    Y: =2
+                    ZIndex: =1
+
+                    DataCardKey2 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue2 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage4 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue2.Y + DataCardValue2.Height
+                        ZIndex: =3
+
+                    StarVisible4 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey2.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey2.Y
+                        ZIndex: =4
+
                 Tipo_Acceso_DataCard2 As typedDataCard.allowedValuesStringEditCard:
                     AllowedValues: =DataSourceInfo([@Empleado], DataSourceInfo.AllowedValues, "Tipo_Acceso")
                     BorderStyle: =BorderStyle.Solid
@@ -507,8 +589,8 @@ scr_configuracion As screen:
                     Required: =false
                     Update: =DataCardValue1.Selected.Result
                     Width: =428
-                    X: =2
-                    Y: =2
+                    X: =1
+                    Y: =3
                     ZIndex: =1
 
                     DataCardKey1 As label:
@@ -557,6 +639,74 @@ scr_configuracion As screen:
                         Y: =DataCardKey1.Y
                         ZIndex: =4
 
+                Ubicacion_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Ubicacion"
+                    Default: =ThisItem.Ubicacion
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Ubicacion")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Empleado], DataSourceInfo.MaxLength, "Ubicacion")
+                    Required: =false
+                    Update: =DataCardValue5.Text
+                    Width: =428
+                    X: =0
+                    Y: =3
+                    ZIndex: =1
+
+                    DataCardKey5 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue5 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage6 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue5.Y + DataCardValue5.Height
+                        ZIndex: =3
+
+                    StarVisible6 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey5.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey5.Y
+                        ZIndex: =4
+
                 ID_DataCard2 As typedDataCard.textualViewCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="ID"
@@ -568,7 +718,7 @@ scr_configuracion As screen:
                     Required: =false
                     Visible: =false
                     Width: =428
-                    X: =0
+                    X: =2
                     Y: =3
                     ZIndex: =1
 
@@ -607,7 +757,7 @@ scr_configuracion As screen:
                     Required: =false
                     Update: =DataCardValue4.Selected.Result
                     Width: =428
-                    X: =1
+                    X: =428
                     Y: =3
                     ZIndex: =1
 

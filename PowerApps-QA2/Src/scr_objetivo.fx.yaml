@@ -908,7 +908,9 @@ scr_objetivo As screen:
             Items: =Filter(ResultadoClave,'Creado por'.DisplayName=LookUp(Empleado,Nombre_Usuario.DisplayName=lbNombre_1.Text,Responsable.DisplayName))
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =If(Subtitle6.Height+90<100,50,Subtitle6.Height +20,Subtitle6_2.Height +30)
+            TemplateSize: |-
+                =If(Subtitle6.Height+90<100,50,Subtitle6.Height +20,Subtitle6_2.Height +30)
+                //Subtitle6.Height + 150
             Width: =1262
             X: =26
             Y: =135

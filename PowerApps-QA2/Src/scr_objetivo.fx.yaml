@@ -81,8 +81,8 @@ scr_objetivo As screen:
                     Set(varctnDetalleObjetivos,true);
                     Set(varlbtTituloObjetivo,"Detalle Resultados Clave")
                 Width: =39
-                X: =1195
-                Y: =Title14.Y
+                X: =1156
+                Y: =12
                 ZIndex: =3
 
             Separator10 As rectangle:
@@ -110,8 +110,7 @@ scr_objetivo As screen:
                 ZIndex: =5
 
             Body4_2 As label:
-                AutoHeight: =true
-                Height: =Self.Size * 4
+                Height: =22
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -120,7 +119,7 @@ scr_objetivo As screen:
                 Size: =14
                 Text: =ThisItem.EstatusEjecucion
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Title14.Width
+                Width: =200
                 X: =922
                 Y: =12
                 ZIndex: =6
@@ -149,7 +148,7 @@ scr_objetivo As screen:
             Tooltip: ="Agregar Objetivo"
             Width: =50
             X: =1191
-            Y: =34
+            Y: =21
             ZIndex: =3
 
         ctnPopUpSinOK As groupContainer.manualLayoutContainer:
@@ -217,10 +216,10 @@ scr_objetivo As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =15
-            Text: ="Nombre"
+            Text: ="Objetivo"
             VerticalAlign: =VerticalAlign.Top
             Width: =200
-            X: =60
+            X: =47
             Y: =112
             ZIndex: =5
 
@@ -280,10 +279,162 @@ scr_objetivo As screen:
         Y: =63
         ZIndex: =4
 
+        FondoDOB_3 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =690
+            HtmlText: |-
+                ="<div style='width:100%; height:"& ctnObjetivoOtros.Height -20 &"px;
+                    background: #D9D9D9;
+                    opacity: 0.3;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    '>
+                </div>"
+            Width: =1272
+            X: =10
+            Y: =15
+            ZIndex: =2
+
+        "Gallery_ResultadoClaveOG As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            Height: =297
+            Items: =RegistroResultadosClaveOG
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =Min(104, Self.Height - 60)
+            Width: =1240
+            X: =32
+            Y: =353
+            ZIndex: =3
+
+            lbTituloRCOG As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Resultado Clave"
+                VerticalAlign: =VerticalAlign.Top
+                Visible: =false
+                Width: =600
+                X: =32
+                Y: =16
+                ZIndex: =1
+
+            NextArrow6 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(0, 154, 62, 1)
+                Height: =60
+                Icon: =Icon.Trash
+                OnSelect: |-
+                    =If(
+                        CountRows(RegistroResultadosClaveOG) = 1,
+                        Notify("No se puede eliminar"),
+                    Remove(RegistroResultadosClaveOG,ThisItem)
+                    )
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =1127
+                Y: =9
+                ZIndex: =3
+
+            Separator8 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: |
+                    =0
+                ZIndex: =4
+
+            inpResultadoClaveOG As text:
+                BorderColor: =RGBA(0, 154, 62, 1)
+                Default: =ThisItem.Co_ResultadoClaveOG
+                Font: =Font.Arial
+                Height: =60
+                Mode: =TextMode.MultiLine
+                OnSelect: =Select(Parent)
+                Size: =11
+                Width: =1083
+                X: =35
+                Y: =10
+                ZIndex: =5
+
+            lbPTRCOG As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: ="Perido de tiempo"
+                VerticalAlign: =VerticalAlign.Top
+                Visible: =false
+                Width: =400
+                X: =652
+                Y: =14
+                ZIndex: =6
+
+            lisPTRCOG As dropdown:
+                Default: =ThisItem.Co_PeriodoTiempoOG
+                Items: =Distinct(PeriodoTiempo,Nombre)
+                OnSelect: =Select(Parent)
+                Visible: =false
+                Width: =400
+                X: =652
+                Y: =50
+                ZIndex: =7
+
+            lblIDRCOG As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.Co_ID
+                Visible: =false
+                X: =257
+                Y: =10
+                ZIndex: =8
+
+            NextArrow6_2 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(0, 154, 62, 1)
+                Height: =60
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =Set(
+                        VarIDOG,
+                        Sum(
+                            VarIDOG,
+                            1
+                        )
+                    );
+                    If(IsBlank(inpResultadoClaveOG)
+                        ,Notify("Este campo no puede ir vacio"),
+                    Collect(
+                       RegistroResultadosClaveOG,
+                       {
+                           Co_ID:VarIDOG,
+                           Co_ResultadoClaveOG:"",
+                           Co_PeriodoTiempoOG:""
+                        }
+                    ));
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                TabIndex: =0
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =60
+                X: =1180
+                Y: =10
+                ZIndex: =9
+
         Form_ObjetivosGeneral As form:
             DataSource: =Objetivo
             DefaultMode: =FormMode.New
-            Height: =138
+            Height: =227
             OnSuccess: |
                 =ForAll(
                     RegistroResultadosClaveOG,
@@ -291,7 +442,7 @@ scr_objetivo As screen:
                         ResultadoClave,
                         Defaults(ResultadoClave),{
                             Title:Co_ResultadoClaveOG,
-                            PeriodoTiempo:Co_PeriodoTiempoOG,
+                            PeriodoTiempo:Form_ObjetivosGeneral.LastSubmit.Periodo_Tiempo,
                             IdObjetivo:Form_ObjetivosGeneral.LastSubmit.ID
                         }
                     )
@@ -312,9 +463,10 @@ scr_objetivo As screen:
                        Co_PeriodoTiempoOG:""
                     }
                 );
-            Width: =1296
-            Y: =105
-            ZIndex: =1
+            Width: =1256
+            X: =24
+            Y: =70
+            ZIndex: =4
 
             Title_DataCard6 As typedDataCard.textualMultiLineEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -323,17 +475,21 @@ scr_objetivo As screen:
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"Title")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
+                Height: =118
                 Required: =true
                 Update: =DataCardValue40.Text
-                Width: =800
+                Width: =1256
                 X: =0
                 Y: =0
                 ZIndex: =1
 
                 DataCardKey40 As label:
                     AutoHeight: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Font: =Font.Verdana
+                    FontWeight: =FontWeight.Bold
                     Height: =34
+                    Size: =12
                     Text: ="Objetivo"
                     Width: =Parent.Width - 60
                     Wrap: =false
@@ -342,22 +498,25 @@ scr_objetivo As screen:
                     ZIndex: =1
 
                 DataCardValue40 As text:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderColor: =RGBA(0, 154, 62, 1)
                     Clear: =true
                     Default: =Parent.Default
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
-                    Height: =47
+                    Font: =Font.Arial
+                    Height: =60
                     Mode: =TextMode.MultiLine
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
+                    Size: =11
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+                    Y: |
+                        =48
                     ZIndex: =2
 
                 ErrorMessage39 As label:
@@ -387,6 +546,7 @@ scr_objetivo As screen:
 
             Periodo_Tiempo_DataCard2 As typedDataCard.allowedValuesStringEditCard:
                 AllowedValues: =DataSourceInfo([@Objetivo], DataSourceInfo.AllowedValues, "Periodo_Tiempo")
+                BorderColor: =RGBA(0, 154, 62, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Periodo_Tiempo"
                 Default: =ThisItem.Periodo_Tiempo
@@ -403,8 +563,12 @@ scr_objetivo As screen:
 
                 DataCardKey39 As label:
                     AutoHeight: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Font: =Font.Verdana
+                    FontWeight: =FontWeight.Bold
                     Height: =34
-                    Text: =Parent.DisplayName
+                    Size: =12
+                    Text: ="Fecha de cumplimiento"
                     Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
@@ -413,9 +577,13 @@ scr_objetivo As screen:
 
                 DataCardValue39 As dropdown:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(0, 154, 62, 1)
                     Default: =Parent.Default
                     DisplayMode: =Parent.DisplayMode
+                    Font: =Font.Arial
                     Items: =Distinct(PeriodoTiempo,Title)
+                    SelectionFill: =RGBA(0, 154, 62, 1)
+                    Size: =11
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -516,122 +684,39 @@ scr_objetivo As screen:
                     Y: =DataCardKey36.Y
                     ZIndex: =4
 
-        "Gallery_ResultadoClaveOG As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-            Height: =407
-            Items: =RegistroResultadosClaveOG
-            Layout: =Layout.Vertical
-            TemplatePadding: =0
-            TemplateSize: =Min(104, Self.Height - 60)
-            Width: =1190
-            X: =32
-            Y: =243
-            ZIndex: =1
-
-            lbTituloRCOG As label:
-                Height: =36
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: ="Resultado Clave"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =600
-                X: =32
-                Y: =16
-                ZIndex: =1
-
-            NextArrow6 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.Trash
-                OnSelect: =Remove(RegistroResultadosClaveOG,ThisItem)
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="Ver los detalles del elemento"
-                Width: =60
-                X: =Parent.TemplateWidth - Self.Width - 5
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =3
-
-            Separator8 As rectangle:
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
-                ZIndex: =4
-
-            inpResultadoClaveOG As text:
-                Default: =ThisItem.Co_ResultadoClaveOG
-                Mode: =TextMode.MultiLine
-                OnSelect: =Select(Parent)
-                Width: =600
-                X: =32
-                Y: =52
-                ZIndex: =5
-
-            lbPTRCOG As label:
-                Height: =36
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: ="Perido de tiempo"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =400
-                X: =652
-                Y: =14
-                ZIndex: =6
-
-            lisPTRCOG As dropdown:
-                Default: =ThisItem.Co_PeriodoTiempoOG
-                Items: =Distinct(PeriodoTiempo,Nombre)
-                OnSelect: =Select(Parent)
-                Width: =400
-                X: =652
-                Y: =50
-                ZIndex: =7
-
-            lblIDRCOG As label:
-                OnSelect: =Select(Parent)
-                Text: =ThisItem.Co_ID
-                X: =257
-                Y: =10
-                ZIndex: =8
-
         lbENombre As label:
             FontWeight: =FontWeight.Semibold
             Text: ="Nombre"
+            Visible: =false
             Width: =350
             X: =32
             Y: =16
-            ZIndex: =2
+            ZIndex: =5
 
         lbNombre As label:
             Text: =User().FullName
+            Visible: =false
             Width: =550
             X: =32
             Y: =56
-            ZIndex: =3
+            ZIndex: =6
 
         lbEPuesto As label:
             FontWeight: =FontWeight.Semibold
             Text: ="Puesto"
+            Visible: =false
             Width: =350
             X: =634
             Y: =16
-            ZIndex: =4
+            ZIndex: =7
 
         lbPuesto As label:
             Text: =valUsrPuesto
+            Visible: =false
             Width: =550
             X: =634
             Y: =56
-            ZIndex: =5
+            ZIndex: =8
 
         icoAgregarRCOG As icon.Add:
             Icon: =Icon.Add
@@ -643,6 +728,8 @@ scr_objetivo As screen:
                         1
                     )
                 );
+                If(IsBlank(inpResultadoClaveOG)
+                    ,Notify("Este campo no puede ir vacio"),
                 Collect(
                    RegistroResultadosClaveOG,
                    {
@@ -650,12 +737,17 @@ scr_objetivo As screen:
                        Co_ResultadoClaveOG:"",
                        Co_PeriodoTiempoOG:""
                     }
-                );
-            X: =1222
-            Y: =270
-            ZIndex: =6
+                ));
+            X: =1184
+            Y: =265
+            ZIndex: =9
 
         btnGuardarOG As button:
+            DisplayMode: |-
+                =If( IsBlank(DataCardValue40.Text) || IsBlank(inpResultadoClaveOG.Text) 
+                ,Disabled, Edit)
+            Fill: =RGBA(0, 154, 62, 1)
+            Height: =60
             OnSelect: |-
                 =ForAll(
                     Gallery_ResultadoClaveOG.AllItems,
@@ -664,9 +756,6 @@ scr_objetivo As screen:
                         {Co_ID:Value(lblIDRCOG.Text)},
                         {
                             Co_ResultadoClaveOG:inpResultadoClaveOG.Text
-                        },
-                        {
-                            Co_PeriodoTiempoOG:lisPTRCOG.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'
                         }
                     )
                 );
@@ -674,19 +763,61 @@ scr_objetivo As screen:
                 SubmitForm(Form_ObjetivosGeneral);
                 Set(popValObj,"false");
             Text: ="Guardar"
-            X: =474
-            Y: =665
-            ZIndex: =7
+            Width: =227
+            X: =451
+            Y: =611
+            ZIndex: =10
 
         btnCancelarOG As button:
+            Fill: =RGBA(0, 154, 62, 1)
+            Height: =60
             OnSelect: |
                 =Set(varctnObjetivoEmpleado,true);
                 Set(varctnResultadoClaveEmpleado,false);
                 Set(varlbtTituloObjetivo,"Detalle Objetivos");
             Text: ="Cancelar"
-            X: =652
-            Y: =665
-            ZIndex: =8
+            Width: =227
+            X: =745
+            Y: =611
+            ZIndex: =11
+
+        HtmlText2_3 As htmlViewer:
+            AutoHeight: =true
+            Font: =Font.Arial
+            Height: =66
+            HtmlText: |-
+                ="<div style='width:98%; //height:"& HtmlText2_3.Height -1 &"px;
+                    background: #FFFFFF;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 10px;
+                    center;
+                '>
+                <table style='width:100%; border: 1px solid #CCCCCC;'>
+                <tr>
+                <td><div style='color: #009439;font-family:"&Verdana&"; font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;'><center>Objetivo General</div></center></td>
+                </tr>
+                </table>
+                </div>"
+            Size: =14
+            Visible: |
+                =true
+            Width: =1272
+            X: =24
+            Y: =28
+            ZIndex: =12
+
+        Label17 As label:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Size: =12
+            Text: ="Resultado Clave"
+            Width: =250
+            X: =60
+            Y: =313
+            ZIndex: =13
 
     ctnObjetivoOtros As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1500,43 +1631,6 @@ scr_objetivo As screen:
                 Y: =298
                 ZIndex: =10
 
-            HtmlText2_3 As htmlViewer:
-                AutoHeight: =true
-                Font: =Font.Arial
-                Height: =66
-                HtmlText: |-
-                    ="<div style='width:98%; //height:"& HtmlText2_3.Height -1 &"px;
-                        background: #FFFFFF;
-                        border: 1px solid #CCCCCC;
-                        border-radius: 10px;
-                        center;
-                    '>
-                    <table style='width:100%; border: 1px solid #CCCCCC;'>
-                    <tr>
-                    <td><div style='color: #009439;font-family:"&Verdana&"; font-style: normal;
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 18px;'><center>Objetivo General</div></center></td>
-                    </tr>
-                    </table>
-                    <table style='width:100%; border: 1px solid #CCCCCC;'>
-                    <tr>
-                    <td style='font-family: "&Arial&";
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 22px;
-                    text-align: center;'><center>"&LookUp(Objetivo,ID=varIDObjetivoEmple,Title)&"</center></td>
-                    </tr>
-                    <table>
-                    </div>"
-                Size: =14
-                Visible: =false
-                Width: =1272
-                X: =24
-                Y: =60
-                ZIndex: =11
-
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =679
@@ -1652,7 +1746,7 @@ scr_objetivo As screen:
                     =Set(varIDRCEmple,ThisItem.ID);
                     Set(varctnResultadosCDetalle,true);
                     Set(varlbtTituloObjetivo,"Detalle Tareas");
-                Tooltip: ="Ver detalle"
+                Tooltip: ="Ver detalle del resultado Clave"
                 Width: =39
                 X: =1069
                 Y: =6
@@ -2395,7 +2489,7 @@ scr_objetivo As screen:
         Label10 As label:
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
-            Text: ="Nombre"
+            Text: ="Tarea"
             X: =30
             Y: =132
             ZIndex: =9

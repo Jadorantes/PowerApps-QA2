@@ -895,7 +895,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnActualizarOG",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2526,7 +2526,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnGuardarOG",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -534,7 +534,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/13/2023 00:15:24",
+  "HeaderLastSavedDateTimeUTC": "01/13/2023 01:22:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "4795ab98-1e69-471e-abb2-0bdd7f7329af": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-85c85b27-e9d2-4418-ab13-2a0382aee054\"",
@@ -543,7 +543,7 @@
     "7701a481-7185-4254-8848-586dee13d327": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-646c35e0-8694-4456-89ea-cc9e3f320f8d\"",
     "c213761e-0a71-44a6-a4ff-4dc3833e6ec2": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-84f1bb82-7640-4da7-a649-9db6-ff1c0991\"",
     "d1c164fd-9d0c-4b19-b76e-98f962ed82a2": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-646c35e0-8694-4456-89ea-cc9e3f320f8d\"",
-    "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/FF21D4157B774347B8A3A9FD164F7701-026C0EDD50B6BBB0\""
+    "eaaf4094-ec28-4f89-b1a1-b6b6eebc1cfc": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/ff21d4157b774347b8a3a9fd164f7701-026c0edd50b6bbb0\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -1455,7 +1455,7 @@
     "FondoOB": 156,
     "FondoRCOO": 161,
     "FondoTareas": 218,
-    "FondoVUA": 30,
+    "FondoVUA": 29,
     "FondoVUA_ECD": 61,
     "Form_Departamento": 332,
     "Form_Empleados": 405,
@@ -1794,14 +1794,14 @@
     "Title9": 255,
     "Title9_1": 256,
     "Title9_2": 257,
-    "TituloValidacion": 31,
+    "TituloValidacion": 30,
     "TxBuscadorObje": 110,
     "txtJefeDirecto": 71,
     "txtNombreUsr": 65,
     "txtPTTarea": 234,
     "txtPuesto": 69,
     "txtTarea": 227,
-    "ValidacionUSerExist": 29,
+    "ValidacionUSerExist": 31,
     "ValidacionUsuarioActivo": 27,
     "VDU": 7,
     "Vista_Departamento": 316,

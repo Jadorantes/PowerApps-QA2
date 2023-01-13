@@ -718,30 +718,6 @@ scr_objetivo As screen:
             Y: =56
             ZIndex: =8
 
-        icoAgregarRCOG As icon.Add:
-            Icon: =Icon.Add
-            OnSelect: |-
-                =Set(
-                    VarIDOG,
-                    Sum(
-                        VarIDOG,
-                        1
-                    )
-                );
-                If(IsBlank(inpResultadoClaveOG)
-                    ,Notify("Este campo no puede ir vacio"),
-                Collect(
-                   RegistroResultadosClaveOG,
-                   {
-                       Co_ID:VarIDOG,
-                       Co_ResultadoClaveOG:"",
-                       Co_PeriodoTiempoOG:""
-                    }
-                ));
-            X: =1184
-            Y: =265
-            ZIndex: =9
-
         btnGuardarOG As button:
             DisplayMode: |-
                 =If( IsBlank(DataCardValue40.Text) || IsBlank(inpResultadoClaveOG.Text) 

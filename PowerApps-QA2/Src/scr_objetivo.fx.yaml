@@ -2422,12 +2422,12 @@ scr_objetivo As screen:
         Align: =Align.Center
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
-        Height: =17
+        Height: =30
         Size: =15
         Text: =varlbtTituloObjetivo
         Width: =626
-        X: =405
-        Y: =22
+        X: =390
+        Y: =15
         ZIndex: =9
 
     DatosUsuario_1 As groupContainer.manualLayoutContainer:

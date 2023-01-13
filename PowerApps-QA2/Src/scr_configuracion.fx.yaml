@@ -577,68 +577,6 @@ scr_configuracion As screen:
                         Y: =DataCardKey2.Y
                         ZIndex: =4
 
-                Tipo_Acceso_DataCard2 As typedDataCard.allowedValuesStringEditCard:
-                    AllowedValues: =DataSourceInfo([@Empleado], DataSourceInfo.AllowedValues, "Tipo_Acceso")
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="Tipo_Acceso"
-                    Default: =ThisItem.Tipo_Acceso
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Tipo_Acceso")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    Required: =false
-                    Update: =DataCardValue1.Selected.Result
-                    Width: =428
-                    X: =1
-                    Y: =3
-                    ZIndex: =1
-
-                    DataCardKey1 As label:
-                        AutoHeight: =true
-                        Height: =34
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue1 As dropdown:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Parent.Default
-                        DisplayMode: =Parent.DisplayMode
-                        Items: =Distinct(Perfil_1,Nombre)
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey1.Y + DataCardKey1.Height + 5
-                        ZIndex: =2
-
-                    ErrorMessage1 As label:
-                        AutoHeight: =true
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue1.Y + DataCardValue1.Height
-                        ZIndex: =3
-
-                    StarVisible1 As label:
-                        Align: =Align.Center
-                        Height: =DataCardKey1.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey1.Y
-                        ZIndex: =4
-
                 Ubicacion_DataCard1 As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Ubicacion"
@@ -705,6 +643,68 @@ scr_configuracion As screen:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey5.Y
+                        ZIndex: =4
+
+                Tipo_Acceso_DataCard2 As typedDataCard.allowedValuesStringEditCard:
+                    AllowedValues: =DataSourceInfo([@Empleado], DataSourceInfo.AllowedValues, "Tipo_Acceso")
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Tipo_Acceso"
+                    Default: =ThisItem.Tipo_Acceso
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Empleado],DataSourceInfo.DisplayName,"Tipo_Acceso")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue1.Selected.Result
+                    Width: =428
+                    X: =1
+                    Y: =3
+                    ZIndex: =1
+
+                    DataCardKey1 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue1 As dropdown:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Distinct(Perfil_1,Nombre)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage1 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1.Y + DataCardValue1.Height
+                        ZIndex: =3
+
+                    StarVisible1 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1.Y
                         ZIndex: =4
 
                 ID_DataCard2 As typedDataCard.textualViewCard:

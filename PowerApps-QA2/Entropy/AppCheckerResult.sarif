@@ -3473,19 +3473,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd_1.AccessibleLabel"
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd_1.AccessibleLabel",
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd_1"
+                "type": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd"
               }
             }
           ],
@@ -3503,19 +3503,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd.AccessibleLabel"
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd.AccessibleLabel",
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd"
+                "type": "scr_configuracion.ctnEmpleados.Vista_Empleados.DdDepartamentoEd_1"
               }
             }
           ],
@@ -3923,6 +3923,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_configuracion",
+                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard2.DataCardValue1.AccessibleLabel"
                 }
               ],
@@ -3936,6 +3966,36 @@
                 "member": "AccessibleLabel",
                 "module": "scr_configuracion",
                 "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Tipo_Acceso_DataCard2.DataCardValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scr_configuracion",
+                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5"
               }
             }
           ],
@@ -4836,66 +4896,6 @@
                 "member": "AccessibleLabel",
                 "module": "scr_home",
                 "type": "scr_home.EnvioCorreoDatos.txtJefeDirecto"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ciudad_DataCard1.DataCardValue2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scr_configuracion",
-                "type": "scr_configuracion.ctnEmpleados.ABC_Empleados.Form_Empleados.Ubicacion_DataCard1.DataCardValue5"
               }
             }
           ],

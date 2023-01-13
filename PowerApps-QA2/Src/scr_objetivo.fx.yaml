@@ -216,6 +216,8 @@ scr_objetivo As screen:
                     Set(varctnResultadoClaveEmpleado,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varctnResultadoClaveEmpleado2,If(valUsrPuesto <> "DGA DE TECNOLOGIAS DE INFORMACION",true,false));
                     Set(varlbtTituloObjetivo,If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION","Registro Objetivo","Detalle Resultados Claves Jefe Directo"));
+                    Set(varbtnGuardar,true);
+                    Set(varbtnActualizar,false);
                 Text: ="Registrar OK"
                 Width: =229
                 X: =354
@@ -1631,6 +1633,7 @@ scr_objetivo As screen:
                     SubmitForm(Form_RCOO);
                     Set(popValObj,"false")
                 Text: ="Guardar"
+                Visible: =varbtnGuardar
                 Width: =227
                 X: =451
                 Y: =611
@@ -1695,6 +1698,60 @@ scr_objetivo As screen:
                 X: =37
                 Y: =298
                 ZIndex: =10
+
+            btnActualizarOG_1 As button:
+                DisplayMode: |-
+                    =If( IsBlank(DataCardValue19.Text) || IsBlank(inpResultadoClaveOG_1.Text) 
+                    ,Disabled, Edit)
+                Fill: =RGBA(0, 154, 62, 1)
+                Font: =Font.Arial
+                Height: =60
+                OnSelect: |
+                    =ForAll(
+                        Gallery_ResultadoClaveOG_1.AllItems,
+                        Patch(
+                            RegistroResultadosClaveOG,
+                            {Co_ID:Value(lblIDRCOG_1.Text)},
+                            {
+                                Co_ResultadoClaveOG:inpResultadoClaveOG_1.Text
+                            }
+                        )
+                    );
+                    /*Set(varNivelObjetivo;If(LookUp(Objetivo;ID=lblOGRC00_1.Text;NivelObjetivo)="Direccion";LookUp(Empleado;Responsable.DisplayName=LookUp(Objetivo;ID=lblOGRC00_1.Text;'Creado por'.DisplayName);Direccion)));;
+                    SubmitForm(Form_RCOO);;
+                    Set(popValObj;"false")*/
+                    ForAll(
+                        RegistroResultadosClaveOG,
+                        Patch(
+                            ResultadoClave,
+                            Defaults(ResultadoClave),{
+                                Title:Co_ResultadoClaveOG,
+                                PeriodoTiempo:Form_RCOO.LastSubmit.Periodo_Tiempo,
+                                IdObjetivo:Form_RCOO.LastSubmit.ID
+                            }
+                        )
+                    );
+                    Set(varctnObjetivoEmpleado,true);
+                    Set(varctnRCOO,false);
+                    NewForm(Form_RCOO);
+                    Set(
+                        VarIDOG,
+                        1
+                    );
+                    ClearCollect(
+                       RegistroResultadosClaveOG,
+                       {
+                           Co_ID:VarIDOG,
+                           Co_ResultadoClaveOG:"",
+                           Co_PeriodoTiempoOG:""
+                        }
+                    );
+                Text: ="Guardar"
+                Visible: =varbtnGuardar
+                Width: =227
+                X: =152
+                Y: =611
+                ZIndex: =11
 
     ctnDetalleObjetivos As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)

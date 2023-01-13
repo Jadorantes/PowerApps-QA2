@@ -132,10 +132,8 @@ scr_objetivo As screen:
                     =/*Set(varIDObjetivoEmple;ThisItem.ID);;
                     Set(varctnDetalleObjetivos;true);;
                     Set(varlbtTituloObjetivo;"Detalle Resultados Clave")*/
-                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral);Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true)
-                    
-                    
-                    ,Set(varctnResultadoClaveEmpleado,false))
+                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral) And Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true)
+                    ,ViewForm(Form_RCOO) And Set(varctnRCOO,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true))
                     
                     
                     /*Set(varctnObjetivoEmpleado;false);;
@@ -914,7 +912,7 @@ scr_objetivo As screen:
             TemplatePadding: =0
             TemplateSize: |-
                 =//If(Subtitle6.Height+90<100;50;Subtitle6.Height +20;Subtitle6_2.Height +30)
-                Min(Subtitle6_2.Height + 20)
+                Min(Subtitle6_2.Height + 150)
             Width: =1262
             X: =26
             Y: =135
@@ -1184,6 +1182,7 @@ scr_objetivo As screen:
                 DataSource: =Objetivo
                 DefaultMode: =FormMode.New
                 Height: =210
+                Item: =GalleryObjetivoEmp.Selected
                 NumberOfColumns: =2
                 OnSuccess: |-
                     =ForAll(
@@ -1747,7 +1746,7 @@ scr_objetivo As screen:
                         }
                     );
                 Text: ="Guardar"
-                Visible: =varbtnGuardar
+                Visible: =varbtnActualizar
                 Width: =227
                 X: =152
                 Y: =611

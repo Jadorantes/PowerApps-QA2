@@ -132,7 +132,7 @@ scr_objetivo As screen:
                     =/*Set(varIDObjetivoEmple;ThisItem.ID);;
                     Set(varctnDetalleObjetivos;true);;
                     Set(varlbtTituloObjetivo;"Detalle Resultados Clave")*/
-                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral) And Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true)
+                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral); Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true)
                     ,ViewForm(Form_RCOO); Set(varctnResultadoClaveEmpleado2,true) And Set(varctnRCOO,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true))
                     
                     
@@ -1439,7 +1439,7 @@ scr_objetivo As screen:
                 ID_ResultadoClave_DataCard1 As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="ID_ResultadoClave"
-                    Default: =ThisItem.ID_ResultadoClave
+                    Default: =varIDRCOG
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Objetivo],DataSourceInfo.DisplayName,"ID_ResultadoClave")
                     Fill: =RGBA(0, 0, 0, 0)

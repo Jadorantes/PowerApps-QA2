@@ -912,7 +912,7 @@ scr_objetivo As screen:
             TemplatePadding: =0
             TemplateSize: |-
                 =//If(Subtitle6.Height+90<100;50;Subtitle6.Height +20;Subtitle6_2.Height +30)
-                Min(Subtitle6_2.Height - 1)
+                Min(Subtitle6_2.Height + 20)
             Width: =1262
             X: =26
             Y: =135
@@ -1643,7 +1643,8 @@ scr_objetivo As screen:
                 Font: =Font.Arial
                 Height: =60
                 OnSelect: |-
-                    =Set(varctnObjetivoEmpleado,true);
+                    =ResetForm(Form_RCOO);
+                    Set(varctnObjetivoEmpleado,true);
                     Set(varctnRCOO,false);
                     Set(varlbtTituloObjetivo,"Detale Resultado Claves Jefe Directo");
                 Text: ="Cancelar"

@@ -132,8 +132,8 @@ scr_objetivo As screen:
                     =/*Set(varIDObjetivoEmple;ThisItem.ID);;
                     Set(varctnDetalleObjetivos;true);;
                     Set(varlbtTituloObjetivo;"Detalle Resultados Clave")*/
-                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral); Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true)
-                    ,ViewForm(Form_RCOO); Set(varctnResultadoClaveEmpleado2,true) And Set(varctnRCOO,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true))
+                    If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",ViewForm(Form_ObjetivosGeneral); Set(varctnResultadoClaveEmpleado,true) And Set(varOBGID,ThisItem.ID) And Set(varOBGPT,ThisItem.Periodo_Tiempo) And Set(varbtnGuardar,false) And Set(varbtnActualizar,true))
+                    //;ViewForm(Form_RCOO);; Set(varctnResultadoClaveEmpleado2;true) And Set(varctnRCOO;true) And Set(varOBGID;ThisItem.ID) And Set(varOBGPT;ThisItem.Periodo_Tiempo) And Set(varbtnGuardar;false) And Set(varbtnActualizar;true))
                     
                     
                     /*Set(varctnObjetivoEmpleado;false);;

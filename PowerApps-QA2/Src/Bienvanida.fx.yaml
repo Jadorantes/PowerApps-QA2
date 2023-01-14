@@ -254,7 +254,9 @@ Bienvanida As screen:
     TimerVDU As timer:
         AutoStart: =varBVDU
         Duration: =5000
-        OnTimerEnd: =Navigate(scr_home)
+        OnTimerEnd: |+
+            =If(valUsrPuesto="DGA DE TECNOLOGIAS DE INFORMACION",Navigate(scr_objetivo),Navigate(scr_home))
+            
         Visible: =false
         X: =924
         Y: =606

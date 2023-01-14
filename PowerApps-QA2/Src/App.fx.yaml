@@ -154,5 +154,5 @@ App As appinfo:
         Set(popValObj,If(CountRows(GalleryObjetivoEmp.AllItems)=0,"true","false"));
         
         //VarpopUpComprobacion=true
-    StartScreen: =If(LookUp(Empleado,Nombre_Usuario.Email=User().Email,Puesto)="DGA DE TECNOLOGIAS DE INFORMACION",scr_objetivo)
+    StartScreen: =//If(LookUp(Empleado;Nombre_Usuario.Email=User().Email;Puesto)="DGA DE TECNOLOGIAS DE INFORMACION";scr_objetivo)
 

@@ -1781,7 +1781,7 @@ scr_objetivo As screen:
             Items: =Filter(ResultadoClave,IdObjetivo=varIDObjetivoEmple)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =Min(Subtitle11.Height + 20)
+            TemplateSize: =Min(Subtitle11.Height - 60)
             Width: =1263
             Y: =221
             ZIndex: =2

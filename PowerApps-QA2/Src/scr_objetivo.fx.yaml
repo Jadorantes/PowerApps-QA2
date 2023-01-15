@@ -381,7 +381,6 @@ scr_objetivo As screen:
             inpResultadoClaveOG As text:
                 BorderColor: =RGBA(0, 154, 62, 1)
                 Default: =ThisItem.Co_ResultadoClaveOG
-                Font: =Font.Arial
                 Height: =60
                 Mode: =TextMode.MultiLine
                 OnSelect: =Select(Parent)

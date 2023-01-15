@@ -546,7 +546,7 @@ scr_home As screen:
             Height: =60
             HoverFill: =ColorFade(RGBA(0, 154, 62, 100), -20%)
             OnSelect: |-
-                =If(IsBlank(txtNombreUsr) || IsBlank(txtPuesto) || IsEmpty(listArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult') || IsBlank(txtJefeDirecto)
+                =If(IsBlank(txtNombreUsr) || IsBlank(txtPuesto) || IsEmpty(listArea.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
                     ,Notify("Tienes que llenar todos los campos"),
                 Office365Outlook.SendEmailV2(Concatenate("solicitudessp@frd.org.mx;",User().Email),"Actualización de los datos del usuario del OKR",Concatenate("Se requieren correcciones de los datos del usuario ",User().FullName,
                 "</br></br>Nombre ", txtNombreUsr, 
@@ -558,6 +558,7 @@ scr_home As screen:
                 Set(varPopUpMail,true)
                 );
                 //Exit();;
+                //|| IsBlank(txtJefeDirecto)
             Text: ="Guardar"
             Visible: =varValUsr
             Width: =227

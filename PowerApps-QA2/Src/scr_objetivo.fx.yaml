@@ -186,20 +186,24 @@ scr_objetivo As screen:
             ZIndex: =4
 
             Button8 As button:
+                BorderColor: =ColorFade(Self.Fill, -10%)
                 BorderThickness: =3
                 Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
-                Height: =429
+                Height: =406
+                HoverBorderColor: =ColorFade(Self.Fill, -15%)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 255, 255, 0)
-                PressedFill: |
-                    =RGBA(244,244,244,100)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PressedBorderColor: =ColorFade(Self.Fill, -15%)
+                PressedFill: =RGBA(255, 255, 255, 1)
                 Text: |-
                     ="Aún no has registrado ningún objetivo.   
-                    ¡Vamos!, ¿Qué esperas para empezar?"
+                    ¡vamos! recuerda que es muy importante registrar tus objetivos para lograr las metas de tu área"
                 Width: =1004
                 X: =164
                 Y: =170

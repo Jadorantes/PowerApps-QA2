@@ -1464,7 +1464,9 @@ scr_objetivo As screen:
 
                     DataCardValue13 As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =//lblRCRC00_2.Text
+                        Default: |-
+                            =//lblRCRC00_2.Text
+                            varIDRCOG
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
                         MaxLength: =Parent.MaxLength
